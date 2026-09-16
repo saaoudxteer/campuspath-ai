@@ -21,6 +21,12 @@ L'hébergement d'un service réel demande les connexions PostgreSQL/S3 et les tr
 
 ## État
 
-La configuration de déploiement est préparée. La publication attend la connexion au compte d'hébergement ; aucune URL en ligne n'est annoncée avant un déploiement réussi. Le moteur Docker local n'est pas disponible, donc la construction Linux complète du conteneur devra être vérifiée lors de ce déploiement.
+Vérifié le 2026-09-16, avant tout déploiement :
+
+- `next.config.ts` produisait un build classique alors que le `Dockerfile` copie `.next/standalone`. L'option `output: "standalone"` a été ajoutée, sans elle la construction de l'image échouait à l'étape de copie.
+- Le chemin de démarrage hébergé a été exécuté de bout en bout hors conteneur, avec la disposition de fichiers de l'image : API interne sur 8000, serveur web sur le port public, `/api/health` répond, la page se charge et les styles sont servis.
+- Le moteur Docker n'était pas disponible, la construction complète de l'image reste donc à confirmer au premier déploiement.
+
+Le dépôt a reçu son premier commit. La publication attend la connexion au compte d'hébergement ; aucune URL en ligne n'est annoncée avant un déploiement réussi.
 
 Références officielles : [services web](https://render.com/docs/web-services), [Docker](https://render.com/docs/docker), [Blueprint](https://render.com/docs/blueprint-spec), [limites du plan gratuit](https://render.com/docs/free).
