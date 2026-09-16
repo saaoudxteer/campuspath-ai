@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.env
+.env.local
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.tsbuildinfo
+backend/data/
+playwright-report/
+test-results/
+.sites-runtime/
+_src_snapshot.tgz
+Claude outputs/
+_to_delete/

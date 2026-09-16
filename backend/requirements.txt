@@ -1,0 +1,11 @@
+fastapi==0.136.1
+uvicorn==0.46.0
+pydantic==2.13.4
+SQLAlchemy>=2.0.43,<2.1
+psycopg[binary]>=3.2,<4
+python-multipart>=0.0.22,<0.1
+httpx>=0.28,<0.29
+pypdf>=6.0,<7
+boto3>=1.40,<2
+pytest>=9.0,<10
+ruff>=0.15,<0.16

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: campuspath-ai-demo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: DEMO_MODE
+        value: "true"
+      - key: STORAGE_BACKEND
+        value: local
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
