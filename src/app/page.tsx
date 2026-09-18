@@ -241,24 +241,26 @@ export default function Page() {
     return (
       <div className="auth-page">
         <div className="auth-brand">
-          <span className="brand-mark">
-            P<span>•</span>
+          <span className="font-editorial text-[26px] font-medium text-[#051c2c]">
+            CampusPath
           </span>
-          CampusPath AI
+          <span className="font-editorial italic text-[20px] text-[#0056b3] ml-1">
+            & Company
+          </span>
         </div>
         <section className="auth-panel">
           <button className="text-link" onClick={() => { setAuth(false); setError(""); }}>{t("Retour à l’accueil", "نرجع للرئيسية")}</button>
-          <div className="eyebrow">{t("VOTRE PROJET, VOTRE PARCOURS", "المشروع ديالك، المسار ديالك")}</div>
+          <div className="eyebrow">{t("ORIENTATION & STRATÉGIE ACADÉMIQUE", "التوجيه والاستراتيجية الأكاديمية")}</div>
           <h1>
             {t(
-              "Votre prochain chapitre commence ici.",
-              "المرحلة الجاية كتبدا هنا.",
+              "Espace Candidat & Stratégie d'Admission",
+              "فضاء المترشح والقبول في المدارس الكبرى",
             )}
           </h1>
           <p>
             {t(
-              "Construisez un dossier clair et des choix qui vous ressemblent.",
-              "وجد ملف واضح وختار مسار كيناسبك.",
+              "Bâtissez un dossier d'excellence pour intégrer les meilleures formations post-bac et supérieures.",
+              "بناء ملف أكاديمي متميز لولوج أفضل المدارس والمسارات الجامعية.",
             )}
           </p>
           <div className="tabs">
@@ -356,15 +358,17 @@ export default function Page() {
           <button
             className="brand"
             onClick={() => go("orientation")}
-            aria-label="CampusPath AI"
+            aria-label="CampusPath & Company"
           >
-            <span className="brand-mark">
-              P<span>•</span>
+            <span className="font-editorial text-[20px] font-medium tracking-tight text-[#051c2c]">
+              CampusPath
             </span>
-            CampusPath<span className="brand-ai">AI</span>
+            <span className="font-editorial italic text-[16px] text-[#0056b3] ml-1">
+              & Co
+            </span>
           </button>
           <div className="workspace-label">
-            {t("MON AVENIR, MES CHOIX", "مستقبلي، اختياري")}
+            {t("STRATÉGIE & ORIENTATION", "الاستراتيجية والتوجيه")}
           </div>
           <nav aria-label={t("Navigation principale", "التنقل الرئيسي")}>
             {navigation.map(([id, fr, ary], i) => {
@@ -515,10 +519,10 @@ export default function Page() {
             <footer className="page-footer">
               <ShieldCheck size={14} />
               {t(
-                "Un outil indépendant de préparation · Non affilié à Campus France",
-                "أداة مستقلة باش توجد الملف · ما تابعةش لكامبوس فرانس",
+                "Cabinet indépendant d'orientation stratégique · Non affilié à Campus France",
+                "استشارة وتوجيه مستقل · غير تابع لكامبوس فرانس",
               )}
-              <span>CampusPath AI</span>
+              <span>CampusPath & Company</span>
             </footer>
           </main>
         </div>

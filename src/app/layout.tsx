@@ -5,9 +5,9 @@ import "./orientation.css";
 import "./refinements.css";
 import { PrivacyPreferences } from "@/components/privacy-preferences";
 export const metadata: Metadata = {
-  title: "CampusPath AI — Trouve ta voie au Maroc",
+  title: "CampusPath & Company — Conseil en Stratégie d'Orientation & Études Supérieures",
   description:
-    "Des parcours visuels pour explorer les études, découvrir les métiers et préparer son avenir au Maroc et à l’étranger.",
+    "Analyses stratégiques, trajectoires d'excellence et préparation rigoureuse aux filières post-bac et supérieures au Maroc et à l'international.",
   icons: { icon: "/favicon.svg" },
 };
 export default function RootLayout({

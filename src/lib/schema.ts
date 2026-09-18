@@ -317,13 +317,23 @@ export const snapshotSchema = z.object({
   cycle: cycleSchema,
 });
 export type Snapshot = z.infer<typeof snapshotSchema>;
+export type Candidate = z.infer<typeof candidateSchema>;
+export type Cycle = z.infer<typeof cycleSchema>;
 export type Fact = z.infer<typeof factSchema>;
 export type Program = z.infer<typeof programSchema>;
 export type DocumentRecord = z.infer<typeof documentSchema>;
 export type Education = z.infer<typeof educationSchema>;
 export type Grade = z.infer<typeof gradeSchema>;
+export type Experience = z.infer<typeof experienceSchema>;
 export type Match = z.infer<typeof matchSchema>;
 export type Question = z.infer<typeof questionSchema>;
 export type Artifact = z.infer<typeof artifactSchema>;
 export type Preferences = z.infer<typeof preferencesSchema>;
 export type Task = z.infer<typeof taskSchema>;
+export type Pathway = z.infer<typeof pathwaySchema>;
+export type Diagnostic = Snapshot["diagnostic"];
+export type Completeness = Snapshot["completeness"];
+export type Audit = Snapshot["audit"];
+export type MatchDimension = Match["dimensions"][number];
+export type Selection = Candidate["selections"][number];
+export type Claim = Program["claims"][string];

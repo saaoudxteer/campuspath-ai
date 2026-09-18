@@ -1,72 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Noto+Sans+Arabic:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
-/* Contextual first-load and connection recovery; no external font dependency. */
-.workspace-loading { display: grid; grid-template-columns: 220px minmax(0, 1fr); min-height: 100vh; }
-.loading-rail { border-inline-end: 1px solid #e6e4df; padding: 44px 24px; }
-.loading-rail span { display: block; height: 13px; background: #e6e4df; margin-bottom: 30px; }
-.loading-rail span:first-child { width: 70%; margin-bottom: 70px; }
-.loading-content { padding: 64px 48px; min-width: 0; }
-.loading-content > p { display: flex; align-items: center; gap: 12px; font-size: 14px; }
-.loading-placeholder { margin: 55px 0; max-width: 620px; }
-.loading-placeholder i { display: block; background: #e6e4df; height: 30px; margin-bottom: 16px; }
-.loading-placeholder i:nth-child(2) { width: 78%; }
-.loading-placeholder i:last-child { width: 50%; height: 12px; margin-top: 28px; }
-.loading-rows > div { display: grid; grid-template-columns: 28px 1fr 90px; gap: 22px; padding: 32px 0; border-top: 1px solid #e6e4df; }
-.loading-rows span { display: block; background: #e6e4df; height: 14px; }
-.connection-recovery { max-width: 720px; margin: 12vh auto; padding: 32px; }
-.recovery-brand { display: block; font-weight: 750; margin-bottom: 55px; }
-.connection-recovery h1 { margin-bottom: 18px; }
-.connection-recovery p { line-height: 1.7; margin-bottom: 26px; }
-@media (max-width: 640px) { .workspace-loading { grid-template-columns: 1fr; } .loading-rail { display: none; } .loading-content { padding: 40px 24px; } }
+
 :root {
-  /* Surfaces */
+  /* McKinsey & Company Visual Identity Tokens */
+  --font-serif: "Newsreader", "Georgia", "Baskerville", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-serif);
+
+  --mckinsey-navy: #051c2c;
+  --mckinsey-midnight: #001a30;
+  --mckinsey-dark: #0a2540;
+  --mckinsey-blue: #0056b3;
+  --mckinsey-cobalt: #0072ce;
+  --mckinsey-sky: #eef5fc;
+  --mckinsey-light: #f5f7fa;
+  --mckinsey-border: #d2d8df;
+  --mckinsey-border-light: #e5e9ee;
+  --mckinsey-ink: #111827;
+  --mckinsey-body: #2d3748;
+  --mckinsey-muted: #5c6779;
+  --mckinsey-faint: #8a94a6;
+
+  /* Legacy & Surface variables aligned to McKinsey standard */
   --page: #ffffff;
   --surface: #ffffff;
-  --wash: #f4f4f4;          /* bandes grises */
-  --deep: #1d2b36;          /* sections pleine largeur sombres */
-  --deep-soft: #2c3e4c;
+  --wash: var(--mckinsey-light);
+  --deep: var(--mckinsey-navy);
+  --deep-soft: var(--mckinsey-dark);
 
-  /* Encre */
-  --ink: #141414;           /* titres */
-  --body-ink: #333333;      /* texte courant */
-  --muted: #5c5c5c;
-  --faint: #767676;         /* 4.54:1 sur blanc, plancher absolu */
+  --ink: var(--mckinsey-ink);
+  --body-ink: var(--mckinsey-body);
+  --muted: var(--mckinsey-muted);
+  --faint: var(--mckinsey-faint);
 
-  /* Traits */
-  --rule: #d4d4d4;
-  --rule-strong: #141414;
-  --rule-invert: #4a5a66;
+  --rule: var(--mckinsey-border-light);
+  --rule-strong: var(--mckinsey-navy);
+  --rule-invert: #2a435a;
 
-  /* Accent unique */
-  --accent: #1b4db3;
-  --accent-hover: #143a89;
-  --accent-wash: #eef2fb;
+  --accent: var(--mckinsey-blue);
+  --accent-hover: #003e82;
+  --accent-wash: var(--mckinsey-sky);
+  --blue: var(--mckinsey-blue);
 
-  /* Sémantique, désaturée */
-  --positive: #1f6b45;
-  --warning: #8a5a10;
-  --danger: #a32718;
-  --danger-wash: #fbefee;
-
-  /* Rythme */
-  --gutter: clamp(20px, 4vw, 40px);
-  --measure: 1224px;
-  --section: clamp(48px, 7vw, 96px);
-
-  /* Typographie */
-  --font-sans: "Libre Franklin", "Helvetica Neue", Helvetica, sans-serif;
-  --font-display: "Libre Franklin", "Helvetica Neue", Helvetica, sans-serif;
-
-  /* Compatibilité avec les règles héritées */
-  --paper: var(--page);
-  --canvas: var(--page);
-  --line: var(--rule);
-  --olive: var(--accent);
-  --olive-hover: var(--accent-hover);
-  --sage: var(--rule);
-  --sage-tint: var(--wash);
-  --sand: var(--wash);
-  --blue: var(--accent);
+  --positive: #0d6832;
+  --warning: #85530b;
+  --danger: #9c2115;
+  --danger-wash: #fdf2f2;
 }
 * {
   box-sizing: border-box;
@@ -754,3 +733,151 @@ main {
     display: none;
   }
 }
+
+/* ==========================================================================
+   McKinsey & Company Visual Signature System
+   ========================================================================== */
+
+.font-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.mckinsey-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.mckinsey-brand-mark {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--mckinsey-navy);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.mckinsey-brand-mark span.company {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--mckinsey-blue);
+  margin-inline-start: 4px;
+}
+
+.mckinsey-brand-mark-dark {
+  color: #ffffff;
+}
+
+.mckinsey-brand-mark-dark span.company {
+  color: #60a5fa;
+}
+
+.mckinsey-kicker {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mckinsey-blue);
+}
+
+.mckinsey-lead-headline {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(32px, 4.5vw, 56px);
+  line-height: 1.12;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: var(--mckinsey-navy);
+}
+
+.mckinsey-card-headline {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--mckinsey-navy);
+}
+
+.mckinsey-small-headline {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--mckinsey-navy);
+}
+
+.mckinsey-divider {
+  height: 1px;
+  background-color: var(--mckinsey-border-light);
+  width: 100%;
+}
+
+.mckinsey-hover-lift {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mckinsey-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(5, 28, 44, 0.08);
+}
+
+.mckinsey-btn-primary {
+  background-color: var(--mckinsey-blue);
+  color: #ffffff;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+  border: 1px solid var(--mckinsey-blue);
+}
+
+.mckinsey-btn-primary:hover {
+  background-color: #00438c;
+}
+
+.mckinsey-btn-outline {
+  background-color: transparent;
+  color: var(--mckinsey-navy);
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  border: 1px solid var(--mckinsey-navy);
+}
+
+.mckinsey-btn-outline:hover {
+  background-color: rgba(5, 28, 44, 0.04);
+}
+
+.mckinsey-btn-white {
+  background-color: #ffffff;
+  color: var(--mckinsey-navy);
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+  border: 1px solid #ffffff;
+}
+
+.mckinsey-btn-white:hover {
+  background-color: #f1f5f9;
+}
+
