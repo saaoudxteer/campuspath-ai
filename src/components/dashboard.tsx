@@ -30,6 +30,16 @@ export function Dashboard() {
     recommend = [...data.matches]
       .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
       .slice(0, 3);
+  const matchLabel = (classification: string) =>
+    classification === "SAFER"
+      ? t("Bonne cohérence", "Tnassob mzyan")
+      : classification === "TARGET"
+        ? t("À explorer", "Khas tktechef")
+        : classification === "AMBITIOUS"
+          ? t("Possible avec remise à niveau", "Momkin m3a ta2hil")
+          : classification === "INELIGIBLE"
+            ? t("Point bloquant à vérifier", "Khas t3awed tchecki")
+            : t("À documenter", "Khas t3ammer lma3lomat");
   return (
     <>
       <div className="page-heading">
@@ -227,10 +237,17 @@ export function Dashboard() {
                       {p.institution.city} ·{" "}
                       {t("Formation fictive", "Formation tajribiya")}
                     </p>
+                    <p className="program-row-reason">
+                      {m.strengths[0] ??
+                        m.risks[0] ??
+                        t(
+                          "Ouvrez la fiche pour comprendre les prérequis.",
+                          "7ell fiche bach tfhem chorot.",
+                        )}
+                    </p>
                   </div>
-                  <span className="fit-number">
-                    {m.score ?? "—"}
-                    <small>/100</small>
+                  <span className="fit-label">
+                    {matchLabel(m.classification)}
                   </span>
                   <ChevronRight size={17} />
                 </button>

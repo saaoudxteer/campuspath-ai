@@ -1,8 +1,8 @@
 # CampusPath AI
 
-CampusPath AI is a working local MVP for preparing a Morocco-to-France study application. The interface is available in French and Latin-script Darija. It helps a candidate assemble evidence, understand academic results, compare programs, prepare written materials, and resolve missing information.
+CampusPath AI is a working local MVP for helping Moroccan students explore study and career directions, then prepare a Morocco-to-France study application when relevant. The interface is available in French and Latin-script Darija. It combines an editorial orientation catalogue with roadmap-style steps, saved pistes, comparison, and a short transparent questionnaire before the admissions workspace.
 
-It is an independent preparation tool, unaffiliated with Campus France. Matching scores are explained heuristics, not admission probabilities. An audit reflects the information entered in this app; it does not certify eligibility or submit an application.
+It is an independent preparation tool, unaffiliated with Campus France. Matching categories are transparent heuristics, not admission probabilities. An audit reflects the information entered in this app; it does not certify eligibility or submit an application.
 
 ## Run locally
 

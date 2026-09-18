@@ -476,6 +476,9 @@ export function InterviewView() {
   const { data, t, go } = useApp(),
     [index, setIndex] = useState(0),
     [answer, setAnswer] = useState(""),
+    [answerMode, setAnswerMode] = useState<"written" | "unknown" | "prefer">(
+      "written",
+    ),
     [busy, setBusy] = useState(false),
     [feedback, setFeedback] = useState<z.infer<typeof feedbackSchema> | null>(
       null,
@@ -553,9 +556,8 @@ export function InterviewView() {
           <h2>{questions[index]}</h2>
           <p>
             {t(
-              "Répondez simplement. Appuyez chaque idée sur un exemple réel.",
-              "Jaweb b bassa ta".replace("bassa ta", "bassata") +
-                ". 3ti exemple 7a9i9i l kol fikra.",
+              "Pourquoi cette question ? Elle relie une information de votre dossier à votre projet. Vous pouvez répondre, dire que vous ne savez pas encore ou passer.",
+              "3lach had sou2al ? Kayrbet ma3loma mn dossier dyalek b projet dyalek. T9der tjawb, tgol mazal ma 3reftch, wla tdouz.",
             )}
           </p>
           <form
@@ -585,13 +587,46 @@ export function InterviewView() {
                 maxLength={6000}
                 required
                 value={answer}
-                onChange={(e) => setAnswer(e.target.value)}
+                onChange={(e) => {
+                  setAnswer(e.target.value);
+                  setAnswerMode("written");
+                }}
                 placeholder={t(
                   "Ce qui m’intéresse dans ce parcours…",
                   "Lli kay3jebni f had masar…",
                 )}
               />
             </Field>
+            <div className="interview-response-options">
+              <button
+                type="button"
+                onClick={() => {
+                  setAnswer(t("Je ne sais pas encore.", "Mazal ma 3reftch."));
+                  setAnswerMode("unknown");
+                }}
+              >
+                {t("Je ne sais pas encore", "Mazal ma 3reftch")}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setAnswer(
+                    t("Je préfère ne pas répondre.", "Kanfdal ma njawbech."),
+                  );
+                  setAnswerMode("prefer");
+                }}
+              >
+                {t("Je préfère ne pas répondre", "Kanfdal ma njawbech")}
+              </button>
+              {answerMode !== "written" && (
+                <span className="muted">
+                  {t(
+                    "Cette réponse sera conservée comme telle, sans hypothèse ajoutée.",
+                    "Had ljawab ghadi yb9a kima howa, bla chi tafsir zayed.",
+                  )}
+                </span>
+              )}
+            </div>
             <div className="form-actions">
               <span>
                 {answer.trim().split(/\s+/).filter(Boolean).length}{" "}
@@ -646,6 +681,7 @@ export function InterviewView() {
               onClick={() => {
                 setIndex((index + 1) % questions.length);
                 setAnswer("");
+                setAnswerMode("written");
                 setFeedback(null);
               }}
             >
@@ -658,6 +694,16 @@ export function InterviewView() {
                   : "Sou2al jdid",
               )}
               <ArrowRight size={16} />
+            </Button>
+            <Button
+              onClick={() => {
+                setIndex((index + 1) % questions.length);
+                setAnswer("");
+                setAnswerMode("written");
+                setFeedback(null);
+              }}
+            >
+              {t("Passer cette question", "Douz had sou2al")}
             </Button>
           </div>
         </section>

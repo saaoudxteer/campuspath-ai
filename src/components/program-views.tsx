@@ -31,7 +31,6 @@ import {
   LinkButton,
   Modal,
   Notice,
-  Progress,
   SectionTitle,
   useApp,
 } from "./ui";
@@ -52,6 +51,29 @@ export const claimLabels: Record<string, [string, string]> = {
   program_url: ["Page de la formation", "Page dyal formation"],
   admission_url: ["Page des admissions", "Page dyal admissions"],
 };
+function classificationLabel(
+  classification: string,
+  t: (fr: string, ary?: string) => string,
+) {
+  return classification === "SAFER"
+    ? t("Bonne cohérence", "Tnassob mzyan")
+    : classification === "TARGET"
+      ? t("À explorer", "Khas tktechef")
+      : classification === "AMBITIOUS"
+        ? t("Possible avec remise à niveau", "Momkin m3a ta2hil")
+        : classification === "INELIGIBLE"
+          ? t("Point bloquant à vérifier", "Khas t3awed tchecki")
+          : t("À documenter", "Khas t3ammer lma3lomat");
+}
+function dimensionLabel(
+  score: number | null,
+  t: (fr: string, ary?: string) => string,
+) {
+  if (score === null) return t("À préciser", "Khas tawdi7");
+  if (score >= 85) return t("Cohérent avec le profil", "Mnasb l profil");
+  if (score >= 65) return t("À explorer", "Khas tktechef");
+  return t("À renforcer", "Khas t9wi");
+}
 export function ProgramsView() {
   const { data, t, go, programId } = useApp(),
     [search, setSearch] = useState(""),
@@ -143,9 +165,9 @@ export function ProgramsView() {
         {[
           ["all", "Toutes les formations", "Ga3 formations"],
           ["saved", "Enregistrées", "Lli 7fedti"],
-          ["SAFER", "Plus accessibles", "Risque a9all"],
-          ["TARGET", "Cibles", "Mnasbin"],
-          ["AMBITIOUS", "Ambitieuses", "Ta7addi"],
+          ["SAFER", "Bonne cohérence", "Tnassob mzyan"],
+          ["TARGET", "À explorer", "Khas tktechef"],
+          ["AMBITIOUS", "Avec remise à niveau", "M3a ta2hil"],
           ["UNASSESSED", "À évaluer", "Khas ta9yim"],
         ].map(([id, fr, ary]) => (
           <button
@@ -225,8 +247,8 @@ export function ProgramsView() {
       )}
       <Notice>
         {t(
-          "Le score décrit l’adéquation du profil, pas vos chances d’admission. « Plus accessible » reste une comparaison de contraintes, sans garantie d’admission.",
-          "Score kaybeyyen tnassob m3a profil, machi chance dyal l9oboul. Risque a9all ma kay3nich l9oboul madmoun.",
+          "Les catégories décrivent la cohérence entre votre profil et les informations connues de la formation. Elles ne prédisent pas l’admission : ouvrez chaque fiche pour voir les prérequis et les points à vérifier.",
+          "Had catégories kaybeyno tnassob bin profil dyalek w lma3lomat lli 3arfin 3la formation. Ma kaytwa33doch l9oboul : 7ell kol fiche bach tchouf chorot w no9at lli khas tchecki.",
         )}
       </Notice>
       {compare.length > 0 && (
@@ -275,11 +297,14 @@ export function ProgramsView() {
                   </span>
                   <h3>{p.title}</h3>
                   <p>{p.institution.city}</p>
-                  <strong className="compare-score">
-                    {m.score ?? "—"}
-                    <small>/100</small>
+                  <strong className="fit-label fit-label-large">
+                    {classificationLabel(m.classification, t)}
                   </strong>
-                  <Badge status={m.classification} />
+                  <p className="compare-reason">
+                    {m.strengths[0] ??
+                      m.risks[0] ??
+                      t("À préciser", "Khas tawdi7")}
+                  </p>
                   <dl>
                     <dt>{t("Budget annuel", "Budget l3am")}</dt>
                     <dd>{p.claims.tuition.value ?? "—"} €</dd>
@@ -357,15 +382,21 @@ function ProgramCard({
       <div className="fit-summary">
         <div>
           <span>{t("Adéquation du profil", "Tnassob m3a profil")}</span>
-          <strong>
-            {m.score ?? "—"}
-            <small>/100</small>
+          <strong className="fit-label fit-label-large">
+            {classificationLabel(m.classification, t)}
           </strong>
         </div>
-        <Progress percent={m.score ?? 0} />
         <p>
-          {t("Données évaluées", "Ma3lomat m9eyma")} : {m.coverage}% ·{" "}
+          {t("Informations documentées", "Ma3lomat m9eyda")} : {m.coverage}% ·{" "}
           {m.blockers.length} {t("points à vérifier", "no9at khas moraja3a")}
+        </p>
+        <p className="program-match-reason">
+          {m.strengths[0] ??
+            m.risks[0] ??
+            t(
+              "Ouvrez la fiche pour comprendre les prérequis.",
+              "7ell fiche bach tfhem chorot.",
+            )}
         </p>
       </div>
       <div className="program-card-actions">
@@ -535,19 +566,16 @@ function ProgramDetail({ program: p }: { program: Program }) {
                 <h2>{t("Une recommandation expliquée", "Tawsiya mcher7a")}</h2>
                 <p className="spaced-copy">
                   {t(
-                    "Le score est une moyenne pondérée des dimensions renseignées. Les dimensions inconnues sont exclues, jamais considérées comme satisfaites.",
-                    "Score howa moyenne pondérée dyal lma3lomat lli kaynin. Lma3lomat lli ma 3refnach ma kan7sbohomch mwef9in.",
+                    "Cette lecture s’appuie sur les dimensions renseignées. Une information inconnue reste à vérifier : elle n’est jamais considérée comme acquise.",
+                    "Had lqra2a kat3tamed 3la lma3lomat lli kaynin. Lma3loma lli ma 3refnach katb9a khas tchecka : ma kan7sbohach mwejda.",
                   )}
                 </p>
                 {m.dimensions.map((d) => (
                   <div className="dimension" key={d.key}>
                     <div>
                       <strong>{t(d.label)}</strong>
-                      <span>
-                        {d.score ?? "—"}/100 · {t("poids", "wazn")} {d.weight}
-                      </span>
+                      <span>{dimensionLabel(d.score, t)}</span>
                     </div>
-                    <Progress percent={d.score ?? 0} />
                     <p>{t(d.reason)}</p>
                   </div>
                 ))}
@@ -610,19 +638,17 @@ function ProgramDetail({ program: p }: { program: Program }) {
         <aside className="detail-aside">
           <section className="panel score-panel">
             <span>{t("Adéquation du profil", "Tnassob m3a profil")}</span>
-            <div className="big-score">
-              {m.score ?? "—"}
-              <small>/100</small>
+            <div className="big-score fit-label-large">
+              {classificationLabel(m.classification, t)}
             </div>
-            <Badge status={m.classification} />
             <p>
               {t(
-                "Un indicateur de correspondance. Aucune probabilité d’admission.",
-                "Mou2achir dyal tnassob. Machi ihtimal l9oboul.",
+                "Une lecture des éléments déjà connus. Les prérequis et les informations manquantes restent à vérifier.",
+                "Qra2a dyal lma3lomat lli 3arfin daba. Chorot w lma3lomat nna9sa khas tchecka.",
               )}
             </p>
             <button className="text-link" onClick={() => setTab("why")}>
-              {t("Comprendre le score", "Fhem score")}
+              {t("Comprendre cette cohérence", "Fhem had tnassob")}
               <ArrowRight size={15} />
             </button>
           </section>
@@ -1074,9 +1100,8 @@ export function ApplicationsView() {
                       : t("Fiche de recherche complète", "Fiche kamla")}
                   </span>
                   <Badge status={m.classification} />
-                  <span className="fit-number">
-                    {m.score ?? "—"}
-                    <small>/100</small>
+                  <span className="fit-label">
+                    {classificationLabel(m.classification, t)}
                   </span>
                 </div>
                 <div className="application-actions">

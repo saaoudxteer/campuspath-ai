@@ -165,16 +165,38 @@ const cycleSchema = z.object({
 export const orientationSchema = z.object({
   saved_roadmaps: z.array(z.string()).default([]),
   explored_steps: z.record(z.string(), z.array(z.string())).default({}),
-  profile: z.object({
-    level: z.enum(["lycee", "bac", "bac2", "licence", "reorientation"]).default("bac"),
-    interests: z.array(z.string()).default([]),
-    priority: z.enum(["discover", "practical", "studies"]).default("discover"),
-    mobility: z.enum(["local", "morocco", "abroad", "undecided"]).default("undecided"),
-  }).default({level: "bac", interests: [], priority: "discover", mobility: "undecided"}),
+  profile: z
+    .object({
+      level: z
+        .enum(["lycee", "bac", "bac2", "licence", "reorientation"])
+        .default("bac"),
+      interests: z.array(z.string()).default([]),
+      priority: z
+        .enum(["discover", "practical", "studies"])
+        .default("discover"),
+      mobility: z
+        .enum(["local", "morocco", "abroad", "undecided"])
+        .default("undecided"),
+    })
+    .default({
+      level: "bac",
+      interests: [],
+      priority: "discover",
+      mobility: "undecided",
+    }),
 });
 export type OrientationState = z.infer<typeof orientationSchema>;
 const candidateSchema = z.object({
-  orientation: orientationSchema.default({saved_roadmaps: [], explored_steps: {}, profile: {level: "bac", interests: [], priority: "discover", mobility: "undecided"}}),
+  orientation: orientationSchema.default({
+    saved_roadmaps: [],
+    explored_steps: {},
+    profile: {
+      level: "bac",
+      interests: [],
+      priority: "discover",
+      mobility: "undecided",
+    },
+  }),
   id: z.string(),
   is_demo: z.boolean(),
   facts: z.array(factSchema),

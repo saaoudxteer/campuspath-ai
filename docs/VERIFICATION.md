@@ -39,15 +39,18 @@ The working Next.js/FastAPI preview was inspected with browser automation:
 
 This is an interactive QA record, not a committed automated browser regression suite. Exhaustive accessibility, load, penetration, and cross-browser tests remain future work. Browser PDF export is offered but print-dialog output was not validated as a separate PDF artifact.
 
-## Orientation space (2026-09-16)
+## Orientation space (2026-09-18)
 
 The orientation catalogue, roadmap view and stylesheet were completed and checked:
 
 - `npx tsc --noEmit` and `npx eslint src --max-warnings=0` are clean.
 - `npx next build` (Next.js 16.3.5, Turbopack) compiles and prerenders the routes.
 - Backend suite: 88 tests pass, including `tests/test_orientation.py` (auth, foreign-origin rejection, id normalisation, full-state persistence).
-- Browser review of the running preview: catalogue, domain and level filters, saved roadmaps, four-question questionnaire, side-by-side comparison of two roadmaps, and the node map with its branch fork and step inspector.
-- Mobile at 390 px: no horizontal overflow; the headline precedes the decorative map.
+- Browser review of the running preview: catalogue, domain and level filters, empty search state, four-question questionnaire opening, roadmap detail structure, saved-roadmap controls, side-by-side comparison flow, and the node map with its branch fork and step inspector.
+- The orientation questionnaire and guided interview let the student answer progressively or choose “Je ne sais pas encore”, “Je préfère ne pas répondre” or “Passer”; an unanswered orientation questionnaire returns to the full catalogue instead of an unexplained empty recommendation state.
+- Dashboard and program views expose qualitative coherence categories with the supporting strength/risk or prerequisite text instead of presenting a raw compatibility score.
+- The orientation page now uses an editorial vertical catalogue, structural separators, a functional “Par où commencer ?” panel, and semantic olive/completion states. It avoids decorative gradient/glow treatments and repeated icon-card grids.
+- Loading, empty, save-failure, validation, long-text wrapping, and connection-recovery states are implemented. Mobile layout rules collapse the catalogue and roadmap inspector without requiring horizontal page scrolling; comparison tables retain intentional horizontal scrolling.
 - Every `orient-*` class used by the view has a matching rule in `src/app/orientation.css`.
 
 The catalogue holds eight roadmaps written in French and Moroccan darija. Durations and costs are deliberately qualitative, and each roadmap links to official portals (MESRSI, CursusSup, OFPPT/Takwine, ONOUSC, ANAPEC) reviewed on the date carried by `ORIENTATION_REVIEWED_AT`. Admission thresholds, dates and fees are not reproduced in the app, since they change every year and per institution.

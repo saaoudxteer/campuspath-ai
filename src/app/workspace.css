@@ -206,6 +206,11 @@
   font-size: 11px;
   margin-top: 5px;
 }
+.program-row-reason {
+  color: var(--ink);
+  max-width: 52ch;
+  overflow-wrap: anywhere;
+}
 .program-row > svg {
   color: #7b705e;
 }
@@ -246,6 +251,28 @@
   font-weight: 400;
   color: var(--muted);
   margin-left: 2px;
+}
+.fit-label {
+  max-width: 145px;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: right;
+}
+.fit-label-large {
+  max-width: 22ch;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-align: left;
+}
+.program-match-reason,
+.compare-reason {
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.55;
+  margin-top: 8px;
 }
 .completion-list {
   display: flex;
@@ -1433,6 +1460,12 @@ select {
   margin: 16px 0 11px;
   letter-spacing: -2px;
 }
+.big-score.fit-label-large {
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin: 16px 0 11px;
+}
 .big-score small {
   font-size: 18px;
   letter-spacing: 0;
@@ -1662,7 +1695,7 @@ select {
   padding: 25px 32px;
 }
 .artifact-paper pre {
-  font-family: 'Archivo', system-ui, sans-serif;
+  font-family: "Archivo", system-ui, sans-serif;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-size: 14px;
@@ -1775,6 +1808,27 @@ select {
 .interview-card > p {
   font-size: 14px;
   margin: 13px 0 27px;
+}
+.interview-response-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 15px;
+  margin: -8px 0 16px;
+}
+.interview-response-options button {
+  color: var(--blue);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.interview-response-options button:hover,
+.interview-response-options button:focus-visible {
+  color: var(--olive-hover);
+}
+.interview-response-options .muted {
+  flex-basis: 100%;
+  font-size: 11px;
 }
 .rubric-list {
   display: flex;
@@ -2669,6 +2723,10 @@ select {
   .program-row > .fit-number {
     font-size: 15px;
   }
+  .program-row > .fit-label {
+    max-width: 92px;
+    font-size: 10px;
+  }
   .program-row > .fit-number small {
     font-size: 9px;
   }
@@ -3237,7 +3295,6 @@ select {
     padding: 0;
   }
 }
-
 
 /* Une carte dans une carte perd son cadre. Le filet du parent suffit. */
 .panel .panel,

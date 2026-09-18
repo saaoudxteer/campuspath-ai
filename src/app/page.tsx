@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Bell,
   BookOpen,
@@ -57,6 +57,7 @@ const icons = [
   FileCheck2,
 ];
 export default function Page() {
+  const mutationInFlight = useRef(false);
   const [data, setData] = useState<Snapshot | null>(null),
     [locale, setLocale] = useState<Locale>("fr"),
     [view, setView] = useState<View>("orientation"),
@@ -129,6 +130,8 @@ export default function Page() {
   }, [toast]);
   const mutate = useCallback(
     async (path: string, body?: unknown, method?: string) => {
+      if (mutationInFlight.current) return null;
+      mutationInFlight.current = true;
       setBusy(true);
       setError("");
       try {
@@ -140,6 +143,7 @@ export default function Page() {
         setError(e instanceof Error ? e.message : "Une erreur est survenue.");
         return null;
       } finally {
+        mutationInFlight.current = false;
         setBusy(false);
       }
     },
@@ -211,6 +215,12 @@ export default function Page() {
     }
   };
   if (loading) return <Loading />;
+  if (!data && !auth && error)
+    return <main className="connection-recovery">
+      <span className="recovery-brand">CampusPath</span>
+      <div role="alert"><h1>{t("Ton espace est momentanément indisponible", "Espace dyalek ma khddamch daba")}</h1><p>{t("La connexion n’a pas abouti. Tes données enregistrées restent conservées. Vérifie ta connexion, puis réessaie.", "Connexion ma khdematch. Données lli tsejjlo ba9yin. Chouf connexion w 3awed.")}</p></div>
+      <Button onClick={() => window.location.reload()}>{t("Réessayer de charger mon espace", "N3awed n7ell espace dyali")}</Button>
+    </main>;
   if (!data || auth)
     return (
       <div className="auth-page">
@@ -446,10 +456,15 @@ export default function Page() {
             {data.candidate.is_demo && (
               <div className="demo-strip">
                 <span>{t("DÉMONSTRATION", "TAJRIBA")}</span>
-                {view === "orientation" ? t("Vos essais sont enregistrés dans un dossier de démonstration", "Tajriba dyalek kattsjjel f dossier tajribi") : t(
-                  "Profil et formations fictifs · aucune candidature envoyée",
-                  "Profil w formations ghir tajriba · ma tsiftat 7ta candidature",
-                )}
+                {view === "orientation"
+                  ? t(
+                      "Vos essais sont enregistrés dans un dossier de démonstration",
+                      "Tajriba dyalek kattsjjel f dossier tajribi",
+                    )
+                  : t(
+                      "Profil et formations fictifs · aucune candidature envoyée",
+                      "Profil w formations ghir tajriba · ma tsiftat 7ta candidature",
+                    )}
                 <button onClick={() => setAuth(true)}>
                   {t("Créer mon dossier", "N7ell dossier dyali")}
                   <ChevronRight size={12} />

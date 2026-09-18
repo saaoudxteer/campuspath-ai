@@ -30,14 +30,18 @@ export type OrientationRoadmap = {
   sources: OrientationLink[];
 };
 
-/** Date de dernière relecture des portails officiels cités dans ce catalogue. */
-export const ORIENTATION_REVIEWED_AT = "2026-09-16";
+/** Dernière revue éditoriale et vérification des références OFPPT / ONOUSC.
+ * Les autres portails servent à retrouver les avis propres à chaque établissement. */
+export const ORIENTATION_REVIEWED_AT = "2026-09-18";
 
 const ENSSUP: OrientationLink = { label: "Ministère de l’Enseignement supérieur", url: "https://www.enssup.gov.ma" };
 const CURSUSSUP: OrientationLink = { label: "CursusSup, orientation et inscription post-bac", url: "https://www.cursussup.gov.ma" };
 const OFPPT: OrientationLink = { label: "OFPPT, formation professionnelle", url: "https://www.ofppt.ma" };
-const TAKWINE: OrientationLink = { label: "Takwine, préinscription OFPPT", url: "https://takwine.ofppt.ma" };
-const ONOUSC: OrientationLink = { label: "ONOUSC, bourses et cité universitaire", url: "https://www.onousc.ma" };
+const OFPPT_ACCES: OrientationLink = { label: "OFPPT, conditions d’accès", url: "https://www.ofppt.ma/fr/conditions-dacces" };
+const OFPPT_DUREES: OrientationLink = { label: "OFPPT, durée des formations", url: "https://www.ofppt.ma/fr/faq/quelle-est-la-duree-dune-formation-organisee-en-cours-du-jour" };
+const OFPPT_PASSERELLES: OrientationLink = { label: "OFPPT, poursuite de formation", url: "https://www.ofppt.ma/fr/poursuivre-votre-formation" };
+const ONOUSC: OrientationLink = { label: "ONOUSC, conditions du logement étudiant", url: "https://www.onousc.ma/etudiant-marocain" };
+const BOURSES: OrientationLink = { label: "ONOUSC, informations sur les bourses", url: "https://www.onousc.ma/Bourses" };
 const ANAPEC: OrientationLink = { label: "ANAPEC, métiers et emploi", url: "https://www.anapec.org" };
 
 /**
@@ -51,12 +55,12 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     title: { fr: "Informatique et numérique", ary: "L2informatique w rre9mi" },
     summary: {
       fr: "Écrire du code, faire tenir des systèmes debout, traiter des données. Un domaine où l’on apprend beaucoup par la pratique et où les portes d’entrée sont variées.",
-      ary: "Tketbi code, t7ella systèmes, tkhdem 3la data. Majal fih t3ellom b tatbi9 w bibane dyal ddkhoul bzaf.",
+      ary: "Tkteb code, tseyyer systèmes, tkhdem 3la data. Majal fih t3ellom b tatbi9 w ttoro9 dyal ddkhoul mokhtalfa.",
     },
     levels: ["lycee", "bac", "bac2", "licence", "reorientation"],
     interests: ["technologie", "logique", "creer"],
-    duration: { fr: "De deux ans pour un diplôme technique à cinq ans pour un cycle ingénieur.", ary: "Men 3amayn l diplôme technique 7tta l 5 snin f cycle ingénieur." },
-    cost: { fr: "Faible dans le public, très variable dans le privé. Prévois surtout le logement, le transport et un ordinateur correct.", ary: "Rkhis f public, kaytbeddel bzaf f privé. Fekker f sskna, transport w chi ordinateur mezyan." },
+    duration: { fr: "Variable selon le diplôme : formation technique, licence ou cursus ingénieur. Compare les durées totales, y compris les préparations éventuelles.", ary: "Katbeddel 7sab diplôme : takwin technique, licence wla cursus ingénieur. 9aren modda kamla, m3a ta7dir ila kayn." },
+    cost: { fr: "Demande les frais exacts de chaque formation. Ajoute le logement, le transport et l’équipement informatique à ton budget.", ary: "Se99si 3la frais b dde9 dyal kol formation. Zid sskna, transport w l2informatique f budget dyalek." },
     careers: [
       { fr: "Développeur logiciel ou web", ary: "Développeur logiciel wla web" },
       { fr: "Administrateur systèmes et réseaux", ary: "Administrateur systèmes w réseaux" },
@@ -139,7 +143,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
         actions: [
           { fr: "Écris la liste des pièces et coche-les une par une.", ary: "Kteb liste dyal lwra9 w 3ellem 3lihom we7da be we7da." },
           { fr: "Prévois un second choix qui te convient vraiment, pas un choix par défaut.", ary: "Wejjed khtiyar tani lli 3jbek b s7i7, machi ghir bach ykoun." },
-          { fr: "Vérifie les aides possibles au logement et à la bourse dès maintenant.", ary: "Chouf daba lmos a3adat dyal sskna w lmin7a." },
+          { fr: "Vérifie les aides possibles au logement et à la bourse dès maintenant.", ary: "Chouf daba lmosa3adat dyal sskna w lmin7a." },
         ],
         resource: ENSSUP,
       },
@@ -149,8 +153,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
         id: "voie-technique-courte",
         title: { fr: "Une voie technique courte", ary: "Tri9 technique 9sira" },
         detail: {
-          fr: "Un diplôme technique en deux ans mène vite à un premier poste, et n’interdit pas de reprendre des études ensuite. C’est une entrée intéressante si tu veux confronter tes idées au terrain rapidement.",
-          ary: "Diplôme technique f 3amayn kaywesslek bzerba l khedma lewla, w ma kaymne3kch tkemmel 9raya men be3d. Khiyar mezyan ila bghiti tchouf terrain bzerba.",
+          fr: "Une formation technique peut préparer à des missions concrètes. L’OFPPT indique deux ans pour le niveau technicien spécialisé. Les poursuites d’études dépendent du diplôme obtenu, de la filière et de la sélection de l’établissement visé.",
+          ary: "Takwin technique y9der ywejjedek l khedmat 3amaliya. OFPPT kay7edded 3amayn l niveau technicien spécialisé. Bach tkemmel l9raya, khassek t2ekked men diplôme, chou3ba w sélection dyal lmo2assassa.",
         },
       },
       {
@@ -166,11 +170,11 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
         title: { fr: "Le cycle ingénieur", ary: "Cycle dyal l2ingénieur" },
         detail: {
           fr: "Une sélection à l’entrée, un rythme soutenu, une formation large. Cela demande une préparation sérieuse en amont et une bonne résistance au travail continu.",
-          ary: "Sélection f lekhoul, rythme 9aseh, takwin wase3. Khassek t7ddar mezyan 9bel w tkoun 9ad lkhedma lmostamirra.",
+          ary: "Sélection f ddkhol, rythme 9aseh, takwin wase3. Khassek t7ddar mezyan 9bel w tkoun 9ad lkhedma lmostamirra.",
         },
       },
     ],
-    sources: [CURSUSSUP, ENSSUP, OFPPT, ANAPEC],
+    sources: [CURSUSSUP, ENSSUP, OFPPT_DUREES, OFPPT_PASSERELLES, ANAPEC],
   },
   {
     id: "ingenierie",
@@ -182,8 +186,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     },
     levels: ["lycee", "bac", "bac2", "licence"],
     interests: ["construire", "logique", "technologie", "comprendre"],
-    duration: { fr: "Cinq ans après le bac dans la plupart des cycles ingénieur.", ary: "5 snin men be3d lbac f aghlab dyal cycles ingénieur." },
-    cost: { fr: "Modéré dans le public, élevé dans le privé. Les stages et les déplacements pèsent aussi.", ary: "Ma3qoul f public, ghali f privé. Stages w tan9olat 7att 3endhom taman." },
+    duration: { fr: "Compte la préparation éventuelle et le cycle ingénieur. La durée restante dépend de ton point d’entrée et du cursus de l’école.", ary: "7seb ta7dir ila kayn w cycle ingénieur. Lmodda lli ba9ya katbeddel 7sab fin ghadi tdkhol w cursus dyal l2école." },
+    cost: { fr: "Compare les frais de scolarité, le logement, le matériel et les déplacements liés aux stages. Vérifie les aides disponibles.", ary: "9aren frais dyal l9raya, sskna, lmo3addat w tan9olat dyal stages. T2ekked men lmosa3adat lli kaynin." },
     careers: [
       { fr: "Ingénieur en génie civil", ary: "Ingénieur f génie civil" },
       { fr: "Ingénieur procédés ou production", ary: "Ingénieur procédés wla production" },
@@ -214,7 +218,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
       {
         id: "verifier",
-        title: { fr: "Comprendre la sélection à l’entrée", ary: "Fhem sélection dyal lekhoul" },
+        title: { fr: "Comprendre la sélection à l’entrée", ary: "Fhem sélection dyal ddkhol" },
         detail: { fr: "Les cycles ingénieur sélectionnent sur dossier, concours ou les deux, avec des seuils publiés chaque année. Cette étape se prépare plusieurs mois à l’avance.", ary: "Cycles ingénieur kaykhtaro 3la dossier, concours wla bjouj, b seuils kaytnecherou kol 3am. Had lkhotwa katwejjed men chhour 9bel." },
         actions: [
           { fr: "Lis l’avis officiel de l’année en cours, pas celui de l’an dernier.", ary: "9ra l2i3lan rasmi dyal had l3am, machi dyal 3am lli fat." },
@@ -247,19 +251,19 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       {
         id: "preparer",
         title: { fr: "Construire un dossier solide", ary: "Bni dossier 9wi" },
-        detail: { fr: "Les notes scientifiques comptent, mais la régularité et un projet cohérent aussi. Un plan de repli sérieux évite de tout jouer sur un seul concours.", ary: "No9at l3ilmiya mohimma, walakin l2intidam w projet mtnase9 7ett mohimmin. Plan b jiddi kayb3ed 3lik tkhssar kolchi f concours wa7ed." },
+        detail: { fr: "Les notes scientifiques comptent, mais la régularité et un projet cohérent aussi. Un plan de repli sérieux évite de tout jouer sur un seul concours.", ary: "No9at l3ilmiya mohimma, walakin l2intidam w projet mtnase9 7tta mohimmin. Plan b jiddi kayb3ed 3lik tkhssar kolchi f concours wa7ed." },
         actions: [
           { fr: "Consolide les matières scientifiques dès maintenant.", ary: "9ewwi lmawad l3ilmiya men daba." },
           { fr: "Prépare une voie alternative que tu accepterais sans regret.", ary: "Wejjed tri9 okhra lli t9bleha bla nadam." },
-          { fr: "Renseigne-toi sur le logement et la bourse avant les résultats.", ary: "3ref 3la sskna w lmin7a 9bel manatij." },
+          { fr: "Renseigne-toi sur le logement et la bourse avant les résultats.", ary: "3ref 3la sskna w lmin7a 9bel nnata2ij." },
         ],
         resource: ONOUSC,
       },
     ],
     branches: [
-      { id: "voie-prepa", title: { fr: "Passer par une préparation", ary: "Tdouz men ta7dir" }, detail: { fr: "Deux années intensives avant le concours. Le rythme est dur mais la formation scientifique obtenue est solide et réutilisable ailleurs.", ary: "3amayn 9asa7 9bel concours. Rythme s3ib walakin takwin l3ilmi 9wi w kayn fe3 f blayes okhra." } },
-      { id: "voie-integree", title: { fr: "Un cycle intégré après le bac", ary: "Cycle mdmouj men be3d lbac" }, detail: { fr: "Tu entres directement dans une école pour cinq ans. Moins de concours à passer, mais un choix de spécialité engagé plus tôt.", ary: "Katdkhol nichan l chi école 5 snin. Concours 9all, walakin katkhtar takhassous bekri." } },
-      { id: "voie-technique", title: { fr: "Monter depuis un diplôme technique", ary: "Tel3a men diplôme technique" }, detail: { fr: "Un diplôme technique en deux ans peut mener à une licence professionnelle puis à un cycle ingénieur. La route est plus longue mais très concrète.", ary: "Diplôme technique f 3amayn y9der ywesslek l licence professionnelle w men be3d cycle ingénieur. Tri9 twila walakin 9riba l wa9i3." } },
+      { id: "voie-prepa", title: { fr: "Passer par une préparation", ary: "Tdouz men ta7dir" }, detail: { fr: "Deux années intensives avant le concours. Le rythme est dur mais la formation scientifique obtenue est solide et réutilisable ailleurs.", ary: "3amayn 9asa7 9bel concours. Rythme s3ib walakin takwin l3ilmi 9wi w kaynfe3 f blayes okhra." } },
+      { id: "voie-integree", title: { fr: "Un cycle intégré après le bac", ary: "Cycle mdmouj men be3d lbac" }, detail: { fr: "Certaines écoles proposent un parcours après le bac comprenant une préparation intégrée. Vérifie la sélection à l’entrée, les conditions de passage en cycle ingénieur et le moment du choix de spécialité.", ary: "Chi écoles kay9ettar7o masar men be3d lbac fih ta7dir mdmouj. T2ekked men sélection f ddkhoul, chorot lmorour l cycle ingénieur w imta katkhtar takhassous." } },
+      { id: "voie-technique", title: { fr: "Explorer une admission sur diplôme", ary: "Chouf l9obol b diplôme" }, detail: { fr: "Des admissions sur diplôme existent dans certaines écoles. Elles dépendent du diplôme exact, des résultats, de la spécialité et des places disponibles. Une licence ou un diplôme technique ne donne pas automatiquement accès au cycle ingénieur.", ary: "Chi écoles kay9eblo b diplôme b chorot. Kayt3elle9 b diplôme b dde9, no9at, takhassous w blayes. Licence wla diplôme technique ma kay3tiwch ddkhoul l cycle ingénieur automatiquement." } },
     ],
     sources: [CURSUSSUP, ENSSUP, ANAPEC],
   },
@@ -268,13 +272,13 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     category: "tech",
     title: { fr: "Métiers techniques et formation professionnelle", ary: "Lkhedmat ttechnika w takwin lmihani" },
     summary: {
-      fr: "Apprendre un métier précis et entrer plus vite dans la vie active. Maintenance, électricité, froid, logistique, hôtellerie, automobile. La pratique domine dès le premier jour.",
-      ary: "Tt3ellem khedma m7ddda w tdkhol bzerba l lkhedma. Maintenance, électricité, froid, logistique, hôtellerie, tonobil. Tatbi9 men nhar lewwel.",
+      fr: "Apprendre les gestes et les connaissances d’un métier. Maintenance, électricité, froid, logistique, hôtellerie, automobile. Compare la place des ateliers et des stages dans chaque formation.",
+      ary: "Tt3ellem l7arakat w lma3arif dyal chi khedma. Maintenance, électricité, froid, logistique, hôtellerie, tonobil. 9aren blassat l2ateliers w stages f kol takwin.",
     },
     levels: ["lycee", "bac", "bac2", "reorientation"],
     interests: ["terrain", "construire", "technologie"],
-    duration: { fr: "De un à deux ans selon le niveau de diplôme visé.", ary: "Men 3am l 3amayn 7sab niveau dyal diplôme." },
-    cost: { fr: "Accessible dans le réseau public. Compte surtout le transport, la tenue et le petit outillage.", ary: "Sahel f réseau l3omoumi. Fekker f transport, lbsa w chi 3dda sghira." },
+    duration: { fr: "À l’OFPPT, deux ans pour les niveaux technicien et technicien spécialisé en cours du jour. Vérifie la durée de la formation précise.", ary: "F OFPPT, 3amayn l niveau technicien w technicien spécialisé f cours du jour. T2ekked men moddat takwin lli bghiti." },
+    cost: { fr: "Vérifie les frais d’inscription et le matériel à fournir. Ajoute le transport, la tenue professionnelle et l’outillage éventuel.", ary: "T2ekked men frais dyal tasjil w lmo3addat lli khassek tjib. Zid transport, lbsa dyal lkhedma w l3dda ila khassak." },
     careers: [
       { fr: "Technicien de maintenance industrielle", ary: "Technicien dyal maintenance sina3iya" },
       { fr: "Électricien d’installation", ary: "Kahrabi dyal tarkib" },
@@ -283,7 +287,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     ],
     strengths: [
       { fr: "On apprend en faisant, avec des résultats visibles tout de suite.", ary: "Kat3ellem b lkhedma, w natija kattbane deghya." },
-      { fr: "L’entrée dans l’emploi est souvent plus rapide qu’après un long cursus.", ary: "Doukhoul l lkhedma ghalban bzerba kter men 9raya twila." },
+      { fr: "Un cursus court permet de tester un domaine avant d’envisager une spécialisation.", ary: "Takwin 9sir kay3awnek tjerreb majal 9bel ma tfekker f takhassous." },
       { fr: "Un métier maîtrisé peut mener à l’installation à son compte.", ary: "Khedma lli t7ekmti fiha t9der twesslek t7ell rassek." },
     ],
     watchouts: [
@@ -305,14 +309,14 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
       {
         id: "verifier",
-        title: { fr: "Vérifier le niveau d’entrée et le calendrier", ary: "T2ekked men niveau dyal lekhoul w rroznama" },
-        detail: { fr: "Les niveaux de formation professionnelle ont chacun leurs conditions d’accès, du niveau spécialisation jusqu’au technicien spécialisé après le bac. Les préinscriptions se font en ligne à dates fixes.", ary: "Kol niveau f takwin lmihani 3endo chorot dyalo, men spécialisation 7tta technicien spécialisé men be3d lbac. Préinscription kattdar online f tawarikh m7ddda." },
+        title: { fr: "Vérifier le niveau d’entrée et le calendrier", ary: "T2ekked men niveau dyal ddkhol w rroznama" },
+        detail: { fr: "Les conditions OFPPT varient selon le niveau : diplôme ou niveau scolaire, âge et correspondance des filières. Vérifie aussi le calendrier et le canal d’inscription de l’année concernée.", ary: "Chorot OFPPT kaytbeddlo 7sab niveau : diplôme wla niveau dyal 9raya, l3mer w tnasob bin chou3ab. T2ekked 7tta men tawarikh w tari9at tasjil dyal l3am lli bghiti." },
         actions: [
           { fr: "Vérifie le niveau scolaire exigé par la spécialité visée.", ary: "T2ekked men niveau dyal 9raya lli katlab takhassous." },
           { fr: "Crée ton compte de préinscription dès l’ouverture.", ary: "Dir compte dyal préinscription melli tt7ell." },
           { fr: "Note les pièces à fournir et la date de dépôt au centre.", ary: "Kteb lwra9 lli khassek w tarikh dyal ddepot f markaz." },
         ],
-        resource: TAKWINE,
+        resource: OFPPT_ACCES,
       },
       {
         id: "essayer",
@@ -337,8 +341,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
       {
         id: "preparer",
-        title: { fr: "Sécuriser ta place", ary: "Demmen blastek" },
-        detail: { fr: "Les filières demandées se remplissent vite. Un dossier complet déposé tôt et un deuxième choix crédible valent mieux qu’un premier choix unique.", ary: "Chou3ab lli mtlouba kat3emmer bzerba. Dossier kaml mde3 bekri w khtiyar tani m39oul khir men khtiyar wa7ed.", },
+        title: { fr: "Préparer ta candidature", ary: "Wejjed candidature dyalek" },
+        detail: { fr: "Prépare un dossier complet dans les délais et une seconde piste qui te convient. Déposer tôt évite les imprévus, mais ne garantit pas l’admission.", ary: "Wejjed dossier kaml f lwe9t w tri9 taniya lli mnasba lik. Ila de33ti bekri katne9es lmofaja2at, walakin hada ma kaydemmench l9obol." },
         actions: [
           { fr: "Dépose ton dossier dès l’ouverture, sans attendre la date limite.", ary: "De33 dossier melli tt7ell, ma tstennach lekher nhar." },
           { fr: "Prépare une seconde spécialité proche de la première.", ary: "Wejjed takhassous tani 9rib men lewwel." },
@@ -349,10 +353,10 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     ],
     branches: [
       { id: "voie-alternance", title: { fr: "Se former en alternance", ary: "Takwin b ttanawob" }, detail: { fr: "Une partie du temps en entreprise, une partie en centre. L’apprentissage est plus concret et le réseau professionnel se construit tôt.", ary: "Chi we9t f charika w chi we9t f markaz. T3ellom 9rib l wa9i3 w réseau mihani kaytbna bekri." } },
-      { id: "voie-diplome-superieur", title: { fr: "Poursuivre vers un diplôme supérieur", ary: "Kemmel l diplôme 3ali" }, detail: { fr: "Après un diplôme technique, une licence professionnelle reste accessible. Beaucoup découvrent le goût des études par la pratique.", ary: "Men be3d diplôme technique, licence professionnelle b9at momkina. Bzaf kaytkechfo 7obb l9raya men tatbi9." } },
+      { id: "voie-diplome-superieur", title: { fr: "Poursuivre vers un diplôme supérieur", ary: "Kemmel l diplôme 3ali" }, detail: { fr: "L’OFPPT décrit des passerelles entre niveaux et des possibilités de licence professionnelle pour les techniciens spécialisés. L’accès dépend de la filière, des résultats et des conditions de l’établissement ; il n’est pas automatique.", ary: "OFPPT kaychar7 passerelles bin niveaux w imkaniyat dyal licence professionnelle l techniciens spécialisés. L9obol kayt3elle9 b chou3ba, no9at w chorot dyal lmo2assassa ; machi automatique." } },
       { id: "voie-independant", title: { fr: "Travailler à son compte", ary: "Tkhdem 3la rassek" }, detail: { fr: "Un métier manuel maîtrisé permet de s’installer, mais la gestion, le devis et la relation client s’apprennent aussi.", ary: "Khedma b yeddik lli t7ekmti fiha katkhellik t7ell rassek, walakin ttasyir, devis w 3ila9a m3a client bghaw t3ellom." } },
     ],
-    sources: [OFPPT, TAKWINE, ANAPEC],
+    sources: [OFPPT_ACCES, OFPPT_DUREES, OFPPT_PASSERELLES, ANAPEC],
   },
   {
     id: "commerce",
@@ -364,8 +368,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     },
     levels: ["bac", "bac2", "licence", "reorientation"],
     interests: ["organiser", "communiquer", "logique"],
-    duration: { fr: "Trois ans pour une licence, cinq ans pour un cycle complet en école.", ary: "3 snin l licence, 5 snin l cycle kaml f l2école." },
-    cost: { fr: "Raisonnable à l’université, souvent élevé dans les écoles privées.", ary: "Ma3qoul f l2université, ghalban ghali f l2écoles l khassa." },
+    duration: { fr: "Diplôme technique, licence ou cursus en école : compare le nombre d’années annoncé et les poursuites d’études envisagées.", ary: "Diplôme technique, licence wla cursus f école : 9aren 3dad snin lli kat3len lmo2assassa w l9raya lli bghiti tkemmel." },
+    cost: { fr: "Compare les frais de scolarité sur tout le cursus, ainsi que le logement et les stages. Demande les conditions des bourses éventuelles.", ary: "9aren frais dyal l9raya f cursus kamel, m3a sskna w stages. Se99si 3la chorot dyal lmina7 ila kaynin." },
     careers: [
       { fr: "Chargé de clientèle en banque", ary: "Chargé de clientèle f lbanka" },
       { fr: "Contrôleur de gestion", ary: "Contrôleur de gestion" },
@@ -378,7 +382,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       { fr: "On peut évoluer vers la création de sa propre activité.", ary: "T9der tdouz l khel9 dyal nchat dyalek." },
     ],
     watchouts: [
-      { fr: "Les intitulés sont nombreux et parfois flous, vérifie le contenu réel.", ary: "Smiyat bzaf w b3d lme rrat ghamda, t2ekked men lm7towa l7a9i9i." },
+      { fr: "Les intitulés sont nombreux et parfois flous, vérifie le contenu réel.", ary: "Smiyat bzaf w b3d lmerrat ghamda, t2ekked men lm7towa l7a9i9i." },
       { fr: "La pression sur les objectifs existe dans plusieurs métiers commerciaux.", ary: "Dghet dyal l2ahdaf kayn f bzaf dyal khedmat tijariya." },
       { fr: "Sans stages ni expérience, la sortie d’études peut être lente.", ary: "Bla stages w bla tajriba, lkhrouj men 9raya y9der ykoun bti." },
     ],
@@ -396,12 +400,12 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
       {
         id: "verifier",
-        title: { fr: "Vérifier les voies d’accès", ary: "T2ekked men ttoro9 dyal lekhoul" },
+        title: { fr: "Vérifier les voies d’accès", ary: "T2ekked men ttoro9 dyal ddkhol" },
         detail: { fr: "Certaines écoles recrutent sur concours après le bac, l’université ouvre des licences en gestion et en économie. Les conditions ne se ressemblent pas.", ary: "Chi écoles kayrekrutiw b concours men be3d lbac, l2université kat7ell licences f tasyir w i9tisad. Chorot ma kaychebhouch." },
         actions: [
           { fr: "Compare une voie sélective et une voie universitaire.", ary: "9aren tri9 b sélection w tri9 dyal l2université." },
           { fr: "Note les dates de concours et de dépôt de dossier.", ary: "Kteb tawarikh dyal concours w ddepot dyal dossier." },
-          { fr: "Regarde le niveau de langues attendu à l’entrée.", ary: "Chouf niveau dyal loghat lli mtloub f lekhoul." },
+          { fr: "Regarde le niveau de langues attendu à l’entrée.", ary: "Chouf niveau dyal loghat lli mtloub f ddkhol." },
         ],
         resource: CURSUSSUP,
       },
@@ -439,9 +443,9 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
     ],
     branches: [
-      { id: "voie-ecole", title: { fr: "Une école de commerce", ary: "École dyal tijara" }, detail: { fr: "Sélection à l’entrée, cursus rythmé par les stages et les projets. Le coût et le réseau sont deux critères déterminants.", ary: "Sélection f lekhoul, cursus mebni 3la stages w projets. Taman w réseau jouj ma3ayir mohimmin." } },
+      { id: "voie-ecole", title: { fr: "Une école de commerce", ary: "École dyal tijara" }, detail: { fr: "Sélection à l’entrée, cursus rythmé par les stages et les projets. Le coût et le réseau sont deux critères déterminants.", ary: "Sélection f ddkhol, cursus mebni 3la stages w projets. Taman w réseau jouj ma3ayir mohimmin." } },
       { id: "voie-universite", title: { fr: "Une licence à l’université", ary: "Licence f l2université" }, detail: { fr: "Un accès plus large et un coût contenu, avec davantage d’autonomie à fournir. Les stages se cherchent souvent par soi-même.", ary: "Doukhoul wase3 w taman m39oul, walakin khassek t3temd 3la rassek kter. Stages ghalban kat9elleb 3lihom b rassek." } },
-      { id: "voie-technique-gestion", title: { fr: "Un diplôme technique en gestion", ary: "Diplôme technique f ttasyir" }, detail: { fr: "Deux ans orientés pratique, utiles pour entrer vite en poste ou poursuivre en licence professionnelle.", ary: "3amayn 3amaliyin, mofidin bach tdkhol bzerba l khedma wla tkemmel licence professionnelle." } },
+      { id: "voie-technique-gestion", title: { fr: "Un diplôme technique en gestion", ary: "Diplôme technique f ttasyir" }, detail: { fr: "Une voie à examiner pour ses applications en comptabilité ou gestion. Vérifie la durée, les stages et les possibilités de poursuite d’études pour le diplôme exact, auprès de l’établissement visé.", ary: "Tri9 bach tchouf tatbi9at f comptabilité wla tasyir. T2ekked men modda, stages w imkaniyat bach tkemmel l9raya b dak diplôme b dde9 3end lmo2assassa." } },
     ],
     sources: [CURSUSSUP, ENSSUP, ANAPEC],
   },
@@ -455,8 +459,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     },
     levels: ["lycee", "bac", "bac2", "licence"],
     interests: ["aider", "comprendre", "terrain"],
-    duration: { fr: "Trois ans pour les soins infirmiers, sept ans et plus en médecine.", ary: "3 snin l tamrid, 7 snin w kter f tibb." },
-    cost: { fr: "Contenu dans le public, très élevé dans le privé. Les stages imposent des déplacements.", ary: "M39oul f public, ghali bzaf f privé. Stages katfred tan9olat." },
+    duration: { fr: "La durée dépend du diplôme, de la spécialité et de la promotion. Consulte le cursus officiel de l’établissement, stages et spécialisations compris.", ary: "Lmodda katbeddel 7sab diplôme, takhassous w lfoj. Chouf cursus rasmi dyal lmo2assassa, m3a stages w takhassousat." },
+    cost: { fr: "Demande les frais annuels et les dépenses de matériel. Prévois aussi le logement et les transports vers les lieux de stage.", ary: "Se99si 3la frais dyal kol 3am w taman lmo3addat. 7seb 7tta sskna w transport l blayes dyal stages." },
     careers: [
       { fr: "Infirmier polyvalent", ary: "Momarrid polyvalent" },
       { fr: "Technicien de laboratoire", ary: "Technicien dyal laboratoire" },
@@ -530,24 +534,24 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
     ],
     branches: [
-      { id: "voie-paramedical", title: { fr: "Les formations paramédicales", ary: "Takwinat chibh tibbiya" }, detail: { fr: "Soins infirmiers, laboratoire, imagerie, rééducation. Des études de trois ans environ, très professionnalisantes et ancrées dans la pratique.", ary: "Tamrid, laboratoire, imagerie, rééducation. 9raya 7wali 3 snin, 3amaliya bezzaf." } },
+      { id: "voie-paramedical", title: { fr: "Les formations paramédicales", ary: "Takwinat chibh tibbiya" }, detail: { fr: "Soins infirmiers, laboratoire, imagerie, rééducation : chaque diplôme prépare à des activités distinctes. Vérifie sa reconnaissance, sa durée, les stages et les conditions d’exercice du métier.", ary: "Tamrid, laboratoire, imagerie, rééducation : kol diplôme kaywejjed l khedmat mokhtalfa. T2ekked men l2i3tiraf bih, modda, stages w chorot dyal lkhedma." } },
       { id: "voie-medicale", title: { fr: "Médecine, pharmacie, dentaire", ary: "Tibb, saydala, l2asnan" }, detail: { fr: "Des cursus longs et sélectifs qui demandent un engagement de plusieurs années avant l’exercice autonome.", ary: "Cursus twal w b sélection, katlab iltizam dyal snin 9bel ma tkhdem b rassek." } },
       { id: "voie-sante-publique", title: { fr: "Santé publique et gestion", ary: "Se77a 3omoumiya w tasyir" }, detail: { fr: "Prévention, épidémiologie, organisation des soins. Une manière de travailler pour la santé sans être au chevet du patient.", ary: "Wi9aya, épidémiologie, tandim dyal l3ilaj. Tari9a bach tkhdem l se77a bla ma tkoun 7da lmarid." } },
     ],
-    sources: [CURSUSSUP, ENSSUP, ONOUSC],
+    sources: [CURSUSSUP, ENSSUP, ONOUSC, BOURSES],
   },
   {
     id: "creation",
     category: "creative",
     title: { fr: "Design, audiovisuel et création", ary: "Design, sam3i basari w l2ibda3" },
     summary: {
-      fr: "Donner une forme à une idée. Graphisme, design produit, architecture d’intérieur, vidéo, animation, son. Le portfolio compte souvent plus que le diplôme.",
-      ary: "T3ti chakl l chi fikra. Graphisme, design dyal montaj, dakhili, vidéo, animation, sawt. Portfolio ghalban kaywzen kter men diplôme.",
+      fr: "Donner une forme à une idée. Graphisme, design produit, architecture d’intérieur, vidéo, animation, son. Explore les travaux attendus et les qualifications propres à chaque métier.",
+      ary: "T3ti chakl l chi fikra. Graphisme, design dyal montaj, design dakhili, vidéo, animation, sawt. Chouf lkhedmat w chahadat lli kay7taj kol métier.",
     },
     levels: ["lycee", "bac", "bac2", "reorientation"],
     interests: ["creer", "technologie", "communiquer"],
-    duration: { fr: "De deux à cinq ans selon la spécialité et l’école.", ary: "Men 3amayn l 5 snin 7sab takhassous w l2école." },
-    cost: { fr: "Souvent élevé dans le privé, avec du matériel et des logiciels à prévoir.", ary: "Ghalban ghali f privé, m3a mo3addat w logiciels khassek t7seb lihom." },
+    duration: { fr: "La durée dépend de la spécialité, du diplôme et de l’école. Vérifie le cursus et la place des stages ou du projet de fin d’études.", ary: "Lmodda katbeddel 7sab takhassous, diplôme w l2école. T2ekked men cursus w blassat stages wla projet dyal nihayat l9raya." },
+    cost: { fr: "Ajoute aux frais de scolarité le matériel, les logiciels et les dépenses liées aux projets. Vérifie ce que l’école fournit réellement.", ary: "Zid m3a frais dyal l9raya lmo3addat, logiciels w frais dyal projets. T2ekked men dakchi lli katweffer l2école b s7i7." },
     careers: [
       { fr: "Designer graphique", ary: "Designer graphique" },
       { fr: "Monteur vidéo ou motion designer", ary: "Monteur vidéo wla motion designer" },
@@ -577,7 +581,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       },
       {
         id: "verifier",
-        title: { fr: "Vérifier ce qui est demandé à l’entrée", ary: "T2ekked ach mtloub f lekhoul" },
+        title: { fr: "Vérifier ce qui est demandé à l’entrée", ary: "T2ekked ach mtloub f ddkhol" },
         detail: { fr: "Beaucoup d’écoles de création demandent un dossier de travaux, parfois un entretien ou un test. Cela se prépare longtemps à l’avance, pas la veille.", ary: "Bzaf dyal écoles dyal l2ibda3 katlab dossier dyal khedma, chi merra entretien wla test. Hada katwejjdo men be3d we9t, machi lbare7." },
         actions: [
           { fr: "Vérifie si un dossier de travaux est exigé et sous quelle forme.", ary: "T2ekked wach khassek dossier dyal khedma w b achmen chakl." },
@@ -589,7 +593,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       {
         id: "essayer",
         title: { fr: "Produire avant de postuler", ary: "Nteg 9bel ma t9addem" },
-        detail: { fr: "Dans ce domaine, on juge des travaux, pas des intentions. Trois pièces finies et assumées valent mieux que vingt essais inachevés.", ary: "F had majal, kay7ekmo 3la lkhedma, machi 3la nniya. 3 khedmat kamlin khir men 20 tajriba ma kemlatch." },
+        detail: { fr: "Quelques travaux terminés t’aident à montrer ta démarche et à demander un retour précis. Vérifie les consignes du portfolio si l’école en demande un.", ary: "Chi khedmat kamlin kay3awnouk tweri tari9at lkhedma dyalek w t9elleb 3la ra2y wad7. T2ekked men ta3limat portfolio ila l2école katetlbo." },
         actions: [
           { fr: "Termine trois travaux personnels, du début à la fin.", ary: "Kemmel 3 khedmat chakhsiya, men lewwel l lekher." },
           { fr: "Fais relire ton travail par quelqu’un d’exigeant.", ary: "Khelli chi wa7ed 9aseh ychouf lkhedma dyalek." },
@@ -614,14 +618,14 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
         actions: [
           { fr: "Garde tes meilleures pièces et retire les plus faibles.", ary: "7fed a7sen khedmat dyalek w 7yed d3if." },
           { fr: "Écris deux phrases d’explication par projet.", ary: "Kteb jouj jomal dyal char7 l kol projet." },
-          { fr: "Prépare une version numérique facile à partager.", ary: "Wejjed version numérique sahla bach tchareki." },
+          { fr: "Prépare une version numérique facile à partager.", ary: "Wejjed version numérique sahla bach tcharko." },
         ],
       },
     ],
     branches: [
-      { id: "voie-ecole-art", title: { fr: "Une école d’art ou de design", ary: "École dyal fann wla design" }, detail: { fr: "Un cadre exigeant avec des ateliers et des critiques régulières. L’admission passe souvent par un dossier de travaux.", ary: "Ikar 9aseh b ateliers w n9ad montadam. L9obol ghalban kaydouz men dossier dyal khedma." } },
-      { id: "voie-technique-creative", title: { fr: "Un diplôme technique créatif", ary: "Diplôme technique ibda3i" }, detail: { fr: "Infographie, audiovisuel, multimédia en deux ans. Une entrée rapide dans la production, avec des outils maîtrisés tôt.", ary: "Infographie, sam3i basari, multimédia f 3amayn. Doukhoul bzerba l production, b adawat kat7ekem fihom bekri." } },
-      { id: "voie-autodidacte", title: { fr: "Se former en autodidacte, avec un cadre", ary: "Tt3ellem b rassek, b chi ikar" }, detail: { fr: "Possible dans ce domaine, à condition d’une discipline réelle et de retours extérieurs réguliers. Le diplôme reste utile pour certaines structures.", ary: "Momkin f had majal, b chart dyal indibat 7a9i9i w retours men bra. Diplôme kaybqa nafe3 f chi mo2assassat." } },
+      { id: "voie-ecole-art", title: { fr: "Une école d’art ou de design", ary: "École dyal fann wla design" }, detail: { fr: "Un cadre exigeant avec des ateliers et des critiques régulières. L’admission passe souvent par un dossier de travaux.", ary: "Ittar jiddi b ateliers w n9ad montadam. L9obol ghalban kaydouz men dossier dyal khedma." } },
+      { id: "voie-technique-creative", title: { fr: "Un diplôme technique créatif", ary: "Diplôme technique ibda3i" }, detail: { fr: "Infographie, audiovisuel, multimédia : examine les outils enseignés, les projets réalisés et les stages. Vérifie la durée et les conditions d’accès de la spécialité choisie.", ary: "Infographie, sam3i basari, multimédia : chouf l2adawat lli kay9erriw, projets w stages. T2ekked men modda w chorot l9obol dyal takhassous lli khtariti." } },
+      { id: "voie-autodidacte", title: { fr: "Se former en autodidacte, avec un cadre", ary: "Tt3ellem b rassek, b chi ittar" }, detail: { fr: "Possible dans ce domaine, à condition d’une discipline réelle et de retours extérieurs réguliers. Le diplôme reste utile pour certaines structures.", ary: "Momkin f had majal, b chart dyal indibat 7a9i9i w retours men bra. Diplôme kaybqa nafe3 f chi mo2assassat." } },
     ],
     sources: [CURSUSSUP, ENSSUP, ANAPEC],
   },
@@ -635,8 +639,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     },
     levels: ["lycee", "bac", "licence", "reorientation"],
     interests: ["comprendre", "logique", "technologie"],
-    duration: { fr: "Trois ans de licence, deux de master, puis trois de doctorat si tu poursuis.", ary: "3 snin licence, 3amayn master, w 3 snin doctorat ila kemmelti." },
-    cost: { fr: "Parmi les voies les plus accessibles financièrement à l’université publique.", ary: "Men ttoro9 lli 9all f taman f l2université l3omoumiya." },
+    duration: { fr: "Licence, puis éventuellement master et doctorat. Vérifie la durée de chaque cycle et ses conditions d’accès ; une poursuite d’études reste soumise à sélection.", ary: "Licence, w momkin men be3d master w doctorat. T2ekked men moddat kol cycle w chorot dyalo ; bach tkemmel l9raya kayna sélection." },
+    cost: { fr: "Vérifie les frais éventuels et le budget de vie dans la ville visée. Consulte séparément les conditions de bourse et de logement.", ary: "T2ekked men frais ila kaynin w budget dyal l3icha f lmdina lli bghiti. Chouf chorot lmin7a w sskna bo7dhom." },
     careers: [
       { fr: "Enseignant en sciences", ary: "Ostad dyal l3olom" },
       { fr: "Chargé d’études ou d’analyses", ary: "Chargé dyal dirassat wla ta7lilat" },
@@ -645,8 +649,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     ],
     strengths: [
       { fr: "La formation apprend à raisonner, ce qui se réemploie partout.", ary: "Takwin kay3ellmek tfekker, w hada kaynfe3 f kol blassa." },
-      { fr: "Le coût des études reste bas dans le public.", ary: "Taman dyal 9raya b9a rkhis f l3omoumi." },
-      { fr: "Les passerelles vers l’ingénierie et les données existent réellement.", ary: "L2intiqal l l2ingénierie w l data kayn b s7i7." },
+      { fr: "Tu peux explorer une discipline en profondeur avant de te spécialiser.", ary: "T9der t3emme9 f chi madda 9bel ma tkhtar takhassous." },
+      { fr: "Les acquis scientifiques peuvent être utiles dans l’analyse de données ou l’industrie ; vérifie les formations complémentaires requises.", ary: "Lma3arif l3ilmiya y9dro ynfe3o f ta7lil data wla sina3a ; t2ekked men takwin zayed lli khassek." },
     ],
     watchouts: [
       { fr: "L’autonomie demandée est forte, peu de gens te relanceront.", ary: "Khassek t3temd 3la rassek bezzaf, 9lil lli ghadi yjbdek." },
@@ -714,7 +718,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       { id: "voie-enseignement", title: { fr: "Vers l’enseignement", ary: "L jihat tadris" }, detail: { fr: "Transmettre une discipline, avec une formation pédagogique et des concours propres. Le contact avec les élèves est le cœur du métier.", ary: "Twesssel chi madda, b takwin baydaghouji w concours khassin. L2itisal m3a telaba howa 9elb lkhedma." } },
       { id: "voie-applications", title: { fr: "Vers les applications techniques", ary: "L jihat tatbi9at ttechnika" }, detail: { fr: "Données, calcul, laboratoire, industrie. Un master appliqué rapproche une licence scientifique du marché du travail.", ary: "Data, 7sab, laboratoire, sina3a. Master tatbi9i kay9arreb licence 3ilmiya men sou9 chchoghl." } },
     ],
-    sources: [ENSSUP, CURSUSSUP, ONOUSC],
+    sources: [ENSSUP, CURSUSSUP, ONOUSC, BOURSES],
   },
   {
     id: "societe",
@@ -726,8 +730,8 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
     },
     levels: ["bac", "licence", "reorientation"],
     interests: ["communiquer", "aider", "organiser", "comprendre"],
-    duration: { fr: "Trois ans de licence, souvent prolongés par un master ou un concours.", ary: "3 snin licence, ghalban kaytzad master wla concours." },
-    cost: { fr: "Accessible à l’université publique. Les concours demandent surtout du temps de préparation.", ary: "Sahel f l2université l3omoumiya. Concours katlab bezzaf we9t dyal ta7dir." },
+    duration: { fr: "Distingue le diplôme initial de la formation ou du concours exigé pour le métier visé. Vérifie les conditions à chaque étape.", ary: "Ferre9 bin diplôme lewwel w takwin wla concours lli katlab lkhedma lli bghiti. T2ekked men chorot f kol khotwa." },
+    cost: { fr: "Calcule les frais éventuels, le logement et les déplacements. Si un concours est requis, prévois aussi le temps et les moyens de préparation.", ary: "7seb frais ila kaynin, sskna w tan9olat. Ila khas concours, 7seb 7tta lwe9t w l2imkaniyat dyal ta7dir." },
     careers: [
       { fr: "Juriste d’entreprise ou d’administration", ary: "Juriste f charika wla idara" },
       { fr: "Enseignant", ary: "Ostad" },
@@ -748,7 +752,7 @@ export const orientationRoadmaps: OrientationRoadmap[] = [
       {
         id: "decouvrir",
         title: { fr: "Distinguer les familles de métiers", ary: "Ferre9 bin 3a2ilat lkhedmat" },
-        detail: { fr: "Le droit, l’enseignement et le travail social partagent le contact humain mais rien d’autre. Les journées, les lieux et les responsabilités diffèrent complètement.", ary: "L9anoun, tadris w l3amal ijtima3i kaytchariko l2itisal m3a nnas w safi. Nhar, blayes w mas2ouliyat mokhtalfin kollhom." },
+        detail: { fr: "Le droit, l’enseignement et le travail social comportent des activités différentes. Compare la lecture, l’écrit, le contact avec le public et les responsabilités de chaque métier.", ary: "L9anoun, tadris w l3amal ijtima3i fihom khedmat mokhtalfa. 9aren l9raya, lktaba, l2itisal m3a nnas w mas2ouliyat dyal kol métier." },
         actions: [
           { fr: "Choisis une famille et lis deux fiches métiers qui en relèvent.", ary: "Khtar 3a2ila w 9ra jouj fiches métiers men dakchi." },
           { fr: "Repère la part d’écrit et la part d’oral dans chacune.", ary: "3ref 9edd dyal lktaba w 9edd dyal lhadra f kol wa7da." },

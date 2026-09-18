@@ -1,5 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
+/* Contextual first-load and connection recovery; no external font dependency. */
+.workspace-loading { display: grid; grid-template-columns: 220px minmax(0, 1fr); min-height: 100vh; }
+.loading-rail { border-right: 1px solid #e6e4df; padding: 44px 24px; }
+.loading-rail span { display: block; height: 13px; background: #e6e4df; margin-bottom: 30px; }
+.loading-rail span:first-child { width: 70%; margin-bottom: 70px; }
+.loading-content { padding: 64px 48px; min-width: 0; }
+.loading-content > p { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+.loading-placeholder { margin: 55px 0; max-width: 620px; }
+.loading-placeholder i { display: block; background: #e6e4df; height: 30px; margin-bottom: 16px; }
+.loading-placeholder i:nth-child(2) { width: 78%; }
+.loading-placeholder i:last-child { width: 50%; height: 12px; margin-top: 28px; }
+.loading-rows > div { display: grid; grid-template-columns: 28px 1fr 90px; gap: 22px; padding: 32px 0; border-top: 1px solid #e6e4df; }
+.loading-rows span { display: block; background: #e6e4df; height: 14px; }
+.connection-recovery { max-width: 720px; margin: 12vh auto; padding: 32px; }
+.recovery-brand { display: block; font-weight: 750; margin-bottom: 55px; }
+.connection-recovery h1 { margin-bottom: 18px; }
+.connection-recovery p { line-height: 1.7; margin-bottom: 26px; }
+@media (max-width: 640px) { .workspace-loading { grid-template-columns: 1fr; } .loading-rail { display: none; } .loading-content { padding: 40px 24px; } }
 :root {
   /* Encre et papier, neutres chauds */
   --paper: #fbfaf8;
@@ -27,8 +44,8 @@
   /* Compatibilité avec les règles existantes */
   --blue: var(--olive);
   --canvas: var(--paper);
-  --font-sans: 'Archivo', system-ui, sans-serif;
-  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Segoe UI', Arial, sans-serif;
+  --font-display: 'Segoe UI', Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -37,7 +54,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--canvas);
-  font-family: 'Archivo', system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -80,7 +97,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 650;
 }
 h1 {
   font-size: 30px;

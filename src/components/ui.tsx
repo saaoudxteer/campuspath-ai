@@ -234,9 +234,9 @@ export function Progress({
 }
 export function Loading() {
   return (
-    <div className="loading-state">
-      <LoaderCircle className="spin" size={30} />
-      <p>Préparation de votre espace…</p>
+    <div className="workspace-loading" aria-busy="true" aria-label="Chargement de votre espace">
+      <div className="loading-rail" aria-hidden="true"><span /><span /><span /><span /></div>
+      <div className="loading-content"><p role="status"><LoaderCircle className="spin" size={18} />Préparation de votre espace…</p><div className="loading-placeholder" aria-hidden="true"><i /><i /><i /></div><div className="loading-rows" aria-hidden="true">{[1, 2, 3].map((row) => <div key={row}><span /><span /><span /></div>)}</div></div>
     </div>
   );
 }

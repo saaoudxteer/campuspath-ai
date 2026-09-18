@@ -13,6 +13,7 @@ export async function request(
   method?: string,
 ): Promise<unknown> {
   const response = await fetch("/api" + path, {
+    signal: AbortSignal.timeout(20000),
     method: method ?? (body === undefined ? "GET" : "POST"),
     credentials: "same-origin",
     headers:
@@ -27,6 +28,8 @@ export async function request(
         : body instanceof FormData
           ? body
           : JSON.stringify(body),
+  }).catch(() => {
+    throw new ApiError("Connexion interrompue ou trop lente. Vérifiez votre connexion et réessayez.", 0);
   });
   const payload = await response.json().catch(() => null);
   if (!response.ok) {
