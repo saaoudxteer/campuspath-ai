@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&family=Noto+Sans+Arabic:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 /* Contextual first-load and connection recovery; no external font dependency. */
 .workspace-loading { display: grid; grid-template-columns: 220px minmax(0, 1fr); min-height: 100vh; }
-.loading-rail { border-right: 1px solid #e6e4df; padding: 44px 24px; }
+.loading-rail { border-inline-end: 1px solid #e6e4df; padding: 44px 24px; }
 .loading-rail span { display: block; height: 13px; background: #e6e4df; margin-bottom: 30px; }
 .loading-rail span:first-child { width: 70%; margin-bottom: 70px; }
 .loading-content { padding: 64px 48px; min-width: 0; }
@@ -18,34 +19,54 @@
 .connection-recovery p { line-height: 1.7; margin-bottom: 26px; }
 @media (max-width: 640px) { .workspace-loading { grid-template-columns: 1fr; } .loading-rail { display: none; } .loading-content { padding: 40px 24px; } }
 :root {
-  /* Encre et papier, neutres chauds */
-  --paper: #fbfaf8;
+  /* Surfaces */
+  --page: #ffffff;
   --surface: #ffffff;
-  --ink: #1a1815;
-  --muted: #666057;
-  --faint: #8d887e;          /* 24 px et plus uniquement */
-  --line: #e6e4df;
+  --wash: #f4f4f4;          /* bandes grises */
+  --deep: #1d2b36;          /* sections pleine largeur sombres */
+  --deep-soft: #2c3e4c;
+
+  /* Encre */
+  --ink: #141414;           /* titres */
+  --body-ink: #333333;      /* texte courant */
+  --muted: #5c5c5c;
+  --faint: #767676;         /* 4.54:1 sur blanc, plancher absolu */
+
+  /* Traits */
+  --rule: #d4d4d4;
+  --rule-strong: #141414;
+  --rule-invert: #4a5a66;
+
   /* Accent unique */
-  --olive: #3f5233;
-  --olive-hover: #33422a;
-  --sage: #a8b79a;
-  --sage-tint: #eef1ea;
-  --sand: #d8cdbc;
-  /* Sémantique */
+  --accent: #1b4db3;
+  --accent-hover: #143a89;
+  --accent-wash: #eef2fb;
+
+  /* Sémantique, désaturée */
+  --positive: #1f6b45;
   --warning: #8a5a10;
-  --warning-tint: #faf2e2;
-  --danger: #9e3b22;
-  --danger-tint: #fbede9;
-  /* Rayons */
-  --radius-control: 8px;
-  --radius-surface: 12px;
-  --radius-media: 20px;
-  --radius-pill: 999px;
-  /* Compatibilité avec les règles existantes */
-  --blue: var(--olive);
-  --canvas: var(--paper);
-  --font-sans: 'Segoe UI', Arial, sans-serif;
-  --font-display: 'Segoe UI', Arial, sans-serif;
+  --danger: #a32718;
+  --danger-wash: #fbefee;
+
+  /* Rythme */
+  --gutter: clamp(20px, 4vw, 40px);
+  --measure: 1224px;
+  --section: clamp(48px, 7vw, 96px);
+
+  /* Typographie */
+  --font-sans: "Libre Franklin", "Helvetica Neue", Helvetica, sans-serif;
+  --font-display: "Libre Franklin", "Helvetica Neue", Helvetica, sans-serif;
+
+  /* Compatibilité avec les règles héritées */
+  --paper: var(--page);
+  --canvas: var(--page);
+  --line: var(--rule);
+  --olive: var(--accent);
+  --olive-hover: var(--accent-hover);
+  --sage: var(--rule);
+  --sage-tint: var(--wash);
+  --sand: var(--wash);
+  --blue: var(--accent);
 }
 * {
   box-sizing: border-box;
@@ -122,10 +143,11 @@ p {
 }
 .sidebar {
   position: fixed;
-  inset: 0 auto 0 0;
+  inset-block: 0;
+  inset-inline-start: 0;
   width: 246px;
   background: white;
-  border-right: 1px solid var(--line);
+  border-inline-end: 1px solid var(--line);
   padding: 28px 19px 0;
   display: flex;
   flex-direction: column;
@@ -157,7 +179,7 @@ p {
   position: absolute;
   right: 3px;
   bottom: 0;
-  color: #657555;
+  color: #1f6b45;
 }
 .brand-ai {
   font-size: 10px;
@@ -171,7 +193,7 @@ p {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.7px;
-  color: #7b705d;
+  color: #a32718;
   padding: 0 13px 15px;
 }
 .nav-item {
@@ -182,9 +204,9 @@ p {
   padding: 11px 13px;
   margin: 3px 0;
   border-radius: 8px;
-  text-align: left;
+  text-align: start;
   font-size: 14px;
-  color: #7a6f5c;
+  color: #a32718;
 }
 .nav-item:hover {
   background: #f9f8f6;
@@ -242,7 +264,7 @@ p {
   color: var(--muted);
 }
 .workspace {
-  margin-left: 246px;
+  margin-inline-start: 246px;
   width: calc(100% - 246px);
 }
 .topbar {
@@ -277,7 +299,7 @@ main {
 }
 .demo-strip {
   font-size: 11px;
-  color: #7a6f5d;
+  color: #a32718;
   display: flex;
   align-items: center;
   gap: 9px;
@@ -287,7 +309,7 @@ main {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #7b705d;
+  color: #a32718;
   border: 1px solid #e8e5e1;
   border-radius: 8px;
   padding: 2px 5px;
@@ -307,7 +329,7 @@ main {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.6px;
-  color: #3f5233;
+  color: #1f6b45;
   margin-bottom: 8px;
 }
 .blue {
@@ -352,17 +374,17 @@ main {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #3f5233;
+  color: #1f6b45;
   margin-bottom: 13px;
 }
 .journey-card h2 {
   font-size: 26px;
-  color: #33422a;
+  color: #1f6b45;
   line-height: 1.35;
 }
 .journey-card > p {
   font-size: 12px;
-  color: #3f5233;
+  color: #1f6b45;
   margin-top: 12px;
 }
 .journey-card > p span {
@@ -378,13 +400,13 @@ main {
   position: relative;
   display: grid;
   place-content: center;
-  border: 1px solid #afbca2;
+  border: 1px solid #eef5f1;
   background: #f8f7f6;
   width: 29px;
   height: 29px;
   border-radius: 50%;
   font-size: 12px;
-  color: #3f5233;
+  color: #1f6b45;
   flex-shrink: 0;
 }
 .journey-steps > div.done {
@@ -404,7 +426,7 @@ main {
   left: -15px;
   white-space: nowrap;
   font-size: 10px;
-  color: #3f5233;
+  color: #1f6b45;
 }
 .journey-steps > i {
   height: 1px;
@@ -440,7 +462,7 @@ main {
   padding: 22px;
 }
 .progress-panel .panel-top {
-  color: #33422a;
+  color: #1f6b45;
 }
 .progress-panel h3 {
   color: var(--ink);
@@ -471,8 +493,8 @@ main {
 }
 .progress-ring small {
   font-size: 18px;
-  color: #7c705d;
-  margin-left: 2px;
+  color: #a32718;
+  margin-inline-start: 2px;
   font-weight: 400;
 }
 .progress-panel > strong {
@@ -518,7 +540,7 @@ main {
 .step-number {
   font-size: 22px;
   font-weight: 600;
-  color: #796f5c;
+  color: #a32718;
   letter-spacing: -1px;
 }
 .badge {
@@ -532,23 +554,23 @@ main {
   white-space: nowrap;
 }
 .red {
-  color: #b1474b;
-  background: #fff0f0;
+  color: #a32718;
+  background: #fbefee;
 }
 .amber {
-  color: #90691d;
-  background: #fff6e6;
+  color: #a32718;
+  background: #fbefee;
 }
 .blue-badge {
-  color: #3f5233;
+  color: #1f6b45;
   background: #f8f7f5;
 }
 .green {
-  color: #297d68;
-  background: #eaf8f2;
+  color: #1f6b45;
+  background: #eef5f1;
 }
 .gray {
-  color: #796f5d;
+  color: #a32718;
   background: #f5f4f2;
 }
 .priority-card h3 {
@@ -598,11 +620,11 @@ main {
 @media (max-width: 1100px) {
   .sidebar {
     width: 215px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
   }
   .workspace {
-    margin-left: 215px;
+    margin-inline-start: 215px;
     width: calc(100% - 215px);
   }
   main {
@@ -660,7 +682,7 @@ main {
     margin-top: auto;
   }
   .workspace {
-    margin-left: 74px;
+    margin-inline-start: 74px;
     width: calc(100% - 74px);
   }
   .overview-grid {
