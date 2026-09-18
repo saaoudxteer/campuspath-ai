@@ -1,11 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
 :root {
-  --ink: #202d47;
-  --muted: #718096;
-  --blue: #3159df;
-  --line: #e6eaf1;
-  --canvas: #f7f9fc;
-  --font-sans: Arial, Helvetica, sans-serif;
+  /* Encre et papier, neutres chauds */
+  --paper: #fbfaf8;
+  --surface: #ffffff;
+  --ink: #1a1815;
+  --muted: #666057;
+  --faint: #8d887e;          /* 24 px et plus uniquement */
+  --line: #e6e4df;
+  /* Accent unique */
+  --olive: #3f5233;
+  --olive-hover: #33422a;
+  --sage: #a8b79a;
+  --sage-tint: #eef1ea;
+  --sand: #d8cdbc;
+  /* Sémantique */
+  --warning: #8a5a10;
+  --warning-tint: #faf2e2;
+  --danger: #9e3b22;
+  --danger-tint: #fbede9;
+  /* Rayons */
+  --radius-control: 8px;
+  --radius-surface: 12px;
+  --radius-media: 20px;
+  --radius-pill: 999px;
+  /* Compatibilité avec les règles existantes */
+  --blue: var(--olive);
+  --canvas: var(--paper);
+  --font-sans: 'Archivo', system-ui, sans-serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
 }
 * {
   box-sizing: border-box;
@@ -14,7 +37,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--canvas);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Archivo', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -52,6 +75,12 @@ h2,
 h3,
 p {
   margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
 }
 h1 {
   font-size: 30px;
@@ -100,7 +129,7 @@ p {
   position: relative;
   background: var(--blue);
   color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 35px;
   height: 36px;
   font-size: 25px;
@@ -111,21 +140,21 @@ p {
   position: absolute;
   right: 3px;
   bottom: 0;
-  color: #b6c9ff;
+  color: #657555;
 }
 .brand-ai {
   font-size: 10px;
   letter-spacing: 0.5px;
-  background: #eaf0ff;
+  background: #f6f5f3;
   color: var(--blue);
   padding: 3px 5px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .workspace-label {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.7px;
-  color: #99a3b4;
+  color: #7b705d;
   padding: 0 13px 15px;
 }
 .nav-item {
@@ -135,25 +164,25 @@ p {
   width: 100%;
   padding: 11px 13px;
   margin: 3px 0;
-  border-radius: 7px;
+  border-radius: 8px;
   text-align: left;
   font-size: 14px;
-  color: #66728a;
+  color: #7a6f5c;
 }
 .nav-item:hover {
-  background: #f4f6fb;
+  background: #f9f8f6;
 }
 .nav-item.active {
-  background: #edf2ff;
+  background: #f7f6f5;
   color: var(--blue);
   font-weight: 700;
 }
 .sidebar-note {
   margin: auto 10px 23px;
   padding: 19px 15px;
-  background: #f7f9fc;
+  background: #fafaf9;
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: 8px;
 }
 .sidebar-note svg {
   color: var(--blue);
@@ -181,7 +210,7 @@ p {
   width: 37px;
   height: 37px;
   border-radius: 50%;
-  background: #eaf0ff;
+  background: #f6f5f3;
   color: var(--blue);
   font-size: 12px;
   font-weight: 700;
@@ -220,7 +249,7 @@ p {
   align-items: center;
   gap: 8px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 7px 11px;
   font-size: 12px;
 }
@@ -231,7 +260,7 @@ main {
 }
 .demo-strip {
   font-size: 11px;
-  color: #8590a4;
+  color: #7a6f5d;
   display: flex;
   align-items: center;
   gap: 9px;
@@ -241,9 +270,9 @@ main {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #7a85a0;
-  border: 1px solid #dce2ed;
-  border-radius: 4px;
+  color: #7b705d;
+  border: 1px solid #e8e5e1;
+  border-radius: 8px;
   padding: 2px 5px;
 }
 .page-heading {
@@ -261,7 +290,7 @@ main {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.6px;
-  color: #8091ae;
+  color: #3f5233;
   margin-bottom: 8px;
 }
 .blue {
@@ -274,7 +303,7 @@ main {
   gap: 8px;
   border: 1px solid var(--line);
   padding: 10px 16px;
-  border-radius: 7px;
+  border-radius: 8px;
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
@@ -284,7 +313,7 @@ main {
   color: white;
   background: var(--blue);
   border-color: var(--blue);
-  box-shadow: 0 3px 6px #3159df18;
+  box-shadow: none;
 }
 .button:hover {
   filter: brightness(0.97);
@@ -297,26 +326,26 @@ main {
 .journey-card {
   position: relative;
   border-radius: 12px;
-  background: #eaf0ff;
+  background: #f6f5f3;
   padding: 28px 31px;
   overflow: hidden;
-  border: 1px solid #dce6fc;
+  border: 1px solid #efede9;
 }
 .card-kicker {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #657cad;
+  color: #3f5233;
   margin-bottom: 13px;
 }
 .journey-card h2 {
   font-size: 26px;
-  color: #233e77;
+  color: #33422a;
   line-height: 1.35;
 }
 .journey-card > p {
   font-size: 12px;
-  color: #6980aa;
+  color: #3f5233;
   margin-top: 12px;
 }
 .journey-card > p span {
@@ -332,13 +361,13 @@ main {
   position: relative;
   display: grid;
   place-content: center;
-  border: 1px solid #bccaea;
-  background: #eff4ff;
+  border: 1px solid #afbca2;
+  background: #f8f7f6;
   width: 29px;
   height: 29px;
   border-radius: 50%;
   font-size: 12px;
-  color: #8295b9;
+  color: #3f5233;
   flex-shrink: 0;
 }
 .journey-steps > div.done {
@@ -350,7 +379,7 @@ main {
   background: white;
   color: var(--blue);
   border: 2px solid var(--blue);
-  box-shadow: 0 0 0 5px #dce6ff;
+  box-shadow: 0 0 0 5px #f0eeeb;
 }
 .journey-steps > div span {
   position: absolute;
@@ -358,11 +387,11 @@ main {
   left: -15px;
   white-space: nowrap;
   font-size: 10px;
-  color: #657da6;
+  color: #3f5233;
 }
 .journey-steps > i {
   height: 1px;
-  background: #c1d0ed;
+  background: #ddd8d1;
   flex: 1;
 }
 .text-link {
@@ -380,7 +409,7 @@ main {
 .panel {
   background: white;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 23px;
 }
 .panel-top {
@@ -394,7 +423,7 @@ main {
   padding: 22px;
 }
 .progress-panel .panel-top {
-  color: #536985;
+  color: #33422a;
 }
 .progress-panel h3 {
   color: var(--ink);
@@ -404,7 +433,7 @@ main {
   width: 126px;
   height: 126px;
   border-radius: 50%;
-  background: conic-gradient(var(--blue) 74%, #eaf0fb 0);
+  background: conic-gradient(var(--blue) 74%, #f4f3f1 0);
   margin: 20px auto 14px;
   display: grid;
   place-content: center;
@@ -425,7 +454,7 @@ main {
 }
 .progress-ring small {
   font-size: 18px;
-  color: #8a96ab;
+  color: #7c705d;
   margin-left: 2px;
   font-weight: 400;
 }
@@ -472,14 +501,14 @@ main {
 .step-number {
   font-size: 22px;
   font-weight: 600;
-  color: #bbc5d6;
+  color: #796f5c;
   letter-spacing: -1px;
 }
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 10px;
   font-weight: 650;
   padding: 4px 7px;
@@ -490,20 +519,20 @@ main {
   background: #fff0f0;
 }
 .amber {
-  color: #a17520;
+  color: #90691d;
   background: #fff6e6;
 }
 .blue-badge {
-  color: #4b6cc4;
-  background: #eef3ff;
+  color: #3f5233;
+  background: #f8f7f5;
 }
 .green {
-  color: #2c856e;
+  color: #297d68;
   background: #eaf8f2;
 }
 .gray {
-  color: #6f7b90;
-  background: #f0f3f7;
+  color: #796f5d;
+  background: #f5f4f2;
 }
 .priority-card h3 {
   margin: 17px 0 8px;

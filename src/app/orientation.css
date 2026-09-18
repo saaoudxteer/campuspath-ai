@@ -1,16 +1,17 @@
-/* Espace orientation. Carte de parcours inspirée des roadmaps, accent vert et or. */
+/* Espace orientation. Carte de parcours dessinée, un seul accent. */
 .orientation {
-  --or-green: #0a7a52;
-  --or-green-dark: #085f40;
-  --or-green-soft: #e9f5f0;
-  --or-green-line: #c9e5da;
-  --or-gold: #e9a900;
-  --or-gold-soft: #fdf4e0;
-  --or-gold-line: #f0dcae;
-  --or-ink: #17253c;
-  --or-muted: #64748b;
-  --or-line: #e3e8f0;
-  --or-shadow: 0 1px 2px #17253c0c, 0 8px 24px #17253c08;
+  /* Alias sur les tokens globaux : un seul accent pour tout le site. */
+  --or-green: var(--olive);
+  --or-green-dark: var(--olive-hover);
+  --or-green-soft: var(--sage-tint);
+  --or-green-line: var(--sage);
+  --or-gold: var(--warning);
+  --or-gold-soft: var(--warning-tint);
+  --or-gold-line: #e7d6ae;
+  --or-ink: var(--ink);
+  --or-muted: var(--muted);
+  --or-line: var(--line);
+  --or-shadow: none;
   color: var(--or-ink);
   display: flex;
   flex-direction: column;
@@ -31,10 +32,9 @@
   border: 0;
 }
 .orientation .button.orient-yellow {
-  background: var(--or-gold);
-  border-color: var(--or-gold);
-  color: #3d2c00;
-  box-shadow: 0 3px 8px #e9a90033;
+  background: var(--olive);
+  border-color: var(--olive);
+  color: var(--paper);
 }
 .orientation .button.orient-done-button {
   background: var(--or-green-soft);
@@ -56,10 +56,8 @@
   grid-template-columns: 1fr 340px;
   gap: 40px;
   align-items: center;
-  padding: 40px 42px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #f4faf7 0%, #ffffff 58%, #fdf7e9 100%);
-  border: 1px solid var(--or-line);
+  padding: 8px 0 32px;
+  background: none;
 }
 .orient-kicker {
   display: inline-flex;
@@ -71,7 +69,7 @@
   color: var(--or-green-dark);
   background: #ffffffcc;
   border: 1px solid var(--or-green-line);
-  border-radius: 999px;
+  border-radius: 20px;
   padding: 6px 14px;
   margin-bottom: 20px;
 }
@@ -117,14 +115,14 @@
   padding: 24px 20px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 14px;
-  box-shadow: var(--or-shadow);
+  border-radius: 12px;
+  box-shadow: none;
 }
 .mini-note {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.2px;
-  color: #94a3b8;
+  color: #7a6f5d;
   margin-bottom: 6px;
 }
 .mini-node {
@@ -134,14 +132,14 @@
   font-size: 13px;
   font-weight: 600;
   padding: 11px 18px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1.5px solid var(--or-green-line);
   background: var(--or-green-soft);
   color: var(--or-green-dark);
 }
 .mini-node.finish {
-  border-color: var(--or-gold-line);
-  background: var(--or-gold-soft);
+  border-color: var(--sage);
+  background: var(--sage-tint);
   color: #7a5a00;
 }
 .mini-line {
@@ -156,8 +154,8 @@
 .mini-fork > span {
   font-size: 11px;
   font-weight: 600;
-  color: #56708f;
-  border: 1px dashed #cbd5e1;
+  color: #33422a;
+  border: 1px dashed #dcd8d0;
   border-radius: 8px;
   padding: 7px 11px;
   background: #fff;
@@ -190,7 +188,7 @@
   gap: 9px;
   font-size: 13px;
   font-weight: 600;
-  color: #45566f;
+  color: #675d4d;
 }
 .orient-intro-line svg {
   color: var(--or-green);
@@ -239,7 +237,7 @@
 }
 .orient-tabs > button:hover {
   color: var(--or-ink);
-  background: #f6f8fb;
+  background: #f9f9f8;
 }
 .orient-tabs > button[aria-pressed="true"] {
   color: var(--or-green-dark);
@@ -250,21 +248,21 @@
   font-weight: 700;
   min-width: 19px;
   padding: 2px 6px;
-  border-radius: 999px;
-  background: #eef2f7;
-  color: #55657d;
+  border-radius: 20px;
+  background: #f4f3f1;
+  color: #786d5a;
 }
 .orient-fit-note {
   display: flex;
   gap: 14px;
   padding: 16px 18px;
-  border-radius: 11px;
+  border-radius: 12px;
   background: var(--or-gold-soft);
   border: 1px solid var(--or-gold-line);
 }
 .orient-fit-note svg {
   flex-shrink: 0;
-  color: #b58200;
+  color: #916800;
   margin-top: 1px;
 }
 .orient-fit-note strong {
@@ -300,15 +298,15 @@
   min-height: 46px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .orient-search:focus-within,
 .orient-level:focus-within {
   border-color: var(--or-green);
-  box-shadow: 0 0 0 3px #0a7a5218;
+  box-shadow: 0 0 0 3px #3f523326;
 }
 .orient-search svg {
-  color: #94a3b8;
+  color: #7a6f5d;
   flex-shrink: 0;
 }
 .orient-search input {
@@ -320,7 +318,7 @@
   min-width: 0;
 }
 .orient-search > button {
-  color: #94a3b8;
+  color: #7a6f5d;
   display: grid;
   place-content: center;
 }
@@ -332,8 +330,8 @@
   min-height: 46px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 10px;
-  color: #94a3b8;
+  border-radius: 12px;
+  color: #7a6f5d;
 }
 .orient-level select {
   border: 0;
@@ -352,19 +350,19 @@
 .orient-filters > button {
   font-size: 13px;
   font-weight: 600;
-  color: #55657d;
+  color: #786d5a;
   padding: 8px 15px;
-  border-radius: 999px;
+  border-radius: 20px;
   border: 1px solid var(--or-line);
   background: #fff;
 }
 .orient-filters > button:hover {
-  border-color: #c3cfdf;
+  border-color: #79705d;
 }
 .orient-filters > button[aria-pressed="true"] {
   background: var(--or-green);
   border-color: var(--or-green);
-  color: #fff;
+  color: var(--paper);
 }
 
 /* --- Grille de parcours --- */
@@ -381,8 +379,8 @@
   padding: 20px 20px 22px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 13px;
-  box-shadow: var(--or-shadow);
+  border-radius: 12px;
+  box-shadow: none;
   overflow: hidden;
   transition: border-color 0.18s ease, transform 0.18s ease;
 }
@@ -394,32 +392,32 @@
   background: var(--card-accent, var(--or-green));
 }
 .orient-card:hover {
-  border-color: #c9d5e6;
+  border-color: #7b715d;
   transform: translateY(-2px);
 }
 .orient-card.domain-tech {
-  --card-accent: #2f6fd0;
-  --card-tint: #eaf2fd;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card.domain-business {
-  --card-accent: #b5760d;
-  --card-tint: #fdf2e2;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card.domain-health {
-  --card-accent: #c1272d;
-  --card-tint: #fdeced;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card.domain-creative {
-  --card-accent: #8145c6;
-  --card-tint: #f4ecfd;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card.domain-science {
-  --card-accent: #0a7a52;
-  --card-tint: #e9f5f0;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card.domain-society {
-  --card-accent: #3f5d86;
-  --card-tint: #eef2f9;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-card-top {
   display: flex;
@@ -427,27 +425,23 @@
   gap: 11px;
 }
 .orient-domain-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
   display: grid;
   place-content: center;
-  background: var(--card-tint, var(--or-green-soft));
-  color: var(--card-accent, var(--or-green));
+  color: var(--muted);
 }
 .orient-card-number {
   font-size: 12px;
   font-weight: 700;
-  color: #b3bfcf;
+  color: #7d705d;
   letter-spacing: 0.5px;
 }
 .orient-bookmark {
   margin-left: auto;
-  color: #b3bfcf;
+  color: #7d705d;
   display: grid;
   place-content: center;
   padding: 4px;
-  border-radius: 7px;
+  border-radius: 8px;
 }
 .orient-bookmark:hover {
   color: var(--or-gold);
@@ -467,7 +461,7 @@
 }
 .orient-card-link h3 svg {
   flex-shrink: 0;
-  color: #c3cfdf;
+  color: #79705d;
   transition: transform 0.18s ease, color 0.18s ease;
 }
 .orient-card:hover .orient-card-link h3 svg {
@@ -490,7 +484,7 @@
   font-weight: 600;
   color: #8a6400;
   background: var(--or-gold-soft);
-  border-radius: 7px;
+  border-radius: 8px;
   padding: 7px 10px;
 }
 .orient-match svg {
@@ -504,9 +498,9 @@
 .orient-card-careers > span {
   font-size: 11.5px;
   font-weight: 600;
-  color: #55657d;
-  background: #f4f7fb;
-  border-radius: 6px;
+  color: #786d5a;
+  background: #f9f8f6;
+  border-radius: 8px;
   padding: 5px 9px;
 }
 .orient-card-bottom {
@@ -516,7 +510,7 @@
   gap: 10px;
   margin-top: auto;
   padding-top: 13px;
-  border-top: 1px solid #f0f3f8;
+  border-top: 1px solid #f6f4f2;
   font-size: 11.5px;
   color: var(--or-muted);
 }
@@ -548,7 +542,7 @@
 .orient-source-note {
   font-size: 12px;
   line-height: 1.6;
-  color: #8496ac;
+  color: #7b715e;
   padding-top: 4px;
 }
 
@@ -559,7 +553,7 @@
   gap: 20px;
   flex-wrap: wrap;
   padding: 26px 30px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--or-green-soft);
   border: 1px solid var(--or-green-line);
 }
@@ -575,14 +569,9 @@
   color: #4d6b60;
 }
 .orient-next-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 13px;
   display: grid;
   place-content: center;
-  background: #fff;
-  color: var(--or-green);
-  border: 1px solid var(--or-green-line);
+  color: var(--olive);
   flex-shrink: 0;
 }
 .orient-france-link {
@@ -592,12 +581,12 @@
   width: 100%;
   text-align: left;
   padding: 17px 20px;
-  border-radius: 11px;
-  border: 1px dashed #c6d2e4;
+  border-radius: 12px;
+  border: 1px dashed #dbd7cf;
   background: #fff;
   font-size: 13.5px;
   font-weight: 600;
-  color: #45566f;
+  color: #675d4d;
 }
 .orient-france-link:hover {
   border-color: var(--or-green);
@@ -608,7 +597,7 @@
 }
 .orient-france-link svg {
   flex-shrink: 0;
-  color: #93a3b8;
+  color: #7a6f5c;
 }
 
 /* --- Barre de comparaison --- */
@@ -623,8 +612,8 @@
   padding: 14px 18px;
   border-radius: 12px;
   background: var(--or-ink);
-  color: #fff;
-  box-shadow: 0 12px 30px #17253c33;
+  color: var(--paper);
+  box-shadow: none;
 }
 .orient-compare-bar > div:first-child {
   display: flex;
@@ -637,18 +626,18 @@
 }
 .orient-compare-bar span {
   font-size: 12px;
-  color: #9fb0c8;
+  color: #7b705d;
 }
 .orient-compare-bar > button:last-child {
-  color: #9fb0c8;
+  color: #7b705d;
   display: grid;
   place-content: center;
   padding: 6px;
-  border-radius: 7px;
+  border-radius: 8px;
 }
 .orient-compare-bar > button:last-child:hover {
   background: #ffffff1a;
-  color: #fff;
+  color: var(--paper);
 }
 
 /* --- Questionnaire --- */
@@ -687,21 +676,21 @@
   font-size: 14px;
   font-weight: 600;
   padding: 13px 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1.5px solid var(--or-line);
   background: #fff;
 }
 .orient-options > button > svg:first-child {
-  color: #93a3b8;
+  color: #7a6f5c;
   flex-shrink: 0;
 }
 .orient-options > button > svg:last-child {
   margin-left: auto;
-  color: #cbd5e1;
+  color: #7b705b;
   flex-shrink: 0;
 }
 .orient-options > button:hover {
-  border-color: #b9c8dc;
+  border-color: #7c6f5d;
 }
 .orient-options > button[aria-pressed="true"] {
   border-color: var(--or-green);
@@ -720,7 +709,7 @@
 .orient-small {
   font-size: 12px;
   line-height: 1.6;
-  color: #8496ac;
+  color: #7b715e;
 }
 
 /* --- Détail d’un parcours --- */
@@ -748,44 +737,38 @@
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 28px 30px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #f4faf7, #ffffff 70%);
-  border: 1px solid var(--or-line);
+  padding: 4px 0 24px;
+  background: none;
 }
 .orient-road-icon {
-  width: 62px;
-  height: 62px;
-  border-radius: 15px;
   display: grid;
   place-content: center;
   flex-shrink: 0;
-  background: var(--card-tint, var(--or-green-soft));
-  color: var(--card-accent, var(--or-green));
+  color: var(--muted);
 }
 .orient-road-icon.domain-tech {
-  --card-accent: #2f6fd0;
-  --card-tint: #eaf2fd;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-icon.domain-business {
-  --card-accent: #b5760d;
-  --card-tint: #fdf2e2;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-icon.domain-health {
-  --card-accent: #c1272d;
-  --card-tint: #fdeced;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-icon.domain-creative {
-  --card-accent: #8145c6;
-  --card-tint: #f4ecfd;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-icon.domain-science {
-  --card-accent: #0a7a52;
-  --card-tint: #e9f5f0;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-icon.domain-society {
-  --card-accent: #3f5d86;
-  --card-tint: #eef2f9;
+  --card-accent: var(--olive);
+  --card-tint: transparent;
 }
 .orient-road-header h1 {
   font-size: 29px;
@@ -803,7 +786,7 @@
   padding: 16px 20px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 11px;
+  border-radius: 12px;
 }
 .orient-road-progress > span {
   display: inline-flex;
@@ -827,7 +810,7 @@
 }
 .orient-road-progress small {
   font-size: 11.5px;
-  color: #8496ac;
+  color: #7b715e;
   flex-basis: 100%;
 }
 
@@ -844,10 +827,10 @@
   gap: 10px;
   padding: 24px 24px 22px;
   background:
-    radial-gradient(circle at 1px 1px, #dde5ef 1px, transparent 0) 0 0 / 22px 22px,
-    #fbfcfe;
+    radial-gradient(circle at 1px 1px, #eae7e2 1px, transparent 0) 0 0 / 22px 22px,
+    #fdfdfc;
   border: 1px solid var(--or-line);
-  border-radius: 14px;
+  border-radius: 12px;
 }
 .orient-map-hint {
   display: inline-flex;
@@ -859,7 +842,7 @@
   color: var(--or-muted);
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 999px;
+  border-radius: 20px;
   padding: 6px 13px;
 }
 .orient-map-start,
@@ -867,7 +850,7 @@
   font-size: 9.5px;
   font-weight: 700;
   letter-spacing: 1.3px;
-  color: #93a3b8;
+  color: #7a6f5c;
   text-align: center;
   padding: 6px 0;
 }
@@ -893,7 +876,7 @@
   content: "";
   width: 2px;
   height: 20px;
-  background: repeating-linear-gradient(to bottom, #c9d5e6 0 4px, transparent 4px 8px);
+  background: repeating-linear-gradient(to bottom, #ddd9d2 0 4px, transparent 4px 8px);
   flex-shrink: 0;
 }
 .orient-node {
@@ -905,14 +888,14 @@
   padding: 14px 16px;
   background: #fff;
   border: 1.5px solid var(--or-line);
-  border-radius: 11px;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: var(--or-shadow);
+  box-shadow: none;
   transition: border-color 0.16s ease, box-shadow 0.16s ease;
 }
 .orient-node:hover {
-  border-color: #b9c8dc;
+  border-color: #7c6f5d;
 }
 .orient-node > span:nth-child(2) {
   flex: 1;
@@ -926,28 +909,28 @@
   color: var(--or-green);
 }
 .orient-node > svg:last-child {
-  color: #cbd5e1;
+  color: #7b705b;
   flex-shrink: 0;
 }
 .orient-node-index {
   width: 30px;
   height: 30px;
-  border-radius: 9px;
+  border-radius: 8px;
   display: grid;
   place-content: center;
   flex-shrink: 0;
   font-size: 12px;
   font-weight: 700;
-  background: #f1f5fa;
-  color: #7a8CA3;
+  background: #f7f6f4;
+  color: #7a6f5c;
 }
 .orient-node.explored .orient-node-index {
   background: var(--or-green);
-  color: #fff;
+  color: var(--paper);
 }
 .orient-node.active {
   border-color: var(--or-green);
-  box-shadow: 0 0 0 3px #0a7a5216, var(--or-shadow);
+  box-shadow: 0 0 0 3px #3f523326;
 }
 .orient-node.active > svg:last-child {
   color: var(--or-green);
@@ -965,7 +948,7 @@
   gap: 8px;
   width: 100%;
   padding: 13px;
-  border: 1.5px dashed #cfdbea;
+  border: 1.5px dashed #e1ded8;
   border-radius: 12px;
   background: #ffffffb3;
 }
@@ -975,22 +958,22 @@
   gap: 7px;
   font-size: 12.5px;
   font-weight: 600;
-  color: #4f627d;
+  color: #33422a;
   padding: 8px 13px;
-  border-radius: 999px;
+  border-radius: 20px;
   border: 1px solid var(--or-line);
   background: #fff;
 }
 .orient-branches > div > button:hover {
-  border-color: #b9c8dc;
+  border-color: #7c6f5d;
 }
 .orient-branches > div > button.active {
-  border-color: #8145c6;
-  background: #f4ecfd;
-  color: #6b34a8;
+  border-color: #846e44;
+  background: #f6f5f3;
+  color: #6e6455;
 }
 .orient-branches > div > button svg {
-  color: #8145c6;
+  color: var(--muted);
 }
 .orient-map-end {
   display: flex;
@@ -1011,7 +994,7 @@
   place-content: center;
   background: var(--or-gold-soft);
   border: 1.5px solid var(--or-gold-line);
-  color: #a37600;
+  color: #946b00;
 }
 .orient-map-legend {
   display: flex;
@@ -1020,7 +1003,7 @@
   flex-wrap: wrap;
   margin-top: 12px;
   padding-top: 14px;
-  border-top: 1px solid #e8edf4;
+  border-top: 1px solid #f0efec;
   font-size: 11.5px;
   color: var(--or-muted);
 }
@@ -1032,17 +1015,17 @@
 .orient-map-legend i {
   width: 11px;
   height: 11px;
-  border-radius: 4px;
-  background: #f1f5fa;
-  border: 1.5px solid #d4dded;
+  border-radius: 8px;
+  background: #f7f6f4;
+  border: 1.5px solid #e5e2dc;
 }
 .orient-map-legend i.done {
   background: var(--or-green);
   border-color: var(--or-green);
 }
 .orient-map-legend i.branch {
-  background: #f4ecfd;
-  border-color: #8145c6;
+  background: var(--sage-tint);
+  border-color: var(--olive);
   border-style: dashed;
 }
 
@@ -1056,8 +1039,8 @@
   padding: 24px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 14px;
-  box-shadow: var(--or-shadow);
+  border-radius: 12px;
+  box-shadow: none;
 }
 .orient-inspector:focus-visible {
   outline: 2px solid var(--or-green);
@@ -1088,12 +1071,12 @@
   gap: 10px;
   font-size: 13px;
   line-height: 1.5;
-  color: #45566f;
+  color: #675d4d;
 }
 .orient-action-list > li > span {
   width: 20px;
   height: 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   display: grid;
   place-content: center;
   flex-shrink: 0;
@@ -1106,9 +1089,9 @@
   align-items: center;
   gap: 11px;
   padding: 12px 14px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid var(--or-line);
-  background: #f9fbfd;
+  background: #fcfbfa;
   font-size: 13px;
   font-weight: 600;
 }
@@ -1146,7 +1129,7 @@
   padding: 20px 22px;
   background: #fff;
   border: 1px solid var(--or-line);
-  border-radius: 13px;
+  border-radius: 12px;
 }
 .orient-facts h2 {
   display: flex;
@@ -1172,7 +1155,7 @@
   padding-left: 17px;
   font-size: 13px;
   line-height: 1.55;
-  color: #45566f;
+  color: #675d4d;
 }
 .orient-facts li::before {
   content: "";
@@ -1186,7 +1169,7 @@
 }
 .orient-personal-plan {
   padding: 26px 28px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--or-green-soft);
   border: 1px solid var(--or-green-line);
 }
@@ -1218,9 +1201,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 22px 24px;
-  border-radius: 13px;
-  border: 1px dashed #c6d2e4;
-  background: #fbfcfe;
+  border-radius: 12px;
+  border: 1px dashed #dbd7cf;
+  background: #fdfdfc;
 }
 .orient-sources h2 {
   font-size: 15px;
@@ -1259,7 +1242,7 @@
 .orient-table-scroll {
   overflow-x: auto;
   border: 1px solid var(--or-line);
-  border-radius: 11px;
+  border-radius: 12px;
 }
 .orient-comparison table {
   width: 100%;
@@ -1271,10 +1254,10 @@
   text-align: left;
   vertical-align: top;
   padding: 13px 15px;
-  border-bottom: 1px solid #eef2f7;
+  border-bottom: 1px solid #f4f3f1;
 }
 .orient-comparison thead th {
-  background: #f7f9fc;
+  background: #fafaf9;
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
@@ -1292,10 +1275,10 @@
   font-weight: 700;
   color: var(--or-muted);
   white-space: nowrap;
-  background: #fbfcfe;
+  background: #fdfdfc;
 }
 .orient-comparison td {
-  color: #45566f;
+  color: #675d4d;
   line-height: 1.55;
   min-width: 190px;
 }
