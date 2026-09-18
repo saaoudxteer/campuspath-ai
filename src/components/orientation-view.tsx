@@ -36,31 +36,31 @@ import type { OrientationState } from "@/lib/schema";
 import { Button, Empty, Modal, Notice, Progress, useApp } from "./ui";
 
 const levels = [
-  ["lycee", "Au lycée", "F lycée"],
-  ["bac", "Après le bac", "Men be3d l bac"],
-  ["bac2", "Bac +2", "Bac +2"],
-  ["licence", "Licence et plus", "Licence w kter"],
-  ["reorientation", "Me réorienter", "Nbeddel lmasar"],
+  ["lycee", "Au lycée", "فالثانوي"],
+  ["bac", "Après le bac", "من بعد الباك"],
+  ["bac2", "Bac +2", "الباك +2"],
+  ["licence", "Licence et plus", "الإجازة وفوق"],
+  ["reorientation", "Me réorienter", "نبدل المسار"],
 ] as const;
 const interests = [
-  ["technologie", "La technologie", "Technologie"],
-  ["logique", "Résoudre des problèmes", "N7ell lmachakil"],
-  ["construire", "Construire et fabriquer", "Nebni w nsayeb"],
-  ["organiser", "Organiser et gérer", "Nnedem w nseyyer"],
-  ["aider", "Aider les autres", "N3awen nnas"],
-  ["creer", "Imaginer et créer", "Ntkeyyel w nbde3"],
-  ["comprendre", "Comprendre et chercher", "Nfhem w n9elleb"],
-  ["communiquer", "Échanger et convaincre", "Ntwasel w n9ne3"],
-  ["terrain", "Apprendre sur le terrain", "Nt3ellem f terrain"],
+  ["technologie", "La technologie", "التكنولوجيا"],
+  ["logique", "Résoudre des problèmes", "نحل المشاكل"],
+  ["construire", "Construire et fabriquer", "نبني ونصنع"],
+  ["organiser", "Organiser et gérer", "ننظم ونسير"],
+  ["aider", "Aider les autres", "نعاون الناس"],
+  ["creer", "Imaginer et créer", "نتخيل ونبدع"],
+  ["comprendre", "Comprendre et chercher", "نفهم ونقلب"],
+  ["communiquer", "Échanger et convaincre", "نتواصل ونقنع"],
+  ["terrain", "Apprendre sur le terrain", "نتعلم فالميدان"],
 ] as const;
 const categories = [
-  ["all", "Tous les domaines", "Ga3 lmajalat"],
-  ["tech", "Tech & ingénierie", "Tech w ingénierie"],
-  ["business", "Commerce", "Tijara"],
-  ["health", "Santé", "Se77a"],
-  ["creative", "Création", "Ibda3"],
-  ["science", "Sciences", "3olom"],
-  ["society", "Société", "Mojtama3"],
+  ["all", "Tous les domaines", "جميع المجالات"],
+  ["tech", "Tech & ingénierie", "التقنية والهندسة"],
+  ["business", "Commerce", "التجارة"],
+  ["health", "Santé", "الصحة"],
+  ["creative", "Création", "الإبداع"],
+  ["science", "Sciences", "العلوم"],
+  ["society", "Société", "المجتمع"],
 ] as const;
 const domainIcons = {
   tech: Code2,
@@ -74,6 +74,9 @@ const normalize = (value: string) =>
   value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u064b-\u065f\u0670\u0640]/g, "")
+    .replace(/[أإآ]/g, "ا")
+    .replace(/ى/g, "ي")
     .toLowerCase();
 
 function RoadIcon({
@@ -159,7 +162,7 @@ export function OrientationView() {
         {busy && (
           <>
             <LoaderCircle size={15} className="spin" />
-            {t("Enregistrement en cours…", "Kantsjjlo taghyirat…")}
+            {t("Enregistrement en cours…", "كنسجلو التغييرات…")}
           </>
         )}
       </div>
@@ -173,14 +176,14 @@ export function OrientationView() {
           />
         ) : (
           <Empty
-            title={t("Ce parcours n’existe pas", "Had lmasar ma kaynch")}
+            title={t("Ce parcours n’existe pas", "هاد المسار ما كاينش")}
             description={t(
               "Retrouvez toutes les pistes dans le catalogue.",
-              "Rje3 l liste bach tchouf lmasarat.",
+              "رجع للائحة باش تشوف المسارات.",
             )}
             action={
               <Button onClick={() => go("orientation")}>
-                {t("Voir les parcours", "Chouf lmasarat")}
+                {t("Voir les parcours", "شوف المسارات")}
               </Button>
             }
           />
@@ -192,18 +195,18 @@ export function OrientationView() {
               <span className="orient-kicker">
                 {t(
                   "CAMPUSPATH / ORIENTATION AU MAROC",
-                  "CAMPUSPATH / TAWJIH F LMAGHRIB",
+                  "CampusPath / التوجيه فالمغرب",
                 )}
               </span>
               <h1>
-                {t("Comprendre tes options.", "Fhem l2ikhtiyarat.")}
+                {t("Comprendre tes options.", "فهم الاختيارات ديالك.")}
                 <br />
-                {t("Choisir ta voie.", "Khtar tri9ek.")}
+                {t("Choisir ta voie.", "ختار الطريق ديالك.")}
               </h1>
               <p>
                 {t(
                   "Des études aux métiers, explore les possibles au Maroc. Une carte, des étapes concrètes et la liberté de choisir ta voie.",
-                  "Men l9raya l lkhedma, ktechef l2ikhtiyarat f lMaghrib. Kharita w khotwat wad7in bach tkhtar tri9ek.",
+                  "من القراية للخدمة، اكتشف الاختيارات فالمغرب. خريطة وخطوات واضحة باش تختار الطريق ديالك.",
                 )}
               </p>
               <div className="orient-hero-actions">
@@ -211,34 +214,34 @@ export function OrientationView() {
                   <Compass size={18} />
                   {t(
                     "Trouver mes premières pistes",
-                    "Nl9a lmasarat lli y3ejbouni",
+                    "نلقى المسارات اللي يعجبوني",
                   )}
                   <ArrowRight size={17} />
                 </Button>
                 <span>
                   {t(
                     "4 questions · sans bonne ou mauvaise réponse",
-                    "4 as2ila · ma kayn la s7i7 la ghalet",
+                    "4 أسئلة · ما كاين لا جواب صحيح لا غلط",
                   )}
                 </span>
               </div>
             </div>
             <aside
               className="orient-start"
-              aria-label={t("Par où commencer", "Men fin nebda")}
+              aria-label={t("Par où commencer", "منين نبدا")}
             >
-              <h2>{t("Par où commencer ?", "Men fin nebda ?")}</h2>
+              <h2>{t("Par où commencer ?", "منين نبدا؟")}</h2>
               <p>
                 {t(
                   "Choisis ce qui t’est utile aujourd’hui.",
-                  "Khtar ach y3awnek lyoum.",
+                  "ختار اللي يقدر يعاونك اليوم.",
                 )}
               </p>
               <div className="orient-start-links">
                 <button onClick={() => setQuiz(true)}>
                   <span>01</span>
                   <strong>
-                    {t("Faire le point sur mes envies", "Nfhem ach bghit")}
+                    {t("Faire le point sur mes envies", "نفهم شنو بغيت")}
                   </strong>
                   <ArrowRight size={16} />
                 </button>
@@ -252,7 +255,7 @@ export function OrientationView() {
                 >
                   <span>02</span>
                   <strong>
-                    {t("Explorer les parcours", "Nktechef lmasarat")}
+                    {t("Explorer les parcours", "نكتشف المسارات")}
                   </strong>
                   <ArrowRight size={16} />
                 </button>
@@ -266,7 +269,7 @@ export function OrientationView() {
                 >
                   <span>03</span>
                   <strong>
-                    {t("Reprendre mes favoris", "Nrje3 l favoris dyali")} (
+                    {t("Reprendre mes favoris", "نرجع للمفضلة ديالي")} (
                     {state.saved_roadmaps.length})
                   </strong>
                   <ArrowRight size={16} />
@@ -278,29 +281,29 @@ export function OrientationView() {
             <div className="orient-section-heading">
               <div>
                 <span className="orient-eyebrow">
-                  {t("LE CHAMP DES POSSIBLES", "L2IKHTIYARAT 9EDDAMEK")}
+                  {t("LE CHAMP DES POSSIBLES", "الاختيارات اللي قدامك")}
                 </span>
                 <h2 id="catalog-title">
                   {t(
                     "Quel chemin veux-tu explorer ?",
-                    "Achmen tri9 bghiti tktechef ?",
+                    "أشنو هو الطريق اللي بغيتي تكتشف؟",
                   )}
                 </h2>
               </div>
               <span className="orient-count" aria-live="polite">
-                {roads.length} {t("parcours", "masarat")}
+                {roads.length} {t("parcours", "مسارات")}
               </span>
             </div>
             <div
               className="orient-tabs"
               role="group"
-              aria-label={t("Afficher les parcours", "Chouf lmasarat")}
+              aria-label={t("Afficher les parcours", "شوف المسارات")}
             >
               <button
                 aria-pressed={tab === "all"}
                 onClick={() => setMode("all")}
               >
-                {t("Tous les parcours", "Ga3 lmasarat")}
+                {t("Tous les parcours", "جميع المسارات")}
               </button>
               <button
                 aria-pressed={tab === "suggested"}
@@ -311,14 +314,14 @@ export function OrientationView() {
                 }
               >
                 <Compass size={15} />
-                {t("Mes pistes suggérées", "Pistes mo9tara7a")}
+                {t("Mes pistes suggérées", "المسارات المقترحة ليا")}
               </button>
               <button
                 aria-pressed={tab === "saved"}
                 onClick={() => setMode("saved")}
               >
                 <Bookmark size={15} />
-                {t("Mes favoris", "Lfavoris dyali")}
+                {t("Mes favoris", "المفضلة ديالي")}
                 <span>{state.saved_roadmaps.length}</span>
               </button>
             </div>
@@ -329,17 +332,17 @@ export function OrientationView() {
                   <strong>
                     {t(
                       "Des points de départ, à explorer librement",
-                      "No9at lbidaya, ktechefhom b 7orriya",
+                      "نقط للبداية، اكتشفها بحرية",
                     )}
                   </strong>
                   <p>
                     {t(
                       "Ces pistes partagent tes centres d’intérêt. Elles sont classées par nombre d’intérêts communs, puis par niveau d’exploration. Ce n’est ni un test d’aptitude ni une décision d’admission.",
-                      "Had pistes kaytchabho m3a l2ihtimamat dyalek. Tartib 7sab l2ihtimamat lmochtaraka, w men be3d niveau. Machi test dyal l9odrat w la 9arar dyal l9obol.",
+                      "هاد المسارات قريبة للاهتمامات ديالك. الترتيب حسب الاهتمامات المشتركة، ومن بعد المستوى الدراسي. هادا ماشي اختبار للقدرات ولا قرار بالقبول.",
                     )}
                   </p>
                   <button onClick={() => setQuiz(true)}>
-                    {t("Modifier mes réponses", "Nbeddel l2ajwiba")}
+                    {t("Modifier mes réponses", "نبدل الأجوبة ديالي")}
                   </button>
                 </div>
               </div>
@@ -352,14 +355,14 @@ export function OrientationView() {
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={t(
                     "Un domaine, un métier…",
-                    "Majal, chi khedma…",
+                    "مجال، شي خدمة…",
                   )}
-                  aria-label={t("Rechercher un parcours", "9elleb 3la masar")}
+                  aria-label={t("Rechercher un parcours", "قلب على مسار")}
                 />
                 {query && (
                   <button
                     onClick={() => setQuery("")}
-                    aria-label={t("Effacer la recherche", "Mse7 lba7t")}
+                    aria-label={t("Effacer la recherche", "مسح البحث")}
                   >
                     <X size={16} />
                   </button>
@@ -370,10 +373,10 @@ export function OrientationView() {
                 <select
                   value={level}
                   onChange={(e) => setLevel(e.target.value)}
-                  aria-label={t("Niveau d’exploration", "Niveau bach tktechef")}
+                  aria-label={t("Niveau d’exploration", "المستوى اللي بغيتي تكتشف")}
                 >
                   <option value="all">
-                    {t("Tous les niveaux", "Ga3 niveaux")}
+                    {t("Tous les niveaux", "جميع المستويات")}
                   </option>
                   {levels.map(([id, fr, ary]) => (
                     <option key={id} value={id}>
@@ -386,7 +389,7 @@ export function OrientationView() {
             <div
               className="orient-filters"
               role="group"
-              aria-label={t("Domaines", "Lmajalat")}
+              aria-label={t("Domaines", "المجالات")}
             >
               {categories.map(([id, fr, ary]) => (
                 <button
@@ -447,7 +450,7 @@ export function OrientationView() {
                     </div>
                     <div className="orient-card-careers">
                       <small>
-                        {t("MÉTIERS À DÉCOUVRIR", "KHEDMAT BACH TKTECHEF")}
+                        {t("MÉTIERS À DÉCOUVRIR", "خدمات باش تكتشف")}
                       </small>
                       {road.careers.slice(0, 2).map((career) => (
                         <span key={career.fr}>{tx(career)}</span>
@@ -463,7 +466,7 @@ export function OrientationView() {
                             saved
                               ? "Retirer des favoris : "
                               : "Ajouter aux favoris : ",
-                            saved ? "7yed men favoris : " : "Zid l favoris : ",
+                            saved ? "نحيد من المفضلة : " : "نزيد للمفضلة : ",
                           ) + tx(road.title)
                         }
                         onClick={() => toggleSaved(road.id)}
@@ -474,15 +477,15 @@ export function OrientationView() {
                         />
                         {t(
                           saved ? "Enregistré" : "Garder",
-                          saved ? "Tsejjel" : "N7fed",
+                          saved ? "تسجل" : "نحفظ",
                         )}
                       </button>
                       <div className="orient-card-bottom">
                         <span>
                           <GitBranch size={14} />
                           {explored > 0
-                            ? `${explored}/${road.steps.length} ${t("étapes explorées", "khotwat tktechfo")}`
-                            : `${road.steps.length} ${t("étapes à explorer", "khotwat bach tktechef")}`}
+                            ? `${explored}/${road.steps.length} ${t("étapes explorées", "خطوات تكتاشفو")}`
+                            : `${road.steps.length} ${t("étapes à explorer", "خطوات باش تكتشف")}`}
                         </span>
                         <label>
                           <input
@@ -497,17 +500,17 @@ export function OrientationView() {
                               )
                             }
                             aria-label={
-                              t("Comparer : ", "9aren : ") + tx(road.title)
+                              t("Comparer : ", "قارن : ") + tx(road.title)
                             }
                           />
-                          {t("Comparer", "9aren")}
+                          {t("Comparer", "قارن")}
                         </label>
                       </div>
                       {saveError === road.id && (
                         <p className="orient-inline-error" role="alert">
                           {t(
                             "Non enregistré. Vérifie ta connexion et réessaie avec le bouton Garder.",
-                            "Ma tsejjelch. Chouf connexion w 3awed b bouton N7fed.",
+                            "ما تسجلش. شوف الاتصال وعاود بزر الحفظ.",
                           )}
                         </p>
                       )}
@@ -522,7 +525,7 @@ export function OrientationView() {
                       <span className="sr-only">
                         {t(
                           "Premier résultat par intérêts communs",
-                          "Awal resultat 7sab l2ihtimamat",
+                          "أول النتائج حسب الاهتمامات",
                         )}
                       </span>
                     )}
@@ -537,20 +540,20 @@ export function OrientationView() {
                     ? "Tes prochaines pistes commencent ici"
                     : "Aucun parcours pour ces filtres",
                   tab === "saved" && !state.saved_roadmaps.length
-                    ? "Lmasarat jayin kaybdaw hna"
-                    : "Ma l9inach masar b had filtres",
+                    ? "المسارات الجاية كتبدا هنا"
+                    : "ما لقيناش مسار بهاد التصفية",
                 )}
                 description={t(
                   tab === "saved" && !state.saved_roadmaps.length
                     ? "Utilise le marque-page sur un parcours pour le retrouver ici."
                     : "Essaie un autre mot-clé ou affiche tous les domaines.",
                   tab === "saved" && !state.saved_roadmaps.length
-                    ? "Klik 3la marque-page bach t7fed lmasar hna."
-                    : "Jerreb kelma okhra wla chouf ga3 lmajalat.",
+                    ? "ضغط على علامة الحفظ باش تلقى المسار هنا."
+                    : "جرب كلمة أخرى ولا شوف جميع المجالات.",
                 )}
                 action={
                   <Button onClick={() => setMode("all")}>
-                    {t("Voir tous les parcours", "Chouf ga3 lmasarat")}
+                    {t("Voir tous les parcours", "شوف جميع المسارات")}
                   </Button>
                 }
               />
@@ -558,7 +561,7 @@ export function OrientationView() {
             <p className="orient-source-note">
               {t(
                 "Les niveaux servent à explorer. Les conditions d’accès dépendent de chaque formation. Catalogue relu le",
-                "Niveaux ghir bach tktechef. Chorot l9obol katbeddel 7sab formation. Catalogue t3awed t9ra nhar",
+                "المستويات غير باش تكتشف. شروط القبول كتبدل حسب التكوين. آخر مراجعة للدليل نهار",
               )}{" "}
               {new Date(
                 ORIENTATION_REVIEWED_AT + "T12:00:00",
@@ -574,18 +577,18 @@ export function OrientationView() {
               <h2>
                 {t(
                   "Tu n’as pas encore de projet précis ?",
-                  "Mazal ma 3endekch projet wad7 ?",
+                  "مازال ما عندكش مشروع واضح؟",
                 )}
               </h2>
               <p>
                 {t(
                   "Commence par ce qui t’intéresse. Tu peux explorer plusieurs chemins et changer d’avis.",
-                  "Bda b dakchi lli kay3ejbek. T9der tktechef kter men tri9 w tbeddel ra2yek.",
+                  "بدا بداكشي اللي كيعجبك. تقدر تكتشف كثر من طريق وتبدل الرأي ديالك.",
                 )}
               </p>
             </div>
             <Button variant="secondary" onClick={() => setQuiz(true)}>
-              {t("Faire le point", "Nfhem chno bghit")}
+              {t("Faire le point", "نفهم شنو بغيت")}
               <ArrowRight size={16} />
             </Button>
           </section>
@@ -594,7 +597,7 @@ export function OrientationView() {
             <span>
               {t(
                 "Tu envisages la France ? Retrouve aussi ton espace de préparation des candidatures.",
-                "Katfekker f Fransa ? Chouf espace bach twejjed candidatures dyalek.",
+                "كتفكر تقرا ففرنسا؟ شوف الفضاء ديال تحضير الترشيحات.",
               )}
             </span>
             <ChevronRight size={18} />
@@ -605,17 +608,17 @@ export function OrientationView() {
                 <GitBranch size={19} />
                 <strong>
                   {compare.length}/3{" "}
-                  {t("parcours sélectionnés", "masarat mkhtarin")}
+                  {t("parcours sélectionnés", "مسارات مختارة")}
                 </strong>
                 <span>
                   {compare.length < 2
                     ? t(
                         "Choisis au moins 2 pistes",
-                        "Khtar 3la l2a9al 2 pistes",
+                        "ختار جوج مسارات على الأقل",
                       )
                     : t(
                         "3 pistes maximum · décoche pour remplacer",
-                        "3 pistes maximum · 7yed bach tbeddel",
+                        "3 مسارات كحد أقصى · حيد واحد باش تبدلو",
                       )}
                 </span>
               </div>
@@ -624,11 +627,11 @@ export function OrientationView() {
                 className="orient-yellow"
                 onClick={() => setComparing(true)}
               >
-                {t("Comparer mes pistes", "N9aren lmasarat")}
+                {t("Comparer mes pistes", "نقارن المسارات")}
                 <ArrowRight size={16} />
               </Button>
               <button
-                aria-label={t("Vider la comparaison", "7yed lmo9arana")}
+                aria-label={t("Vider la comparaison", "حيد المقارنة")}
                 onClick={() => setCompare([])}
               >
                 <X size={18} />
@@ -679,47 +682,47 @@ function OrientationQuiz({
     [
       "discover",
       "Je veux découvrir mes options",
-      "Bghit nktechef l2ikhtiyarat",
+      "بغيت نكتشف الاختيارات ديالي",
     ],
     [
       "practical",
       "J’aime apprendre par la pratique",
-      "Kanbghi nt3ellem b tatbi9",
+      "كنبغي نتعلم بالتطبيق",
     ],
     [
       "studies",
       "Je me projette dans des études approfondies",
-      "Bghit nt3emme9 f l9raya",
+      "بغيت نعمق فالقراية",
     ],
   ] as const;
   const mobility = [
-    ["undecided", "Je ne sais pas encore", "Mazal ma 3reft"],
-    ["local", "Rester près de chez moi", "Neb9a 9rib l dar"],
-    ["morocco", "Bouger au Maroc", "N9ra f chi mdina f lMaghrib"],
-    ["abroad", "Envisager l’étranger", "Nfekker f lkharej"],
+    ["undecided", "Je ne sais pas encore", "مازال ما عرفت"],
+    ["local", "Rester près de chez moi", "نبقى قريب للدار"],
+    ["morocco", "Bouger au Maroc", "نقرا فشي مدينة فالمغرب"],
+    ["abroad", "Envisager l’étranger", "نفكر فالخارج"],
   ] as const;
   const titles = [
-    t("Où en es-tu aujourd’hui ?", "Fin wselti lyoum ?"),
-    t("Qu’est-ce qui t’attire ?", "Ach kay3ejbek ?"),
-    t("Comment aimes-tu avancer ?", "Kifach katbghi t9eddem ?"),
-    t("Où imagines-tu la suite ?", "Fin katchewwar lmar7ala jaya ?"),
+    t("Où en es-tu aujourd’hui ?", "فين وصلتي اليوم؟"),
+    t("Qu’est-ce qui t’attire ?", "شنو كيعجبك؟"),
+    t("Comment aimes-tu avancer ?", "كيفاش كتبغي تتقدم؟"),
+    t("Où imagines-tu la suite ?", "فين كتفكر تدوز المرحلة الجاية؟"),
   ];
   const reasons = [
     t(
       "Cette réponse situe les parcours qui correspondent à ton moment d’études.",
-      "Had ljawab kay3awen n3erfo lmasarat lli kaynasbo lmar7ala dyalek.",
+      "هاد الجواب كيعاوننا نعرفو المسارات اللي كتناسب المرحلة ديالك.",
     ),
     t(
       "Tes centres d’intérêt donnent des pistes de départ, jamais une étiquette.",
-      "L2ihtimamat dyalek kay3tiw no9at lbidaya, ma kay7ettokch f chi tasnif.",
+      "الاهتمامات ديالك كتعطينا نقط للبداية، ما كتحطكش فشي تصنيف.",
     ),
     t(
       "Cela nous aide à proposer une prochaine étape qui te ressemble.",
-      "Hadchi kay3awen n9ter7o khotwa jaya lli katnasbek.",
+      "هادشي كيعاوننا نقترحو خطوة جاية مناسبة ليك.",
     ),
     t(
       "La mobilité change les options à vérifier, sans fermer les autres chemins.",
-      "Mobility katbeddel l2ikhtiyarat lli khas tchecki, bla ma tsedd lmasarat lokhrin.",
+      "إمكانية التنقل كتأثر على الاختيارات اللي خاصك تراجع، بلا ما تسد عليك المسارات الأخرى.",
     ),
   ];
   const finish = async () => {
@@ -738,17 +741,17 @@ function OrientationQuiz({
   };
   return (
     <Modal
-      title={t("Trouvons tes premières pistes", "Nl9aw lmasarat dyalek")}
+      title={t("Trouvons tes premières pistes", "نلقاو المسارات ديالك")}
       onClose={onClose}
     >
       <div className="orient-quiz">
         <div className="orient-quiz-progress">
           <span>
-            {t("QUESTION", "SO2AL")} 0{step + 1} / 04
+            {t("QUESTION", "السؤال")} 0{step + 1} / 04
           </span>
           <Progress
             percent={(step + 1) * 25}
-            label={t("Progression du questionnaire", "T9eddom l2as2ila")}
+            label={t("Progression du questionnaire", "التقدم فالأسئلة")}
           />
         </div>
         <h3 ref={questionHeading} tabIndex={-1}>
@@ -835,23 +838,23 @@ function OrientationQuiz({
         </div>
         <div
           className="orient-question-actions"
-          aria-label={t("Réponses sans choix", "Ajwiba bla ikhtiyar")}
+          aria-label={t("Réponses sans choix", "اختيارات أخرى للجواب")}
         >
           <button type="button" disabled={busy} onClick={advanceWithoutAnswer}>
-            {t("Je ne sais pas encore", "Mazal ma 3reft")}
+            {t("Je ne sais pas encore", "مازال ما عرفت")}
           </button>
           <button type="button" disabled={busy} onClick={advanceWithoutAnswer}>
-            {t("Je préfère ne pas répondre", "Kanfdal ma njawbech")}
+            {t("Je préfère ne pas répondre", "كنفضل ما نجاوبش")}
           </button>
           <button type="button" disabled={busy} onClick={advanceWithoutAnswer}>
-            {t("Passer", "Douz")}
+            {t("Passer", "دوز")}
           </button>
         </div>
         {saveFailed && (
           <p className="orient-inline-error" role="alert">
             {t(
               "Tes réponses n’ont pas pu être enregistrées. Elles restent ici : vérifie ta connexion puis réessaie.",
-              "L2ajwiba ma tsejloch. Ba9yin hna : chouf connexion w 3awed.",
+              "الأجوبة ما تسجلوش. باقيين هنا: شوف الاتصال وعاود.",
             )}
           </p>
         )}
@@ -859,7 +862,7 @@ function OrientationQuiz({
           {busy && (
             <>
               <LoaderCircle size={15} className="spin" />
-              {t("Enregistrement de tes réponses…", "Kantsjjlo l2ajwiba…")}
+              {t("Enregistrement de tes réponses…", "كنسجلو الأجوبة…")}
             </>
           )}
         </div>
@@ -867,7 +870,7 @@ function OrientationQuiz({
           <p className="orient-small">
             {t(
               "Les pistes seront triées par intérêts communs, puis par niveau. Ton style d’apprentissage et ta mobilité servent à préparer les actions proposées dans chaque parcours.",
-              "Pistes ghadi ytertbo 7sab l2ihtimamat lmochtaraka, w men be3d niveau. Tari9at ta3allom w mobility kay3awnouk f l2af3al dyal kol masar.",
+              "المسارات غادي يترتبو حسب الاهتمامات المشتركة، ومن بعد المستوى. طريقة التعلم وإمكانية التنقل كيعاونوك تحدد الخطوات ديال كل مسار.",
             )}
           </p>
         )}
@@ -876,7 +879,7 @@ function OrientationQuiz({
             variant="secondary"
             onClick={() => (step ? changeStep(step - 1) : onClose())}
           >
-            {t(step ? "Retour" : "Plus tard", step ? "Rje3" : "Men be3d")}
+            {t(step ? "Retour" : "Plus tard", step ? "نرجع" : "من بعد")}
           </Button>
           <Button
             className="orient-yellow"
@@ -887,7 +890,7 @@ function OrientationQuiz({
           >
             {t(
               step < 3 ? "Continuer" : "Découvrir mes pistes",
-              step < 3 ? "Kemmel" : "Nktechef lmasarat",
+              step < 3 ? "نكمل" : "نكتشف المسارات",
             )}
             <ArrowRight size={16} />
           </Button>
@@ -954,13 +957,13 @@ function RoadmapDetail({
       <div className="orient-detail-top">
         <button className="orient-back" onClick={() => go("orientation")}>
           <ArrowLeft size={16} />
-          {t("Tous les parcours", "Ga3 lmasarat")}
+          {t("Tous les parcours", "جميع المسارات")}
         </button>
         <Button variant="secondary" onClick={onSave} aria-pressed={saved}>
           <Bookmark size={16} fill={saved ? "currentColor" : "none"} />
           {t(
             saved ? "Parcours enregistré" : "Garder cette piste",
-            saved ? "Masar tsejjel" : "N7fed had lmasar",
+            saved ? "المسار تسجل" : "نحفظ هاد المسار",
           )}
         </Button>
       </div>
@@ -968,7 +971,7 @@ function RoadmapDetail({
         <p className="orient-inline-error" role="alert">
           {t(
             "Le favori n’a pas été enregistré. Vérifie ta connexion et réessaie.",
-            "Favori ma tsejjelch. Chouf connexion w 3awed.",
+            "المفضلة ما تسجلاتش. شوف الاتصال وعاود.",
           )}
         </p>
       )}
@@ -978,7 +981,7 @@ function RoadmapDetail({
         </span>
         <div>
           <span className="orient-eyebrow">
-            {t("TA CARTE D’EXPLORATION", "KHARITAT L2IKTICHAF DYALEK")}
+            {t("TA CARTE D’EXPLORATION", "خريطة الاكتشاف ديالك")}
           </span>
           <h1>{tx(road.title)}</h1>
           <p>{tx(road.summary)}</p>
@@ -990,33 +993,33 @@ function RoadmapDetail({
           <strong>
             {explored.length}/{road.steps.length}
           </strong>{" "}
-          {t("étapes explorées", "khotwat tktechfo")}
+          {t("étapes explorées", "خطوات تكتاشفو")}
         </span>
         <Progress
           percent={(explored.length / road.steps.length) * 100}
-          label={t("Étapes explorées", "Khotwat tktechfo")}
+          label={t("Étapes explorées", "خطوات تكتاشفو")}
         />
         <small>
           {t(
             "Un repère pour ta réflexion, pas une qualification.",
-            "Ghir repère bach tfekker, machi diplôme.",
+            "غير مؤشر باش تفكر، ماشي دبلوم.",
           )}
         </small>
       </div>
       <div className="orient-road-layout">
         <section
           className="orient-map"
-          aria-label={t("Carte interactive du parcours", "Kharita dyal lmasar")}
+          aria-label={t("Carte interactive du parcours", "خريطة المسار")}
         >
           <div className="orient-map-hint">
             <GitBranch size={16} />
             {t(
               "Clique sur une étape ou une voie pour l’explorer",
-              "Klik 3la chi khotwa wla tri9 bach tktechefha",
+              "ضغط على شي خطوة ولا طريق باش تكتشفها",
             )}
           </div>
           <div className="orient-map-start">
-            {t("TON POINT DE DÉPART", "NO9TAT LBIDAYA DYALEK")}
+            {t("TON POINT DE DÉPART", "نقطة البداية ديالك")}
           </div>
           <ol className="orient-nodes">
             {road.steps.map((step, index) => (
@@ -1037,7 +1040,7 @@ function RoadmapDetail({
                   <span>
                     {tx(step.title)}
                     {explored.includes(step.id) && (
-                      <small>{t("Explorée", "Tktechfat")}</small>
+                      <small>{t("Explorée", "تكتاشفات")}</small>
                     )}
                   </span>
                   <ChevronRight size={16} />
@@ -1047,7 +1050,7 @@ function RoadmapDetail({
                     <span className="orient-branch-label">
                       {t(
                         "PLUSIEURS VOIES POSSIBLES",
-                        "KAYNIN BZAF DYAL TTORO9",
+                        "كاينين بزاف ديال الطرق",
                       )}
                     </span>
                     <div>
@@ -1075,21 +1078,21 @@ function RoadmapDetail({
             </span>
             {t(
               "Une décision éclairée. Ta prochaine étape.",
-              "9arar 3la bayna. Lkhotwa jaya dyalek.",
+              "قرار على بينة. الخطوة الجاية ديالك.",
             )}
           </div>
           <div className="orient-map-legend">
             <span>
               <i />
-              {t("À explorer", "Bach tktechef")}
+              {t("À explorer", "باش تكتشف")}
             </span>
             <span>
               <i className="done" />
-              {t("Explorée", "Tktechfat")}
+              {t("Explorée", "تكتاشفات")}
             </span>
             <span>
               <i className="branch" />
-              {t("Voie possible", "Tri9 momkina")}
+              {t("Voie possible", "طريق ممكنة")}
             </span>
           </div>
         </section>
@@ -1098,12 +1101,12 @@ function RoadmapDetail({
           ref={inspector}
           tabIndex={-1}
           className="orient-inspector"
-          aria-label={t("Détail de la sélection", "Tafasil l2ikhtiyar")}
+          aria-label={t("Détail de la sélection", "تفاصيل الاختيار")}
         >
           <span className="orient-eyebrow">
             {activeStep
-              ? `${t("ÉTAPE", "KHOTWA")} ${road.steps.indexOf(activeStep) + 1} / ${road.steps.length}`
-              : t("UNE VOIE À ENVISAGER", "TRI9 MOMKINA")}
+              ? `${t("ÉTAPE", "الخطوة")} ${road.steps.indexOf(activeStep) + 1} / ${road.steps.length}`
+              : t("UNE VOIE À ENVISAGER", "طريق ممكنة")}
           </span>
           <h2>
             {activeStep
@@ -1121,7 +1124,7 @@ function RoadmapDetail({
           </p>
           {activeStep && (
             <>
-              <h3>{t("À toi de jouer", "Daba nowbtek")}</h3>
+              <h3>{t("À toi de jouer", "دابا نوبتك")}</h3>
               <ul className="orient-action-list">
                 {activeStep.actions.map((action) => (
                   <li key={action.fr}>
@@ -1145,7 +1148,7 @@ function RoadmapDetail({
                     <small>
                       {t(
                         "Consulter la source officielle",
-                        "Chouf lmasdar rrasmi",
+                        "شوف المصدر الرسمي",
                       )}
                     </small>
                   </span>
@@ -1160,21 +1163,21 @@ function RoadmapDetail({
                 <CheckCircle2 size={17} />
                 {t(
                   complete ? "Explorée · annuler" : "Marquer comme explorée",
-                  complete ? "Tktechfat · 7yed" : "3ellem belli tktechfat",
+                  complete ? "تكتاشفات · نحيد العلامة" : "نعلم بلي تكتاشفات",
                 )}
               </Button>
               {progressFailed && (
                 <p className="orient-inline-error" role="alert">
                   {t(
                     "La progression n’a pas été enregistrée. Réessaie avec le bouton ci-dessus.",
-                    "T9eddom ma tsejjelch. 3awed b bouton lli lfou9.",
+                    "التقدم ما تسجلش. عاود بالزر اللي لفوق.",
                   )}
                 </p>
               )}
               <p className="orient-small">
                 {t(
                   "Coche cette étape après avoir examiné les actions. Tu peux revenir dessus à tout moment.",
-                  "3ellem 3la had khotwa melli tchouf l2af3al. T9der t3awed trje3 liha.",
+                  "علم على هاد الخطوة ملي تشوف الإجراءات. تقدر ترجع ليها من بعد.",
                 )}
               </p>
             </>
@@ -1183,7 +1186,7 @@ function RoadmapDetail({
             <Notice>
               {t(
                 "Les voies proposées sont des alternatives. Vérifie les diplômes requis, la sélection, les coûts et les dates auprès de l’établissement visé.",
-                "Had ttoro9 ikhtiyarat mokhtalfa. T2ekked men diplômes, sélection, taman w tawarikh 3end l’établissement.",
+                "هاد الطرق اختيارات مختلفة. تأكد من الدبلومات والانتقاء والثمن والتواريخ عند المؤسسة.",
               )}
             </Notice>
           )}
@@ -1193,7 +1196,7 @@ function RoadmapDetail({
         <section>
           <h2>
             <BriefcaseBusiness size={18} />
-            {t("Des métiers à découvrir", "Khedmat bach tktechef")}
+            {t("Des métiers à découvrir", "خدمات باش تكتشف")}
           </h2>
           <ul>
             {road.careers.map((career) => (
@@ -1203,14 +1206,14 @@ function RoadmapDetail({
           <p className="orient-small">
             {t(
               "Selon la spécialisation et les qualifications obtenues.",
-              "7sab spécialité w diplômes lli khditi.",
+              "حسب التخصص والدبلومات اللي خديتي.",
             )}
           </p>
         </section>
         <section>
           <h2>
             <Lightbulb size={18} />
-            {t("Ce qui peut te plaire", "Ach y9der y3ejbek")}
+            {t("Ce qui peut te plaire", "شنو يقدر يعجبك")}
           </h2>
           <ul>
             {road.strengths.map((strength) => (
@@ -1221,7 +1224,7 @@ function RoadmapDetail({
         <section>
           <h2>
             <Compass size={18} />
-            {t("À prendre en compte", "Ach khassek t7seb lih")}
+            {t("À prendre en compte", "شنو خاصك تحسب ليه")}
           </h2>
           <ul>
             {road.watchouts.map((watchout) => (
@@ -1232,12 +1235,12 @@ function RoadmapDetail({
       </div>
       <section className="orient-personal-plan">
         <h2>
-          {t("Pour préparer ta prochaine décision", "Bach twejjed l9arar jaya")}
+          {t("Pour préparer ta prochaine décision", "باش توجد القرار الجاي")}
         </h2>
         <div>
           <span>01</span>
           <p>
-            {t("Temps et budget : ", "Lwe9t w budget : ")}
+            {t("Temps et budget : ", "الوقت والميزانية : ")}
             {tx(road.duration)} {tx(road.cost)}
           </p>
         </div>
@@ -1247,16 +1250,16 @@ function RoadmapDetail({
             {state.profile.priority === "practical"
               ? t(
                   "Ton envie de pratique : contacte un étudiant ou un professionnel et choisis une petite expérience concrète dans ce domaine.",
-                  "Bghiti tatbi9 : hder m3a talib wla professionnel w khtar tajriba sghira f had lmajal.",
+                  "بغيتي التطبيق: هضر مع طالب ولا مهني وختار تجربة صغيرة فهاد المجال.",
                 )
               : state.profile.priority === "studies"
                 ? t(
                     "Ton envie d’approfondir : compare les matières, les poursuites d’études et les prérequis de deux formations.",
-                    "Bghiti t3emme9 : 9aren matières, l9raya men be3d w chorot dyal jouj formations.",
+                    "بغيتي تعمق: قارن المواد، وإمكانية تكمل القراية، وشروط جوج تكوينات.",
                   )
                 : t(
                     "Pour mieux te connaître : essaie une activité du domaine et note ce qui te donne envie de continuer.",
-                    "Bach t3ref rassek : jerreb chi activité f had lmajal w kteb ach 3ejbek.",
+                    "باش تعرف راسك: جرب شي نشاط فهاد المجال وكتب شنو عجبك.",
                   )}
           </p>
         </div>
@@ -1266,32 +1269,32 @@ function RoadmapDetail({
             {state.profile.mobility === "abroad"
               ? t(
                   "Si tu envisages l’étranger, vérifie aussi les langues, les équivalences, les démarches et le budget total. L’espace France peut t’aider à préparer ton dossier.",
-                  "Ila katfekker f lkharej, t2ekked men loghat, équivalences, démarches w budget kamel. Espace Fransa y9der y3awnek twejjed dossier.",
+                  "إلا كتفكر فالخارج، تأكد من اللغات ومعادلة الدبلومات والإجراءات والميزانية كاملة. فضاء فرنسا يقدر يعاونك توجد الملف.",
                 )
               : state.profile.mobility === "local"
                 ? t(
                     "Pour rester près de chez toi, repère deux établissements accessibles et vérifie le trajet, l’offre exacte et les modalités de présence.",
-                    "Bach teb9a 9rib l dar, 9elleb 3la jouj établissements w t2ekked men tri9, formation w présence.",
+                    "باش تبقى قريب للدار، قلب على جوج مؤسسات وتأكد من الطريق والتكوين والحضور.",
                   )
                 : t(
                     "Avant de choisir une ville, compare le logement, le transport et les aides possibles en plus des frais de formation.",
-                    "9bel ma tkhtar mdina, 9aren sken, transport w lmos a3adat m3a frais dyal formation.",
+                    "قبل ما تختار المدينة، قارن السكن والنقل والمساعدات مع مصاريف التكوين.",
                   )}
           </p>
         </div>
       </section>
       <section className="orient-sources">
         <div>
-          <h2>{t("Vérifie à la source", "T2ekked men lmasdar")}</h2>
+          <h2>{t("Vérifie à la source", "تأكد من المصدر")}</h2>
           <p>
-            {t("Catalogue relu le", "Catalogue t3awed t9ra nhar")}{" "}
+            {t("Catalogue relu le", "آخر مراجعة للدليل نهار")}{" "}
             {new Date(ORIENTATION_REVIEWED_AT + "T12:00:00").toLocaleDateString(
               "fr-FR",
             )}
             .{" "}
             {t(
               "Vérifie l’avis de l’année concernée avant toute démarche.",
-              "T2ekked men i3lan dyal l3am lli bghiti 9bel ay démarche.",
+              "تأكد من الإعلان ديال السنة اللي باغي تقرا فيها قبل أي إجراء.",
             )}
           </p>
         </div>
@@ -1324,34 +1327,34 @@ function Comparison({
     tx = (value: BiText) => value[locale];
   const rows = [
     {
-      label: t("Ce qu’on y explore", "Ach fih"),
+      label: t("Ce qu’on y explore", "شنو فيه"),
       content: (road: OrientationRoadmap) => tx(road.summary),
     },
     {
-      label: t("Voies possibles", "Ttoro9 momkina"),
+      label: t("Voies possibles", "الطرق الممكنة"),
       content: (road: OrientationRoadmap) =>
         road.branches.map((branch) => tx(branch.title)).join(" · "),
     },
     {
-      label: t("Durée indicative", "Lmodda ta9riban"),
+      label: t("Durée indicative", "المدة تقريبا"),
       content: (road: OrientationRoadmap) => tx(road.duration),
     },
     {
-      label: t("Budget à prévoir", "Budget lli khassek"),
+      label: t("Budget à prévoir", "الميزانية اللي خاصك"),
       content: (road: OrientationRoadmap) => tx(road.cost),
     },
     {
-      label: t("Métiers à découvrir", "Khedmat bach tktechef"),
+      label: t("Métiers à découvrir", "خدمات باش تكتشف"),
       content: (road: OrientationRoadmap) => road.careers.map(tx).join(" · "),
     },
     {
-      label: t("Points d’attention", "Ach khassek t7seb lih"),
+      label: t("Points d’attention", "شنو خاصك تحسب ليه"),
       content: (road: OrientationRoadmap) => road.watchouts.map(tx).join(" "),
     },
   ];
   return (
     <Modal
-      title={t("Comparer mes pistes", "N9aren lmasarat")}
+      title={t("Comparer mes pistes", "نقارن المسارات")}
       onClose={onClose}
       wide
     >
@@ -1359,14 +1362,14 @@ function Comparison({
         <p>
           {t(
             "Compare les compromis. Le bon parcours dépend de ce qui compte pour toi et des conditions d’accès réelles.",
-            "9aren l2ikhtiyarat. Lmasar lmnasb kayt3elle9 b dakchi lli mohim 3endek w chorot l9obol.",
+            "قارن الاختيارات. المسار المناسب كيتعلق بداكشي اللي مهم عندك وبشروط القبول.",
           )}
         </p>
         <div className="orient-table-scroll">
           <table>
             <thead>
               <tr>
-                <th scope="col">{t("Mes critères", "Ma3ayir dyali")}</th>
+                <th scope="col">{t("Mes critères", "المعايير ديالي")}</th>
                 {roads.map((road) => (
                   <th scope="col" key={road.id}>
                     <RoadIcon road={road} />
@@ -1385,7 +1388,7 @@ function Comparison({
                 </tr>
               ))}
               <tr>
-                <th scope="row">{t("Prochaine étape", "Lkhotwa jaya")}</th>
+                <th scope="row">{t("Prochaine étape", "الخطوة الجاية")}</th>
                 {roads.map((road) => (
                   <td key={road.id}>
                     <Button
@@ -1395,7 +1398,7 @@ function Comparison({
                         go("orientation", road.id);
                       }}
                     >
-                      {t("Explorer", "Nktechef")}
+                      {t("Explorer", "نكتشف")}
                       <ArrowRight size={14} />
                     </Button>
                   </td>
@@ -1407,7 +1410,7 @@ function Comparison({
         <p className="orient-small">
           {t(
             "Les durées sont des repères. Consulte les liens officiels de chaque carte pour les modalités exactes.",
-            "Lmodda ghir repère. Chouf lmasadir rrasmiya f kol kharita bach t3ref tafasil.",
+            "المدة غير مؤشر. شوف المصادر الرسمية فكل خريطة باش تعرف التفاصيل.",
           )}
         </p>
       </div>

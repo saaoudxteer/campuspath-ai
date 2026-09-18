@@ -7,77 +7,77 @@ export function translateSystem(text: string): string {
   const patterns: [RegExp, (...groups: string[]) => string][] = [
     [
       /^Ajouter le relevé du semestre (\d+)$/,
-      (n) => `Zid relevé dyal semestre ${n}`,
+      (n) => `زيد كشف النقط ديال السداسي ${n}`,
     ],
     [
       /^(.*?) : ce semestre n’a pas de relevé associé\. Sans cette pièce, le parcours reste incomplet\.$/,
       (year) =>
-        `${year} : had semestre ma 3endouch relevé. Bla had document, masar kayb9a na9s.`,
+        `${year} : هاد السداسي ما عندوش كشف النقط. بلا هاد الوثيقة، المسار كيبقى ناقص.`,
     ],
     [
       /^Période (.*?) sans explication\.$/,
-      (years) => `Lmodda ${years} bla tawdi7.`,
+      (years) => `المدة ${years} بلا توضيح.`,
     ],
     [
       /^(.*?) chevauche (.*?)\. Documentez les études simultanées ou corrigez les dates\.$/,
       (a, b) =>
-        `${a} kaytla9a m3a ${b}. Wde7 wach 9riti bjouj f nafs lwa9t wlla s7e7 dates.`,
+        `${a} كيتداخل مع ${b}. وضح واش قريتي بجوج فنفس الوقت ولا صحح التواريخ.`,
     ],
     [
       /^Deux années au niveau (.*?) : ajoutez une explication\.$/,
-      (level) => `Jouj snin f niveau ${level} : zid tawdi7.`,
+      (level) => `جوج سنين فالمستوى ${level} : زيد توضيح.`,
     ],
-    [/^(.*?) à confirmer$/, (label) => `${translateSystem(label)} khas ta2kid`],
+    [/^(.*?) à confirmer$/, (label) => `${translateSystem(label)} خاص تأكيد`],
     [
       /^(.*?) : source non admissible$/,
-      (label) => `${translateSystem(label)} : source ma ma9boulach`,
+      (label) => `${translateSystem(label)} : مصدر ما مقبولش`,
     ],
     [
       /^(.*?) : adéquation favorable$/,
-      (label) => `${translateSystem(label)} : tnassob mzyan`,
+      (label) => `${translateSystem(label)} : توافق مزيان`,
     ],
-    [/^Vérifier : (.*?)$/, (label) => `Raje3 : ${translateSystem(label)}`],
+    [/^Vérifier : (.*?)$/, (label) => `راجع : ${translateSystem(label)}`],
     [
       /^Ajouter votre (.*?)$/,
       (label) =>
-        `Zid ${({ "pièce d’identité": "document lhowiya", "photo d’identité": "tswira dyal ta3rif", diplôme: "diplôme", "justificatif de langue": "document dyal logha" } as Record<string, string>)[label] ?? label}`,
+        `زيد ${({ "pièce d’identité": "وثيقة الهوية", "photo d’identité": "صورة التعريف", diplôme: "الدبلوم", "justificatif de langue": "شهادة اللغة" } as Record<string, string>)[label] ?? label}`,
     ],
-    [/^Échéance : (.*?)$/, (program) => `Akher ajal : ${program}`],
+    [/^Échéance : (.*?)$/, (program) => `آخر أجل : ${program}`],
     [
       /^Information à compléter : (.*?)$/,
       (field) =>
-        `Ma3loma khas tk e mmel : ${field}`.replace("tk e mmel", "tkemmel"),
+        `معلومة خاصها تتكمل : ${field}`,
     ],
     [
       /^(.*?) : pièce absente ou non vérifiée$/,
       (label) =>
-        `${translateSystem(label)} : document na9s wlla mazal ma traje3ch`,
+        `${translateSystem(label)} : وثيقة ناقصة ولا مازال ما تراجعاتش`,
     ],
     [
       /^(.*?) : pièce revue$/,
-      (label) => `${translateSystem(label)} : document traje3`,
+      (label) => `${translateSystem(label)} : وثيقة تراجعات`,
     ],
     [
       /^(.*?) : motivation non validée$/,
-      (program) => `${program} : motivation mazal ma t2ekkdatch`,
+      (program) => `${program} : رسالة الدوافع مازال ما تأكداتش`,
     ],
     [
       /^Pouvez-vous confirmer : (.*?) pour mon profil \?$/,
-      (label) => `Wach t9dro t2ekkdo ${translateSystem(label)} l profil dyali?`,
+      (label) => `واش تقدروا تأكدوا ${translateSystem(label)} للملف ديالي؟`,
     ],
     [
       /^(.*?) : information critique non résolue\. L’absence de réponse peut modifier votre stratégie\.$/,
       (label) =>
-        `${translateSystem(label)} : ma3loma asasiya mazal ma t2ekkdatch. Bla jawab, stratégie dyalek momkin tbeddel.`,
+        `${translateSystem(label)} : معلومة أساسية مازال ما تأكداتش. بلا جواب، الخطة ديالك ممكن تبدل.`,
     ],
     [
       /^Doublon possible : (.*?), semestre (\d+)\.$/,
       (subject, semester) =>
-        `Momkin note msejjla jouj mrat : ${subject}, semestre ${semester}.`,
+        `ممكن النقطة مسجلة جوج مرات : ${subject}، السداسي ${semester}.`,
     ],
     [
       /^Limite configurée : (\d+) choix\.$/,
-      (n) => `L7edd lli msejjel howa ${n} choix.`,
+      (n) => `الحد المسجل هو ${n} اختيارات.`,
     ],
   ];
   for (const [pattern, format] of patterns) {

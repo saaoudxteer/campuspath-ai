@@ -1,0 +1,6187 @@
+[
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Bienvenue",
+    "ary": "Mer7ba",
+    "start": 489,
+    "end": 497
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Bonne cohérence",
+    "ary": "Tnassob mzyan",
+    "start": 849,
+    "end": 864
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "À explorer",
+    "ary": "Khas tktechef",
+    "start": 928,
+    "end": 943
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Possible avec remise à niveau",
+    "ary": "Momkin m3a ta2hil",
+    "start": 1033,
+    "end": 1052
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Point bloquant à vérifier",
+    "ary": "Khas t3awed tchecki",
+    "start": 1143,
+    "end": 1164
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "À documenter",
+    "ary": "Khas t3ammer lma3lomat",
+    "start": 1198,
+    "end": 1222
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "CHAQUE ÉTAPE COMPTE",
+    "ary": "KOL KHOTWA KAT7SEB",
+    "start": 1366,
+    "end": 1386
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Votre avenir prend forme,",
+    "ary": "Most9belek kaybda yban,",
+    "start": 1463,
+    "end": 1488
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Un dossier solide commence par une prochaine étape claire.",
+    "ary": "Dossier mzyan kaybda b khotwa jaya wad7a.",
+    "start": 1678,
+    "end": 1721
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Voir mon dossier",
+    "ary": "Chouf dossier dyali",
+    "start": 1864,
+    "end": 1885
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "VOTRE CAP",
+    "ary": "LWIJHA DYALEK",
+    "start": 2092,
+    "end": 2107
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Du Maroc à la France.",
+    "ary": "Mn lmaghrib l Fransa.",
+    "start": 2171,
+    "end": 2194
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Un parcours qui vous ressemble.",
+    "ary": "Masar lli ynasbek.",
+    "start": 2266,
+    "end": 2286
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Votre projet reste à explorer",
+    "ary": "Mazal n9ellbo 3la projet dyalek",
+    "start": 2436,
+    "end": 2469
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Rentrée à confirmer",
+    "ary": "Rentrée khas ta2kid",
+    "start": 2553,
+    "end": 2574
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Mon profil",
+    "ary": "Profil dyali",
+    "start": 2740,
+    "end": 2754
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Mes formations",
+    "ary": "Les formations",
+    "start": 2881,
+    "end": 2897
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Mon dossier",
+    "ary": "Dossier dyali",
+    "start": 3001,
+    "end": 3016
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Mon départ",
+    "ary": "Safar dyali",
+    "start": 3119,
+    "end": 3132
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Explorer mes parcours",
+    "ary": "Nchouf masarat dyali",
+    "start": 3272,
+    "end": 3294
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Votre dossier",
+    "ary": "Dossier dyalek",
+    "start": 3465,
+    "end": 3481
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Complétude",
+    "ary": "Ch7al kammelti",
+    "start": 3773,
+    "end": 3789
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Une base pour avancer",
+    "ary": "Bidaya bach tzid l9ddam",
+    "start": 4024,
+    "end": 4049
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Renseigné ne signifie pas encore vérifié.",
+    "ary": "M3emmer ma kay3nich m2ekked.",
+    "start": 4175,
+    "end": 4205
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Vérifier mon dossier",
+    "ary": "Nraja3 dossier dyali",
+    "start": 4327,
+    "end": 4349
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Documents vérifiés",
+    "ary": "Lwra9 lm2ekkda",
+    "start": 4833,
+    "end": 4849
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Moyenne pondérée",
+    "ary": "Moyenne pondérée",
+    "start": 5286,
+    "end": 5304
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Formations sélectionnées",
+    "ary": "Formations lli khtariti",
+    "start": 5749,
+    "end": 5774
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Vos prochaines étapes",
+    "ary": "Ach khassek dir daba",
+    "start": 5928,
+    "end": 5950
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Concentrez-vous sur ce qui fait avancer votre candidature.",
+    "ary": "Rekkez 3la lli ghadi y9ddem candidature dyalek.",
+    "start": 6059,
+    "end": 6108
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Toutes mes priorités",
+    "ary": "Ga3 l2awlawiyat",
+    "start": 6228,
+    "end": 6245
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Des formations à explorer",
+    "ary": "Formations bach t9elleb",
+    "start": 7066,
+    "end": 7091
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Adéquation du profil, sans probabilité d’admission.",
+    "ary": "Tnassob m3a profil, machi chance dyal l9oboul.",
+    "start": 7205,
+    "end": 7253
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Tout voir",
+    "ary": "Chouf kolchi",
+    "start": 7381,
+    "end": 7395
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Formation fictive",
+    "ary": "Formation tajribiya",
+    "start": 8125,
+    "end": 8146
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Ouvrez la fiche pour comprendre les prérequis.",
+    "ary": "7ell fiche bach tfhem chorot.",
+    "start": 8437,
+    "end": 8468
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Le catalogue vérifié sera connecté ici.",
+    "ary": "Catalogue lm2ekked ghadi yban hna.",
+    "start": 8933,
+    "end": 8969
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Votre progression",
+    "ary": "Ta9addom dyalek",
+    "start": 9132,
+    "end": 9149
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "fr": "Compléter mon profil",
+    "ary": "Nkemmel profil dyali",
+    "start": 9858,
+    "end": 9880
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Enregistrement en cours…",
+    "ary": "Kantsjjlo taghyirat…",
+    "start": 4917,
+    "end": 4939
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ce parcours n’existe pas",
+    "ary": "Had lmasar ma kaynch",
+    "start": 5300,
+    "end": 5322
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Retrouvez toutes les pistes dans le catalogue.",
+    "ary": "Rje3 l liste bach tchouf lmasarat.",
+    "start": 5431,
+    "end": 5467
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Voir les parcours",
+    "ary": "Chouf lmasarat",
+    "start": 5602,
+    "end": 5618
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "CAMPUSPATH / ORIENTATION AU MAROC",
+    "ary": "CAMPUSPATH / TAWJIH F LMAGHRIB",
+    "start": 5936,
+    "end": 5968
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comprendre tes options.",
+    "ary": "Fhem l2ikhtiyarat.",
+    "start": 6076,
+    "end": 6096
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Choisir ta voie.",
+    "ary": "Khtar tri9ek.",
+    "start": 6161,
+    "end": 6176
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Des études aux métiers, explore les possibles au Maroc. Une carte, des étapes concrètes et la liberté de choisir ta voie.",
+    "ary": "Men l9raya l lkhedma, ktechef l2ikhtiyarat f lMaghrib. Kharita w khotwat wad7in bach tkhtar tri9ek.",
+    "start": 6398,
+    "end": 6499
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Trouver mes premières pistes",
+    "ary": "Nl9a lmasarat lli y3ejbouni",
+    "start": 6806,
+    "end": 6835
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "4 questions · sans bonne ou mauvaise réponse",
+    "ary": "4 as2ila · ma kayn la s7i7 la ghalet",
+    "start": 7060,
+    "end": 7098
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Par où commencer",
+    "ary": "Men fin nebda",
+    "start": 7291,
+    "end": 7306
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Par où commencer ?",
+    "ary": "Men fin nebda ?",
+    "start": 7366,
+    "end": 7383
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Choisis ce qui t’est utile aujourd’hui.",
+    "ary": "Khtar ach y3awnek lyoum.",
+    "start": 7508,
+    "end": 7534
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Faire le point sur mes envies",
+    "ary": "Nfhem ach bghit",
+    "start": 7797,
+    "end": 7814
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Explorer les parcours",
+    "ary": "Nktechef lmasarat",
+    "start": 8305,
+    "end": 8324
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Reprendre mes favoris",
+    "ary": "Nrje3 l favoris dyali",
+    "start": 8817,
+    "end": 8840
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "LE CHAMP DES POSSIBLES",
+    "ary": "L2IKHTIYARAT 9EDDAMEK",
+    "start": 9305,
+    "end": 9328
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Quel chemin veux-tu explorer ?",
+    "ary": "Achmen tri9 bghiti tktechef ?",
+    "start": 9491,
+    "end": 9522
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "parcours",
+    "ary": "masarat",
+    "start": 9699,
+    "end": 9708
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Afficher les parcours",
+    "ary": "Chouf lmasarat",
+    "start": 9887,
+    "end": 9903
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tous les parcours",
+    "ary": "Ga3 lmasarat",
+    "start": 10090,
+    "end": 10104
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Mes pistes suggérées",
+    "ary": "Pistes mo9tara7a",
+    "start": 10478,
+    "end": 10496
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Mes favoris",
+    "ary": "Lfavoris dyali",
+    "start": 10730,
+    "end": 10746
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Des points de départ, à explorer librement",
+    "ary": "No9at lbidaya, ktechefhom b 7orriya",
+    "start": 11140,
+    "end": 11177
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ces pistes partagent tes centres d’intérêt. Elles sont classées par nombre d’intérêts communs, puis par niveau d’exploration. Ce n’est ni un test d’aptitude ni une décision d’admission.",
+    "ary": "Had pistes kaytchabho m3a l2ihtimamat dyalek. Tartib 7sab l2ihtimamat lmochtaraka, w men be3d niveau. Machi test dyal l9odrat w la 9arar dyal l9obol.",
+    "start": 11509,
+    "end": 11660
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Modifier mes réponses",
+    "ary": "Nbeddel l2ajwiba",
+    "start": 11813,
+    "end": 11831
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Un domaine, un métier…",
+    "ary": "Majal, chi khedma…",
+    "start": 12270,
+    "end": 12290
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Rechercher un parcours",
+    "ary": "9elleb 3la masar",
+    "start": 12371,
+    "end": 12389
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Effacer la recherche",
+    "ary": "Mse7 lba7t",
+    "start": 12572,
+    "end": 12584
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Niveau d’exploration",
+    "ary": "Niveau bach tktechef",
+    "start": 12981,
+    "end": 13003
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tous les niveaux",
+    "ary": "Ga3 niveaux",
+    "start": 13106,
+    "end": 13119
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Domaines",
+    "ary": "Lmajalat",
+    "start": 13530,
+    "end": 13540
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "MÉTIERS À DÉCOUVRIR",
+    "ary": "KHEDMAT BACH TKTECHEF",
+    "start": 16048,
+    "end": 16071
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "étapes explorées",
+    "ary": "khotwat tktechfo",
+    "start": 17624,
+    "end": 17642
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "étapes à explorer",
+    "ary": "khotwat bach tktechef",
+    "start": 17723,
+    "end": 17746
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comparer : ",
+    "ary": "9aren : ",
+    "start": 18425,
+    "end": 18435
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comparer",
+    "ary": "9aren",
+    "start": 18554,
+    "end": 18561
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Non enregistré. Vérifie ta connexion et réessaie avec le bouton Garder.",
+    "ary": "Ma tsejjelch. Chouf connexion w 3awed b bouton N7fed.",
+    "start": 18910,
+    "end": 18965
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Premier résultat par intérêts communs",
+    "ary": "Awal resultat 7sab l2ihtimamat",
+    "start": 19542,
+    "end": 19574
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Voir tous les parcours",
+    "ary": "Chouf ga3 lmasarat",
+    "start": 20812,
+    "end": 20832
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Les niveaux servent à explorer. Les conditions d’accès dépendent de chaque formation. Catalogue relu le",
+    "ary": "Niveaux ghir bach tktechef. Chorot l9obol katbeddel 7sab formation. Catalogue t3awed t9ra nhar",
+    "start": 21117,
+    "end": 21213
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tu n’as pas encore de projet précis ?",
+    "ary": "Mazal ma 3endekch projet wad7 ?",
+    "start": 21696,
+    "end": 21729
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Commence par ce qui t’intéresse. Tu peux explorer plusieurs chemins et changer d’avis.",
+    "ary": "Bda b dakchi lli kay3ejbek. T9der tktechef kter men tri9 w tbeddel ra2yek.",
+    "start": 21934,
+    "end": 22010
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Faire le point",
+    "ary": "Nfhem chno bghit",
+    "start": 22175,
+    "end": 22193
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tu envisages la France ? Retrouve aussi ton espace de préparation des candidatures.",
+    "ary": "Katfekker f Fransa ? Chouf espace bach twejjed candidatures dyalek.",
+    "start": 22555,
+    "end": 22624
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "parcours sélectionnés",
+    "ary": "masarat mkhtarin",
+    "start": 22979,
+    "end": 22997
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Choisis au moins 2 pistes",
+    "ary": "Khtar 3la l2a9al 2 pistes",
+    "start": 23189,
+    "end": 23216
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "3 pistes maximum · décoche pour remplacer",
+    "ary": "3 pistes maximum · 7yed bach tbeddel",
+    "start": 23360,
+    "end": 23398
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comparer mes pistes",
+    "ary": "N9aren lmasarat",
+    "start": 23689,
+    "end": 23706
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Vider la comparaison",
+    "ary": "7yed lmo9arana",
+    "start": 23850,
+    "end": 23866
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Où en es-tu aujourd’hui ?",
+    "ary": "Fin wselti lyoum ?",
+    "start": 25800,
+    "end": 25820
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Qu’est-ce qui t’attire ?",
+    "ary": "Ach kay3ejbek ?",
+    "start": 25857,
+    "end": 25874
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comment aimes-tu avancer ?",
+    "ary": "Kifach katbghi t9eddem ?",
+    "start": 25913,
+    "end": 25939
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Où imagines-tu la suite ?",
+    "ary": "Fin katchewwar lmar7ala jaya ?",
+    "start": 25977,
+    "end": 26009
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Cette réponse situe les parcours qui correspondent à ton moment d’études.",
+    "ary": "Had ljawab kay3awen n3erfo lmasarat lli kaynasbo lmar7ala dyalek.",
+    "start": 26133,
+    "end": 26200
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tes centres d’intérêt donnent des pistes de départ, jamais une étiquette.",
+    "ary": "L2ihtimamat dyalek kay3tiw no9at lbidaya, ma kay7ettokch f chi tasnif.",
+    "start": 26305,
+    "end": 26377
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Cela nous aide à proposer une prochaine étape qui te ressemble.",
+    "ary": "Hadchi kay3awen n9ter7o khotwa jaya lli katnasbek.",
+    "start": 26472,
+    "end": 26524
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "La mobilité change les options à vérifier, sans fermer les autres chemins.",
+    "ary": "Mobility katbeddel l2ikhtiyarat lli khas tchecki, bla ma tsedd lmasarat lokhrin.",
+    "start": 26630,
+    "end": 26712
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Trouvons tes premières pistes",
+    "ary": "Nl9aw lmasarat dyalek",
+    "start": 27177,
+    "end": 27200
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "QUESTION",
+    "ary": "SO2AL",
+    "start": 27360,
+    "end": 27367
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Progression du questionnaire",
+    "ary": "T9eddom l2as2ila",
+    "start": 27516,
+    "end": 27534
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Réponses sans choix",
+    "ary": "Ajwiba bla ikhtiyar",
+    "start": 30386,
+    "end": 30407
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Je ne sais pas encore",
+    "ary": "Mazal ma 3reft",
+    "start": 30540,
+    "end": 30556
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Je préfère ne pas répondre",
+    "ary": "Kanfdal ma njawbech",
+    "start": 30704,
+    "end": 30725
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Passer",
+    "ary": "Douz",
+    "start": 30853,
+    "end": 30859
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tes réponses n’ont pas pu être enregistrées. Elles restent ici : vérifie ta connexion puis réessaie.",
+    "ary": "L2ajwiba ma tsejloch. Ba9yin hna : chouf connexion w 3awed.",
+    "start": 31129,
+    "end": 31190
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Enregistrement de tes réponses…",
+    "ary": "Kantsjjlo l2ajwiba…",
+    "start": 31438,
+    "end": 31459
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Les pistes seront triées par intérêts communs, puis par niveau. Ton style d’apprentissage et ta mobilité servent à préparer les actions proposées dans chaque parcours.",
+    "ary": "Pistes ghadi ytertbo 7sab l2ihtimamat lmochtaraka, w men be3d niveau. Tari9at ta3allom w mobility kay3awnouk f l2af3al dyal kol masar.",
+    "start": 31785,
+    "end": 31921
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Tous les parcours",
+    "ary": "Ga3 lmasarat",
+    "start": 34592,
+    "end": 34606
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Le favori n’a pas été enregistré. Vérifie ta connexion et réessaie.",
+    "ary": "Favori ma tsejjelch. Chouf connexion w 3awed.",
+    "start": 35144,
+    "end": 35191
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "TA CARTE D’EXPLORATION",
+    "ary": "KHARITAT L2IKTICHAF DYALEK",
+    "start": 35504,
+    "end": 35532
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "étapes explorées",
+    "ary": "khotwat tktechfo",
+    "start": 35880,
+    "end": 35898
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Étapes explorées",
+    "ary": "Khotwat tktechfo",
+    "start": 36038,
+    "end": 36056
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Un repère pour ta réflexion, pas une qualification.",
+    "ary": "Ghir repère bach tfekker, machi diplôme.",
+    "start": 36179,
+    "end": 36221
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Carte interactive du parcours",
+    "ary": "Kharita dyal lmasar",
+    "start": 36416,
+    "end": 36437
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Clique sur une étape ou une voie pour l’explorer",
+    "ary": "Klik 3la chi khotwa wla tri9 bach tktechefha",
+    "start": 36626,
+    "end": 36672
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "TON POINT DE DÉPART",
+    "ary": "NO9TAT LBIDAYA DYALEK",
+    "start": 36789,
+    "end": 36812
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Explorée",
+    "ary": "Tktechfat",
+    "start": 37707,
+    "end": 37718
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "PLUSIEURS VOIES POSSIBLES",
+    "ary": "KAYNIN BZAF DYAL TTORO9",
+    "start": 38097,
+    "end": 38122
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Une décision éclairée. Ta prochaine étape.",
+    "ary": "9arar 3la bayna. Lkhotwa jaya dyalek.",
+    "start": 39109,
+    "end": 39148
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "À explorer",
+    "ary": "Bach tktechef",
+    "start": 39298,
+    "end": 39313
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Explorée",
+    "ary": "Tktechfat",
+    "start": 39421,
+    "end": 39432
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Voie possible",
+    "ary": "Tri9 momkina",
+    "start": 39547,
+    "end": 39561
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Détail de la sélection",
+    "ary": "Tafasil l2ikhtiyar",
+    "start": 39811,
+    "end": 39831
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "ÉTAPE",
+    "ary": "KHOTWA",
+    "start": 39942,
+    "end": 39950
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "UNE VOIE À ENVISAGER",
+    "ary": "TRI9 MOMKINA",
+    "start": 40057,
+    "end": 40071
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "À toi de jouer",
+    "ary": "Daba nowbtek",
+    "start": 40541,
+    "end": 40555
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Consulter la source officielle",
+    "ary": "Chouf lmasdar rrasmi",
+    "start": 41409,
+    "end": 41431
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "La progression n’a pas été enregistrée. Réessaie avec le bouton ci-dessus.",
+    "ary": "T9eddom ma tsejjelch. 3awed b bouton lli lfou9.",
+    "start": 42287,
+    "end": 42336
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Coche cette étape après avoir examiné les actions. Tu peux revenir dessus à tout moment.",
+    "ary": "3ellem 3la had khotwa melli tchouf l2af3al. T9der t3awed trje3 liha.",
+    "start": 42588,
+    "end": 42658
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Les voies proposées sont des alternatives. Vérifie les diplômes requis, la sélection, les coûts et les dates auprès de l’établissement visé.",
+    "ary": "Had ttoro9 ikhtiyarat mokhtalfa. T2ekked men diplômes, sélection, taman w tawarikh 3end l’établissement.",
+    "start": 42971,
+    "end": 43077
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Des métiers à découvrir",
+    "ary": "Khedmat bach tktechef",
+    "start": 43317,
+    "end": 43340
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Selon la spécialisation et les qualifications obtenues.",
+    "ary": "7sab spécialité w diplômes lli khditi.",
+    "start": 43644,
+    "end": 43684
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ce qui peut te plaire",
+    "ary": "Ach y9der y3ejbek",
+    "start": 43844,
+    "end": 43863
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "À prendre en compte",
+    "ary": "Ach khassek t7seb lih",
+    "start": 44157,
+    "end": 44180
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Pour préparer ta prochaine décision",
+    "ary": "Bach twejjed l9arar jaya",
+    "start": 44496,
+    "end": 44522
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Temps et budget : ",
+    "ary": "Lwe9t w budget : ",
+    "start": 44630,
+    "end": 44649
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ton envie de pratique : contacte un étudiant ou un professionnel et choisis une petite expérience concrète dans ce domaine.",
+    "ary": "Bghiti tatbi9 : hder m3a talib wla professionnel w khtar tajriba sghira f had lmajal.",
+    "start": 45018,
+    "end": 45105
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ton envie d’approfondir : compare les matières, les poursuites d’études et les prérequis de deux formations.",
+    "ary": "Bghiti t3emme9 : 9aren matières, l9raya men be3d w chorot dyal jouj formations.",
+    "start": 45351,
+    "end": 45432
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Pour mieux te connaître : essaie une activité du domaine et note ce qui te donne envie de continuer.",
+    "ary": "Bach t3ref rassek : jerreb chi activité f had lmajal w kteb ach 3ejbek.",
+    "start": 45619,
+    "end": 45692
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Si tu envisages l’étranger, vérifie aussi les langues, les équivalences, les démarches et le budget total. L’espace France peut t’aider à préparer ton dossier.",
+    "ary": "Ila katfekker f lkharej, t2ekked men loghat, équivalences, démarches w budget kamel. Espace Fransa y9der y3awnek twejjed dossier.",
+    "start": 46066,
+    "end": 46197
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Pour rester près de chez toi, repère deux établissements accessibles et vérifie le trajet, l’offre exacte et les modalités de présence.",
+    "ary": "Bach teb9a 9rib l dar, 9elleb 3la jouj établissements w t2ekked men tri9, formation w présence.",
+    "start": 46468,
+    "end": 46565
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Avant de choisir une ville, compare le logement, le transport et les aides possibles en plus des frais de formation.",
+    "ary": "9bel ma tkhtar mdina, 9aren sken, transport w lmos a3adat m3a frais dyal formation.",
+    "start": 46768,
+    "end": 46853
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Vérifie à la source",
+    "ary": "T2ekked men lmasdar",
+    "start": 47020,
+    "end": 47041
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Catalogue relu le",
+    "ary": "Catalogue t3awed t9ra nhar",
+    "start": 47099,
+    "end": 47127
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Vérifie l’avis de l’année concernée avant toute démarche.",
+    "ary": "T2ekked men i3lan dyal l3am lli bghiti 9bel ay démarche.",
+    "start": 47378,
+    "end": 47436
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Ce qu’on y explore",
+    "ary": "Ach fih",
+    "start": 48097,
+    "end": 48106
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Voies possibles",
+    "ary": "Ttoro9 momkina",
+    "start": 48219,
+    "end": 48235
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Durée indicative",
+    "ary": "Lmodda ta9riban",
+    "start": 48400,
+    "end": 48417
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Budget à prévoir",
+    "ary": "Budget lli khassek",
+    "start": 48532,
+    "end": 48552
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Métiers à découvrir",
+    "ary": "Khedmat bach tktechef",
+    "start": 48666,
+    "end": 48689
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Points d’attention",
+    "ary": "Ach khassek t7seb lih",
+    "start": 48821,
+    "end": 48844
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Comparer mes pistes",
+    "ary": "N9aren lmasarat",
+    "start": 48998,
+    "end": 49015
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Compare les compromis. Le bon parcours dépend de ce qui compte pour toi et des conditions d’accès réelles.",
+    "ary": "9aren l2ikhtiyarat. Lmasar lmnasb kayt3elle9 b dakchi lli mohim 3endek w chorot l9obol.",
+    "start": 49261,
+    "end": 49350
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Mes critères",
+    "ary": "Ma3ayir dyali",
+    "start": 49532,
+    "end": 49547
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Prochaine étape",
+    "ary": "Lkhotwa jaya",
+    "start": 50205,
+    "end": 50219
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Explorer",
+    "ary": "Nktechef",
+    "start": 50583,
+    "end": 50593
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "fr": "Les durées sont des repères. Consulte les liens officiels de chaque carte pour les modalités exactes.",
+    "ary": "Lmodda ghir repère. Chouf lmasadir rrasmiya f kol kharita bach t3ref tafasil.",
+    "start": 50972,
+    "end": 51051
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "LE POINT DE DÉPART",
+    "ary": "L BIDAYa",
+    "start": 1227,
+    "end": 1237
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Un profil qui raconte votre parcours.",
+    "ary": "Profil kay7ki masar dyalek.",
+    "start": 1319,
+    "end": 1348
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vos informations restent liées à leurs justificatifs. Vous validez chaque changement.",
+    "ary": "Ma3lomat dyalek katb9a merbouta b dalil. Nta lli kat2ekked taghyirat.",
+    "start": 1494,
+    "end": 1565
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Votre prénom",
+    "ary": "Smiya",
+    "start": 1803,
+    "end": 1810
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Situation à compléter",
+    "ary": "Khas t3emmer situation",
+    "start": 1942,
+    "end": 1966
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Profil renseigné",
+    "ary": "Profil m3emmer",
+    "start": 2096,
+    "end": 2112
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vos informations personnelles",
+    "ary": "Ma3lomat dyalek",
+    "start": 3100,
+    "end": 3117
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Une modification nécessite une nouvelle vérification.",
+    "ary": "Ila beddeltiha, khas moraja3a jdida.",
+    "start": 3805,
+    "end": 3843
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "À préciser",
+    "ary": "Khas tawdi7",
+    "start": 4387,
+    "end": 4400
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Le projet qui vous anime",
+    "ary": "Projet lli kay7emsek",
+    "start": 5984,
+    "end": 6006
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Quel métier ou domaine vous intéresse ?",
+    "ary": "Ach men métier wlla domaine kay3ejbek?",
+    "start": 6162,
+    "end": 6202
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vous pouvez aussi indiquer : je ne sais pas encore.",
+    "ary": "T9der tgoul : mazal ma 3reftch.",
+    "start": 6568,
+    "end": 6601
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Matières et centres d’intérêt",
+    "ary": "Lmawad w domaines lli kay3ejbok",
+    "start": 6848,
+    "end": 6881
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Séparez les éléments par une virgule.",
+    "ary": "Ferre9 binathom b virgule.",
+    "start": 7020,
+    "end": 7048
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Villes acceptables",
+    "ary": "Lmdoun lli ynasbok",
+    "start": 7587,
+    "end": 7607
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Budget annuel disponible (€)",
+    "ary": "Budget dyal l3am (€)",
+    "start": 8174,
+    "end": 8196
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Études et vie quotidienne. Les comparaisons de frais restent partielles.",
+    "ary": "9raya w lma3icha. Mou9arana dyal frais mazal na9sa.",
+    "start": 8370,
+    "end": 8423
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Votre façon d’apprendre",
+    "ary": "Kifach katfeddel t9ra",
+    "start": 9174,
+    "end": 9197
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Pratique et projets",
+    "ary": "Tatbi9 w projets",
+    "start": 9667,
+    "end": 9685
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Théorie et recherche",
+    "ary": "Théorie w recherche",
+    "start": 9817,
+    "end": 9838
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Un équilibre des deux",
+    "ary": "Tawazon binathom",
+    "start": 9973,
+    "end": 9991
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Les modifications sont enregistrées après validation.",
+    "ary": "Taghyirat katsajjel mlli kat2ekked.",
+    "start": 10313,
+    "end": 10350
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Enregistrer mon profil",
+    "ary": "Nsejjel profil dyali",
+    "start": 10525,
+    "end": 10547
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Votre base d’expériences",
+    "ary": "Tajarob dyalek",
+    "start": 10757,
+    "end": 10773
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Projets, stages, emplois, compétences, certifications et activités.",
+    "ary": "Projets, stages, khdma, compétences, certifications w activités.",
+    "start": 10903,
+    "end": 10969
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter",
+    "ary": "Zid",
+    "start": 11131,
+    "end": 11136
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Chaque parcours commence quelque part.",
+    "ary": "Kol masar 3endo bidaya.",
+    "start": 11349,
+    "end": 11374
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajoutez vos projets ou déclarez simplement ne pas avoir encore d’expérience.",
+    "ary": "Zid projets dyalek wlla sarr7 belli mazal ma 3endek expérience.",
+    "start": 11535,
+    "end": 11600
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Aucune expérience à déclarer",
+    "ary": "Ma 3endi expérience nsarre7 biha",
+    "start": 12171,
+    "end": 12205
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Cette base alimente votre CV. Aucun savoir-faire ni résultat ne sera ajouté sans déclaration.",
+    "ary": "Had lbase kat3emmer CV. Ma kanzido 7ta compétence bla ma tsarre7 biha.",
+    "start": 13121,
+    "end": 13193
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "« Vérifié sur pièce » signifie que vous avez comparé l’information au document. L’authenticité du document n’est pas certifiée automatiquement.",
+    "ary": "M2ekked b dalil kay3ni raja3ti lma3loma f document. L’app ma kat2ekkedch automatiquement belli document asli.",
+    "start": 13503,
+    "end": 13614
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Information",
+    "ary": "Ma3loma",
+    "start": 13800,
+    "end": 13809
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Valeur",
+    "ary": "Valeur",
+    "start": 13852,
+    "end": 13860
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Statut",
+    "ary": "Statut",
+    "start": 13903,
+    "end": 13911
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Source",
+    "ary": "Dalil",
+    "start": 13954,
+    "end": 13961
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Déclaration",
+    "ary": "Déclaration",
+    "start": 14613,
+    "end": 14626
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vérifier",
+    "ary": "Raje3",
+    "start": 14952,
+    "end": 14959
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter un justificatif",
+    "ary": "Zid dalil",
+    "start": 15259,
+    "end": 15270
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vérifier une information",
+    "ary": "Raje3 ma3loma",
+    "start": 15673,
+    "end": 15688
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Comparez la valeur actuelle à la pièce avant de confirmer.",
+    "ary": "9aren lma3loma m3a document 9bel ta2kid.",
+    "start": 15830,
+    "end": 15872
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Valeur confirmée",
+    "ary": "Ma3loma lm2ekkda",
+    "start": 16599,
+    "end": 16617
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Document source",
+    "ary": "Document dyal dalil",
+    "start": 16824,
+    "end": 16845
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Déclaration personnelle",
+    "ary": "Déclaration dyali",
+    "start": 16999,
+    "end": 17018
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Page (facultatif)",
+    "ary": "Page (ikhtiyari)",
+    "start": 17288,
+    "end": 17306
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "J’ai comparé cette information au justificatif.",
+    "ary": "9arent had lma3loma m3a document.",
+    "start": 17650,
+    "end": 17685
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Je confirme cette modification du profil.",
+    "ary": "Kan2ekked had taghyir f profil.",
+    "start": 17902,
+    "end": 17935
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Annuler",
+    "ary": "Lghi",
+    "start": 18056,
+    "end": 18062
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Confirmer",
+    "ary": "2ekked",
+    "start": 18153,
+    "end": 18161
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter une expérience",
+    "ary": "Zid tajriba",
+    "start": 18389,
+    "end": 18402
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Type",
+    "ary": "Naw3",
+    "start": 18907,
+    "end": 18913
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Intitulé",
+    "ary": "L3onwan",
+    "start": 19414,
+    "end": 19423
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Période",
+    "ary": "Lmodda",
+    "start": 19537,
+    "end": 19545
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ce que vous avez réellement fait",
+    "ary": "Ach derti b se7",
+    "start": 19674,
+    "end": 19691
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Je confirme l’exactitude de ma déclaration.",
+    "ary": "Kan2ekked belli déclaration dyali s7i7a.",
+    "start": 19959,
+    "end": 20001
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter à mon profil",
+    "ary": "Zid l profil dyali",
+    "start": 20119,
+    "end": 20139
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "LES FAITS AVANT TOUT",
+    "ary": "DALIL LLOWEL",
+    "start": 20738,
+    "end": 20752
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Un document. Une source de confiance.",
+    "ary": "Kol document, dalil f dossier.",
+    "start": 20834,
+    "end": 20866
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajoutez vos pièces, puis vérifiez les informations qui leur sont associées.",
+    "ary": "Zid lwra9 dyalek, men be3d raje3 lma3lomat lli fihom.",
+    "start": 21002,
+    "end": 21057
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Déposez votre document ici",
+    "ary": "7ett document dyalek hna",
+    "start": 21648,
+    "end": 21674
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "PDF, JPEG ou PNG · 10 Mo maximum · stockage privé",
+    "ary": "PDF, JPEG wlla PNG · 10 Mo maximum · stockage privé",
+    "start": 21804,
+    "end": 21857
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Choisir un fichier",
+    "ary": "Khtar fichier",
+    "start": 22065,
+    "end": 22080
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Choisir un fichier",
+    "ary": "Khtar fichier",
+    "start": 22284,
+    "end": 22299
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Type de document",
+    "ary": "Naw3 dyal document",
+    "start": 22417,
+    "end": 22437
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter au dossier",
+    "ary": "Zid l dossier",
+    "start": 23773,
+    "end": 23788
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Lecture automatique limitée au texte PDF. Les scans demandent une saisie manuelle. Aucune extraction ne remplace silencieusement votre profil.",
+    "ary": "L9raya l2otomatikiya mahdouda l texte PDF. Scans khas saisie manuelle. Ma kanbeddlo profil bla ta2kid dyalek.",
+    "start": 24015,
+    "end": 24126
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Votre bibliothèque de justificatifs",
+    "ary": "Lwra9 lli f dossier",
+    "start": 24231,
+    "end": 24252
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Filtrer les documents",
+    "ary": "Filtrer lwra9",
+    "start": 24341,
+    "end": 24356
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Tous les documents",
+    "ary": "Ga3 lwra9",
+    "start": 24511,
+    "end": 24522
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "À vérifier",
+    "ary": "Khas moraja3a",
+    "start": 24607,
+    "end": 24622
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vérifiés",
+    "ary": "M2ekkdin",
+    "start": 24699,
+    "end": 24709
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Aucun document dans cette vue",
+    "ary": "Ma kayn 7ta document hna",
+    "start": 24856,
+    "end": 24882
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajoutez votre première pièce ou changez le filtre.",
+    "ary": "Zid awal document wlla beddel filtre.",
+    "start": 24989,
+    "end": 25028
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Pièce fictive · démonstration",
+    "ary": "Document tajribi",
+    "start": 25497,
+    "end": 25515
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Télécharger",
+    "ary": "Télécharger",
+    "start": 25937,
+    "end": 25950
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vérifier",
+    "ary": "Raje3",
+    "start": 26133,
+    "end": 26140
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vérifier le document",
+    "ary": "Raje3 document",
+    "start": 26727,
+    "end": 26743
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Pièce de démonstration. Aucune valeur administrative.",
+    "ary": "Document dyal tajriba, ma 3endoch valeur administrative.",
+    "start": 27117,
+    "end": 27175
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ouvrir la pièce téléchargée",
+    "ary": "Télécharger document bach traj3o",
+    "start": 27382,
+    "end": 27416
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Comparer avant de remplacer",
+    "ary": "9aren 9bel tabdil",
+    "start": 28051,
+    "end": 28070
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Valeur actuelle",
+    "ary": "Ma3loma daba",
+    "start": 28260,
+    "end": 28274
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Valeur détectée",
+    "ary": "Ma3loma lli t9rat",
+    "start": 28602,
+    "end": 28621
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Remplacer les champs affichés par les valeurs extraites après vérification.",
+    "ary": "Nbeddel had lchamps b lma3lomat lli t9rat mlli raja3thom.",
+    "start": 28997,
+    "end": 29056
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Associer à une année",
+    "ary": "Rbet b 3am dyal 9raya",
+    "start": 29251,
+    "end": 29274
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ne pas associer maintenant",
+    "ary": "Machi daba",
+    "start": 29439,
+    "end": 29451
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Semestre justifié",
+    "ary": "Semestre lli fih dalil",
+    "start": 29851,
+    "end": 29875
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Choisir",
+    "ary": "Khtar",
+    "start": 30087,
+    "end": 30094
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "J’ai lu cette pièce et vérifié les informations et associations ci-dessus.",
+    "ary": "9rit document w raja3t lma3lomat w liens lli lfo9.",
+    "start": 30645,
+    "end": 30697
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Annuler",
+    "ary": "Lghi",
+    "start": 30818,
+    "end": 30824
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Confirmer ma vérification",
+    "ary": "2ekked lmoraja3a",
+    "start": 30969,
+    "end": 30987
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "COMPRENDRE VOTRE PARCOURS",
+    "ary": "FHEM MASAR DYALEK",
+    "start": 31382,
+    "end": 31401
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vos résultats, remis en perspective.",
+    "ary": "Nnatayj dyalek f si9ha.",
+    "start": 31482,
+    "end": 31507
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Des calculs transparents pour identifier vos forces et les points à travailler.",
+    "ary": "7ssabat wad7in bach t3ref no9at l9owa w fin khas tkhdem.",
+    "start": 31647,
+    "end": 31705
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajouter une note",
+    "ary": "Zid note",
+    "start": 31870,
+    "end": 31880
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Moyenne pondérée",
+    "ary": "Moyenne pondérée",
+    "start": 32034,
+    "end": 32052
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "notes saisies",
+    "ary": "notes msejlin",
+    "start": 32240,
+    "end": 32255
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Progression entre semestres",
+    "ary": "Ta9addom bin semestres",
+    "start": 32390,
+    "end": 32414
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "points",
+    "ary": "points",
+    "start": 32607,
+    "end": 32615
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Premier et dernier semestre renseignés",
+    "ary": "Awal w akher semestre m3emmer",
+    "start": 32746,
+    "end": 32777
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Matières fortes",
+    "ary": "Lmawad lli 9wi fihom",
+    "start": 32901,
+    "end": 32923
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "D’après les moyennes disponibles",
+    "ary": "3la 7sab moyennes lli kaynin",
+    "start": 33082,
+    "end": 33112
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Votre chronologie académique",
+    "ary": "Tarikh dyal 9raytek",
+    "start": 33422,
+    "end": 33443
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Une année",
+    "ary": "3am",
+    "start": 33593,
+    "end": 33598
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Modifier / expliquer",
+    "ary": "Beddel / chre7",
+    "start": 35107,
+    "end": 35123
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ajoutez chaque année, même en cas d’interruption.",
+    "ary": "Zid kol 3am, 7ta ila kan twa9of.",
+    "start": 35400,
+    "end": 35434
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vos matières en un regard",
+    "ary": "Nadra 3la lmawad",
+    "start": 35617,
+    "end": 35635
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Moyenne = somme des notes sur 20 × coefficients, divisée par la somme des coefficients.",
+    "ary": "Moyenne = majmou3 notes 3la 20 × coefficients, m9soum 3la majmou3 coefficients.",
+    "start": 36242,
+    "end": 36323
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Compléter les relevés manquants",
+    "ary": "Nkemmel relevés nna9sin",
+    "start": 36473,
+    "end": 36498
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Notes et justificatifs",
+    "ary": "Notes w dalil",
+    "start": 36631,
+    "end": 36646
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Matière",
+    "ary": "Lmada",
+    "start": 36791,
+    "end": 36798
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Semestre",
+    "ary": "Semestre",
+    "start": 36831,
+    "end": 36841
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Note",
+    "ary": "Note",
+    "start": 36870,
+    "end": 36876
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Coefficient",
+    "ary": "Coefficient",
+    "start": 36912,
+    "end": 36925
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Source",
+    "ary": "Dalil",
+    "start": 36956,
+    "end": 36963
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Modifier",
+    "ary": "Beddel",
+    "start": 38211,
+    "end": 38219
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Supprimer cette note et recalculer le diagnostic ?",
+    "ary": "N7yed had note w n3awed l7ssab?",
+    "start": 38751,
+    "end": 38784
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Matière",
+    "ary": "Lmada",
+    "start": 40551,
+    "end": 40558
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Note obtenue",
+    "ary": "Note lli jebti",
+    "start": 40805,
+    "end": 40821
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Barème",
+    "ary": "Barème",
+    "start": 41082,
+    "end": 41090
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Coefficient",
+    "ary": "Coefficient",
+    "start": 41360,
+    "end": 41373
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Semestre",
+    "ary": "Semestre",
+    "start": 41680,
+    "end": 41690
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Relevé source",
+    "ary": "Relevé dyal dalil",
+    "start": 41979,
+    "end": 41998
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Déclaration sans pièce",
+    "ary": "Déclaration bla document",
+    "start": 42153,
+    "end": 42179
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "J’ai comparé cette note au relevé.",
+    "ary": "9arent had note m3a relevé.",
+    "start": 42735,
+    "end": 42764
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Enregistrer et recalculer",
+    "ary": "Sejjel w 3awed l7ssab",
+    "start": 42887,
+    "end": 42910
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Une étape de votre parcours",
+    "ary": "Khotwa f masar dyalek",
+    "start": 43178,
+    "end": 43201
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Formation / diplôme",
+    "ary": "Formation / diplôme",
+    "start": 44017,
+    "end": 44038
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Établissement",
+    "ary": "Lmo2assasa",
+    "start": 44240,
+    "end": 44252
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Année de début",
+    "ary": "3am lbidaya",
+    "start": 44505,
+    "end": 44518
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Année de fin",
+    "ary": "3am nihaya",
+    "start": 44796,
+    "end": 44808
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Niveau",
+    "ary": "Niveau",
+    "start": 45076,
+    "end": 45084
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Semestres attendus (ex. 3,4)",
+    "ary": "Semestres lli khas (ex. 3,4)",
+    "start": 45403,
+    "end": 45433
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Interruption, redoublement ou précision",
+    "ary": "Twa9of, redoublement wlla tawdi7",
+    "start": 45757,
+    "end": 45791
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Enregistrer cette étape",
+    "ary": "Sejjel had lkhotwa",
+    "start": 46078,
+    "end": 46098
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Qu’est-ce qui vous intéresse vraiment ?",
+    "ary": "Ach lli kay3ejbek b se7?",
+    "start": 46507,
+    "end": 46533
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Comment aimez-vous apprendre ?",
+    "ary": "Kifach katfeddel t9ra?",
+    "start": 46576,
+    "end": 46600
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Quel horizon professionnel imaginez-vous ?",
+    "ary": "Ach kattsawwer tkhdem men be3d?",
+    "start": 46668,
+    "end": 46701
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Quelles sont vos contraintes ?",
+    "ary": "Ach homa l9oyod dyalek?",
+    "start": 46750,
+    "end": 46775
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "PLUSIEURS ROUTES, VOTRE DIRECTION",
+    "ary": "MASARAT MOKHTALFA, LWIJHA DYALEK",
+    "start": 46893,
+    "end": 46927
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Dessinez la suite de votre parcours.",
+    "ary": "Rsem lli jay f masar dyalek.",
+    "start": 47018,
+    "end": 47048
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Explorez des possibilités. Chaque transition reste soumise aux conditions d’admission.",
+    "ary": "Chouf l2imkaniyat. Kol transition khas chorot l9oboul.",
+    "start": 47195,
+    "end": 47251
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Préciser mon projet",
+    "ary": "Nwadda7 projet dyali",
+    "start": 47511,
+    "end": 47533
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Ces parcours sont des pistes de réflexion, pas des passerelles garanties. Coûts et débouchés doivent être vérifiés pour chaque formation.",
+    "ary": "Had masarat ghir afkar, machi passerelles madmouna. Frais w afaq khas moraja3a l kol formation.",
+    "start": 47763,
+    "end": 47860
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Commençons par vos envies.",
+    "ary": "Nbdaw b chno bghiti.",
+    "start": 47991,
+    "end": 48013
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Quatre questions pour identifier les parcours à explorer.",
+    "ary": "Rb3a dyal as2ila bach n3erfo masarat lli n9ellbo 3lihom.",
+    "start": 48127,
+    "end": 48185
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Commencer",
+    "ary": "Nbda",
+    "start": 48305,
+    "end": 48311
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Durée",
+    "ary": "Lmodda",
+    "start": 50060,
+    "end": 50068
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Exigence",
+    "ary": "S3ouba",
+    "start": 50121,
+    "end": 50129
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Professionnalisation",
+    "ary": "Tatbi9 mihani",
+    "start": 50221,
+    "end": 50236
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Flexibilité",
+    "ary": "Flexibilité",
+    "start": 50351,
+    "end": 50364
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Coût",
+    "ary": "Takalif",
+    "start": 50416,
+    "end": 50425
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Points de vigilance",
+    "ary": "No9at khas l2intibah",
+    "start": 50741,
+    "end": 50763
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Sorties possibles, sous conditions",
+    "ary": "Makharej momkina b chorot",
+    "start": 51077,
+    "end": 51104
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Explorer les formations",
+    "ary": "Nchouf les formations",
+    "start": 51339,
+    "end": 51362
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Trouver votre direction",
+    "ary": "L9a lwijha dyalek",
+    "start": 51608,
+    "end": 51627
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Question",
+    "ary": "Sou2al",
+    "start": 51778,
+    "end": 51786
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Vos matières préférées, séparées par des virgules",
+    "ary": "Lmawad lli kay3ejbok, ferre9 b virgule",
+    "start": 52110,
+    "end": 52150
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Un métier, un domaine ou « à explorer »",
+    "ary": "Métier, domaine wlla « mazal n9elleb »",
+    "start": 53595,
+    "end": 53635
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Villes acceptables",
+    "ary": "Lmdoun lli ynasbok",
+    "start": 53948,
+    "end": 53968
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Budget annuel (€), si connu",
+    "ary": "Budget dyal l3am (€), ila 3refti",
+    "start": 54419,
+    "end": 54453
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Précédent",
+    "ary": "Lli 9bel",
+    "start": 55116,
+    "end": 55126
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "fr": "Voir mes pistes",
+    "ary": "Nchouf l2afkar",
+    "start": 55837,
+    "end": 55853
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Bonne cohérence",
+    "ary": "Tnassob mzyan",
+    "start": 1638,
+    "end": 1653
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À explorer",
+    "ary": "Khas tktechef",
+    "start": 1713,
+    "end": 1728
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Possible avec remise à niveau",
+    "ary": "Momkin m3a ta2hil",
+    "start": 1814,
+    "end": 1833
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Point bloquant à vérifier",
+    "ary": "Khas t3awed tchecki",
+    "start": 1920,
+    "end": 1941
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À documenter",
+    "ary": "Khas t3ammer lma3lomat",
+    "start": 1973,
+    "end": 1997
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À préciser",
+    "ary": "Khas tawdi7",
+    "start": 2143,
+    "end": 2156
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Cohérent avec le profil",
+    "ary": "Mnasb l profil",
+    "start": 2214,
+    "end": 2230
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À explorer",
+    "ary": "Khas tktechef",
+    "start": 2275,
+    "end": 2290
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À renforcer",
+    "ary": "Khas t9wi",
+    "start": 2319,
+    "end": 2330
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "DES CHOIX QUI ONT DU SENS",
+    "ary": "KHTIYAR 3LA BAYNA",
+    "start": 3444,
+    "end": 3463
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Trouvez votre prochaine formation.",
+    "ary": "L9a formation lli jaya.",
+    "start": 3542,
+    "end": 3567
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Comparez l’adéquation, les contenus et les points à clarifier avant de choisir.",
+    "ary": "9aren tnassob, contenu w no9at lli khas nwedd7o 9bel lkhtiyar.",
+    "start": 3707,
+    "end": 3771
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ma sélection",
+    "ary": "Khtiyarat dyali",
+    "start": 3921,
+    "end": 3938
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Rechercher une formation",
+    "ary": "9elleb 3la formation",
+    "start": 4158,
+    "end": 4180
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Formation, établissement, domaine…",
+    "ary": "Formation, mo2assasa, domaine…",
+    "start": 4360,
+    "end": 4392
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Effacer la recherche",
+    "ary": "7yed recherche",
+    "start": 4561,
+    "end": 4577
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Filtrer par ville",
+    "ary": "Khtar lmdina",
+    "start": 4735,
+    "end": 4749
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Toutes les villes",
+    "ary": "Ga3 lmdoun",
+    "start": 4891,
+    "end": 4903
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "formations à explorer",
+    "ary": "formations bach t9elleb",
+    "start": 5974,
+    "end": 5999
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Tri : pertinence du profil",
+    "ary": "Tri : tnassob m3a profil",
+    "start": 6076,
+    "end": 6102
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Aucune formation dans cette vue",
+    "ary": "Ma kayna 7ta formation hna",
+    "start": 6261,
+    "end": 6289
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Essayez une autre recherche ou retirez un filtre.",
+    "ary": "Jerrab recherche okhra wlla 7yed filtre.",
+    "start": 6471,
+    "end": 6513
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Le catalogue de production est vide. Les formations fictives restent réservées à la démonstration.",
+    "ary": "Catalogue lm2ekked mazal khawi. Formations tajribiya ghir f démo.",
+    "start": 6690,
+    "end": 6757
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Réinitialiser les filtres",
+    "ary": "7yed les filtres",
+    "start": 7088,
+    "end": 7106
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Les catégories décrivent la cohérence entre votre profil et les informations connues de la formation. Elles ne prédisent pas l’admission : ouvrez chaque fiche pour voir les prérequis et les points à vérifier.",
+    "ary": "Had catégories kaybeyno tnassob bin profil dyalek w lma3lomat lli 3arfin 3la formation. Ma kaytwa33doch l9oboul : 7ell kol fiche bach tchouf chorot w no9at lli khas tchecki.",
+    "start": 8268,
+    "end": 8443
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "formations à comparer",
+    "ary": "formations lmo9arana",
+    "start": 8680,
+    "end": 8702
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Comparer",
+    "ary": "9aren",
+    "start": 8903,
+    "end": 8910
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Vider la comparaison",
+    "ary": "7yed mo9arana",
+    "start": 9117,
+    "end": 9132
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Comparer vos options",
+    "ary": "9aren l2ikhtiyarat",
+    "start": 9301,
+    "end": 9321
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "À préciser",
+    "ary": "Khas tawdi7",
+    "start": 10330,
+    "end": 10343
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Budget annuel",
+    "ary": "Budget l3am",
+    "start": 10436,
+    "end": 10449
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Langue",
+    "ary": "Logha",
+    "start": 10557,
+    "end": 10564
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Points bloquants",
+    "ary": "No9at lli khas t7ell",
+    "start": 10681,
+    "end": 10703
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Voir la fiche",
+    "ary": "Chouf fiche",
+    "start": 11060,
+    "end": 11073
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "FICTIF",
+    "ary": "TAJRIBI",
+    "start": 12677,
+    "end": 12686
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Catalogue",
+    "ary": "Catalogue",
+    "start": 12705,
+    "end": 12716
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Adéquation du profil",
+    "ary": "Tnassob m3a profil",
+    "start": 12902,
+    "end": 12922
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Informations documentées",
+    "ary": "Ma3lomat m9eyda",
+    "start": 13132,
+    "end": 13149
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "points à vérifier",
+    "ary": "no9at khas moraja3a",
+    "start": 13229,
+    "end": 13250
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ouvrez la fiche pour comprendre les prérequis.",
+    "ary": "7ell fiche bach tfhem chorot.",
+    "start": 13459,
+    "end": 13490
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Comparer",
+    "ary": "9aren",
+    "start": 13718,
+    "end": 13725
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Voir la fiche",
+    "ary": "Chouf fiche",
+    "start": 13833,
+    "end": 13846
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Toutes les formations",
+    "ary": "Ga3 formations",
+    "start": 14524,
+    "end": 14540
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Enseignement en français",
+    "ary": "9raya b français",
+    "start": 14975,
+    "end": 14993
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Fiche fictive de démonstration. Les critères, frais et dates ci-dessous ne décrivent aucune admission réelle.",
+    "ary": "Fiche tajribiya. Chorot, frais w dates hna ma kaywassfouch chi admission 7a9i9iya.",
+    "start": 15700,
+    "end": 15784
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ce que nous savons. Ce qui reste à confirmer.",
+    "ary": "Chno 3refna w chno ba9i khas ta2kid.",
+    "start": 16602,
+    "end": 16640
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Information non disponible",
+    "ary": "Lma3loma mazal ma kaynach",
+    "start": 17150,
+    "end": 17177
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Source fictive",
+    "ary": "Dalil tajribi",
+    "start": 17379,
+    "end": 17394
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Consulter la source",
+    "ary": "Chouf source",
+    "start": 17701,
+    "end": 17715
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Correspondance du candidat",
+    "ary": "Correspondance dyal candidat",
+    "start": 17961,
+    "end": 17991
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Revu le",
+    "ary": "Traje3 f",
+    "start": 18187,
+    "end": 18197
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Préparer une demande de clarification",
+    "ary": "Wejjed talab tawdi7",
+    "start": 19454,
+    "end": 19475
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Une recommandation expliquée",
+    "ary": "Tawsiya mcher7a",
+    "start": 19778,
+    "end": 19795
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Cette lecture s’appuie sur les dimensions renseignées. Une information inconnue reste à vérifier : elle n’est jamais considérée comme acquise.",
+    "ary": "Had lqra2a kat3tamed 3la lma3lomat lli kaynin. Lma3loma lli ma 3refnach katb9a khas tchecka : ma kan7sbohach mwejda.",
+    "start": 20055,
+    "end": 20173
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Points forts",
+    "ary": "No9at l9owa",
+    "start": 20691,
+    "end": 20704
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Pourquoi rester prudent ?",
+    "ary": "3lach khas l7der?",
+    "start": 20917,
+    "end": 20936
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Aucune question ouverte",
+    "ary": "Ma kayn 7ta sou2al",
+    "start": 21310,
+    "end": 21330
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Depuis la fiche, préparez une demande sur une exigence incertaine.",
+    "ary": "Mn fiche, wejjed sou2al 3la chi chart ma wad7ch.",
+    "start": 21477,
+    "end": 21527
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Revenir à la fiche",
+    "ary": "Rje3 l fiche",
+    "start": 21688,
+    "end": 21702
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ouvrir la clarification",
+    "ary": "7ell tawdi7",
+    "start": 22476,
+    "end": 22489
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Adéquation du profil",
+    "ary": "Tnassob m3a profil",
+    "start": 22848,
+    "end": 22868
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Une lecture des éléments déjà connus. Les prérequis et les informations manquantes restent à vérifier.",
+    "ary": "Qra2a dyal lma3lomat lli 3arfin daba. Chorot w lma3lomat nna9sa khas tchecka.",
+    "start": 23182,
+    "end": 23261
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Comprendre cette cohérence",
+    "ary": "Fhem had tnassob",
+    "start": 23417,
+    "end": 23435
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Avant de candidater",
+    "ary": "9bel ma tdfe3",
+    "start": 23653,
+    "end": 23668
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Fiche documentée pour ce scénario. L’audit du dossier reste nécessaire.",
+    "ary": "Fiche kamla f had scénario. Mazal khas audit dossier.",
+    "start": 24243,
+    "end": 24298
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Vérifier mon dossier",
+    "ary": "Raje3 dossier dyali",
+    "start": 24443,
+    "end": 24464
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Statut connecté : à vérifier. Une procédure parallèle peut être nécessaire.",
+    "ary": "Statut connecté khas moraja3a. Momkin khas procédure okhra.",
+    "start": 24652,
+    "end": 24713
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Confirmer votre choix",
+    "ary": "2ekked lkhtiyar dyalek",
+    "start": 25401,
+    "end": 25425
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Sélectionner prépare votre stratégie. Cela ne dépose aucune candidature et ne lève aucun point bloquant.",
+    "ary": "Lkhtiyar kaywejjed stratégie. Ma kaydfe3 7ta candidature w ma kay7ell 7ta mochkil.",
+    "start": 25742,
+    "end": 25826
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Je choisis cette formation et j’ai lu les points à vérifier.",
+    "ary": "Khtarit had formation w 9rit no9at lli khas moraja3a.",
+    "start": 26502,
+    "end": 26557
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ajouter à ma sélection",
+    "ary": "Zid l khtiyarat dyali",
+    "start": 26707,
+    "end": 26730
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Approuver le brouillon",
+    "ary": "Wafe9 3la moswadda",
+    "start": 27283,
+    "end": 27303
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Enregistrer mon envoi manuel",
+    "ary": "Sejjel belli sift b yeddi",
+    "start": 27381,
+    "end": 27408
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Confirmer la conclusion",
+    "ary": "2ekked lkholassa",
+    "start": 27485,
+    "end": 27503
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Enregistrer la réponse",
+    "ary": "Sejjel ljawab",
+    "start": 27545,
+    "end": 27560
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Clarification · suivi de la demande",
+    "ary": "Tawdi7 · tatabbo3 talab",
+    "start": 27656,
+    "end": 27681
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Aucun email envoyé par CampusPath",
+    "ary": "CampusPath ma kaysift 7ta email",
+    "start": 27894,
+    "end": 27927
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Objet du message (français)",
+    "ary": "Objet dyal message (français)",
+    "start": 28054,
+    "end": 28085
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Brouillon en français",
+    "ary": "Moswadda b français",
+    "start": 28213,
+    "end": 28234
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Brouillon copié. Aucun email envoyé.",
+    "ary": "Tcopiat moswadda. Ma tsift 7ta email.",
+    "start": 28655,
+    "end": 28694
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Sélectionnez le texte pour le copier.",
+    "ary": "Khtar texte bach tcopih.",
+    "start": 28872,
+    "end": 28898
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Copier le brouillon",
+    "ary": "Copier moswadda",
+    "start": 29038,
+    "end": 29055
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Contact officiel à rechercher",
+    "ary": "9elleb 3la contact rasmi",
+    "start": 29182,
+    "end": 29208
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Réponse saisie",
+    "ary": "Ljawab lli dkhelti",
+    "start": 29319,
+    "end": 29339
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Destinataire réel de votre envoi",
+    "ary": "Lli sift lih message b se7",
+    "start": 30164,
+    "end": 30192
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Collez la réponse reçue",
+    "ary": "Lssa9 ljawab lli wselek",
+    "start": 30538,
+    "end": 30563
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Conclusion appuyée par la réponse",
+    "ary": "Lkholassa 3la 7sab ljawab",
+    "start": 30865,
+    "end": 30892
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Valeur confirmée à reporter dans la fiche",
+    "ary": "Lma3loma lm2ekkda lli ndirou f fiche",
+    "start": 31373,
+    "end": 31411
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Choisir une décision explicite",
+    "ary": "Khtar 9arar wad7",
+    "start": 31715,
+    "end": 31733
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Conditions satisfaites",
+    "ary": "Chorot mtwefrin",
+    "start": 31890,
+    "end": 31907
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Conditions non satisfaites",
+    "ary": "Chorot ma mtwefrin-ch",
+    "start": 32095,
+    "end": 32118
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "VOUS AVEZ LE DERNIER MOT",
+    "ary": "L9ARAR DYALEK",
+    "start": 34275,
+    "end": 34290
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Une sélection réfléchie. Un cap clair.",
+    "ary": "Khtiyarat m9addin. Wijha wad7a.",
+    "start": 34373,
+    "end": 34406
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Hiérarchisez vos choix et suivez chaque étape de votre candidature.",
+    "ary": "Retteb khtiyarat dyalek w tbe3 kol mar7ala dyal candidature.",
+    "start": 34534,
+    "end": 34596
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Explorer les formations",
+    "ary": "Chouf formations",
+    "start": 34749,
+    "end": 34767
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "choix sélectionnés",
+    "ary": "khtiyarat msejlin",
+    "start": 35009,
+    "end": 35028
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Limites de la procédure",
+    "ary": "7odoud procédure",
+    "start": 35482,
+    "end": 35500
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Votre sélection commence par un premier choix.",
+    "ary": "Khtiyarat dyalek katbda b awal formation.",
+    "start": 36257,
+    "end": 36300
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Explorez les fiches puis enregistrez les formations qui vous intéressent.",
+    "ary": "Chouf fiches w 7fed formations lli 3ejbok.",
+    "start": 36442,
+    "end": 36486
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Explorer le catalogue",
+    "ary": "Chouf catalogue",
+    "start": 36632,
+    "end": 36649
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Rang",
+    "ary": "Rang",
+    "start": 37147,
+    "end": 37153
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Fiche de recherche complète",
+    "ary": "Fiche kamla",
+    "start": 38625,
+    "end": 38638
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Revoir la fiche",
+    "ary": "Raje3 fiche",
+    "start": 39044,
+    "end": 39057
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Confirmer ce choix",
+    "ary": "2ekked lkhtiyar",
+    "start": 39250,
+    "end": 39267
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Suivre la réponse",
+    "ary": "Tbe3 ljawab",
+    "start": 39430,
+    "end": 39443
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Retirer cette formation de votre sélection ?",
+    "ary": "N7yed had formation mn lkhtiyarat?",
+    "start": 39814,
+    "end": 39850
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Retirer",
+    "ary": "7yed",
+    "start": 40149,
+    "end": 40155
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Vos choix donnent une direction à votre dossier.",
+    "ary": "Khtiyarat dyalek kat3ti wijha l dossier.",
+    "start": 40504,
+    "end": 40546
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Construisez maintenant votre CV et vos projets à partir des faits.",
+    "ary": "Wejjed daba CV w projets mn lma3lomat dyalek.",
+    "start": 40719,
+    "end": 40766
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Préparer mon CV",
+    "ary": "Nwejjed CV",
+    "start": 40915,
+    "end": 40927
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Suivi de candidature",
+    "ary": "Tatabbo3 candidature",
+    "start": 41943,
+    "end": 41965
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Statut actuel",
+    "ary": "Statut daba",
+    "start": 42085,
+    "end": 42098
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Vous enregistrez une action ou une réponse reçue en dehors de CampusPath. Aucun dossier n’est transmis par cette application.",
+    "ary": "Katsejjel action wlla jawab barra mn CampusPath. L’app ma katsift 7ta dossier.",
+    "start": 42318,
+    "end": 42398
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Nouvel état constaté",
+    "ary": "Statut jdid lli w9e3",
+    "start": 42950,
+    "end": 42972
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Référence / réponse reçue",
+    "ary": "Référence / ljawab lli wsel",
+    "start": 43352,
+    "end": 43381
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Je confirme que cet événement a réellement eu lieu.",
+    "ary": "Kan2ekked belli had l7adath w9e3 b se7.",
+    "start": 43680,
+    "end": 43721
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Enregistrer le suivi",
+    "ary": "Sejjel tatabbo3",
+    "start": 43847,
+    "end": 43864
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "fr": "Ce choix a atteint un état final.",
+    "ary": "Had lkhtiyar wsel l statut final.",
+    "start": 44002,
+    "end": 44037
+  },
+  {
+    "file": "src\\components\\ui.tsx",
+    "fr": "Fermer",
+    "ary": "Sedd",
+    "start": 3512,
+    "end": 3518
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "LES FAITS DEVIENNENT VOTRE HISTOIRE",
+    "ary": "LMA3LOMAT KATWELLI 7KAYTEK",
+    "start": 1314,
+    "end": 1342
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre parcours. Le bon angle.",
+    "ary": "Masar dyalek. B tari9a mnasba.",
+    "start": 1477,
+    "end": 1509
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Une motivation qui vous ressemble.",
+    "ary": "Motivation kat3ebber 3lik.",
+    "start": 1614,
+    "end": 1642
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Un CV préparé depuis votre profil, adapté aux formations que vous avez choisies.",
+    "ary": "CV mn profil dyalek, mnasb l formations lli khtariti.",
+    "start": 1849,
+    "end": 1904
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Un projet cohérent, puis un brouillon spécifique à chaque formation.",
+    "ary": "Projet mtanass9, men be3d moswadda l kol formation.",
+    "start": 2043,
+    "end": 2096
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les documents officiels restent en français. Les brouillons de démonstration utilisent vos données et des modèles déterministes ; aucun service d’IA externe n’est connecté.",
+    "ary": "Documents officiels kayb9aw b français. Moswaddat démo katsta3mel ma3lomat dyalek w modèles déterministes ; ma kaynach IA externe connectée.",
+    "start": 2356,
+    "end": 2498
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Vos choix viennent d’abord.",
+    "ary": "Khtiyarat dyalek lowwel.",
+    "start": 2625,
+    "end": 2651
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Sélectionnez au moins une formation avant de préparer votre CV ou vos motivations.",
+    "ary": "Khtar formation 3la l2a9al 9bel ma twejjed CV w motivations.",
+    "start": 2790,
+    "end": 2852
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Choisir mes formations",
+    "ary": "Nkhtar formations",
+    "start": 2999,
+    "end": 3018
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre fil conducteur",
+    "ary": "Lkhet lli kayrbet masar dyalek",
+    "start": 3401,
+    "end": 3433
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Mon projet d’études",
+    "ary": "Projet dyal 9rayti",
+    "start": 4433,
+    "end": 4453
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Reliez vos acquis, vos choix et les compétences que vous souhaitez développer.",
+    "ary": "Rbet lli 9riti, lkhtiyarat w compétences lli bghiti twesse3.",
+    "start": 4611,
+    "end": 4673
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Mon projet professionnel",
+    "ary": "Projet mihani dyali",
+    "start": 5298,
+    "end": 5319
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Expliquez le métier visé et les étapes réalistes pour y parvenir.",
+    "ary": "Chre7 métier lli bghiti w lkhotwat lmomkina bach twsel lih.",
+    "start": 5464,
+    "end": 5525
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Je valide ces projets comme mes déclarations de référence.",
+    "ary": "Kan2ekked had projets ka déclarations dyali.",
+    "start": 6337,
+    "end": 6383
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Un changement invalide les documents préparés à partir de l’ancienne version.",
+    "ary": "Taghyir kaykhelli documents l9dam khas ytraj3o.",
+    "start": 6649,
+    "end": 6698
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Enregistrer mes projets",
+    "ary": "Sejjel projets dyali",
+    "start": 6894,
+    "end": 6916
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Mon CV de candidature",
+    "ary": "CV dyal candidature",
+    "start": 7226,
+    "end": 7247
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Brouillon par formation",
+    "ary": "Moswadda l kol formation",
+    "start": 7300,
+    "end": 7326
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Formation pour la motivation",
+    "ary": "Formation dyal motivation",
+    "start": 7560,
+    "end": 7587
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Version française",
+    "ary": "Version française",
+    "start": 8749,
+    "end": 8768
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Exporter le texte",
+    "ary": "Télécharger texte",
+    "start": 9727,
+    "end": 9746
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Imprimer / PDF",
+    "ary": "Imprimer / PDF",
+    "start": 9926,
+    "end": 9942
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Valider après relecture",
+    "ary": "2ekked men be3d moraja3a",
+    "start": 10385,
+    "end": 10411
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre brouillon apparaîtra ici.",
+    "ary": "Moswadda dyalek ghadi tban hna.",
+    "start": 10642,
+    "end": 10675
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les études, projets, expériences et langues viennent de votre profil.",
+    "ary": "9raya, projets, tajarob w loghat mn profil dyalek.",
+    "start": 10916,
+    "end": 10968
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Validez vos projets et résolvez les exigences de la fiche formation pour continuer.",
+    "ary": "2ekked projets w 7ell no9at fiche formation bach tkemmel.",
+    "start": 11162,
+    "end": 11221
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Avant de générer",
+    "ary": "9bel ma twejjed",
+    "start": 11401,
+    "end": 11418
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Formations sélectionnées",
+    "ary": "Formations mkhtarin",
+    "start": 11620,
+    "end": 11641
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Projets personnels validés",
+    "ary": "Projets dyalek m2ekkdin",
+    "start": 12173,
+    "end": 12198
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Recherche formation complète",
+    "ary": "Recherche dyal formation kamla",
+    "start": 12628,
+    "end": 12660
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Résoudre les points bloquants",
+    "ary": "7ell no9at lli ba9in",
+    "start": 13751,
+    "end": 13773
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Contrôle qualité",
+    "ary": "Moraja3at ljawda",
+    "start": 13984,
+    "end": 14002
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "caractères",
+    "ary": "caractères",
+    "start": 14287,
+    "end": 14299
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Voir les références des assertions",
+    "ary": "Chouf dalil dyal lma3lomat",
+    "start": 14951,
+    "end": 14979
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Aucune compétence, expérience ou exigence n’est ajoutée par le générateur. Relisez chaque déclaration avant de l’utiliser.",
+    "ary": "Générateur ma kayzid 7ta compétence, expérience wlla chart. Raje3 kol déclaration 9bel ma tsta3melha.",
+    "start": 16325,
+    "end": 16428
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Valider ce document",
+    "ary": "2ekked had document",
+    "start": 16610,
+    "end": 16631
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Cette validation confirme votre relecture. Le document ne sera envoyé à aucun établissement.",
+    "ary": "Ta2kid kay3ni raja3ti document. Ma ghadi ytsift l 7ta mo2assasa.",
+    "start": 16847,
+    "end": 16913
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "J’ai relu le contenu, vérifié ses sources et confirmé qu’il reflète mon parcours.",
+    "ary": "Raja3t contenu w dalil w 2ekkedt belli kay3ebber 3la masar dyali.",
+    "start": 17484,
+    "end": 17551
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Valider",
+    "ary": "2ekked",
+    "start": 17672,
+    "end": 17680
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Pourquoi souhaitez-vous étudier en France ?",
+    "ary": "3lach bghiti t9ra f Fransa?",
+    "start": 18645,
+    "end": 18674
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Quelle formation correspond à votre projet, et pourquoi ?",
+    "ary": "Ach men formation mnasba l projet dyalek w 3lach?",
+    "start": 18842,
+    "end": 18893
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Quel acquis de votre parcours vous prépare à cette formation ?",
+    "ary": "Ach men 7aja f 9raytek wejdatek l had formation?",
+    "start": 18991,
+    "end": 19041
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Quel métier souhaitez-vous exercer après vos études ?",
+    "ary": "Ach bghiti tkhdem men be3d l9raya?",
+    "start": 19218,
+    "end": 19254
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Comment comptez-vous financer vos études et votre séjour ?",
+    "ary": "Kifach ghadi tkhalles 9raytek w lma3icha?",
+    "start": 19348,
+    "end": 19391
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Comment expliquez-vous les relevés manquants dans votre dossier ?",
+    "ary": "Kifach katfesser relevés nna9sin f dossier?",
+    "start": 19563,
+    "end": 19608
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Quelle difficulté de votre parcours avez-vous surmontée ?",
+    "ary": "Ach men s3ouba f masar dyalek 9derti tjawezha?",
+    "start": 19712,
+    "end": 19760
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "EXPLIQUER VOS CHOIX AVEC CLARTÉ",
+    "ary": "CHRE7 KHTIYARAT B WODO7",
+    "start": 19886,
+    "end": 19911
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre projet, avec vos propres mots.",
+    "ary": "Projet dyalek, b klamek nta.",
+    "start": 20002,
+    "end": 20032
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Entraînez-vous à partir de votre dossier, une question à la fois.",
+    "ary": "Tderreb mn dossier dyalek, sou2al b sou2al.",
+    "start": 20158,
+    "end": 20203
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Simulation écrite",
+    "ary": "Simulation b lktaba",
+    "start": 20473,
+    "end": 20494
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Pourquoi cette question ? Elle relie une information de votre dossier à votre projet. Vous pouvez répondre, dire que vous ne savez pas encore ou passer.",
+    "ary": "3lach had sou2al ? Kayrbet ma3loma mn dossier dyalek b projet dyalek. T9der tjawb, tgol mazal ma 3reftch, wla tdouz.",
+    "start": 21054,
+    "end": 21172
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre réponse",
+    "ary": "Ljawab dyalek",
+    "start": 21874,
+    "end": 21889
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Ce qui m’intéresse dans ce parcours…",
+    "ary": "Lli kay3jebni f had masar…",
+    "start": 22282,
+    "end": 22310
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Je ne sais pas encore.",
+    "ary": "Mazal ma 3reftch.",
+    "start": 22567,
+    "end": 22586
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Je ne sais pas encore",
+    "ary": "Mazal ma 3reftch",
+    "start": 22713,
+    "end": 22731
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Je préfère ne pas répondre.",
+    "ary": "Kanfdal ma njawbech.",
+    "start": 22925,
+    "end": 22947
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Je préfère ne pas répondre",
+    "ary": "Kanfdal ma njawbech",
+    "start": 23098,
+    "end": 23119
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Cette réponse sera conservée comme telle, sans hypothèse ajoutée.",
+    "ary": "Had ljawab ghadi yb9a kima howa, bla chi tafsir zayed.",
+    "start": 23363,
+    "end": 23419
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "mots",
+    "ary": "kelma",
+    "start": 23666,
+    "end": 23673
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Obtenir un retour",
+    "ary": "Nchouf moraja3a",
+    "start": 23925,
+    "end": 23942
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre retour de préparation",
+    "ary": "Moraja3a dyal ta7dir",
+    "start": 24211,
+    "end": 24233
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Précédent",
+    "ary": "Lli 9bel",
+    "start": 25147,
+    "end": 25157
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Passer cette question",
+    "ary": "Douz had sou2al",
+    "start": 26058,
+    "end": 26075
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les repères d’une bonne réponse",
+    "ary": "No9at dyal jawab mzyan",
+    "start": 26259,
+    "end": 26283
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Clarté",
+    "ary": "Wodo7",
+    "start": 26411,
+    "end": 26418
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Une idée principale, puis un exemple.",
+    "ary": "Fikra ra2issiya, men be3d exemple.",
+    "start": 26523,
+    "end": 26559
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Cohérence",
+    "ary": "Tnassob",
+    "start": 26652,
+    "end": 26661
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Un lien entre votre passé et votre projet.",
+    "ary": "Rabet bin lmadi dyalek w projet.",
+    "start": 26771,
+    "end": 26805
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Précision",
+    "ary": "Di99a",
+    "start": 26898,
+    "end": 26905
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Des matières et des contenus vérifiés.",
+    "ary": "Mawad w contenu m2ekkdin.",
+    "start": 27011,
+    "end": 27038
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Authenticité",
+    "ary": "Ssid9",
+    "start": 27134,
+    "end": 27141
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Vos propres raisons, dans vos mots.",
+    "ary": "L2asbab dyalek, b klamek nta.",
+    "start": 27244,
+    "end": 27275
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Relire mon projet",
+    "ary": "N3awed n9ra projet",
+    "start": 27704,
+    "end": 27724
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "UNE CHOSE À LA FOIS",
+    "ary": "7AJA B 7AJA",
+    "start": 28643,
+    "end": 28656
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Aujourd’hui, avancez sur l’essentiel.",
+    "ary": "Lyom, khdem 3la darori.",
+    "start": 28738,
+    "end": 28763
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les priorités se mettent à jour avec votre dossier. Corriger la cause résout la tâche.",
+    "ary": "L2awlawiyat kaytbeddlo m3a dossier. Mlli kat7ell sabab, tâche kattsala.",
+    "start": 28910,
+    "end": 28983
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Vérifier mon calendrier",
+    "ary": "Nraja3 calendrier",
+    "start": 29138,
+    "end": 29157
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Marquer comme terminé",
+    "ary": "Sejjel belli tsala",
+    "start": 31528,
+    "end": 31548
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Aucune priorité dans cette vue",
+    "ary": "Ma kaynach priorité hna",
+    "start": 31787,
+    "end": 31812
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Vos tâches évoluent avec les informations du dossier.",
+    "ary": "Tâches kaytbeddlo m3a lma3lomat dyal dossier.",
+    "start": 31922,
+    "end": 31969
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Le calendrier dépend de votre procédure.",
+    "ary": "Calendrier 3la 7sab procédure dyalek.",
+    "start": 32206,
+    "end": 32245
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Consultez la source officielle avant de confirmer le cycle et les échéances.",
+    "ary": "Chouf source rasmi 9bel ta2kid cycle w deadlines.",
+    "start": 32416,
+    "end": 32467
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Calendrier Campus France Maroc",
+    "ary": "Calendrier Campus France Maroc",
+    "start": 32798,
+    "end": 32830
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Confirmer mon cycle de candidature",
+    "ary": "2ekked cycle dyal candidature",
+    "start": 33204,
+    "end": 33235
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les dates ne sont jamais copiées d’une année à l’autre. Reportez uniquement l’échéance officielle de votre procédure.",
+    "ary": "Dates ma kaytn9louch mn 3am l 3am. Sejjel ghir date rasmiya dyal procédure dyalek.",
+    "start": 33459,
+    "end": 33543
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Intitulé officiel du cycle",
+    "ary": "Smiya rasmiya dyal cycle",
+    "start": 34214,
+    "end": 34240
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Date limite officielle",
+    "ary": "Akher ajal rasmi",
+    "start": 34597,
+    "end": 34615
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "URL officielle Campus France",
+    "ary": "Lien rasmi Campus France",
+    "start": 34858,
+    "end": 34884
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "J’ai vérifié que ce cycle et cette échéance s’appliquent à ma situation.",
+    "ary": "Raja3t belli had cycle w date kaynasbo situation dyali.",
+    "start": 35326,
+    "end": 35383
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Enregistrer ma vérification",
+    "ary": "Sejjel moraja3ti",
+    "start": 35508,
+    "end": 35526
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "RIEN D’IMPORTANT NE PASSE INAPERÇU",
+    "ary": "7TA 7AJA MOHIMMA MA TFOUT",
+    "start": 35783,
+    "end": 35810
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Votre dossier, passé en revue.",
+    "ary": "Dossier dyalek, traje3 kamel.",
+    "start": 35895,
+    "end": 35926
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Un état clair des pièces, du parcours, des choix et des documents de candidature.",
+    "ary": "7ala wad7a dyal lwra9, masar, khtiyarat w documents candidature.",
+    "start": 36068,
+    "end": 36134
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Voir mes priorités",
+    "ary": "Chouf l2awlawiyat",
+    "start": 36289,
+    "end": 36308
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les contrôles sont satisfaits.",
+    "ary": "Lmoraja3a dazet.",
+    "start": 37053,
+    "end": 37071
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "La complétude mesure le contenu renseigné. La préparation exige des pièces et des conditions vérifiées.",
+    "ary": "Ch7al kammelti kay9iss ma3lomat m3emrin. Bach twjed, khas lwra9 w chorot m2ekkdin.",
+    "start": 37255,
+    "end": 37339
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "dossier renseigné",
+    "ary": "dossier m3emmer",
+    "start": 37525,
+    "end": 37542
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Points bloquants",
+    "ary": "No9at kay7ebso dossier",
+    "start": 37716,
+    "end": 37740
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Vigilances",
+    "ary": "No9at l2intibah",
+    "start": 37825,
+    "end": 37842
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Éléments vérifiés",
+    "ary": "7wayej m2ekkda",
+    "start": 37940,
+    "end": 37956
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "À résoudre avant toute candidature",
+    "ary": "Khas t7ell 9bel candidature",
+    "start": 38420,
+    "end": 38449
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Aucun blocage détecté par les règles configurées.",
+    "ary": "Ma kayn 7ta blocage f règles lli msejlin.",
+    "start": 38898,
+    "end": 38941
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Passer à l’action",
+    "ary": "Nbda nkhdem",
+    "start": 39077,
+    "end": 39090
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "À garder en tête",
+    "ary": "Khelli f balek",
+    "start": 39295,
+    "end": 39311
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Ce qui est déjà prêt",
+    "ary": "Chno wajed",
+    "start": 39657,
+    "end": 39669
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Les premiers éléments validés apparaîtront ici.",
+    "ary": "Awal 7wayej m2ekkda ghadi ybano hna.",
+    "start": 40100,
+    "end": 40138
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "fr": "Cet audit n’est ni une décision d’éligibilité officielle, ni une garantie d’admission. Le candidat reste responsable du dossier transmis sur la plateforme officielle.",
+    "ary": "Had audit machi 9arar rasmi dyal l9oboul w ma kaydmench admission. Candidat kayb9a mas2oul 3la dossier lli ghadi ytsift f plateforme rasmiya.",
+    "start": 40459,
+    "end": 40602
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Modifications enregistrées.",
+    "ary": "Tsejjlat taghyirat.",
+    "start": 4102,
+    "end": 4123
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Ton espace est momentanément indisponible",
+    "ary": "Espace dyalek ma khddamch daba",
+    "start": 6650,
+    "end": 6682
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "La connexion n’a pas abouti. Tes données enregistrées restent conservées. Vérifie ta connexion, puis réessaie.",
+    "ary": "Connexion ma khdematch. Données lli tsejjlo ba9yin. Chouf connexion w 3awed.",
+    "start": 6809,
+    "end": 6887
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Réessayer de charger mon espace",
+    "ary": "N3awed n7ell espace dyali",
+    "start": 6993,
+    "end": 7020
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Votre prochain chapitre commence ici.",
+    "ary": "Lmar7ala jaya katbda hna.",
+    "start": 7486,
+    "end": 7513
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Construisez un dossier clair et des choix qui vous ressemblent.",
+    "ary": "Wejjed dossier wad7 w khtar masar lli ynasbek.",
+    "start": 7671,
+    "end": 7719
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Créer mon compte",
+    "ary": "N7ell compte",
+    "start": 7977,
+    "end": 7991
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Me connecter",
+    "ary": "Ndkhol",
+    "start": 8199,
+    "end": 8207
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Mot de passe · 12 caractères minimum",
+    "ary": "Mot de passe · 12 caractères 3la l2a9al",
+    "start": 8538,
+    "end": 8579
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Explorer avec un profil fictif",
+    "ary": "Njerrab b profil tajribi",
+    "start": 9779,
+    "end": 9805
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Retour à mon espace",
+    "ary": "Rje3 l espace dyali",
+    "start": 9963,
+    "end": 9984
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Bienvenue",
+    "ary": "Mer7ba",
+    "start": 10343,
+    "end": 10351
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Aller au contenu",
+    "ary": "Sir l contenu",
+    "start": 10929,
+    "end": 10944
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "MON AVENIR, MES CHOIX",
+    "ary": "MOSTA9BALI, KHTIYARI",
+    "start": 11396,
+    "end": 11418
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Des choix éclairés.",
+    "ary": "Khtiyar 3la bayna.",
+    "start": 12299,
+    "end": 12319
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Explorez les possibles. Avancez à votre rythme.",
+    "ary": "Ktechef l2ikhtiyarat. T9eddem b rythme dyalek.",
+    "start": 12448,
+    "end": 12496
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Créer ou changer de compte",
+    "ary": "Beddel compte",
+    "start": 12762,
+    "end": 12777
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Profil de démonstration",
+    "ary": "Profil tajribi",
+    "start": 13120,
+    "end": 13136
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Mon compte candidat",
+    "ary": "Compte dyali",
+    "start": 13183,
+    "end": 13197
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Mon espace",
+    "ary": "Espace dyali",
+    "start": 13442,
+    "end": 13456
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Changer la langue",
+    "ary": "Beddel logha",
+    "start": 13756,
+    "end": 13770
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Voir mes priorités",
+    "ary": "Chouf l2awlawiyat",
+    "start": 14125,
+    "end": 14144
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Se déconnecter",
+    "ary": "Nkhroj",
+    "start": 14409,
+    "end": 14417
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "DÉMONSTRATION",
+    "ary": "TAJRIBA",
+    "start": 15106,
+    "end": 15115
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Vos essais sont enregistrés dans un dossier de démonstration",
+    "ary": "Tajriba dyalek kattsjjel f dossier tajribi",
+    "start": 15296,
+    "end": 15340
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Profil et formations fictifs · aucune candidature envoyée",
+    "ary": "Profil w formations ghir tajriba · ma tsiftat 7ta candidature",
+    "start": 15492,
+    "end": 15555
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Créer mon dossier",
+    "ary": "N7ell dossier dyali",
+    "start": 15677,
+    "end": 15698
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Fermer",
+    "ary": "Sedd",
+    "start": 16040,
+    "end": 16046
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Un outil indépendant de préparation · Non affilié à Campus France",
+    "ary": "Outil mosta9il bach twejjed dossier · Ma tabi3ch l Campus France",
+    "start": 17170,
+    "end": 17236
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "fr": "Fermer",
+    "ary": "Sedd",
+    "start": 17572,
+    "end": 17578
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2informatique w rre9mi",
+    "start": 2819,
+    "end": 2844
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tkteb code, tseyyer systèmes, tkhdem 3la data. Majal fih t3ellom b tatbi9 w ttoro9 dyal ddkhoul mokhtalfa.",
+    "start": 3052,
+    "end": 3160
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Katbeddel 7sab diplôme : takwin technique, licence wla cursus ingénieur. 9aren modda kamla, m3a ta7dir ila kayn.",
+    "start": 3465,
+    "end": 3579
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si 3la frais b dde9 dyal kol formation. Zid sskna, transport w l2informatique f budget dyalek.",
+    "start": 3730,
+    "end": 3830
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Développeur logiciel wla web",
+    "start": 3899,
+    "end": 3929
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Administrateur systèmes w réseaux",
+    "start": 3989,
+    "end": 4024
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Analyste dyal data",
+    "start": 4069,
+    "end": 4089
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Technicien support w infrastructure",
+    "start": 4151,
+    "end": 4188
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T9der tt9eddem b rassek bin dourouss, b projets w tamarin.",
+    "start": 4316,
+    "end": 4376
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lkhedma kattbane. Projet kaml khir men hadra twila.",
+    "start": 4478,
+    "end": 4531
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L compétences kaytn9lo men secteur l akhor, men lbanka 7tta l industrie.",
+    "start": 4639,
+    "end": 4713
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kolchi kaytbeddel bzerba. Khassek tebghi t3awed tt3ellem.",
+    "start": 4840,
+    "end": 4899
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "We9t bzaf 9oddam écran, w bo7dek m3a chi mochkil.",
+    "start": 4995,
+    "end": 5046
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Smiyat dyal formations kaychebho. Chouf programme 7a9i9i, machi smiya.",
+    "start": 5154,
+    "end": 5226
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf ach kayn mora had lkelma",
+    "start": 5360,
+    "end": 5392
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2informatique machi khedma we7da. Développement, réseaux, data, sécurité, support. Kol branche bghat chi 7aja okhra. 9bel ma tkhtar formation, 3ref ach bezzaf kay3ejbek.",
+    "start": 5661,
+    "end": 5833
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb 3 7wayej 3amaliya kay3ejbouk, machi 3 smiyat dyal diplômes.",
+    "start": 5972,
+    "end": 6038
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf nhar 3adi dyal jouj khedmat mokhtalfin f had majal.",
+    "start": 6131,
+    "end": 6190
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9elleb 3la fiches métiers rasmiyin, machi vidéos dyal promotion.",
+    "start": 6293,
+    "end": 6359
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men chorot l9obol l7a9i9iyin",
+    "start": 6516,
+    "end": 6554
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Seuils, concours w tawarikh kaytbeddlo kol 3am w kaykhtalfo men mo2assassa l okhra. Lli kan 3am lli fat momkin ma b9ach. 9elleb 3la l2i3lan rasmi dyal had l3am.",
+    "start": 6828,
+    "end": 6990
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7ell lmanassa lwataniya w 9ra chorot dyal chou3ba lli bghiti.",
+    "start": 7122,
+    "end": 7185
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb tawarikh f agenda dyalek, m3a jem3a dyal marge.",
+    "start": 7285,
+    "end": 7339
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed bekri lwra9 lli tatlbo, ghalban katakhod we9t kter mma katfekker.",
+    "start": 7450,
+    "end": 7524
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Jerreb 9bel ma tdkhol",
+    "start": 7681,
+    "end": 7704
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi projet sghir 7a9i9i kay3ellmek 3la rassek kter men brochure. Ghadi t3ref bzerba wach 7ell bug f sa3tayn kaydayy9ek wla kay3ejbek. Hadik réaction hiya lmohimma.",
+    "start": 7938,
+    "end": 8103
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kemmel chi projet sghir men lewwel l lekher, wakha bsit bzaf.",
+    "start": 8225,
+    "end": 8288
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Hder m3a talib deja f chou3ba w se99si ach fajje2o.",
+    "start": 8389,
+    "end": 8442
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ra9eb réaction dyalek 9oddam ssou3ouba, hiya a7sen dalil.",
+    "start": 8539,
+    "end": 8598
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren jouj wla tlata dyal formations",
+    "start": 8731,
+    "end": 8769
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "F had lmar7ala, weqqef tt9aren majalat w bda t9aren formations b smiyathom. Programme, 9edd dyal tatbi9, ach kaydiro lkhrijin w taman kamel.",
+    "start": 9006,
+    "end": 9148
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7ett les programmes 7da be7da, madda b madda.",
+    "start": 9273,
+    "end": 9320
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7seb budget kamel, frais w l3icha dyal kol nhar.",
+    "start": 9410,
+    "end": 9460
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khelli chi khiyar sahel m3a lkhtiyar lewwel dyalek.",
+    "start": 9547,
+    "end": 9600
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed lmaw3id jay",
+    "start": 9748,
+    "end": 9768
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tawjih ghalban kaytle3 wla kaytih 3la tafasil idariya. Dossier kaml, tawarikh mte7termin, plan b w wajed. Machi chi 7aja zwina walakin hiya lli katbeddel.",
+    "start": 9997,
+    "end": 10153
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb liste dyal lwra9 w 3ellem 3lihom we7da be we7da.",
+    "start": 10264,
+    "end": 10319
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed khtiyar tani lli 3jbek b s7i7, machi ghir bach ykoun.",
+    "start": 10423,
+    "end": 10485
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf daba lmosa3adat dyal sskna w lmin7a.",
+    "start": 10585,
+    "end": 10629
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tri9 technique 9sira",
+    "start": 10810,
+    "end": 10832
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwin technique y9der ywejjedek l khedmat 3amaliya. OFPPT kay7edded 3amayn l niveau technicien spécialisé. Bach tkemmel l9raya, khassek t2ekked men diplôme, chou3ba w sélection dyal lmo2assassa.",
+    "start": 11127,
+    "end": 11324
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tri9 dyal l2université",
+    "start": 11444,
+    "end": 11468
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Licence w men be3d master kay3tiwk we9t bach t7edded takhassous dyalek. Lkadr 9all men l2école, l2istiqlaliya mohimma kter.",
+    "start": 11667,
+    "end": 11792
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Cycle dyal l2ingénieur",
+    "start": 11905,
+    "end": 11929
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Sélection f ddkhol, rythme 9aseh, takwin wase3. Khassek t7ddar mezyan 9bel w tkoun 9ad lkhedma lmostamirra.",
+    "start": 12143,
+    "end": 12252
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2ingénierie w l3olom tatbi9iya",
+    "start": 12477,
+    "end": 12510
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tsemmem, t7seb, tkhelli l7aja tkhdem. Génie civil, électrique, industriel, ta9at. Takwin 9aseh f l3olom w 9rib l wa9i3.",
+    "start": 12717,
+    "end": 12838
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7seb ta7dir ila kayn w cycle ingénieur. Lmodda lli ba9ya katbeddel 7sab fin ghadi tdkhol w cursus dyal l2école.",
+    "start": 13127,
+    "end": 13240
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren frais dyal l9raya, sskna, lmo3addat w tan9olat dyal stages. T2ekked men lmosa3adat lli kaynin.",
+    "start": 13394,
+    "end": 13496
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ingénieur f génie civil",
+    "start": 13562,
+    "end": 13587
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ingénieur procédés wla production",
+    "start": 13645,
+    "end": 13680
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé d’affaires techniques",
+    "start": 13734,
+    "end": 13764
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ingénieur f ta9at motajaddida",
+    "start": 13822,
+    "end": 13853
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Katchouf natija dyal khedmtek f 7wayej w machari3 7a9i9iyin.",
+    "start": 13978,
+    "end": 14040
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwin kaybqa wase3, kay7ell 3la bzaf dyal secteurs.",
+    "start": 14126,
+    "end": 14180
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chantiers w usines kay9eddro nnidam w lmanhajiya.",
+    "start": 14270,
+    "end": 14321
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Niveau f riyadiyat w fizya 9aseh men l3am lewwel.",
+    "start": 14450,
+    "end": 14501
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi khedmat katfred tan9ol w sa3at t9al.",
+    "start": 14590,
+    "end": 14632
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kelmat ingénieur kat3ni 7wayej mokhtalfa bzaf 7sab takhassous.",
+    "start": 14734,
+    "end": 14798
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ferre9 bin takhassousat lkbar",
+    "start": 14924,
+    "end": 14955
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Génie civil, électrique, mécanique, industriel, ta9a. L7ayat dyal kol nhar mokhtalfa bezzaf bin wa7ed w akhor. 7ett souwar wad7a mora kol smiya.",
+    "start": 15151,
+    "end": 15297
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khtar jouj takhassousat w 9aren nhar 3adi dyalhom.",
+    "start": 15401,
+    "end": 15453
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf f achmen secteurs kayrekrutiw had profils f lMaghrib.",
+    "start": 15542,
+    "end": 15603
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref l mawad l3ilmiya lli kol wa7da katlab b s7i7.",
+    "start": 15696,
+    "end": 15748
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Fhem sélection dyal ddkhol",
+    "start": 15900,
+    "end": 15928
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Cycles ingénieur kaykhtaro 3la dossier, concours wla bjouj, b seuils kaytnecherou kol 3am. Had lkhotwa katwejjed men chhour 9bel.",
+    "start": 16121,
+    "end": 16252
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9ra l2i3lan rasmi dyal had l3am, machi dyal 3am lli fat.",
+    "start": 16369,
+    "end": 16427
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb l imti7anat w format dyal concours lli bghiti.",
+    "start": 16511,
+    "end": 16564
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dir ta7dir montadam, machi ghir sprint f lekher.",
+    "start": 16655,
+    "end": 16705
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf lwa9i3 b 3inik",
+    "start": 16853,
+    "end": 16875
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ziyara l chantier, atelier wla wa7da dyal production ghalban katbeddel nadra dyalek 3la lkhedma. Ssda3, rythme w khedma jama3iya kaytkechfo f l3in lmakan.",
+    "start": 17085,
+    "end": 17241
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tlob tzour chi site wla mchi m3a ziyara mnaddma.",
+    "start": 17346,
+    "end": 17396
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si professionnel 3la 9edd terrain w 9edd bureau.",
+    "start": 17489,
+    "end": 17543
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Jerreb wach kay3ejbek l7sab tatbi9i f chi 7ala bsita.",
+    "start": 17630,
+    "end": 17685
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren l2écoles b ma3ayir mofida",
+    "start": 17819,
+    "end": 17852
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Machi ghir classement. Chouf 9edd projets, modat stages, charakat m3a chrikat w ach kaydiro lkhrijin b s7i7.",
+    "start": 18032,
+    "end": 18142
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren 3dad chhour dyal stage f cursus kamel.",
+    "start": 18252,
+    "end": 18298
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men lmo3addat w lmokhtabarat lli kaynin.",
+    "start": 18384,
+    "end": 18434
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si fin lkhrijin men be3d 3amayn.",
+    "start": 18518,
+    "end": 18556
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Bni dossier 9wi",
+    "start": 18702,
+    "end": 18719
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "No9at l3ilmiya mohimma, walakin l2intidam w projet mtnase9 7tta mohimmin. Plan b jiddi kayb3ed 3lik tkhssar kolchi f concours wa7ed.",
+    "start": 18903,
+    "end": 19037
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9ewwi lmawad l3ilmiya men daba.",
+    "start": 19139,
+    "end": 19172
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed tri9 okhra lli t9bleha bla nadam.",
+    "start": 19262,
+    "end": 19304
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref 3la sskna w lmin7a 9bel nnata2ij.",
+    "start": 19397,
+    "end": 19437
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tdouz men ta7dir",
+    "start": 19590,
+    "end": 19608
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3amayn 9asa7 9bel concours. Rythme s3ib walakin takwin l3ilmi 9wi w kaynfe3 f blayes okhra.",
+    "start": 19770,
+    "end": 19863
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Cycle mdmouj men be3d lbac",
+    "start": 19950,
+    "end": 19978
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi écoles kay9ettar7o masar men be3d lbac fih ta7dir mdmouj. T2ekked men sélection f ddkhoul, chorot lmorour l cycle ingénieur w imta katkhtar takhassous.",
+    "start": 20208,
+    "end": 20365
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf l9obol b diplôme",
+    "start": 20458,
+    "end": 20482
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi écoles kay9eblo b diplôme b chorot. Kayt3elle9 b diplôme b dde9, no9at, takhassous w blayes. Licence wla diplôme technique ma kay3tiwch ddkhoul l cycle ingénieur automatiquement.",
+    "start": 20751,
+    "end": 20935
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lkhedmat ttechnika w takwin lmihani",
+    "start": 21120,
+    "end": 21157
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tt3ellem l7arakat w lma3arif dyal chi khedma. Maintenance, électricité, froid, logistique, hôtellerie, tonobil. 9aren blassat l2ateliers w stages f kol takwin.",
+    "start": 21394,
+    "end": 21555
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "F OFPPT, 3amayn l niveau technicien w technicien spécialisé f cours du jour. T2ekked men moddat takwin lli bghiti.",
+    "start": 21841,
+    "end": 21957
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men frais dyal tasjil w lmo3addat lli khassek tjib. Zid transport, lbsa dyal lkhedma w l3dda ila khassak.",
+    "start": 22115,
+    "end": 22230
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Technicien dyal maintenance sina3iya",
+    "start": 22310,
+    "end": 22348
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kahrabi dyal tarkib",
+    "start": 22400,
+    "end": 22421
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Technicien dyal froid w climatisation",
+    "start": 22483,
+    "end": 22522
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3amil logistique wla magasinier",
+    "start": 22578,
+    "end": 22611
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kat3ellem b lkhedma, w natija kattbane deghya.",
+    "start": 22728,
+    "end": 22776
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwin 9sir kay3awnek tjerreb majal 9bel ma tfekker f takhassous.",
+    "start": 22883,
+    "end": 22950
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khedma lli t7ekmti fiha t9der twesslek t7ell rassek.",
+    "start": 23036,
+    "end": 23090
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Blayes m7douda f chou3ab lli mtlouba, khassek tbda bekri.",
+    "start": 23220,
+    "end": 23279
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi takhassousat fihom majhoud jismani w khdmthom wa9ef.",
+    "start": 23366,
+    "end": 23424
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ttoro9i kaydouz men takwin mostamir, ma kayjich bo7do.",
+    "start": 23522,
+    "end": 23578
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref lkhedmat lli kayrekrutiw 9rib lik",
+    "start": 23723,
+    "end": 23763
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2i9tisad kaykhtalef men jiha l okhra. Khedma mtlouba f zone industrielle momkin ma tkounch mtlouba f blassa okhra. Chouf ach kayn 7dak.",
+    "start": 23964,
+    "end": 24102
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb chrikat w ateliers lli kaynin f jihtek.",
+    "start": 24210,
+    "end": 24256
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khtar 3 takhassousat m7ddda, machi secteur 3am.",
+    "start": 24347,
+    "end": 24396
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si chi 7erfi wla technicien ach ghadi ydir f blastek.",
+    "start": 24491,
+    "end": 24550
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men niveau dyal ddkhol w rroznama",
+    "start": 24712,
+    "end": 24755
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chorot OFPPT kaytbeddlo 7sab niveau : diplôme wla niveau dyal 9raya, l3mer w tnasob bin chou3ab. T2ekked 7tta men tawarikh w tari9at tasjil dyal l3am lli bghiti.",
+    "start": 24977,
+    "end": 25140
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men niveau dyal 9raya lli katlab takhassous.",
+    "start": 25247,
+    "end": 25301
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dir compte dyal préinscription melli tt7ell.",
+    "start": 25381,
+    "end": 25427
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb lwra9 lli khassek w tarikh dyal ddepot f markaz.",
+    "start": 25513,
+    "end": 25568
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Douz nhar f lkhedma",
+    "start": 25723,
+    "end": 25744
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Walou ma ybeddel chi sa3at f atelier. Jaww, l7arakat w l2ajwa' kattchafou f l3in lmakan, machi f chi wer9a.",
+    "start": 25911,
+    "end": 26020
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tlob tchouf ness nhar f chi atelier.",
+    "start": 26122,
+    "end": 26160
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb ach 3ejbek w ach 3eyyak, b s7i7.",
+    "start": 26245,
+    "end": 26284
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked belli dourouf jismaniya mnasba lik.",
+    "start": 26366,
+    "end": 26411
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren lmarakiz w ttakhassousat",
+    "start": 26541,
+    "end": 26573
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Jouj marakiz momkin y3etiw nefs takhassous b mo3addat w charakat mokhtalfin. Stage w l2idmaj homa lli kaybeddlo.",
+    "start": 26759,
+    "end": 26873
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren lmo3addat w 7alat l2ateliers.",
+    "start": 26970,
+    "end": 27007
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si 3la modda w blassa dyal stages.",
+    "start": 27083,
+    "end": 27123
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7seb tri9 dyal kol nhar, kaywzen kter mma katfekker.",
+    "start": 27210,
+    "end": 27264
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed candidature dyalek",
+    "start": 27404,
+    "end": 27431
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed dossier kaml f lwe9t w tri9 taniya lli mnasba lik. Ila de33ti bekri katne9es lmofaja2at, walakin hada ma kaydemmench l9obol.",
+    "start": 27613,
+    "end": 27746
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "De33 dossier melli tt7ell, ma tstennach lekher nhar.",
+    "start": 27861,
+    "end": 27915
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed takhassous tani 9rib men lewwel.",
+    "start": 27998,
+    "end": 28039
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7fed copie numérique dyal kol wer9a de33iti.",
+    "start": 28119,
+    "end": 28165
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwin b ttanawob",
+    "start": 28319,
+    "end": 28338
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi we9t f charika w chi we9t f markaz. T3ellom 9rib l wa9i3 w réseau mihani kaytbna bekri.",
+    "start": 28499,
+    "end": 28592
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kemmel l diplôme 3ali",
+    "start": 28695,
+    "end": 28718
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "OFPPT kaychar7 passerelles bin niveaux w imkaniyat dyal licence professionnelle l techniciens spécialisés. L9obol kayt3elle9 b chou3ba, no9at w chorot dyal lmo2assassa ; machi automatique.",
+    "start": 28979,
+    "end": 29169
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tkhdem 3la rassek",
+    "start": 29253,
+    "end": 29272
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khedma b yeddik lli t7ekmti fiha katkhellik t7ell rassek, walakin ttasyir, devis w 3ila9a m3a client bghaw t3ellom.",
+    "start": 29415,
+    "end": 29532
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tijara, tasyir w malia",
+    "start": 29730,
+    "end": 29754
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tbi3, tseyyer, t7ell l2ar9am, tkhelli chi mo2assasa tdour. Majal wase3 fih l3ila9at 9add lmanhajiya.",
+    "start": 29935,
+    "end": 30037
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Diplôme technique, licence wla cursus f école : 9aren 3dad snin lli kat3len lmo2assassa w l9raya lli bghiti tkemmel.",
+    "start": 30313,
+    "end": 30431
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren frais dyal l9raya f cursus kamel, m3a sskna w stages. Se99si 3la chorot dyal lmina7 ila kaynin.",
+    "start": 30596,
+    "end": 30699
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé de clientèle f lbanka",
+    "start": 30770,
+    "end": 30800
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Contrôleur de gestion",
+    "start": 30847,
+    "end": 30870
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Mas2oul dyal chra wla logistique",
+    "start": 30928,
+    "end": 30962
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé dyal marketing digital",
+    "start": 31015,
+    "end": 31046
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Had lqodrat kaynfe3o f 9rib ga3 secteurs.",
+    "start": 31153,
+    "end": 31196
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lkhedma jama3iya w l2itisal lmobachir 3endhom blassa 7a9i9iya.",
+    "start": 31289,
+    "end": 31353
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T9der tdouz l khel9 dyal nchat dyalek.",
+    "start": 31434,
+    "end": 31474
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Smiyat bzaf w b3d lmerrat ghamda, t2ekked men lm7towa l7a9i9i.",
+    "start": 31596,
+    "end": 31660
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dghet dyal l2ahdaf kayn f bzaf dyal khedmat tijariya.",
+    "start": 31758,
+    "end": 31813
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Bla stages w bla tajriba, lkhrouj men 9raya y9der ykoun bti.",
+    "start": 31901,
+    "end": 31963
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ferre9 bin lbi3, ttasyir w lmalia",
+    "start": 32097,
+    "end": 32132
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Had tlata dyal l3a2ilat bghaw tiba3 mokhtalfa. Lbi3 3aych b l2itisal, ttasyir b tandim, lmalia b ta7lil dyal l2ar9am.",
+    "start": 32314,
+    "end": 32433
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Rettb had tlata men lli kter kay3ejbek 7tta l l2a9all.",
+    "start": 32551,
+    "end": 32607
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9ra jouj fiches métiers f l3a2ila lli jat lewwla.",
+    "start": 32693,
+    "end": 32744
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf 3ila9tek m3a l2ar9am f chi 7ala wad7a.",
+    "start": 32826,
+    "end": 32872
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men ttoro9 dyal ddkhol",
+    "start": 33016,
+    "end": 33048
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi écoles kayrekrutiw b concours men be3d lbac, l2université kat7ell licences f tasyir w i9tisad. Chorot ma kaychebhouch.",
+    "start": 33234,
+    "end": 33358
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren tri9 b sélection w tri9 dyal l2université.",
+    "start": 33461,
+    "end": 33511
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb tawarikh dyal concours w ddepot dyal dossier.",
+    "start": 33591,
+    "end": 33643
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf niveau dyal loghat lli mtloub f ddkhol.",
+    "start": 33721,
+    "end": 33768
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7ett rjel f chi mo2assasa",
+    "start": 33924,
+    "end": 33951
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khedma mawsimiya, stage 9sir wla khedma jam3awiya kay9oulou bzaf. Ghadi tchouf bzerba wach rythme dyal chi équipe mnaseb lik.",
+    "start": 34117,
+    "end": 34244
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9elleb 3la tajriba 9sira, wakha b la flous.",
+    "start": 34339,
+    "end": 34384
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ra9eb ach kay3eyyik w ach kaymotivik f lkhedma jama3iya.",
+    "start": 34476,
+    "end": 34534
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tlob tmchi m3a chi professionnel nhar kaml.",
+    "start": 34618,
+    "end": 34663
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren b kter men ssom3a",
+    "start": 34787,
+    "end": 34812
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf modat stages, loghat, l7alat l3amaliya w réseau dyal l9odama. Ssom3a bo7dha ma kat9oul walou 3la lm7towa.",
+    "start": 34988,
+    "end": 35101
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7seb chhour dyal stage ijbari f kol cursus.",
+    "start": 35208,
+    "end": 35253
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men loghat lli kaytkhdem bihom b s7i7 f dourouss.",
+    "start": 35334,
+    "end": 35393
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren taman kaml, machi ghir frais dyal l3am.",
+    "start": 35478,
+    "end": 35525
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khdem 3la kifach t9addem rassek",
+    "start": 35669,
+    "end": 35702
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "F had majal, t3ref t9addem rassek mohimm bekri. Entretien, wer9a w awwel CV kaytwejjdo 7tta 9bel ma tdkhol l formation.",
+    "start": 35875,
+    "end": 35996
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb ta3rif dyalek f 5 jomal wad7in.",
+    "start": 36101,
+    "end": 36139
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed mital wad7 dyal khedma jama3iya.",
+    "start": 36217,
+    "end": 36258
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref 3la lmina7 9bel ddokhoul.",
+    "start": 36335,
+    "end": 36367
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "École dyal tijara",
+    "start": 36515,
+    "end": 36534
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Sélection f ddkhol, cursus mebni 3la stages w projets. Taman w réseau jouj ma3ayir mohimmin.",
+    "start": 36681,
+    "end": 36775
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Licence f l2université",
+    "start": 36861,
+    "end": 36885
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Doukhoul wase3 w taman m39oul, walakin khassek t3temd 3la rassek kter. Stages ghalban kat9elleb 3lihom b rassek.",
+    "start": 37035,
+    "end": 37149
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Diplôme technique f ttasyir",
+    "start": 37247,
+    "end": 37276
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tri9 bach tchouf tatbi9at f comptabilité wla tasyir. T2ekked men modda, stages w imkaniyat bach tkemmel l9raya b dak diplôme b dde9 3end lmo2assassa.",
+    "start": 37498,
+    "end": 37649
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se77a w l3ilaj",
+    "start": 37800,
+    "end": 37816
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T3alej, tra9eb, tw99a. Tibb, saydala, tamrid, kiné, laboratoire. 9raya twila w b sélection, w khedma m3a nnas dima.",
+    "start": 38035,
+    "end": 38152
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lmodda katbeddel 7sab diplôme, takhassous w lfoj. Chouf cursus rasmi dyal lmo2assassa, m3a stages w takhassousat.",
+    "start": 38441,
+    "end": 38556
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si 3la frais dyal kol 3am w taman lmo3addat. 7seb 7tta sskna w transport l blayes dyal stages.",
+    "start": 38709,
+    "end": 38809
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Momarrid polyvalent",
+    "start": 38871,
+    "end": 38892
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Technicien dyal laboratoire",
+    "start": 38943,
+    "end": 38972
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kinésithérapeute",
+    "start": 39014,
+    "end": 39032
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tbib 3am",
+    "start": 39077,
+    "end": 39087
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Fayda dyal lkhedma kattbane deghya w 9lil lli kayn9echha.",
+    "start": 39197,
+    "end": 39256
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L7ajat kaynin f kol blassa, 7tta bra men lmodon lkbar.",
+    "start": 39346,
+    "end": 39402
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lma3rifa lli katkhod katbqa nafe3a f 7ayatek lmihaniya kollha.",
+    "start": 39492,
+    "end": 39556
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Sélection 9asa7 w lkhedma t9ila 7ded f snin dyal 9raya.",
+    "start": 39681,
+    "end": 39738
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2itisal m3a l2alam katlab tawazon chakhsi 9wi.",
+    "start": 39832,
+    "end": 39881
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Sa3at ghalban fihom gardes w khedma b lil.",
+    "start": 39970,
+    "end": 40014
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf tanaw3 dyal khedmat l3ilaj",
+    "start": 40143,
+    "end": 40177
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Sse77a machi ghir tibb. Tamrid, laboratoire, rééducation, wi9aya, tasyir dyal sbitar. Kol tri9 3endha modda w wa9i3 dyalha.",
+    "start": 40369,
+    "end": 40494
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref 4 khedmat f se77a b modad dyal 9raya mokhtalfa.",
+    "start": 40607,
+    "end": 40661
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ferre9 ach kay3ejbek f l3ilaj, l7araka wla l3ila9a.",
+    "start": 40755,
+    "end": 40808
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Hder m3a chi wa7ed kaykhdem f se77a 3la nhar 3adi dyalo.",
+    "start": 40880,
+    "end": 40938
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Fhem sélection w chorot",
+    "start": 41096,
+    "end": 41121
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chou3ab dyal se77a kaykhtaro 3la dossier, concours wla bjouj, b blayes m7douda. Chorot kaytnecherou kol 3am men l mo2assassat.",
+    "start": 41319,
+    "end": 41447
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9ra l2i3lan rasmi dyal chou3ba w dyal had l3am.",
+    "start": 41554,
+    "end": 41603
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb chnou homa b dde9 imti7anat dyal sélection.",
+    "start": 41681,
+    "end": 41731
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked wach kayn chorot dyal logha wla dossier tibbi.",
+    "start": 41827,
+    "end": 41883
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9erreb men 3alam l3ilaj",
+    "start": 42030,
+    "end": 42055
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L3amal tatawo3i, jam3iya wla mora9aba mo2attara kay3etiw fikra s7i7a. Rri7a, ssda3 w l3ya dyal chi service ma kaytqraw f brochure.",
+    "start": 42253,
+    "end": 42385
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dkhol f chi 3amal jam3awi f se77a wla is3af.",
+    "start": 42497,
+    "end": 42543
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tlob tchouf b mora9aba, wakha we9t 9sir.",
+    "start": 42618,
+    "end": 42660
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9eyyem b s7i7 réaction dyalek 9oddam l3ya w stress.",
+    "start": 42752,
+    "end": 42805
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren modda, sélection w wa9i3 dyal lkhedma",
+    "start": 42942,
+    "end": 42987
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chou3ba 9sira machi khtiyar tani. Katwessel l khedma kamla, b mas2ouliyat dyalha w imkaniyat dyal ttoro9i.",
+    "start": 43168,
+    "end": 43276
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren jouj chou3ab 3la modda kamla w nisbat l9obol.",
+    "start": 43387,
+    "end": 43440
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf fin kaykhedmo lkhrijin b s7i7.",
+    "start": 43514,
+    "end": 43552
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men l2imkaniyat dyal tbdil ila bddelti ra2yek.",
+    "start": 43637,
+    "end": 43693
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9awem l masafa",
+    "start": 43828,
+    "end": 43844
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Had 9raya katlab tandim montadam kter men majhoud dyal we9t wa7ed. N3ass, lmanhajiya w dda3m 7walik mohimmin 9add niveau.",
+    "start": 44037,
+    "end": 44160
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dir tari9a dyal moraja3a tabta men lewwel.",
+    "start": 44264,
+    "end": 44308
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed tri9 okhra f majal dyal se77a.",
+    "start": 44393,
+    "end": 44432
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf dourouf dyal sskna 9rib men blayes dyal stage.",
+    "start": 44521,
+    "end": 44575
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwinat chibh tibbiya",
+    "start": 44736,
+    "end": 44760
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tamrid, laboratoire, imagerie, rééducation : kol diplôme kaywejjed l khedmat mokhtalfa. T2ekked men l2i3tiraf bih, modda, stages w chorot dyal lkhedma.",
+    "start": 44980,
+    "end": 45133
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tibb, saydala, l2asnan",
+    "start": 45220,
+    "end": 45244
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Cursus twal w b sélection, katlab iltizam dyal snin 9bel ma tkhdem b rassek.",
+    "start": 45375,
+    "end": 45453
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se77a 3omoumiya w tasyir",
+    "start": 45542,
+    "end": 45568
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wi9aya, épidémiologie, tandim dyal l3ilaj. Tari9a bach tkhdem l se77a bla ma tkoun 7da lmarid.",
+    "start": 45717,
+    "end": 45813
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Design, sam3i basari w l2ibda3",
+    "start": 45996,
+    "end": 46028
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T3ti chakl l chi fikra. Graphisme, design dyal montaj, design dakhili, vidéo, animation, sawt. Chouf lkhedmat w chahadat lli kay7taj kol métier.",
+    "start": 46255,
+    "end": 46401
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lmodda katbeddel 7sab takhassous, diplôme w l2école. T2ekked men cursus w blassat stages wla projet dyal nihayat l9raya.",
+    "start": 46684,
+    "end": 46806
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Zid m3a frais dyal l9raya lmo3addat, logiciels w frais dyal projets. T2ekked men dakchi lli katweffer l2école b s7i7.",
+    "start": 46970,
+    "end": 47089
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Designer graphique",
+    "start": 47149,
+    "end": 47169
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Monteur vidéo wla motion designer",
+    "start": 47227,
+    "end": 47262
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Designer dyal l2amakin wla dakhili",
+    "start": 47320,
+    "end": 47356
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé dyal tawasol basari",
+    "start": 47414,
+    "end": 47442
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lkhedma kattbane nichan, portfolio kayhder 3lik.",
+    "start": 47556,
+    "end": 47606
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Projets chakhsiya kaywzno b s7i7 f had majal.",
+    "start": 47691,
+    "end": 47738
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L compétences kaynfe3o f bzaf dyal secteurs, machi ghir f l2ichhar.",
+    "start": 47840,
+    "end": 47909
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dakhl y9der ykoun ghir montadam f lewwel, khassatan ila khdemti 3la rassek.",
+    "start": 48031,
+    "end": 48108
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "N9ad dyal lkhedma joz2 men lkhedma, khassek t9eblo.",
+    "start": 48199,
+    "end": 48252
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Dew9 bo7do ma kafich, ttechnika w lmawa3id homa lli kaynaddmo kolchi.",
+    "start": 48345,
+    "end": 48416
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Semmi b dde9 ach bghiti tkhle9",
+    "start": 48547,
+    "end": 48579
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tkhle9 tswira, blassa, sawt wla 7araka machi nefs l2adawat w machi nefs takwin. Kelmat l2ibda3 wase3a bezzaf bach tkhtar.",
+    "start": 48763,
+    "end": 48886
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khtar jouj supports m7ddin lli kter kay3ejbouk.",
+    "start": 48988,
+    "end": 49037
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf lkhedma l7a9i9iya dyal professionnels f had jouj ttoro9.",
+    "start": 49129,
+    "end": 49193
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb l2adawat w logiciels lli kayt3awdo bzaf.",
+    "start": 49283,
+    "end": 49330
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked ach mtloub f ddkhol",
+    "start": 49459,
+    "end": 49488
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Bzaf dyal écoles dyal l2ibda3 katlab dossier dyal khedma, chi merra entretien wla test. Hada katwejjdo men be3d we9t, machi lbare7.",
+    "start": 49672,
+    "end": 49805
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked wach khassek dossier dyal khedma w b achmen chakl.",
+    "start": 49919,
+    "end": 49979
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb tawarikh dyal ddepot w formats lli kayt9eblo.",
+    "start": 50057,
+    "end": 50109
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf wach kayna chi mo2assasa 3omoumiya b nefs takhassous.",
+    "start": 50206,
+    "end": 50267
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Nteg 9bel ma t9addem",
+    "start": 50413,
+    "end": 50435
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chi khedmat kamlin kay3awnouk tweri tari9at lkhedma dyalek w t9elleb 3la ra2y wad7. T2ekked men ta3limat portfolio ila l2école katetlbo.",
+    "start": 50620,
+    "end": 50758
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kemmel 3 khedmat chakhsiya, men lewwel l lekher.",
+    "start": 50860,
+    "end": 50910
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khelli chi wa7ed 9aseh ychouf lkhedma dyalek.",
+    "start": 50989,
+    "end": 51036
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb kifach khdemti, machi ghir natija lekhira.",
+    "start": 51121,
+    "end": 51170
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren l2écoles 3la lkhedma lli kaynteg",
+    "start": 51303,
+    "end": 51343
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "A7sen dalil howa lkhedma dyal telaba lli kharjin. Chouf projets dyalhom, tanaw3hom w fin wselo.",
+    "start": 51514,
+    "end": 51611
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf khedmat dyal nihayat 9raya dyal l fawj lekhrin.",
+    "start": 51722,
+    "end": 51777
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men lmo3addat w logiciels lli kaynin b s7i7.",
+    "start": 51867,
+    "end": 51921
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren taman kaml m3a lmo3addat chakhsiya lli khassek.",
+    "start": 52011,
+    "end": 52066
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Bni portfolio 9wi",
+    "start": 52217,
+    "end": 52236
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Portfolio kaytkhdem b7al dossier. Khtiyar m7kem, ta9dim nqi, w char7 9sir l kol projet. Hada howa awwel 7ojja dyalek.",
+    "start": 52420,
+    "end": 52539
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7fed a7sen khedmat dyalek w 7yed d3if.",
+    "start": 52644,
+    "end": 52684
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb jouj jomal dyal char7 l kol projet.",
+    "start": 52758,
+    "end": 52800
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Wejjed version numérique sahla bach tcharko.",
+    "start": 52878,
+    "end": 52924
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "École dyal fann wla design",
+    "start": 53056,
+    "end": 53084
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ittar jiddi b ateliers w n9ad montadam. L9obol ghalban kaydouz men dossier dyal khedma.",
+    "start": 53228,
+    "end": 53317
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Diplôme technique ibda3i",
+    "start": 53413,
+    "end": 53439
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Infographie, sam3i basari, multimédia : chouf l2adawat lli kay9erriw, projets w stages. T2ekked men modda w chorot l9obol dyal takhassous lli khtariti.",
+    "start": 53639,
+    "end": 53792
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tt3ellem b rassek, b chi ittar",
+    "start": 53892,
+    "end": 53924
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Momkin f had majal, b chart dyal indibat 7a9i9i w retours men bra. Diplôme kaybqa nafe3 f chi mo2assassat.",
+    "start": 54098,
+    "end": 54206
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L3olom l2asasiya w lba7t",
+    "start": 54383,
+    "end": 54409
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tfhem 9bel ma tatbbe9. Riyadiyat, fizya, kimya, biologia, 3olom l2ard. Tri9 9aseh kay7ell 3la tadris, ba7t w ta7lil.",
+    "start": 54626,
+    "end": 54744
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Licence, w momkin men be3d master w doctorat. T2ekked men moddat kol cycle w chorot dyalo ; bach tkemmel l9raya kayna sélection.",
+    "start": 55060,
+    "end": 55190
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men frais ila kaynin w budget dyal l3icha f lmdina lli bghiti. Chouf chorot lmin7a w sskna bo7dhom.",
+    "start": 55349,
+    "end": 55458
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ostad dyal l3olom",
+    "start": 55522,
+    "end": 55541
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé dyal dirassat wla ta7lilat",
+    "start": 55596,
+    "end": 55631
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Technicien wla ingénieur f laboratoire",
+    "start": 55695,
+    "end": 55735
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ba7et men be3d masar dyal doctorat",
+    "start": 55797,
+    "end": 55833
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Takwin kay3ellmek tfekker, w hada kaynfe3 f kol blassa.",
+    "start": 55947,
+    "end": 56004
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T9der t3emme9 f chi madda 9bel ma tkhtar takhassous.",
+    "start": 56100,
+    "end": 56154
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lma3arif l3ilmiya y9dro ynfe3o f ta7lil data wla sina3a ; t2ekked men takwin zayed lli khassek.",
+    "start": 56316,
+    "end": 56413
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khassek t3temd 3la rassek bezzaf, 9lil lli ghadi yjbdek.",
+    "start": 56524,
+    "end": 56582
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2irtibat b khedma m7ddda 9all men chou3ba mihaniya.",
+    "start": 56685,
+    "end": 56739
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lmakhraj ghalban kaytwe99ef 3la master mkhtar mezyan.",
+    "start": 56821,
+    "end": 56876
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf ach katwelli l3ilm f l2université",
+    "start": 57014,
+    "end": 57055
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Riyadiyat dyal thanawi w dyal licence ma kaychebhouch. Chouf programme 7a9i9i dyal l3am lewwel 9bel ma tkhtar.",
+    "start": 57223,
+    "end": 57335
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7ell programme dyal licence dyal chou3ba lli bghiti.",
+    "start": 57434,
+    "end": 57488
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref lmawad lli ma t3reftihomch w 9elleb 3la ach kat3ni.",
+    "start": 57582,
+    "end": 57640
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si talib f l3am tani ach fajje2o.",
+    "start": 57729,
+    "end": 57768
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men tasjil w chorot",
+    "start": 57925,
+    "end": 57954
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Doukhoul l l2université wase3 kter men chou3ab b sélection, walakin chi mentions 3endhom blayes m7douda w chorot. T2ekked 9bel.",
+    "start": 58150,
+    "end": 58279
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men 9edd blayes f chou3ba lli khtariti.",
+    "start": 58383,
+    "end": 58432
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb tawarikh dyal tasjil idari.",
+    "start": 58506,
+    "end": 58540
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf b achmen logha kaytdarrsou lmawad l3ilmiya.",
+    "start": 58630,
+    "end": 58681
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Jerreb 3ila9tek m3a tajrid",
+    "start": 58835,
+    "end": 58863
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L3ilm l2asasi kat3ichou f ttoul w sser. Chi mochkil kaybqa m3ak iyyam hada l3adi, machi istitna2.",
+    "start": 59039,
+    "end": 59138
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khdem 3la chi mochkil s3ib 3la mdar iyyam.",
+    "start": 59240,
+    "end": 59284
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ra9eb wach ssou3ouba katfechlek wla katchedddek.",
+    "start": 59366,
+    "end": 59416
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ila 9dditi, 7der chi cours meftou7 f l2université.",
+    "start": 59499,
+    "end": 59551
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren lmakharij dyal masters",
+    "start": 59676,
+    "end": 59706
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "F l3olom, licence katwejjeh w master kaykhassas. Chouf men daba achmen masters kaynin w ach kay7ellou b s7i7.",
+    "start": 59877,
+    "end": 59988
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb 3 masters lli t9der twsselhom men licence dyalek.",
+    "start": 60088,
+    "end": 60144
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men chorot dyal sélection dyal had masters.",
+    "start": 60225,
+    "end": 60278
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf ttoro9 l l2ingénierie wla l data.",
+    "start": 60365,
+    "end": 60406
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Drri rassek tkhdem b wa7dek",
+    "start": 60561,
+    "end": 60590
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L2université kat3ti 7orriya kbira, w hadi masyada bla manhajiya. Rythme tabet men lasabi3 lewla kaybeddel l3am kollo.",
+    "start": 60774,
+    "end": 60893
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7edded rythme dyal khedma kol simana men ddokhoul.",
+    "start": 60997,
+    "end": 61049
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L9a groupe dyal khedma jiddi.",
+    "start": 61115,
+    "end": 61146
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men 7e99ek f lmin7a w sskna dyal telaba.",
+    "start": 61230,
+    "end": 61280
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L jihat lba7t",
+    "start": 61428,
+    "end": 61443
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Master w men be3d doctorat, b khedma twila 3la mawdou3 m7edded. Katlab sser w ta2tir mezyan.",
+    "start": 61591,
+    "end": 61685
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L jihat tadris",
+    "start": 61766,
+    "end": 61782
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Twesssel chi madda, b takwin baydaghouji w concours khassin. L2itisal m3a telaba howa 9elb lkhedma.",
+    "start": 61942,
+    "end": 62043
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L jihat tatbi9at ttechnika",
+    "start": 62137,
+    "end": 62165
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Data, 7sab, laboratoire, sina3a. Master tatbi9i kay9arreb licence 3ilmiya men sou9 chchoghl.",
+    "start": 62308,
+    "end": 62402
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L9anoun, tarbiya w lmojtama3",
+    "start": 62579,
+    "end": 62609
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tfhem l9awanin w nnas. L9anoun, 3olom ijtima3iya, tadris, 3amal ijtima3i, idara. Khedmat dyal 9raya, ktaba w 3ila9at.",
+    "start": 62810,
+    "end": 62929
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ferre9 bin diplôme lewwel w takwin wla concours lli katlab lkhedma lli bghiti. T2ekked men chorot f kol khotwa.",
+    "start": 63213,
+    "end": 63326
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7seb frais ila kaynin, sskna w tan9olat. Ila khas concours, 7seb 7tta lwe9t w l2imkaniyat dyal ta7dir.",
+    "start": 63497,
+    "end": 63601
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Juriste f charika wla idara",
+    "start": 63683,
+    "end": 63712
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ostad",
+    "start": 63748,
+    "end": 63755
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khaddam ijtima3i",
+    "start": 63799,
+    "end": 63817
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chargé dyal mawarid bachariya",
+    "start": 63872,
+    "end": 63903
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L9raya w lktaba kaywellou adawat mihaniya 7a9i9iya.",
+    "start": 64022,
+    "end": 64075
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Lmakharij kaynin f l3omoumi b7al f lkhass.",
+    "start": 64159,
+    "end": 64203
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Had majal mnaseb l lli kaybghi ynaqech w ycharreh.",
+    "start": 64291,
+    "end": 64343
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9edd dyal 9raya kbir w montadam.",
+    "start": 64442,
+    "end": 64476
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Bzaf dyal ttoro9 kaydouzou men concours, b ta7dir twil.",
+    "start": 64573,
+    "end": 64630
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chou3ab 3amma katlab takhassous wad7 men be3d.",
+    "start": 64727,
+    "end": 64775
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ferre9 bin 3a2ilat lkhedmat",
+    "start": 64901,
+    "end": 64930
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L9anoun, tadris w l3amal ijtima3i fihom khedmat mokhtalfa. 9aren l9raya, lktaba, l2itisal m3a nnas w mas2ouliyat dyal kol métier.",
+    "start": 65145,
+    "end": 65276
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khtar 3a2ila w 9ra jouj fiches métiers men dakchi.",
+    "start": 65389,
+    "end": 65441
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref 9edd dyal lktaba w 9edd dyal lhadra f kol wa7da.",
+    "start": 65525,
+    "end": 65580
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Se99si professionnel ach khellah yb9a.",
+    "start": 65660,
+    "end": 65700
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men doukhoul w mma jay men be3d",
+    "start": 65858,
+    "end": 65899
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Doukhoul l licence ghalban wase3, walakin lli jay kaydouz men master wla concours. Chouf tri9 kamla, machi ghir l3am lewwel.",
+    "start": 66083,
+    "end": 66209
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf ach kaydiro lkhrijin men be3d 3 snin men licence.",
+    "start": 66319,
+    "end": 66376
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref achmen concours kaynin f tri9 lli bghiti.",
+    "start": 66461,
+    "end": 66509
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb logha ra2isiya dyal dourouss w limti7anat.",
+    "start": 66590,
+    "end": 66639
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Jerreb terrain dyal l3ila9at",
+    "start": 66788,
+    "end": 66818
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2atter groupe, t3awen chi wa7ed wla t7der chi jalsa 3omoumiya kay3ellmek kter men chi bab f ktab.",
+    "start": 66975,
+    "end": 67075
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Charek f chi nchat jam3awi wla da3m madrasi.",
+    "start": 67185,
+    "end": 67231
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "7der chi jalsa 3omoumiya ila kan momkin.",
+    "start": 67311,
+    "end": 67353
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb wach tcharreh l nnas kay3eyyik wla kay3jbek.",
+    "start": 67437,
+    "end": 67488
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "9aren ttakhassousat lmomkina",
+    "start": 67617,
+    "end": 67647
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Licence 3amma katkhassas men be3d. 9anoun l2a3mal, 9anoun 3am, 3olom tarbiya, sociologie tatbi9iya. Khtiyar dyal master howa lli kaywejjeh lkhedma.",
+    "start": 67845,
+    "end": 67994
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb jouj takhassousat kay3ejbouk w lmakharij dyalhom.",
+    "start": 68105,
+    "end": 68161
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T2ekked men sélection dyal had masters.",
+    "start": 68229,
+    "end": 68270
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Chouf wach kayn stage f cursus.",
+    "start": 68345,
+    "end": 68378
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khdem 3la lktaba w l7ojja",
+    "start": 68533,
+    "end": 68560
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "F ga3 had ttoro9, tkteb b wodou7 hiya mahara 7asima. Hadi katkhdem bekri, b tatbi9 montadam kter men nadariya.",
+    "start": 68739,
+    "end": 68851
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Kteb kol simana nass 9sir w mbni 3la 7ojaj.",
+    "start": 68950,
+    "end": 68995
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Khelli chi wa7ed 9aseh ysse77 lik nsoussek.",
+    "start": 69075,
+    "end": 69120
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "3ref 3la lmin7a w sskna dyal telaba.",
+    "start": 69202,
+    "end": 69240
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L9anoun",
+    "start": 69375,
+    "end": 69384
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Madda m7ddda w mnaddma, katwessel l l2istichara, nnizza3at wla l2idara. Dde9 f l9raya howa l2asas.",
+    "start": 69543,
+    "end": 69643
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Ttarbiya",
+    "start": 69713,
+    "end": 69723
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "Tdarres, t2atter, tsemmem baramij. Concours w takwin baydaghouji homa lli kaynaddmo doukhoul l lkhedma.",
+    "start": 69867,
+    "end": 69972
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "L3amal ijtima3i w l2idara",
+    "start": 70065,
+    "end": 70092
+  },
+  {
+    "file": "src\\lib\\orientation-catalog.ts",
+    "ary": "T3awen nnas wla tkhelli chi maslaha 3omoumiya tdour. Terrain bzaf, 9awanin m7ddda w 7ess jama3i 7a9i9i.",
+    "start": 70255,
+    "end": 70360
+  }
+]

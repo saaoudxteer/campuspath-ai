@@ -57,18 +57,8 @@ export async function getSnapshot(
 let bootstrapPromise: Promise<Snapshot> | null = null;
 export function bootstrap() {
   if (!bootstrapPromise)
+    // Only the server session determines authentication. A demo is an explicit choice.
     bootstrapPromise = getSnapshot()
-      .catch(async (error: unknown) => {
-        if (
-          error instanceof ApiError &&
-          error.status === 401 &&
-          !sessionStorage.getItem("campuspath-logged-out")
-        ) {
-          const health = (await request("/health")) as { demo_mode: boolean };
-          if (health.demo_mode) return getSnapshot("/auth/demo", {});
-        }
-        throw error;
-      })
       .finally(() => {
         bootstrapPromise = null;
       });

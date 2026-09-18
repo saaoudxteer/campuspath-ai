@@ -161,7 +161,7 @@ export function Modal({
         <h2>{title}</h2>
         <button
           type="button"
-          aria-label={t("Fermer", "Sedd")}
+          aria-label={t("Fermer", "نسد")}
           onClick={onClose}
         >
           <X size={20} />
@@ -232,11 +232,12 @@ export function Progress({
     </div>
   );
 }
-export function Loading() {
+export function Loading({ locale = "fr" }: { locale?: Locale }) {
+  const label = locale === "fr" ? "Préparation de votre espace…" : "كنوجدو الفضاء ديالك…";
   return (
-    <div className="workspace-loading" aria-busy="true" aria-label="Chargement de votre espace">
+    <div className="workspace-loading" aria-busy="true" aria-label={label}>
       <div className="loading-rail" aria-hidden="true"><span /><span /><span /><span /></div>
-      <div className="loading-content"><p role="status"><LoaderCircle className="spin" size={18} />Préparation de votre espace…</p><div className="loading-placeholder" aria-hidden="true"><i /><i /><i /></div><div className="loading-rows" aria-hidden="true">{[1, 2, 3].map((row) => <div key={row}><span /><span /><span /></div>)}</div></div>
+      <div className="loading-content"><p role="status"><LoaderCircle className="spin" size={18} />{label}</p><div className="loading-placeholder" aria-hidden="true"><i /><i /><i /></div><div className="loading-rows" aria-hidden="true">{[1, 2, 3].map((row) => <div key={row}><span /><span /><span /></div>)}</div></div>
     </div>
   );
 }

@@ -35,44 +35,44 @@ import {
   useApp,
 } from "./ui";
 export const claimLabels: Record<string, [string, string]> = {
-  curriculum: ["Programme pédagogique", "Contenu dyal formation"],
-  prerequisites: ["Prérequis académiques", "Chorot dyal 9raya"],
-  route: ["Voie de candidature", "Tri9 dyal candidature"],
-  deadline: ["Date limite", "Akher ajal"],
-  language: ["Niveau de français", "Niveau dyal français"],
-  tuition: ["Frais annuels (€)", "Frais dyal l3am (€)"],
-  eligibility: ["Votre éligibilité", "Wach katstejib l chorot?"],
-  degree: ["Diplôme requis", "Diplôme lli khas"],
-  documents: ["Documents demandés", "Lwra9 lli khas"],
-  outcomes: ["Débouchés", "Afaq mihaniya"],
-  instruction_language: ["Langue d’enseignement", "Logha dyal 9raya"],
-  application_fee: ["Frais de candidature", "Frais candidature"],
-  contact: ["Contact", "Contact"],
-  program_url: ["Page de la formation", "Page dyal formation"],
-  admission_url: ["Page des admissions", "Page dyal admissions"],
+  curriculum: ["Programme pédagogique", "محتوى التكوين"],
+  prerequisites: ["Prérequis académiques", "شروط القراية"],
+  route: ["Voie de candidature", "طريق الترشيح"],
+  deadline: ["Date limite", "آخر أجل"],
+  language: ["Niveau de français", "المستوى فالفرنسية"],
+  tuition: ["Frais annuels (€)", "مصاريف العام (€)"],
+  eligibility: ["Votre éligibilité", "واش كتستوفي الشروط؟"],
+  degree: ["Diplôme requis", "الدبلوم المطلوب"],
+  documents: ["Documents demandés", "الوثائق المطلوبة"],
+  outcomes: ["Débouchés", "الآفاق المهنية"],
+  instruction_language: ["Langue d’enseignement", "لغة القراية"],
+  application_fee: ["Frais de candidature", "مصاريف الترشيح"],
+  contact: ["Contact", "جهة الاتصال"],
+  program_url: ["Page de la formation", "صفحة التكوين"],
+  admission_url: ["Page des admissions", "صفحة القبول"],
 };
 function classificationLabel(
   classification: string,
   t: (fr: string, ary?: string) => string,
 ) {
   return classification === "SAFER"
-    ? t("Bonne cohérence", "Tnassob mzyan")
+    ? t("Bonne cohérence", "توافق مزيان")
     : classification === "TARGET"
-      ? t("À explorer", "Khas tktechef")
+      ? t("À explorer", "مسار خاصك تكتشفو")
       : classification === "AMBITIOUS"
-        ? t("Possible avec remise à niveau", "Momkin m3a ta2hil")
+        ? t("Possible avec remise à niveau", "ممكن مع تقوية المستوى")
         : classification === "INELIGIBLE"
-          ? t("Point bloquant à vérifier", "Khas t3awed tchecki")
-          : t("À documenter", "Khas t3ammer lma3lomat");
+          ? t("Point bloquant à vérifier", "خاصك تعاود تراجع")
+          : t("À documenter", "خاصك تكمل المعلومات");
 }
 function dimensionLabel(
   score: number | null,
   t: (fr: string, ary?: string) => string,
 ) {
-  if (score === null) return t("À préciser", "Khas tawdi7");
-  if (score >= 85) return t("Cohérent avec le profil", "Mnasb l profil");
-  if (score >= 65) return t("À explorer", "Khas tktechef");
-  return t("À renforcer", "Khas t9wi");
+  if (score === null) return t("À préciser", "خاص توضيح");
+  if (score >= 85) return t("Cohérent avec le profil", "مناسب للملف ديالك");
+  if (score >= 65) return t("À explorer", "خاصك تكتشفو");
+  return t("À renforcer", "خاصك تقوي المستوى");
 }
 export function ProgramsView() {
   const { data, t, go, programId } = useApp(),
@@ -108,19 +108,19 @@ export function ProgramsView() {
   return (
     <>
       <Heading
-        eyebrow={t("DES CHOIX QUI ONT DU SENS", "KHTIYAR 3LA BAYNA")}
+        eyebrow={t("DES CHOIX QUI ONT DU SENS", "اختيار على بينة")}
         title={t(
           "Trouvez votre prochaine formation.",
-          "L9a formation lli jaya.",
+          "لقى التكوين الجاي ديالك.",
         )}
         description={t(
           "Comparez l’adéquation, les contenus et les points à clarifier avant de choisir.",
-          "9aren tnassob, contenu w no9at lli khas nwedd7o 9bel lkhtiyar.",
+          "قارن التوافق والمحتوى والنقط اللي خاصنا نوضحو قبل الاختيار.",
         )}
         action={
           <Button onClick={() => go("applications")}>
             <Bookmark size={16} />
-            {t("Ma sélection", "Khtiyarat dyali")}
+            {t("Ma sélection", "الاختيارات ديالي")}
           </Button>
         }
       />
@@ -128,29 +128,29 @@ export function ProgramsView() {
         <div className="search-box">
           <Search size={18} />
           <input
-            aria-label={t("Rechercher une formation", "9elleb 3la formation")}
+            aria-label={t("Rechercher une formation", "نقلب على تكوين")}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={t(
               "Formation, établissement, domaine…",
-              "Formation, mo2assasa, domaine…",
+              "تكوين، مؤسسة، مجال…",
             )}
           />
           {search && (
             <button
               onClick={() => setSearch("")}
-              aria-label={t("Effacer la recherche", "7yed recherche")}
+              aria-label={t("Effacer la recherche", "نمسح البحث")}
             >
               <X size={16} />
             </button>
           )}
         </div>
         <select
-          aria-label={t("Filtrer par ville", "Khtar lmdina")}
+          aria-label={t("Filtrer par ville", "نختار المدينة")}
           value={city}
           onChange={(e) => setCity(e.target.value)}
         >
-          <option value="all">{t("Toutes les villes", "Ga3 lmdoun")}</option>
+          <option value="all">{t("Toutes les villes", "جميع المدن")}</option>
           {[...new Set(data.programs.map((p) => p.institution.city))].map(
             (c) => (
               <option key={c}>{c}</option>
@@ -163,12 +163,12 @@ export function ProgramsView() {
       </div>
       <div className="filter-chips">
         {[
-          ["all", "Toutes les formations", "Ga3 formations"],
-          ["saved", "Enregistrées", "Lli 7fedti"],
-          ["SAFER", "Bonne cohérence", "Tnassob mzyan"],
-          ["TARGET", "À explorer", "Khas tktechef"],
-          ["AMBITIOUS", "Avec remise à niveau", "M3a ta2hil"],
-          ["UNASSESSED", "À évaluer", "Khas ta9yim"],
+          ["all", "Toutes les formations", "جميع التكوينات"],
+          ["saved", "Enregistrées", "اللي حفظتي"],
+          ["SAFER", "Bonne cohérence", "توافق مزيان"],
+          ["TARGET", "À explorer", "خاص الاكتشاف"],
+          ["AMBITIOUS", "Avec remise à niveau", "مع تقوية المستوى"],
+          ["UNASSESSED", "À évaluer", "خاص التقييم"],
         ].map(([id, fr, ary]) => (
           <button
             className={filter === id ? "active" : ""}
@@ -182,27 +182,27 @@ export function ProgramsView() {
       <div className="results-meta">
         <span>
           {filtered.length}{" "}
-          {t("formations à explorer", "formations bach t9elleb")}
+          {t("formations à explorer", "تكوينات باش تقلب")}
         </span>
         <span>
-          {t("Tri : pertinence du profil", "Tri : tnassob m3a profil")}
+          {t("Tri : pertinence du profil", "الترتيب: التوافق مع الملف")}
         </span>
       </div>
       {filtered.length === 0 ? (
         <Empty
           title={t(
             "Aucune formation dans cette vue",
-            "Ma kayna 7ta formation hna",
+            "ما كاين حتى تكوين هنا",
           )}
           description={
             data.candidate.is_demo
               ? t(
                   "Essayez une autre recherche ou retirez un filtre.",
-                  "Jerrab recherche okhra wlla 7yed filtre.",
+                  "جرب بحث آخر ولا حيد التصفية.",
                 )
               : t(
                   "Le catalogue de production est vide. Les formations fictives restent réservées à la démonstration.",
-                  "Catalogue lm2ekked mazal khawi. Formations tajribiya ghir f démo.",
+                  "دليل التكوينات المؤكدة مازال خاوي. التكوينات التجريبية غير فالعرض التجريبي.",
                 )
           }
           action={
@@ -214,7 +214,7 @@ export function ProgramsView() {
                   setFilter("all");
                 }}
               >
-                {t("Réinitialiser les filtres", "7yed les filtres")}
+                {t("Réinitialiser les filtres", "نحيد التصفية")}
               </Button>
             ) : undefined
           }
@@ -248,7 +248,7 @@ export function ProgramsView() {
       <Notice>
         {t(
           "Les catégories décrivent la cohérence entre votre profil et les informations connues de la formation. Elles ne prédisent pas l’admission : ouvrez chaque fiche pour voir les prérequis et les points à vérifier.",
-          "Had catégories kaybeyno tnassob bin profil dyalek w lma3lomat lli 3arfin 3la formation. Ma kaytwa33doch l9oboul : 7ell kol fiche bach tchouf chorot w no9at lli khas tchecki.",
+          "هاد الفئات كتبين التوافق بين الملف ديالك والمعلومات اللي عارفين على التكوين. ما كتضمنش القبول: حل كل بطاقة باش تشوف الشروط والنقط اللي خاصك تراجع.",
         )}
       </Notice>
       {compare.length > 0 && (
@@ -256,20 +256,20 @@ export function ProgramsView() {
           <GitCompareArrows size={19} />
           <strong>
             {compare.length}/3{" "}
-            {t("formations à comparer", "formations lmo9arana")}
+            {t("formations à comparer", "تكوينات للمقارنة")}
           </strong>
           <Button
             variant="primary"
             disabled={compare.length < 2}
             onClick={() => setShowCompare(true)}
           >
-            {t("Comparer", "9aren")}
+            {t("Comparer", "نقارن")}
             <ArrowRight size={16} />
           </Button>
           <button
             className="icon-button"
             onClick={() => setCompare([])}
-            aria-label={t("Vider la comparaison", "7yed mo9arana")}
+            aria-label={t("Vider la comparaison", "نحيد المقارنة")}
           >
             <X size={18} />
           </button>
@@ -277,7 +277,7 @@ export function ProgramsView() {
       )}
       {showCompare && (
         <Modal
-          title={t("Comparer vos options", "9aren l2ikhtiyarat")}
+          title={t("Comparer vos options", "نقارن الاختيارات")}
           onClose={() => setShowCompare(false)}
           wide
         >
@@ -303,14 +303,14 @@ export function ProgramsView() {
                   <p className="compare-reason">
                     {m.strengths[0] ??
                       m.risks[0] ??
-                      t("À préciser", "Khas tawdi7")}
+                      t("À préciser", "خاص توضيح")}
                   </p>
                   <dl>
-                    <dt>{t("Budget annuel", "Budget l3am")}</dt>
+                    <dt>{t("Budget annuel", "ميزانية العام")}</dt>
                     <dd>{p.claims.tuition.value ?? "—"} €</dd>
-                    <dt>{t("Langue", "Logha")}</dt>
+                    <dt>{t("Langue", "اللغة")}</dt>
                     <dd>{p.claims.language.value ?? "—"}</dd>
-                    <dt>{t("Points bloquants", "No9at lli khas t7ell")}</dt>
+                    <dt>{t("Points bloquants", "النقط اللي خاصك تحل")}</dt>
                     <dd>{m.blockers.length}</dd>
                   </dl>
                   <p>{p.description}</p>
@@ -320,7 +320,7 @@ export function ProgramsView() {
                       go("programs", p.id);
                     }}
                   >
-                    {t("Voir la fiche", "Chouf fiche")}
+                    {t("Voir la fiche", "نشوف البطاقة")}
                   </Button>
                 </div>
               );
@@ -357,7 +357,7 @@ function ProgramCard({
           }
           aria-label={t(
             s?.saved ? "Retirer des favoris" : "Enregistrer " + p.title,
-            s?.saved ? "7yed mn favoris" : "7fed " + p.title,
+            s?.saved ? "نحيد من المفضلة" : "نحفظ " + p.title,
           )}
           aria-pressed={s?.saved ?? false}
         >
@@ -375,37 +375,37 @@ function ProgramCard({
         </span>
         <span>{p.academic_level}</span>
         <span>
-          {p.is_mock ? t("FICTIF", "TAJRIBI") : t("Catalogue", "Catalogue")}
+          {p.is_mock ? t("FICTIF", "تجريبي") : t("Catalogue", "الدليل")}
         </span>
       </div>
       <p className="program-description">{p.description}</p>
       <div className="fit-summary">
         <div>
-          <span>{t("Adéquation du profil", "Tnassob m3a profil")}</span>
+          <span>{t("Adéquation du profil", "التوافق مع الملف")}</span>
           <strong className="fit-label fit-label-large">
             {classificationLabel(m.classification, t)}
           </strong>
         </div>
         <p>
-          {t("Informations documentées", "Ma3lomat m9eyda")} : {m.coverage}% ·{" "}
-          {m.blockers.length} {t("points à vérifier", "no9at khas moraja3a")}
+          {t("Informations documentées", "المعلومات مسجلة")} : {m.coverage}% ·{" "}
+          {m.blockers.length} {t("points à vérifier", "نقط خاصها مراجعة")}
         </p>
         <p className="program-match-reason">
           {m.strengths[0] ??
             m.risks[0] ??
             t(
               "Ouvrez la fiche pour comprendre les prérequis.",
-              "7ell fiche bach tfhem chorot.",
+              "حل البطاقة باش تفهم الشروط.",
             )}
         </p>
       </div>
       <div className="program-card-actions">
         <label className="check-field">
           <input type="checkbox" checked={checked} onChange={onCompare} />
-          {t("Comparer", "9aren")}
+          {t("Comparer", "نقارن")}
         </label>
         <LinkButton onClick={() => go("programs", p.id)}>
-          {t("Voir la fiche", "Chouf fiche")}
+          {t("Voir la fiche", "نشوف البطاقة")}
         </LinkButton>
       </div>
     </section>
@@ -424,7 +424,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
     <>
       <button className="back-link" onClick={() => go("programs")}>
         <ArrowLeft size={16} />
-        {t("Toutes les formations", "Ga3 formations")}
+        {t("Toutes les formations", "جميع التكوينات")}
       </button>
       <div className="program-detail-heading">
         <span className={`program-logo large ${p.color}`}>
@@ -436,7 +436,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
           <p>
             <MapPin size={14} />
             {p.institution.city} · {p.academic_level} ·{" "}
-            {t("Enseignement en français", "9raya b français")}
+            {t("Enseignement en français", "القراية بالفرنسية")}
           </p>
         </div>
         <Button
@@ -448,7 +448,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
           {selection?.selected ? <Check size={16} /> : <Plus size={16} />}{" "}
           {t(
             selection?.selected ? "Dans ma sélection" : "Sélectionner",
-            selection?.selected ? "F khtiyarat dyali" : "Nkhtarha",
+            selection?.selected ? "فالاختيارات ديالي" : "نختارها",
           )}
         </Button>
       </div>
@@ -456,15 +456,15 @@ function ProgramDetail({ program: p }: { program: Program }) {
         <Notice kind="warning">
           {t(
             "Fiche fictive de démonstration. Les critères, frais et dates ci-dessous ne décrivent aucune admission réelle.",
-            "Fiche tajribiya. Chorot, frais w dates hna ma kaywassfouch chi admission 7a9i9iya.",
+            "بطاقة تجريبية. الشروط والمصاريف والتواريخ هنا ما كتوصفش قبول حقيقي.",
           )}
         </Notice>
       )}
       <div className="tabs">
         {[
-          ["research", "Fiche intelligence", "Fiche intelligence"],
-          ["why", "Pourquoi ce choix ?", "3lach had lkhtiyar?"],
-          ["questions", `Questions (${qs.length})`, `As2ila (${qs.length})`],
+          ["research", "Fiche intelligence", "بطاقة المعلومات"],
+          ["why", "Pourquoi ce choix ?", "علاش هاد الاختيار؟"],
+          ["questions", `Questions (${qs.length})`, `أسئلة (${qs.length})`],
         ].map(([id, fr, ary]) => (
           <button
             key={id}
@@ -482,7 +482,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
               <SectionTitle
                 title={t(
                   "Ce que nous savons. Ce qui reste à confirmer.",
-                  "Chno 3refna w chno ba9i khas ta2kid.",
+                  "شنو عرفنا وشنو باقي خاصو تأكيد.",
                 )}
               />
               {Object.entries(p.claims).map(([key, claim]) => (
@@ -495,32 +495,32 @@ function ProgramDetail({ program: p }: { program: Program }) {
                     {claim.value ??
                       t(
                         "Information non disponible",
-                        "Lma3loma mazal ma kaynach",
+                        "المعلومة مازال ما كايناش",
                       )}
                   </p>
                   <div className="claim-source">
                     {claim.source_type === "mock" ? (
-                      <span>{t("Source fictive", "Dalil tajribi")}</span>
+                      <span>{t("Source fictive", "دليل تجريبي")}</span>
                     ) : claim.source_url?.startsWith("https://") ? (
                       <a
                         href={claim.source_url}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {t("Consulter la source", "Chouf source")}
+                        {t("Consulter la source", "نشوف المصدر")}
                         <ArrowUpRight size={12} />
                       </a>
                     ) : (
                       <span>
                         {t(
                           "Correspondance du candidat",
-                          "Correspondance dyal candidat",
+                          "مراسلة المترشح",
                         )}
                       </span>
                     )}
                     {claim.retrieved_at && (
                       <span>
-                        · {t("Revu le", "Traje3 f")} {claim.retrieved_at}
+                        · {t("Revu le", "تراجع نهار")} {claim.retrieved_at}
                       </span>
                     )}
                   </div>
@@ -552,7 +552,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
                         <HelpCircle size={14} />
                         {t(
                           "Préparer une demande de clarification",
-                          "Wejjed talab tawdi7",
+                          "نوجد طلب توضيح",
                         )}
                       </button>
                     )}
@@ -563,11 +563,11 @@ function ProgramDetail({ program: p }: { program: Program }) {
           {tab === "why" && (
             <>
               <section className="panel">
-                <h2>{t("Une recommandation expliquée", "Tawsiya mcher7a")}</h2>
+                <h2>{t("Une recommandation expliquée", "توصية مشروحة")}</h2>
                 <p className="spaced-copy">
                   {t(
                     "Cette lecture s’appuie sur les dimensions renseignées. Une information inconnue reste à vérifier : elle n’est jamais considérée comme acquise.",
-                    "Had lqra2a kat3tamed 3la lma3lomat lli kaynin. Lma3loma lli ma 3refnach katb9a khas tchecka : ma kan7sbohach mwejda.",
+                    "هاد القراءة كتعتمد على المعلومات اللي كاينة. المعلومة اللي ما عرفناش كتبقى خاصها مراجعة، ما كنحسبوهاش واجدة.",
                   )}
                 </p>
                 {m.dimensions.map((d) => (
@@ -581,13 +581,13 @@ function ProgramDetail({ program: p }: { program: Program }) {
                 ))}
               </section>
               <section className="panel why-summary">
-                <h3>{t("Points forts", "No9at l9owa")}</h3>
+                <h3>{t("Points forts", "نقط القوة")}</h3>
                 <ul>
                   {m.strengths.map((s) => (
                     <li key={s}>{t(s)}</li>
                   ))}
                 </ul>
-                <h3>{t("Pourquoi rester prudent ?", "3lach khas l7der?")}</h3>
+                <h3>{t("Pourquoi rester prudent ?", "علاش خاص الانتباه؟")}</h3>
                 <ul>
                   {m.risks.map((s) => (
                     <li key={s}>{t(s)}</li>
@@ -600,14 +600,14 @@ function ProgramDetail({ program: p }: { program: Program }) {
             <>
               {qs.length === 0 ? (
                 <Empty
-                  title={t("Aucune question ouverte", "Ma kayn 7ta sou2al")}
+                  title={t("Aucune question ouverte", "ما كاين حتى سؤال")}
                   description={t(
                     "Depuis la fiche, préparez une demande sur une exigence incertaine.",
-                    "Mn fiche, wejjed sou2al 3la chi chart ma wad7ch.",
+                    "من البطاقة، وجد سؤال على شي شرط ما واضحش.",
                   )}
                   action={
                     <Button onClick={() => setTab("research")}>
-                      {t("Revenir à la fiche", "Rje3 l fiche")}
+                      {t("Revenir à la fiche", "نرجع للبطاقة")}
                     </Button>
                   }
                 />
@@ -625,7 +625,7 @@ function ProgramDetail({ program: p }: { program: Program }) {
                         <Notice kind="success">{q.conclusion}</Notice>
                       )}
                       <Button onClick={() => setQuestion(q)}>
-                        {t("Ouvrir la clarification", "7ell tawdi7")}
+                        {t("Ouvrir la clarification", "نحل التوضيح")}
                         <ChevronRight size={15} />
                       </Button>
                     </section>
@@ -637,24 +637,24 @@ function ProgramDetail({ program: p }: { program: Program }) {
         </div>
         <aside className="detail-aside">
           <section className="panel score-panel">
-            <span>{t("Adéquation du profil", "Tnassob m3a profil")}</span>
+            <span>{t("Adéquation du profil", "التوافق مع الملف")}</span>
             <div className="big-score fit-label-large">
               {classificationLabel(m.classification, t)}
             </div>
             <p>
               {t(
                 "Une lecture des éléments déjà connus. Les prérequis et les informations manquantes restent à vérifier.",
-                "Qra2a dyal lma3lomat lli 3arfin daba. Chorot w lma3lomat nna9sa khas tchecka.",
+                "قراءة للمعلومات اللي عارفين دابا. الشروط والمعلومات الناقصة خاصها مراجعة.",
               )}
             </p>
             <button className="text-link" onClick={() => setTab("why")}>
-              {t("Comprendre cette cohérence", "Fhem had tnassob")}
+              {t("Comprendre cette cohérence", "نفهم هاد التوافق")}
               <ArrowRight size={15} />
             </button>
           </section>
           <section className="panel gate-panel">
             <div className="panel-top">
-              <h3>{t("Avant de candidater", "9bel ma tdfe3")}</h3>
+              <h3>{t("Avant de candidater", "قبل ما تدفع")}</h3>
               <ShieldCheck size={20} />
             </div>
             <Badge status={m.ready ? "READY" : "NEEDS_REVIEW"} />
@@ -671,18 +671,18 @@ function ProgramDetail({ program: p }: { program: Program }) {
               <p>
                 {t(
                   "Fiche documentée pour ce scénario. L’audit du dossier reste nécessaire.",
-                  "Fiche kamla f had scénario. Mazal khas audit dossier.",
+                  "البطاقة كاملة فهاد السيناريو. مازال خاص مراجعة الملف.",
                 )}
               </p>
             )}
             <Button onClick={() => go("audit")}>
-              {t("Vérifier mon dossier", "Raje3 dossier dyali")}
+              {t("Vérifier mon dossier", "نراجع الملف ديالي")}
             </Button>
           </section>
           <Notice>
             {t(
               "Statut connecté : à vérifier. Une procédure parallèle peut être nécessaire.",
-              "Statut connecté khas moraja3a. Momkin khas procédure okhra.",
+              "حالة الربط خاصها مراجعة. ممكن تحتاج إجراء آخر.",
             )}
           </Notice>
         </aside>
@@ -714,7 +714,7 @@ function SelectionModal({
     m = data.matches.find((m) => m.program_id === p.id)!;
   return (
     <Modal
-      title={t("Confirmer votre choix", "2ekked lkhtiyar dyalek")}
+      title={t("Confirmer votre choix", "أكد الاختيار ديالك")}
       onClose={onClose}
     >
       <h3>{p.title}</h3>
@@ -722,7 +722,7 @@ function SelectionModal({
       <Notice kind={m.blockers.length ? "warning" : "info"}>
         {t(
           "Sélectionner prépare votre stratégie. Cela ne dépose aucune candidature et ne lève aucun point bloquant.",
-          "Lkhtiyar kaywejjed stratégie. Ma kaydfe3 7ta candidature w ma kay7ell 7ta mochkil.",
+          "الاختيار كيعاون توجد الخطة. ما كيدفع حتى ترشيح وما كيحل حتى مشكل بوحدو.",
         )}
       </Notice>
       {m.blockers.length > 0 && (
@@ -748,12 +748,12 @@ function SelectionModal({
           <input type="checkbox" required />
           {t(
             "Je choisis cette formation et j’ai lu les points à vérifier.",
-            "Khtarit had formation w 9rit no9at lli khas moraja3a.",
+            "ختاريت هاد التكوين وقريت النقط اللي خاصها مراجعة.",
           )}
         </label>
         <Button type="submit" variant="primary">
           <Check size={16} />
-          {t("Ajouter à ma sélection", "Zid l khtiyarat dyali")}
+          {t("Ajouter à ma sélection", "نزيدو للاختيارات ديالي")}
         </Button>
       </form>
     </Modal>
@@ -779,17 +779,17 @@ function QuestionModal({
             : null;
   const label =
     q.status === "DRAFT"
-      ? t("Approuver le brouillon", "Wafe9 3la moswadda")
+      ? t("Approuver le brouillon", "نوافق على المسودة")
       : q.status === "APPROVED"
-        ? t("Enregistrer mon envoi manuel", "Sejjel belli sift b yeddi")
+        ? t("Enregistrer mon envoi manuel", "نسجل بلي سيفطت بيدي")
         : q.status === "ANSWERED"
-          ? t("Confirmer la conclusion", "2ekked lkholassa")
-          : t("Enregistrer la réponse", "Sejjel ljawab");
+          ? t("Confirmer la conclusion", "نأكد الخلاصة")
+          : t("Enregistrer la réponse", "نسجل الجواب");
   return (
     <Modal
       title={t(
         "Clarification · suivi de la demande",
-        "Tawdi7 · tatabbo3 talab",
+        "توضيح · تتبع الطلب",
       )}
       onClose={onClose}
       wide
@@ -799,19 +799,19 @@ function QuestionModal({
         <small>
           {t(
             "Aucun email envoyé par CampusPath",
-            "CampusPath ma kaysift 7ta email",
+            "CampusPath ما كيسيفط حتى بريد إلكتروني",
           )}
         </small>
       </div>
       <Field
         label={t(
           "Objet du message (français)",
-          "Objet dyal message (français)",
+          "موضوع الرسالة (بالفرنسية)",
         )}
       >
         <input value={q.subject} readOnly />
       </Field>
-      <Field label={t("Brouillon en français", "Moswadda b français")}>
+      <Field label={t("Brouillon en français", "مسودة بالفرنسية")}>
         <textarea value={q.email_draft} readOnly rows={10} />
       </Field>
       <div className="row-actions">
@@ -824,30 +824,30 @@ function QuestionModal({
               notify(
                 t(
                   "Brouillon copié. Aucun email envoyé.",
-                  "Tcopiat moswadda. Ma tsift 7ta email.",
+                  "تنسخات المسودة. ما تسيفط حتى بريد إلكتروني.",
                 ),
               );
             } catch {
               notify(
                 t(
                   "Sélectionnez le texte pour le copier.",
-                  "Khtar texte bach tcopih.",
+                  "ختار النص باش تنسخو.",
                 ),
               );
             }
           }}
         >
           <Copy size={16} />
-          {t("Copier le brouillon", "Copier moswadda")}
+          {t("Copier le brouillon", "ننسخ المسودة")}
         </Button>
         <span className="muted">
           {q.recipient ||
-            t("Contact officiel à rechercher", "9elleb 3la contact rasmi")}
+            t("Contact officiel à rechercher", "نقلب على جهة اتصال رسمية")}
         </span>
       </div>
       {q.response && (
         <Notice>
-          <strong>{t("Réponse saisie", "Ljawab lli dkhelti")}</strong>
+          <strong>{t("Réponse saisie", "الجواب اللي دخلتي")}</strong>
           <p className="preserve-lines">{q.response}</p>
         </Notice>
       )}
@@ -871,7 +871,7 @@ function QuestionModal({
             <Field
               label={t(
                 "Destinataire réel de votre envoi",
-                "Lli sift lih message b se7",
+                "الجهة اللي سيفطتي ليها الرسالة بالفعل",
               )}
             >
               <input
@@ -884,7 +884,7 @@ function QuestionModal({
           )}
           {action === "answer" && (
             <Field
-              label={t("Collez la réponse reçue", "Lssa9 ljawab lli wselek")}
+              label={t("Collez la réponse reçue", "لصق الجواب اللي وصلك")}
             >
               <textarea name="response" required rows={5} maxLength={10000} />
             </Field>
@@ -894,7 +894,7 @@ function QuestionModal({
               <Field
                 label={t(
                   "Conclusion appuyée par la réponse",
-                  "Lkholassa 3la 7sab ljawab",
+                  "الخلاصة على حساب الجواب",
                 )}
               >
                 <textarea
@@ -910,7 +910,7 @@ function QuestionModal({
                 <Field
                   label={t(
                     "Valeur confirmée à reporter dans la fiche",
-                    "Lma3loma lm2ekkda lli ndirou f fiche",
+                    "المعلومة المؤكدة اللي نديرو فالبطاقة",
                   )}
                 >
                   {q.claim_key === "eligibility" ? (
@@ -918,16 +918,16 @@ function QuestionModal({
                       <option value="">
                         {t(
                           "Choisir une décision explicite",
-                          "Khtar 9arar wad7",
+                          "ختار قرار واضح",
                         )}
                       </option>
                       <option value="OUI">
-                        {t("Conditions satisfaites", "Chorot mtwefrin")}
+                        {t("Conditions satisfaites", "الشروط متوفرة")}
                       </option>
                       <option value="NON">
                         {t(
                           "Conditions non satisfaites",
-                          "Chorot ma mtwefrin-ch",
+                          "الشروط ما متوفراش",
                         )}
                       </option>
                     </select>
@@ -953,10 +953,10 @@ function QuestionModal({
                   ? "J’ai vérifié que la réponse justifie cette conclusion."
                   : "J’ai relu ces informations et je confirme cette étape.",
               action === "record_sent"
-                ? "Kan2ekked belli ana lli sift had message."
+                ? "كنأكد بلي أنا اللي سيفطت هاد الرسالة."
                 : action === "resolve"
-                  ? "Raja3t belli ljawab kay2ekked had lkholassa."
-                  : "Raja3t lma3lomat w kan2ekked had lkhotwa.",
+                  ? "راجعت بلي الجواب كيأكد هاد الخلاصة."
+                  : "راجعت المعلومات وكنأكد هاد الخطوة.",
             )}
           </label>
           <Button variant="primary" type="submit">
@@ -986,19 +986,19 @@ export function ApplicationsView() {
   return (
     <>
       <Heading
-        eyebrow={t("VOUS AVEZ LE DERNIER MOT", "L9ARAR DYALEK")}
+        eyebrow={t("VOUS AVEZ LE DERNIER MOT", "القرار ديالك")}
         title={t(
           "Une sélection réfléchie. Un cap clair.",
-          "Khtiyarat m9addin. Wijha wad7a.",
+          "اختيارات مرتبة. وجهة واضحة.",
         )}
         description={t(
           "Hiérarchisez vos choix et suivez chaque étape de votre candidature.",
-          "Retteb khtiyarat dyalek w tbe3 kol mar7ala dyal candidature.",
+          "رتب الاختيارات ديالك وتبع كل مرحلة من الترشيح.",
         )}
         action={
           <Button onClick={() => go("programs")}>
             <Plus size={16} />
-            {t("Explorer les formations", "Chouf formations")}
+            {t("Explorer les formations", "نشوف التكوينات")}
           </Button>
         }
       />
@@ -1007,7 +1007,7 @@ export function ApplicationsView() {
           <h2>
             {selected.length} <small>/ {data.cycle.max_choices}</small>
           </h2>
-          <p>{t("choix sélectionnés", "khtiyarat msejlin")}</p>
+          <p>{t("choix sélectionnés", "اختيارات مسجلة")}</p>
         </div>
         <div className="strategy-breakdown">
           {Object.entries(counts).map(([key, n]) => (
@@ -1023,7 +1023,7 @@ export function ApplicationsView() {
           rel="noreferrer"
           className="text-link"
         >
-          {t("Limites de la procédure", "7odoud procédure")}
+          {t("Limites de la procédure", "حدود الإجراء")}
           <ArrowUpRight size={14} />
         </a>
       </div>
@@ -1033,23 +1033,23 @@ export function ApplicationsView() {
             ? "Explorez plusieurs options pour diversifier votre stratégie. Aucune répartition fixe n’est imposée."
             : "Vérifiez la diversité des exigences et des parcours. Un bon équilibre dépend de vos priorités, pas d’un quota automatique.",
           selected.length < 2
-            ? "Chouf plusieurs options bach tnawwe3 stratégie. Ma kaynach ta9sima tabta."
-            : "Raje3 tanawwo3 chorot w masarat. Tawazon 3la 7sab l2awlawiyat dyalek.",
+            ? "شوف اختيارات متعددة باش تنوع الخطة. ما كايناش تقسيمة ثابتة."
+            : "راجع تنوع الشروط والمسارات. التوازن حسب الأولويات ديالك.",
         )}
       </Notice>
       {selections.length === 0 ? (
         <Empty
           title={t(
             "Votre sélection commence par un premier choix.",
-            "Khtiyarat dyalek katbda b awal formation.",
+            "الاختيارات ديالك كتبدا بأول تكوين.",
           )}
           description={t(
             "Explorez les fiches puis enregistrez les formations qui vous intéressent.",
-            "Chouf fiches w 7fed formations lli 3ejbok.",
+            "شوف البطاقات وحفظ التكوينات اللي عجبوك.",
           )}
           action={
             <Button variant="primary" onClick={() => go("programs")}>
-              {t("Explorer le catalogue", "Chouf catalogue")}
+              {t("Explorer le catalogue", "نشوف الدليل")}
               <ArrowRight size={16} />
             </Button>
           }
@@ -1062,13 +1062,13 @@ export function ApplicationsView() {
             return (
               <section className="panel application-card" key={s.program_id}>
                 <div className="application-top">
-                  <Field label={t("Rang", "Rang")}>
+                  <Field label={t("Rang", "الرتبة")}>
                     <input
                       type="number"
                       defaultValue={s.rank}
                       min={1}
                       max={100}
-                      aria-label={t("Rang de " + p.title, "Rang " + p.title)}
+                      aria-label={t("Rang de " + p.title, "الرتبة " + p.title)}
                       onBlur={(e) => {
                         if (Number(e.target.value) !== s.rank)
                           void mutate(`/programs/${p.id}/selection`, {
@@ -1095,9 +1095,9 @@ export function ApplicationsView() {
                     {m.blockers.length
                       ? t(
                           `${m.blockers.length} points à résoudre`,
-                          `${m.blockers.length} no9at khas t7ell`,
+                          `${m.blockers.length} نقط خاصها تتحل`,
                         )
-                      : t("Fiche de recherche complète", "Fiche kamla")}
+                      : t("Fiche de recherche complète", "البطاقة كاملة")}
                   </span>
                   <Badge status={m.classification} />
                   <span className="fit-label">
@@ -1106,15 +1106,15 @@ export function ApplicationsView() {
                 </div>
                 <div className="application-actions">
                   <LinkButton onClick={() => go("programs", p.id)}>
-                    {t("Revoir la fiche", "Raje3 fiche")}
+                    {t("Revoir la fiche", "نراجع البطاقة")}
                   </LinkButton>
                   {!s.selected ? (
                     <Button variant="primary" onClick={() => setSelect(p)}>
-                      {t("Confirmer ce choix", "2ekked lkhtiyar")}
+                      {t("Confirmer ce choix", "نأكد الاختيار")}
                     </Button>
                   ) : (
                     <Button onClick={() => setTrack(p.id)}>
-                      {t("Suivre la réponse", "Tbe3 ljawab")}
+                      {t("Suivre la réponse", "نتبع الجواب")}
                     </Button>
                   )}
                   <button
@@ -1124,7 +1124,7 @@ export function ApplicationsView() {
                         window.confirm(
                           t(
                             "Retirer cette formation de votre sélection ?",
-                            "N7yed had formation mn lkhtiyarat?",
+                            "نحيد هاد التكوين من الاختيارات؟",
                           ),
                         )
                       )
@@ -1133,7 +1133,7 @@ export function ApplicationsView() {
                         });
                     }}
                   >
-                    {t("Retirer", "7yed")}
+                    {t("Retirer", "نحيد")}
                   </button>
                 </div>
               </section>
@@ -1147,18 +1147,18 @@ export function ApplicationsView() {
             <h3>
               {t(
                 "Vos choix donnent une direction à votre dossier.",
-                "Khtiyarat dyalek kat3ti wijha l dossier.",
+                "الاختيارات ديالك كتعطي وجهة للملف.",
               )}
             </h3>
             <p>
               {t(
                 "Construisez maintenant votre CV et vos projets à partir des faits.",
-                "Wejjed daba CV w projets mn lma3lomat dyalek.",
+                "وجد دابا السيرة الذاتية والمشاريع انطلاقا من المعلومات ديالك.",
               )}
             </p>
           </div>
           <Button variant="primary" onClick={() => go("cv")}>
-            {t("Préparer mon CV", "Nwejjed CV")}
+            {t("Préparer mon CV", "نوجد السيرة الذاتية")}
             <ArrowRight size={16} />
           </Button>
         </section>
@@ -1196,17 +1196,17 @@ function TrackingModal({
     };
   return (
     <Modal
-      title={t("Suivi de candidature", "Tatabbo3 candidature")}
+      title={t("Suivi de candidature", "تتبع الترشيح")}
       onClose={onClose}
     >
       <h3>{p.title}</h3>
       <p className="spaced-copy">
-        {t("Statut actuel", "Statut daba")} : <Badge status={s.status} />
+        {t("Statut actuel", "الحالة دابا")} : <Badge status={s.status} />
       </p>
       <Notice>
         {t(
           "Vous enregistrez une action ou une réponse reçue en dehors de CampusPath. Aucun dossier n’est transmis par cette application.",
-          "Katsejjel action wlla jawab barra mn CampusPath. L’app ma katsift 7ta dossier.",
+          "كتسجل إجراء ولا جواب وقع خارج CampusPath. التطبيق ما كيسيفط حتى ملف.",
         )}
       </Notice>
       {transitions[s.status] ? (
@@ -1225,7 +1225,7 @@ function TrackingModal({
               onClose();
           }}
         >
-          <Field label={t("Nouvel état constaté", "Statut jdid lli w9e3")}>
+          <Field label={t("Nouvel état constaté", "الحالة الجديدة اللي وقعات")}>
             <select name="status">
               {transitions[s.status].map((x) => (
                 <option value={x} key={x}>
@@ -1237,7 +1237,7 @@ function TrackingModal({
           <Field
             label={t(
               "Référence / réponse reçue",
-              "Référence / ljawab lli wsel",
+              "المرجع / الجواب اللي وصل",
             )}
           >
             <textarea name="note" maxLength={3000} rows={3} />
@@ -1246,18 +1246,18 @@ function TrackingModal({
             <input type="checkbox" required />
             {t(
               "Je confirme que cet événement a réellement eu lieu.",
-              "Kan2ekked belli had l7adath w9e3 b se7.",
+              "كنأكد بلي هاد الحدث وقع بالفعل.",
             )}
           </label>
           <Button variant="primary" type="submit">
-            {t("Enregistrer le suivi", "Sejjel tatabbo3")}
+            {t("Enregistrer le suivi", "نسجل التتبع")}
           </Button>
         </form>
       ) : (
         <p>
           {t(
             "Ce choix a atteint un état final.",
-            "Had lkhtiyar wsel l statut final.",
+            "هاد الاختيار وصل للحالة النهائية.",
           )}
         </p>
       )}

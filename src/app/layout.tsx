@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./workspace.css";
 import "./orientation.css";
+import "./refinements.css";
+import { PrivacyPreferences } from "@/components/privacy-preferences";
 export const metadata: Metadata = {
   title: "CampusPath AI — Trouve ta voie au Maroc",
   description:
@@ -15,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>{children}<PrivacyPreferences /></body>
     </html>
   );
 }

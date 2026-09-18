@@ -1,0 +1,794 @@
+[
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "start": 9370,
+    "end": 9390,
+    "text": "Ma3lomat chakhsiya"
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "start": 9392,
+    "end": 9405,
+    "text": "Coordonnées"
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "start": 9407,
+    "end": 9414,
+    "text": "Lwra9"
+  },
+  {
+    "file": "src\\components\\dashboard.tsx",
+    "start": 9416,
+    "end": 9424,
+    "text": "9rayti"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 695,
+    "end": 704,
+    "text": "F lycée"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 733,
+    "end": 749,
+    "text": "Men be3d l bac"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 773,
+    "end": 781,
+    "text": "Bac +2"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 817,
+    "end": 833,
+    "text": "Licence w kter"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 873,
+    "end": 889,
+    "text": "Nbeddel lmasar"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 960,
+    "end": 973,
+    "text": "Technologie"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1016,
+    "end": 1033,
+    "text": "N7ell lmachakil"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1080,
+    "end": 1096,
+    "text": "Nebni w nsayeb"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1137,
+    "end": 1155,
+    "text": "Nnedem w nseyyer"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1190,
+    "end": 1203,
+    "text": "N3awen nnas"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1239,
+    "end": 1257,
+    "text": "Ntkeyyel w nbde3"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1303,
+    "end": 1320,
+    "text": "Nfhem w n9elleb"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1367,
+    "end": 1384,
+    "text": "Ntwasel w n9ne3"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1429,
+    "end": 1449,
+    "text": "Nt3ellem f terrain"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1516,
+    "end": 1530,
+    "text": "Ga3 lmajalat"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1565,
+    "end": 1584,
+    "text": "Tech w ingénierie"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1614,
+    "end": 1622,
+    "text": "Tijara"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1647,
+    "end": 1654,
+    "text": "Se77a"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1684,
+    "end": 1691,
+    "text": "Ibda3"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1720,
+    "end": 1727,
+    "text": "3olom"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 1755,
+    "end": 1765,
+    "text": "Mojtama3"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 16741,
+    "end": 16762,
+    "text": "7yed men favoris : "
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 16765,
+    "end": 16783,
+    "text": "Zid l favoris : "
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 17224,
+    "end": 17233,
+    "text": "Tsejjel"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 17236,
+    "end": 17243,
+    "text": "N7fed"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 19948,
+    "end": 19955,
+    "text": "saved"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 20010,
+    "end": 20038,
+    "text": "Lmasarat jayin kaybdaw hna"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 20061,
+    "end": 20093,
+    "text": "Ma l9inach masar b had filtres"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 20403,
+    "end": 20410,
+    "text": "saved"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 20465,
+    "end": 20510,
+    "text": "Klik 3la marque-page bach t7fed lmasar hna."
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 20533,
+    "end": 20577,
+    "text": "Jerreb kelma okhra wla chouf ga3 lmajalat."
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25046,
+    "end": 25075,
+    "text": "Bghit nktechef l2ikhtiyarat"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25157,
+    "end": 25184,
+    "text": "Kanbghi nt3ellem b tatbi9"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25275,
+    "end": 25300,
+    "text": "Bghit nt3emme9 f l9raya"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25387,
+    "end": 25403,
+    "text": "Mazal ma 3reft"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25447,
+    "end": 25465,
+    "text": "Neb9a 9rib l dar"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25503,
+    "end": 25532,
+    "text": "N9ra f chi mdina f lMaghrib"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 25574,
+    "end": 25593,
+    "text": "Nfekker f lkharej"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 32002,
+    "end": 32008,
+    "text": "Rje3"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 32011,
+    "end": 32021,
+    "text": "Men be3d"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 32351,
+    "end": 32359,
+    "text": "Kemmel"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 32362,
+    "end": 32381,
+    "text": "Nktechef lmasarat"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 34682,
+    "end": 34697,
+    "text": "Masar tsejjel"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 34700,
+    "end": 34718,
+    "text": "N7fed had lmasar"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 41697,
+    "end": 41715,
+    "text": "Tktechfat · 7yed"
+  },
+  {
+    "file": "src\\components\\orientation-view.tsx",
+    "start": 41718,
+    "end": 41742,
+    "text": "3ellem belli tktechfat"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 2351,
+    "end": 2371,
+    "text": "Ma3lomat chakhsiya"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 2418,
+    "end": 2439,
+    "text": "Projets w khtiyarat"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 2483,
+    "end": 2492,
+    "text": "Tajarob"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 2544,
+    "end": 2562,
+    "text": "Dalil w moraja3a"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22411,
+    "end": 22428,
+    "text": "Relevé de notes"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22478,
+    "end": 22492,
+    "text": "Wra9 lhowiya"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22539,
+    "end": 22548,
+    "text": "Tsweera"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22588,
+    "end": 22597,
+    "text": "Diplôme"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22651,
+    "end": 22669,
+    "text": "Certificat logha"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22699,
+    "end": 22703,
+    "text": "CV"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22753,
+    "end": 22768,
+    "text": "Certification"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 22817,
+    "end": 22830,
+    "text": "Dalil akhor"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 39543,
+    "end": 39556,
+    "text": "Beddel note"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 39559,
+    "end": 39569,
+    "text": "Zid note"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 52441,
+    "end": 52459,
+    "text": "Projets w tatbi9"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 52532,
+    "end": 52547,
+    "text": "Nfhem théorie"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 52604,
+    "end": 52622,
+    "text": "Tawazon binathom"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 54923,
+    "end": 54932,
+    "text": "Kemme l"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 54941,
+    "end": 54950,
+    "text": "Kemme l"
+  },
+  {
+    "file": "src\\components\\profile-views.tsx",
+    "start": 54952,
+    "end": 54960,
+    "text": "Kemmel"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 641,
+    "end": 665,
+    "text": "Contenu dyal formation"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 711,
+    "end": 730,
+    "text": "Chorot dyal 9raya"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 766,
+    "end": 789,
+    "text": "Tri9 dyal candidature"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 820,
+    "end": 832,
+    "text": "Akher ajal"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 870,
+    "end": 892,
+    "text": "Niveau dyal français"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 928,
+    "end": 949,
+    "text": "Frais dyal l3am (€)"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 989,
+    "end": 1015,
+    "text": "Wach katstejib l chorot?"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1047,
+    "end": 1065,
+    "text": "Diplôme lli khas"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1104,
+    "end": 1120,
+    "text": "Lwra9 lli khas"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1149,
+    "end": 1164,
+    "text": "Afaq mihaniya"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1217,
+    "end": 1235,
+    "text": "Logha dyal 9raya"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1282,
+    "end": 1301,
+    "text": "Frais candidature"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1327,
+    "end": 1336,
+    "text": "Contact"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1379,
+    "end": 1400,
+    "text": "Page dyal formation"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 1444,
+    "end": 1466,
+    "text": "Page dyal admissions"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5285,
+    "end": 5301,
+    "text": "Ga3 formations"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5340,
+    "end": 5352,
+    "text": "Lli 7fedti"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5394,
+    "end": 5409,
+    "text": "Tnassob mzyan"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5447,
+    "end": 5462,
+    "text": "Khas tktechef"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5513,
+    "end": 5525,
+    "text": "M3a ta2hil"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 5566,
+    "end": 5579,
+    "text": "Khas ta9yim"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 11993,
+    "end": 12010,
+    "text": "7yed mn favoris"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 12013,
+    "end": 12020,
+    "text": "7fed "
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 15341,
+    "end": 15360,
+    "text": "F khtiyarat dyali"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 15363,
+    "end": 15373,
+    "text": "Nkhtarha"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 15820,
+    "end": 15840,
+    "text": "Fiche intelligence"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 15884,
+    "end": 15905,
+    "text": "3lach had lkhtiyar?"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 30971,
+    "end": 30981,
+    "text": "language"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 32925,
+    "end": 32938,
+    "text": "record_sent"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 32957,
+    "end": 33000,
+    "text": "Kan2ekked belli ana lli sift had message."
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 33030,
+    "end": 33039,
+    "text": "resolve"
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 33060,
+    "end": 33106,
+    "text": "Raja3t belli ljawab kay2ekked had lkholassa."
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 33127,
+    "end": 33170,
+    "text": "Raja3t lma3lomat w kan2ekked had lkhotwa."
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 35693,
+    "end": 35768,
+    "text": "Chouf plusieurs options bach tnawwe3 stratégie. Ma kaynach ta9sima tabta."
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 35783,
+    "end": 35854,
+    "text": "Raje3 tanawwo3 chorot w masarat. Tawazon 3la 7sab l2awlawiyat dyalek."
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 37142,
+    "end": 37149,
+    "text": "Rang "
+  },
+  {
+    "file": "src\\components\\program-views.tsx",
+    "start": 41637,
+    "end": 41648,
+    "text": "WITHDRAWN"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 3612,
+    "end": 3620,
+    "text": "Lmad i"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 3629,
+    "end": 3637,
+    "text": "Lmad i"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 3639,
+    "end": 3646,
+    "text": "Lmadi"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 3674,
+    "end": 3727,
+    "text": " → 9raya → compétences → métier → projet lmosta9bal"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 13401,
+    "end": 13424,
+    "text": "3awed wejjed moswadda"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 13427,
+    "end": 13444,
+    "text": "Wejjed moswadda"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 24407,
+    "end": 24429,
+    "text": "Bach tzid twa d d a7"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 24438,
+    "end": 24450,
+    "text": "twa d d a7"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 24452,
+    "end": 24461,
+    "text": "twadda7"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 25363,
+    "end": 25380,
+    "text": "3awed mn lowwel"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 25401,
+    "end": 25414,
+    "text": "Sou2al jdid"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 27730,
+    "end": 27843,
+    "text": "Grille ghir 3la texte. L’oral w ssi7a w ljawda ma kayt9eymoch automatiquement. Ljawab ma kayb9ach mlli tk h roj"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 27869,
+    "end": 27879,
+    "text": "tk h roj"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 27897,
+    "end": 27905,
+    "text": "tkhroj"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 27925,
+    "end": 27940,
+    "text": " mn had page."
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 28969,
+    "end": 28977,
+    "text": "Kolchi"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 29016,
+    "end": 29024,
+    "text": "Darori"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 29062,
+    "end": 29073,
+    "text": "Mosta3jil"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 29111,
+    "end": 29120,
+    "text": "N9ellbo"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 36469,
+    "end": 36504,
+    "text": "Mazal chi khotwat bach tk e mmel."
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 36534,
+    "end": 36545,
+    "text": "tk e mmel"
+  },
+  {
+    "file": "src\\components\\workflow-views.tsx",
+    "start": 36567,
+    "end": 36576,
+    "text": "tkemmel"
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "start": 9104,
+    "end": 9114,
+    "text": "register"
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "start": 9117,
+    "end": 9132,
+    "text": "N7ell dossier"
+  },
+  {
+    "file": "src\\app\\page.tsx",
+    "start": 9135,
+    "end": 9143,
+    "text": "Ndkhol"
+  }
+]

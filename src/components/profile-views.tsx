@@ -55,14 +55,14 @@ export function ProfileView() {
   return (
     <>
       <Heading
-        eyebrow={t("LE POINT DE DÉPART", "L BIDAYa")}
+        eyebrow={t("LE POINT DE DÉPART", "البداية")}
         title={t(
           "Un profil qui raconte votre parcours.",
-          "Profil kay7ki masar dyalek.",
+          "ملف كيحكي المسار ديالك.",
         )}
         description={t(
           "Vos informations restent liées à leurs justificatifs. Vous validez chaque changement.",
-          "Ma3lomat dyalek katb9a merbouta b dalil. Nta lli kat2ekked taghyirat.",
+          "المعلومات ديالك كتبقى مربوطة بالدليل. نتا اللي كتأكد التغييرات.",
         )}
       />
       <div className="profile-overview panel">
@@ -71,16 +71,16 @@ export function ProfileView() {
         </div>
         <div>
           <h2>
-            {values.first_name || t("Votre prénom", "Smiya")} {values.last_name}
+            {values.first_name || t("Votre prénom", "السمية")} {values.last_name}
           </h2>
           <p>
             {values.academic_status ||
-              t("Situation à compléter", "Khas t3emmer situation")}
+              t("Situation à compléter", "خاصك تعمر الوضعية")}
           </p>
         </div>
         <div className="profile-completion">
           <span>
-            {t("Profil renseigné", "Profil m3emmer")}
+            {t("Profil renseigné", "الملف الشخصي معمر")}
             <strong>{data.completeness.percent}%</strong>
           </span>
           <Progress percent={data.completeness.percent} />
@@ -88,10 +88,10 @@ export function ProfileView() {
       </div>
       <div className="tabs">
         {[
-          ["identity", "Identité & contact", "Ma3lomat chakhsiya"],
-          ["goals", "Projet & préférences", "Projets w khtiyarat"],
-          ["experiences", "Expériences", "Tajarob"],
-          ["evidence", "Sources & vérification", "Dalil w moraja3a"],
+          ["identity", "Identité & contact", "المعلومات الشخصية"],
+          ["goals", "Projet & préférences", "المشاريع والاختيارات"],
+          ["experiences", "Expériences", "التجارب"],
+          ["evidence", "Sources & vérification", "الأدلة والمراجعة"],
         ].map(([id, fr, ary]) => (
           <button
             key={id}
@@ -108,7 +108,7 @@ export function ProfileView() {
             {tab === "identity" ? (
               <>
                 <SectionTitle
-                  title={t("Vos informations personnelles", "Ma3lomat dyalek")}
+                  title={t("Vos informations personnelles", "المعلومات ديالك")}
                 />
                 <div className="form-grid">
                   {c.facts
@@ -125,7 +125,7 @@ export function ProfileView() {
                           f.status === "VERIFIED"
                             ? t(
                                 "Une modification nécessite une nouvelle vérification.",
-                                "Ila beddeltiha, khas moraja3a jdida.",
+                                "إلا بدلتيها، خاص مراجعة جديدة.",
                               )
                             : undefined
                         }
@@ -138,7 +138,7 @@ export function ProfileView() {
                             }
                           >
                             <option value="">
-                              {t("À préciser", "Khas tawdi7")}
+                              {t("À préciser", "خاص توضيح")}
                             </option>
                             {["A1", "A2", "B1", "B2", "C1", "C2"].map((x) => (
                               <option key={x}>{x}</option>
@@ -176,12 +176,12 @@ export function ProfileView() {
             ) : (
               <>
                 <SectionTitle
-                  title={t("Le projet qui vous anime", "Projet lli kay7emsek")}
+                  title={t("Le projet qui vous anime", "المشروع اللي كيحمسك")}
                 />
                 <Field
                   label={t(
                     "Quel métier ou domaine vous intéresse ?",
-                    "Ach men métier wlla domaine kay3ejbek?",
+                    "أشنو هي الخدمة ولا المجال اللي كيعجبك؟",
                   )}
                 >
                   <input
@@ -191,7 +191,7 @@ export function ProfileView() {
                     }
                     placeholder={t(
                       "Vous pouvez aussi indiquer : je ne sais pas encore.",
-                      "T9der tgoul : mazal ma 3reftch.",
+                      "تقدر تقول: مازال ما عرفت.",
                     )}
                   />
                 </Field>
@@ -199,11 +199,11 @@ export function ProfileView() {
                   <Field
                     label={t(
                       "Matières et centres d’intérêt",
-                      "Lmawad w domaines lli kay3ejbok",
+                      "المواد والمجالات اللي كيعجبوك",
                     )}
                     hint={t(
                       "Séparez les éléments par une virgule.",
-                      "Ferre9 binathom b virgule.",
+                      "فرق بينهم بفاصلة.",
                     )}
                   >
                     <input
@@ -218,7 +218,7 @@ export function ProfileView() {
                       }
                     />
                   </Field>
-                  <Field label={t("Villes acceptables", "Lmdoun lli ynasbok")}>
+                  <Field label={t("Villes acceptables", "المدن اللي كيناسبوك")}>
                     <input
                       value={prefs.cities.join(", ")}
                       onChange={(e) =>
@@ -234,11 +234,11 @@ export function ProfileView() {
                   <Field
                     label={t(
                       "Budget annuel disponible (€)",
-                      "Budget dyal l3am (€)",
+                      "ميزانية العام (€)",
                     )}
                     hint={t(
                       "Études et vie quotidienne. Les comparaisons de frais restent partielles.",
-                      "9raya w lma3icha. Mou9arana dyal frais mazal na9sa.",
+                      "القراية والمعيشة. مقارنة المصاريف مازال ناقصة.",
                     )}
                   >
                     <input
@@ -260,7 +260,7 @@ export function ProfileView() {
                   <Field
                     label={t(
                       "Votre façon d’apprendre",
-                      "Kifach katfeddel t9ra",
+                      "كيفاش كتفضل تقرا",
                     )}
                   >
                     <select
@@ -273,13 +273,13 @@ export function ProfileView() {
                       }
                     >
                       <option value="practical">
-                        {t("Pratique et projets", "Tatbi9 w projets")}
+                        {t("Pratique et projets", "التطبيق والمشاريع")}
                       </option>
                       <option value="theory">
-                        {t("Théorie et recherche", "Théorie w recherche")}
+                        {t("Théorie et recherche", "النظري والبحث")}
                       </option>
                       <option value="balanced">
-                        {t("Un équilibre des deux", "Tawazon binathom")}
+                        {t("Un équilibre des deux", "توازن بينهم")}
                       </option>
                     </select>
                   </Field>
@@ -290,12 +290,12 @@ export function ProfileView() {
               <p>
                 {t(
                   "Les modifications sont enregistrées après validation.",
-                  "Taghyirat katsajjel mlli kat2ekked.",
+                  "التغييرات كتتسجل ملي كتأكد.",
                 )}
               </p>
               <Button variant="primary" type="submit">
                 <Save size={16} />
-                {t("Enregistrer mon profil", "Nsejjel profil dyali")}
+                {t("Enregistrer mon profil", "نسجل الملف الشخصي ديالي")}
               </Button>
             </div>
           </section>
@@ -304,15 +304,15 @@ export function ProfileView() {
       {tab === "experiences" && (
         <>
           <SectionTitle
-            title={t("Votre base d’expériences", "Tajarob dyalek")}
+            title={t("Votre base d’expériences", "التجارب ديالك")}
             description={t(
               "Projets, stages, emplois, compétences, certifications et activités.",
-              "Projets, stages, khdma, compétences, certifications w activités.",
+              "المشاريع والتداريب والخدمة والمهارات والشهادات والأنشطة.",
             )}
             action={
               <Button onClick={() => setExperience(true)}>
                 <Plus size={16} />
-                {t("Ajouter", "Zid")}
+                {t("Ajouter", "نزيد")}
               </Button>
             }
           />
@@ -320,11 +320,11 @@ export function ProfileView() {
             <Empty
               title={t(
                 "Chaque parcours commence quelque part.",
-                "Kol masar 3endo bidaya.",
+                "كل مسار عندو بداية.",
               )}
               description={t(
                 "Ajoutez vos projets ou déclarez simplement ne pas avoir encore d’expérience.",
-                "Zid projets dyalek wlla sarr7 belli mazal ma 3endek expérience.",
+                "زيد المشاريع ديالك ولا صرح بلي مازال ما عندك تجربة.",
               )}
               action={
                 <Button
@@ -343,7 +343,7 @@ export function ProfileView() {
                 >
                   {t(
                     "Aucune expérience à déclarer",
-                    "Ma 3endi expérience nsarre7 biha",
+                    "ما عندي حتى تجربة نصرح بها",
                   )}
                 </Button>
               }
@@ -370,7 +370,7 @@ export function ProfileView() {
           <Notice>
             {t(
               "Cette base alimente votre CV. Aucun savoir-faire ni résultat ne sera ajouté sans déclaration.",
-              "Had lbase kat3emmer CV. Ma kanzido 7ta compétence bla ma tsarre7 biha.",
+              "هاد المعلومات كتعمر السيرة الذاتية. ما كنزيدو حتى مهارة بلا ما تصرح بها.",
             )}
           </Notice>
         </>
@@ -380,17 +380,17 @@ export function ProfileView() {
           <Notice>
             {t(
               "« Vérifié sur pièce » signifie que vous avez comparé l’information au document. L’authenticité du document n’est pas certifiée automatiquement.",
-              "M2ekked b dalil kay3ni raja3ti lma3loma f document. L’app ma kat2ekkedch automatiquement belli document asli.",
+              "مؤكد بدليل كتعني راجعتي المعلومة فالوثيقة. التطبيق ما كيأكدش آليا بلي الوثيقة أصلية.",
             )}
           </Notice>
           <div className="panel table-panel">
             <table>
               <thead>
                 <tr>
-                  <th>{t("Information", "Ma3loma")}</th>
-                  <th>{t("Valeur", "Valeur")}</th>
-                  <th>{t("Statut", "Statut")}</th>
-                  <th>{t("Source", "Dalil")}</th>
+                  <th>{t("Information", "المعلومة")}</th>
+                  <th>{t("Valeur", "القيمة")}</th>
+                  <th>{t("Statut", "الحالة")}</th>
+                  <th>{t("Source", "الدليل")}</th>
                   <th />
                 </tr>
               </thead>
@@ -406,7 +406,7 @@ export function ProfileView() {
                       </td>
                       <td>
                         {c.documents.find((d) => d.id === f.document_id)
-                          ?.name || t("Déclaration", "Déclaration")}
+                          ?.name || t("Déclaration", "تصريح")}
                         {f.page && <small> · p. {f.page}</small>}
                       </td>
                       <td>
@@ -414,7 +414,7 @@ export function ProfileView() {
                           className="text-link"
                           onClick={() => setReview(f)}
                         >
-                          {t("Vérifier", "Raje3")}
+                          {t("Vérifier", "نراجع")}
                         </button>
                       </td>
                     </tr>
@@ -424,7 +424,7 @@ export function ProfileView() {
           </div>
           <Button onClick={() => go("documents")}>
             <Upload size={16} />
-            {t("Ajouter un justificatif", "Zid dalil")}
+            {t("Ajouter un justificatif", "نزيد دليل")}
           </Button>
         </>
       )}
@@ -437,13 +437,13 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
   const { t, data, mutate } = useApp();
   return (
     <Modal
-      title={t("Vérifier une information", "Raje3 ma3loma")}
+      title={t("Vérifier une information", "نراجع معلومة")}
       onClose={onClose}
     >
       <Notice>
         {t(
           "Comparez la valeur actuelle à la pièce avant de confirmer.",
-          "9aren lma3loma m3a document 9bel ta2kid.",
+          "قارن المعلومة مع الوثيقة قبل التأكيد.",
         )}
       </Notice>
       <p className="original-value">
@@ -465,7 +465,7 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
             onClose();
         }}
       >
-        <Field label={t("Valeur confirmée", "Ma3loma lm2ekkda")}>
+        <Field label={t("Valeur confirmée", "المعلومة المؤكدة")}>
           <input
             name="value"
             defaultValue={fact.value}
@@ -473,10 +473,10 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
             maxLength={3000}
           />
         </Field>
-        <Field label={t("Document source", "Document dyal dalil")}>
+        <Field label={t("Document source", "الوثيقة اللي فيها الدليل")}>
           <select name="document_id" defaultValue={fact.document_id ?? ""}>
             <option value="">
-              {t("Déclaration personnelle", "Déclaration dyali")}
+              {t("Déclaration personnelle", "التصريح ديالي")}
             </option>
             {data.candidate.documents.map((d) => (
               <option key={d.id} value={d.id}>
@@ -485,7 +485,7 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
             ))}
           </select>
         </Field>
-        <Field label={t("Page (facultatif)", "Page (ikhtiyari)")}>
+        <Field label={t("Page (facultatif)", "الصفحة (اختياري)")}>
           <input
             name="page"
             type="number"
@@ -497,20 +497,20 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
           <input name="checked" type="checkbox" />
           {t(
             "J’ai comparé cette information au justificatif.",
-            "9arent had lma3loma m3a document.",
+            "قارنت هاد المعلومة مع الوثيقة.",
           )}
         </label>
         <label className="check-field">
           <input name="confirmed" type="checkbox" required />
           {t(
             "Je confirme cette modification du profil.",
-            "Kan2ekked had taghyir f profil.",
+            "كنأكد هاد التغيير فالملف ديالي.",
           )}
         </label>
         <div className="form-actions">
-          <Button onClick={onClose}>{t("Annuler", "Lghi")}</Button>
+          <Button onClick={onClose}>{t("Annuler", "نلغي")}</Button>
           <Button type="submit" variant="primary">
-            {t("Confirmer", "2ekked")}
+            {t("Confirmer", "نأكد")}
           </Button>
         </div>
       </form>
@@ -520,7 +520,7 @@ function FactModal({ fact, onClose }: { fact: Fact; onClose: () => void }) {
 function ExperienceModal({ onClose }: { onClose: () => void }) {
   const { t, mutate } = useApp();
   return (
-    <Modal title={t("Ajouter une expérience", "Zid tajriba")} onClose={onClose}>
+    <Modal title={t("Ajouter une expérience", "نزيد تجربة")} onClose={onClose}>
       <form
         onSubmit={async (e) => {
           e.preventDefault();
@@ -537,7 +537,7 @@ function ExperienceModal({ onClose }: { onClose: () => void }) {
             onClose();
         }}
       >
-        <Field label={t("Type", "Naw3")}>
+        <Field label={t("Type", "النوع")}>
           <select name="kind">
             {[
               ["project", "Projet"],
@@ -553,24 +553,24 @@ function ExperienceModal({ onClose }: { onClose: () => void }) {
             ))}
           </select>
         </Field>
-        <Field label={t("Intitulé", "L3onwan")}>
+        <Field label={t("Intitulé", "العنوان")}>
           <input name="title" required maxLength={150} />
         </Field>
-        <Field label={t("Période", "Lmodda")}>
+        <Field label={t("Période", "المدة")}>
           <input name="date" maxLength={100} />
         </Field>
-        <Field label={t("Ce que vous avez réellement fait", "Ach derti b se7")}>
+        <Field label={t("Ce que vous avez réellement fait", "شنو درتي بالفعل")}>
           <textarea name="description" required rows={4} maxLength={3000} />
         </Field>
         <label className="check-field">
           <input type="checkbox" required />
           {t(
             "Je confirme l’exactitude de ma déclaration.",
-            "Kan2ekked belli déclaration dyali s7i7a.",
+            "كنأكد بلي التصريح ديالي صحيح.",
           )}
         </label>
         <Button type="submit" variant="primary">
-          {t("Ajouter à mon profil", "Zid l profil dyali")}
+          {t("Ajouter à mon profil", "نزيدها للملف ديالي")}
         </Button>
       </form>
     </Modal>
@@ -591,14 +591,14 @@ export function DocumentsView() {
   return (
     <>
       <Heading
-        eyebrow={t("LES FAITS AVANT TOUT", "DALIL LLOWEL")}
+        eyebrow={t("LES FAITS AVANT TOUT", "الدليل أولا")}
         title={t(
           "Un document. Une source de confiance.",
-          "Kol document, dalil f dossier.",
+          "كل وثيقة دليل فالملف ديالك.",
         )}
         description={t(
           "Ajoutez vos pièces, puis vérifiez les informations qui leur sont associées.",
-          "Zid lwra9 dyalek, men be3d raje3 lma3lomat lli fihom.",
+          "زيد الوثائق ديالك ومن بعد راجع المعلومات اللي فيهم.",
         )}
       />
       <div
@@ -621,12 +621,12 @@ export function DocumentsView() {
           <h3>
             {file
               ? file.name
-              : t("Déposez votre document ici", "7ett document dyalek hna")}
+              : t("Déposez votre document ici", "حط الوثيقة ديالك هنا")}
           </h3>
           <p>
             {t(
               "PDF, JPEG ou PNG · 10 Mo maximum · stockage privé",
-              "PDF, JPEG wlla PNG · 10 Mo maximum · stockage privé",
+              "PDF أو JPEG أو PNG · حتى لـ 10 ميغابايت · تخزين خاص",
             )}
           </p>
         </div>
@@ -634,26 +634,26 @@ export function DocumentsView() {
           ref={input}
           type="file"
           accept="application/pdf,image/png,image/jpeg"
-          aria-label={t("Choisir un fichier", "Khtar fichier")}
+          aria-label={t("Choisir un fichier", "نختار ملف")}
           onChange={(e) => setFile(e.target.files?.[0] ?? null)}
           className="file-picker"
         />
         <Button onClick={() => input.current?.click()}>
-          {t("Choisir un fichier", "Khtar fichier")}
+          {t("Choisir un fichier", "نختار ملف")}
         </Button>
       </div>
       <div className="upload-controls">
-        <Field label={t("Type de document", "Naw3 dyal document")}>
+        <Field label={t("Type de document", "نوع الوثيقة")}>
           <select value={kind} onChange={(e) => setKind(e.target.value)}>
             {[
-              ["transcript", "Relevé de notes", "Relevé de notes"],
-              ["identity", "Pièce d’identité", "Wra9 lhowiya"],
-              ["photo", "Photo d’identité", "Tsweera"],
-              ["diploma", "Diplôme", "Diplôme"],
-              ["language", "Certificat de langue", "Certificat logha"],
-              ["cv", "CV", "CV"],
-              ["certificate", "Certification", "Certification"],
-              ["other", "Autre justificatif", "Dalil akhor"],
+              ["transcript", "Relevé de notes", "كشف النقط"],
+              ["identity", "Pièce d’identité", "وثيقة الهوية"],
+              ["photo", "Photo d’identité", "الصورة"],
+              ["diploma", "Diplôme", "الدبلوم"],
+              ["language", "Certificat de langue", "شهادة اللغة"],
+              ["cv", "CV", "السيرة الذاتية"],
+              ["certificate", "Certification", "شهادة مهارة"],
+              ["other", "Autre justificatif", "دليل آخر"],
             ].map(([v, fr, ary]) => (
               <option value={v} key={v}>
                 {t(fr, ary)}
@@ -678,37 +678,37 @@ export function DocumentsView() {
           }}
         >
           <Upload size={16} />
-          {t("Ajouter au dossier", "Zid l dossier")}
+          {t("Ajouter au dossier", "نزيدها للملف")}
         </Button>
       </div>
       <Notice>
         {t(
           "Lecture automatique limitée au texte PDF. Les scans demandent une saisie manuelle. Aucune extraction ne remplace silencieusement votre profil.",
-          "L9raya l2otomatikiya mahdouda l texte PDF. Scans khas saisie manuelle. Ma kanbeddlo profil bla ta2kid dyalek.",
+          "القراية الآلية محدودة فالنص داخل PDF. الصور والوثائق الممسوحة خاصها إدخال يدوي. ما كنبدلوش الملف بلا تأكيدك.",
         )}
       </Notice>
       <SectionTitle
-        title={t("Votre bibliothèque de justificatifs", "Lwra9 lli f dossier")}
+        title={t("Votre bibliothèque de justificatifs", "الوثائق اللي فالملف")}
         action={
           <select
-            aria-label={t("Filtrer les documents", "Filtrer lwra9")}
+            aria-label={t("Filtrer les documents", "نصفي الوثائق")}
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
           >
-            <option value="all">{t("Tous les documents", "Ga3 lwra9")}</option>
+            <option value="all">{t("Tous les documents", "جميع الوثائق")}</option>
             <option value="NEEDS_REVIEW">
-              {t("À vérifier", "Khas moraja3a")}
+              {t("À vérifier", "خاصها مراجعة")}
             </option>
-            <option value="VERIFIED">{t("Vérifiés", "M2ekkdin")}</option>
+            <option value="VERIFIED">{t("Vérifiés", "مؤكدة")}</option>
           </select>
         }
       />
       {docs.length === 0 ? (
         <Empty
-          title={t("Aucun document dans cette vue", "Ma kayn 7ta document hna")}
+          title={t("Aucun document dans cette vue", "ما كاينة حتى وثيقة هنا")}
           description={t(
             "Ajoutez votre première pièce ou changez le filtre.",
-            "Zid awal document wlla beddel filtre.",
+            "زيد أول وثيقة ولا بدل التصفية.",
           )}
         />
       ) : (
@@ -722,7 +722,7 @@ export function DocumentsView() {
                 <strong>{d.name}</strong>
                 <p>
                   {d.is_mock
-                    ? t("Pièce fictive · démonstration", "Document tajribi")
+                    ? t("Pièce fictive · démonstration", "وثيقة تجريبية")
                     : formatNumber(d.size / 1024) + " Ko"}{" "}
                   · {new Date(d.uploaded_at).toLocaleDateString("fr-FR")}
                 </p>
@@ -732,13 +732,13 @@ export function DocumentsView() {
                 <a
                   href={`/api/documents/${d.id}/download`}
                   className="icon-button"
-                  aria-label={t("Télécharger", "Télécharger")}
+                  aria-label={t("Télécharger", "نحمل")}
                 >
                   <Download size={17} />
                 </a>
               )}
               <Button onClick={() => setReview(d)}>
-                {t("Vérifier", "Raje3")}
+                {t("Vérifier", "نراجع")}
                 <ChevronRight size={14} />
               </Button>
             </div>
@@ -767,7 +767,7 @@ function DocumentModal({
     [edu, setEdu] = useState("");
   return (
     <Modal
-      title={t("Vérifier le document", "Raje3 document")}
+      title={t("Vérifier le document", "نراجع الوثيقة")}
       onClose={onClose}
       wide
     >
@@ -782,13 +782,13 @@ function DocumentModal({
         {doc.processing_note ||
           t(
             "Pièce de démonstration. Aucune valeur administrative.",
-            "Document dyal tajriba, ma 3endoch valeur administrative.",
+            "وثيقة للتجربة، ما عندها حتى قيمة إدارية.",
           )}
       </Notice>
       {!doc.is_mock && (
         <a className="button" href={`/api/documents/${doc.id}/download`}>
           <Download size={16} />
-          {t("Ouvrir la pièce téléchargée", "Télécharger document bach traj3o")}
+          {t("Ouvrir la pièce téléchargée", "نحمل الوثيقة باش نراجعها")}
         </a>
       )}
       <form
@@ -809,12 +809,12 @@ function DocumentModal({
         {doc.extraction.length > 0 && (
           <>
             <SectionTitle
-              title={t("Comparer avant de remplacer", "9aren 9bel tabdil")}
+              title={t("Comparer avant de remplacer", "قارن قبل التغيير")}
             />
             {doc.extraction.map((f) => (
               <div className="extraction-compare" key={f.id}>
                 <div>
-                  <small>{t("Valeur actuelle", "Ma3loma daba")}</small>
+                  <small>{t("Valeur actuelle", "المعلومة الحالية")}</small>
                   <strong>
                     {data.candidate.facts.find((x) => x.key === f.key)?.value ||
                       "—"}
@@ -823,7 +823,7 @@ function DocumentModal({
                 <ArrowRight size={18} />
                 <div>
                   <small>
-                    {t("Valeur détectée", "Ma3loma lli t9rat")} · p. {f.page}
+                    {t("Valeur détectée", "المعلومة اللي تستخرجات")} · p. {f.page}
                   </small>
                   <strong>{f.value}</strong>
                 </div>
@@ -833,17 +833,17 @@ function DocumentModal({
               <input type="checkbox" name="import" />
               {t(
                 "Remplacer les champs affichés par les valeurs extraites après vérification.",
-                "Nbeddel had lchamps b lma3lomat lli t9rat mlli raja3thom.",
+                "نبدل هاد الخانات بالمعلومات المستخرجة من بعد ما راجعتها.",
               )}
             </label>
           </>
         )}
         {doc.kind === "transcript" && (
           <div className="form-grid">
-            <Field label={t("Associer à une année", "Rbet b 3am dyal 9raya")}>
+            <Field label={t("Associer à une année", "نربطها بسنة دراسية")}>
               <select value={edu} onChange={(e) => setEdu(e.target.value)}>
                 <option value="">
-                  {t("Ne pas associer maintenant", "Machi daba")}
+                  {t("Ne pas associer maintenant", "ماشي دابا")}
                 </option>
                 {data.candidate.education
                   .filter((e) => e.expected_semesters.length > 0)
@@ -854,14 +854,14 @@ function DocumentModal({
                   ))}
               </select>
             </Field>
-            <Field label={t("Semestre justifié", "Semestre lli fih dalil")}>
+            <Field label={t("Semestre justifié", "السداسي اللي فيه الدليل")}>
               <select
                 name="semester"
                 disabled={!edu}
                 required={!!edu}
                 key={edu}
               >
-                <option value="">{t("Choisir", "Khtar")}</option>
+                <option value="">{t("Choisir", "نختار")}</option>
                 {data.candidate.education
                   .find((e) => e.id === edu)
                   ?.expected_semesters.map((n) => (
@@ -877,14 +877,14 @@ function DocumentModal({
           <input type="checkbox" required />
           {t(
             "J’ai lu cette pièce et vérifié les informations et associations ci-dessus.",
-            "9rit document w raja3t lma3lomat w liens lli lfo9.",
+            "قريت الوثيقة وراجعت المعلومات والروابط اللي لفوق.",
           )}
         </label>
         <div className="form-actions">
-          <Button onClick={onClose}>{t("Annuler", "Lghi")}</Button>
+          <Button onClick={onClose}>{t("Annuler", "نلغي")}</Button>
           <Button variant="primary" type="submit">
             <ShieldCheck size={16} />
-            {t("Confirmer ma vérification", "2ekked lmoraja3a")}
+            {t("Confirmer ma vérification", "نأكد المراجعة")}
           </Button>
         </div>
       </form>
@@ -900,56 +900,56 @@ export function AcademicView() {
   return (
     <>
       <Heading
-        eyebrow={t("COMPRENDRE VOTRE PARCOURS", "FHEM MASAR DYALEK")}
+        eyebrow={t("COMPRENDRE VOTRE PARCOURS", "فهم المسار ديالك")}
         title={t(
           "Vos résultats, remis en perspective.",
-          "Nnatayj dyalek f si9ha.",
+          "النتائج ديالك فالسياق ديالها.",
         )}
         description={t(
           "Des calculs transparents pour identifier vos forces et les points à travailler.",
-          "7ssabat wad7in bach t3ref no9at l9owa w fin khas tkhdem.",
+          "حسابات واضحة باش تعرف نقط القوة وفين خاصك تخدم.",
         )}
         action={
           <Button variant="primary" onClick={() => setGrade("new")}>
             <Plus size={17} />
-            {t("Ajouter une note", "Zid note")}
+            {t("Ajouter une note", "نزيد نقطة")}
           </Button>
         }
       />
       <div className="stat-grid">
         <div className="panel metric">
-          <span>{t("Moyenne pondérée", "Moyenne pondérée")}</span>
+          <span>{t("Moyenne pondérée", "المعدل بالمعاملات")}</span>
           <strong>
             {formatNumber(diag.average)}
             <small> / 20</small>
           </strong>
           <p>
-            {diag.grade_count} {t("notes saisies", "notes msejlin")}
+            {diag.grade_count} {t("notes saisies", "نقط مسجلة")}
           </p>
         </div>
         <div className="panel metric">
           <span>
-            {t("Progression entre semestres", "Ta9addom bin semestres")}
+            {t("Progression entre semestres", "التقدم بين السداسيات")}
           </span>
           <strong>
             {diag.progression !== null && diag.progression > 0 ? "+" : ""}
             {formatNumber(diag.progression)}
-            <small> {t("points", "points")}</small>
+            <small> {t("points", "نقط")}</small>
           </strong>
           <p>
             {t(
               "Premier et dernier semestre renseignés",
-              "Awal w akher semestre m3emmer",
+              "أول وآخر سداسي معمر",
             )}
           </p>
         </div>
         <div className="panel metric">
-          <span>{t("Matières fortes", "Lmawad lli 9wi fihom")}</span>
+          <span>{t("Matières fortes", "المواد اللي قوي فيها")}</span>
           <h3>{diag.strongest.join(" · ") || "—"}</h3>
           <p>
             {t(
               "D’après les moyennes disponibles",
-              "3la 7sab moyennes lli kaynin",
+              "على حساب المعدلات اللي كاينة",
             )}
           </p>
         </div>
@@ -962,11 +962,11 @@ export function AcademicView() {
       <div className="two-columns">
         <section>
           <SectionTitle
-            title={t("Votre chronologie académique", "Tarikh dyal 9raytek")}
+            title={t("Votre chronologie académique", "تاريخ القراية ديالك")}
             action={
               <Button onClick={() => setEducation("new")}>
                 <Plus size={16} />
-                {t("Une année", "3am")}
+                {t("Une année", "سنة")}
               </Button>
             }
           />
@@ -1004,7 +1004,7 @@ export function AcademicView() {
                       className="text-link"
                       onClick={() => setEducation(e)}
                     >
-                      {t("Modifier / expliquer", "Beddel / chre7")}
+                      {t("Modifier / expliquer", "نبدل / نشرح")}
                     </button>
                   </div>
                 </div>
@@ -1013,7 +1013,7 @@ export function AcademicView() {
               <p>
                 {t(
                   "Ajoutez chaque année, même en cas d’interruption.",
-                  "Zid kol 3am, 7ta ila kan twa9of.",
+                  "زيد كل سنة، حتى إلا كان توقف.",
                 )}
               </p>
             )}
@@ -1021,7 +1021,7 @@ export function AcademicView() {
         </section>
         <section>
           <SectionTitle
-            title={t("Vos matières en un regard", "Nadra 3la lmawad")}
+            title={t("Vos matières en un regard", "نظرة على المواد")}
           />
           <div className="panel subject-chart">
             {Object.entries(diag.subject_averages).map(([s, v]) => (
@@ -1038,26 +1038,26 @@ export function AcademicView() {
             <Notice>
               {t(
                 "Moyenne = somme des notes sur 20 × coefficients, divisée par la somme des coefficients.",
-                "Moyenne = majmou3 notes 3la 20 × coefficients, m9soum 3la majmou3 coefficients.",
+                "المعدل = مجموع النقط على 20 مضروبة فالمعاملات، مقسوم على مجموع المعاملات.",
               )}
             </Notice>
             <LinkButton onClick={() => go("documents")}>
-              {t("Compléter les relevés manquants", "Nkemmel relevés nna9sin")}
+              {t("Compléter les relevés manquants", "نكمل كشوف النقط الناقصة")}
             </LinkButton>
           </div>
         </section>
       </div>
-      <SectionTitle title={t("Notes et justificatifs", "Notes w dalil")} />
+      <SectionTitle title={t("Notes et justificatifs", "النقط والدليل")} />
       <div className="panel table-panel">
         <table>
           <thead>
             <tr>
               {[
-                t("Matière", "Lmada"),
-                t("Semestre", "Semestre"),
-                t("Note", "Note"),
-                t("Coefficient", "Coefficient"),
-                t("Source", "Dalil"),
+                t("Matière", "المادة"),
+                t("Semestre", "السداسي"),
+                t("Note", "النقطة"),
+                t("Coefficient", "المعامل"),
+                t("Source", "الدليل"),
                 "",
               ].map((x, i) => (
                 <th key={i}>{x}</th>
@@ -1093,7 +1093,7 @@ export function AcademicView() {
                 <td>
                   <div className="row-actions">
                     <button className="text-link" onClick={() => setGrade(g)}>
-                      {t("Modifier", "Beddel")}
+                      {t("Modifier", "نبدل")}
                     </button>
                     <button
                       className="icon-button"
@@ -1106,7 +1106,7 @@ export function AcademicView() {
                           window.confirm(
                             t(
                               "Supprimer cette note et recalculer le diagnostic ?",
-                              "N7yed had note w n3awed l7ssab?",
+                              "نحيد هاد النقطة ونعاود الحساب؟",
                             ),
                           )
                         )
@@ -1149,7 +1149,7 @@ function GradeModal({
     <Modal
       title={t(
         grade ? "Modifier une note" : "Ajouter une note",
-        grade ? "Beddel note" : "Zid note",
+        grade ? "نبدل النقطة" : "نزيد نقطة",
       )}
       onClose={onClose}
     >
@@ -1172,7 +1172,7 @@ function GradeModal({
             onClose();
         }}
       >
-        <Field label={t("Matière", "Lmada")}>
+        <Field label={t("Matière", "المادة")}>
           <input
             name="subject"
             required
@@ -1181,7 +1181,7 @@ function GradeModal({
           />
         </Field>
         <div className="form-grid">
-          <Field label={t("Note obtenue", "Note lli jebti")}>
+          <Field label={t("Note obtenue", "النقطة اللي جبتي")}>
             <input
               name="value"
               type="number"
@@ -1191,7 +1191,7 @@ function GradeModal({
               defaultValue={grade?.value}
             />
           </Field>
-          <Field label={t("Barème", "Barème")}>
+          <Field label={t("Barème", "السلم")}>
             <input
               name="scale"
               type="number"
@@ -1201,7 +1201,7 @@ function GradeModal({
               required
             />
           </Field>
-          <Field label={t("Coefficient", "Coefficient")}>
+          <Field label={t("Coefficient", "المعامل")}>
             <input
               name="coefficient"
               type="number"
@@ -1212,7 +1212,7 @@ function GradeModal({
               required
             />
           </Field>
-          <Field label={t("Semestre", "Semestre")}>
+          <Field label={t("Semestre", "السداسي")}>
             <input
               name="semester"
               type="number"
@@ -1223,10 +1223,10 @@ function GradeModal({
             />
           </Field>
         </div>
-        <Field label={t("Relevé source", "Relevé dyal dalil")}>
+        <Field label={t("Relevé source", "كشف النقط اللي فيه الدليل")}>
           <select name="document_id" defaultValue={grade?.document_id ?? ""}>
             <option value="">
-              {t("Déclaration sans pièce", "Déclaration bla document")}
+              {t("Déclaration sans pièce", "تصريح بلا وثيقة")}
             </option>
             {data.candidate.documents
               .filter((d) => d.kind === "transcript")
@@ -1245,11 +1245,11 @@ function GradeModal({
           />
           {t(
             "J’ai comparé cette note au relevé.",
-            "9arent had note m3a relevé.",
+            "قارنت هاد النقطة مع كشف النقط.",
           )}
         </label>
         <Button type="submit" variant="primary">
-          {t("Enregistrer et recalculer", "Sejjel w 3awed l7ssab")}
+          {t("Enregistrer et recalculer", "نسجل ونعاود الحساب")}
         </Button>
       </form>
     </Modal>
@@ -1265,7 +1265,7 @@ function EducationModal({
   const { t, mutate } = useApp();
   return (
     <Modal
-      title={t("Une étape de votre parcours", "Khotwa f masar dyalek")}
+      title={t("Une étape de votre parcours", "خطوة فالمسار ديالك")}
       onClose={onClose}
     >
       <form
@@ -1290,7 +1290,7 @@ function EducationModal({
             onClose();
         }}
       >
-        <Field label={t("Formation / diplôme", "Formation / diplôme")}>
+        <Field label={t("Formation / diplôme", "التكوين / الدبلوم")}>
           <input
             name="label"
             defaultValue={e?.label}
@@ -1298,7 +1298,7 @@ function EducationModal({
             maxLength={150}
           />
         </Field>
-        <Field label={t("Établissement", "Lmo2assasa")}>
+        <Field label={t("Établissement", "المؤسسة")}>
           <input
             name="institution"
             defaultValue={e?.institution}
@@ -1307,7 +1307,7 @@ function EducationModal({
           />
         </Field>
         <div className="form-grid">
-          <Field label={t("Année de début", "3am lbidaya")}>
+          <Field label={t("Année de début", "سنة البداية")}>
             <input
               name="start"
               type="number"
@@ -1317,7 +1317,7 @@ function EducationModal({
               required
             />
           </Field>
-          <Field label={t("Année de fin", "3am nihaya")}>
+          <Field label={t("Année de fin", "سنة النهاية")}>
             <input
               name="end"
               type="number"
@@ -1327,7 +1327,7 @@ function EducationModal({
               required
             />
           </Field>
-          <Field label={t("Niveau", "Niveau")}>
+          <Field label={t("Niveau", "المستوى")}>
             <input
               name="level"
               defaultValue={e?.level}
@@ -1339,7 +1339,7 @@ function EducationModal({
           <Field
             label={t(
               "Semestres attendus (ex. 3,4)",
-              "Semestres lli khas (ex. 3,4)",
+              "السداسيات المطلوبة (مثلا 3,4)",
             )}
           >
             <input
@@ -1352,7 +1352,7 @@ function EducationModal({
         <Field
           label={t(
             "Interruption, redoublement ou précision",
-            "Twa9of, redoublement wlla tawdi7",
+            "توقف ولا تكرار سنة ولا توضيح",
           )}
         >
           <textarea
@@ -1363,7 +1363,7 @@ function EducationModal({
           />
         </Field>
         <Button variant="primary" type="submit">
-          {t("Enregistrer cette étape", "Sejjel had lkhotwa")}
+          {t("Enregistrer cette étape", "نسجل هاد الخطوة")}
         </Button>
       </form>
     </Modal>
@@ -1377,28 +1377,28 @@ export function PathwaysView() {
     [prefs, setPrefs] = useState<Preferences>(data.candidate.preferences),
     [open, setOpen] = useState("university");
   const questions = [
-    t("Qu’est-ce qui vous intéresse vraiment ?", "Ach lli kay3ejbek b se7?"),
-    t("Comment aimez-vous apprendre ?", "Kifach katfeddel t9ra?"),
+    t("Qu’est-ce qui vous intéresse vraiment ?", "شنو كيعجبك بصح؟"),
+    t("Comment aimez-vous apprendre ?", "كيفاش كتفضل تقرا؟"),
     t(
       "Quel horizon professionnel imaginez-vous ?",
-      "Ach kattsawwer tkhdem men be3d?",
+      "شنو كتخيل راسك خدام من بعد؟",
     ),
-    t("Quelles sont vos contraintes ?", "Ach homa l9oyod dyalek?"),
+    t("Quelles sont vos contraintes ?", "شنو هما القيود ديالك؟"),
   ];
   return (
     <>
       <Heading
         eyebrow={t(
           "PLUSIEURS ROUTES, VOTRE DIRECTION",
-          "MASARAT MOKHTALFA, LWIJHA DYALEK",
+          "مسارات مختلفة، والوجهة ديالك",
         )}
         title={t(
           "Dessinez la suite de votre parcours.",
-          "Rsem lli jay f masar dyalek.",
+          "رسم اللي جاي فالمسار ديالك.",
         )}
         description={t(
           "Explorez des possibilités. Chaque transition reste soumise aux conditions d’admission.",
-          "Chouf l2imkaniyat. Kol transition khas chorot l9oboul.",
+          "شوف الإمكانيات. كل انتقال عندو شروط القبول.",
         )}
         action={
           <Button
@@ -1409,26 +1409,26 @@ export function PathwaysView() {
             }}
           >
             <CompassIcon />
-            {t("Préciser mon projet", "Nwadda7 projet dyali")}
+            {t("Préciser mon projet", "نوضح المشروع ديالي")}
           </Button>
         }
       />
       <Notice>
         {t(
           "Ces parcours sont des pistes de réflexion, pas des passerelles garanties. Coûts et débouchés doivent être vérifiés pour chaque formation.",
-          "Had masarat ghir afkar, machi passerelles madmouna. Frais w afaq khas moraja3a l kol formation.",
+          "هاد المسارات غير أفكار، ماشي انتقالات مضمونة. المصاريف والآفاق خاصها مراجعة لكل تكوين.",
         )}
       </Notice>
       {data.pathways.length === 0 ? (
         <Empty
-          title={t("Commençons par vos envies.", "Nbdaw b chno bghiti.")}
+          title={t("Commençons par vos envies.", "نبداو بشنو بغيتي.")}
           description={t(
             "Quatre questions pour identifier les parcours à explorer.",
-            "Rb3a dyal as2ila bach n3erfo masarat lli n9ellbo 3lihom.",
+            "ربعة أسئلة باش نعرفو المسارات اللي نقلبو عليهم.",
           )}
           action={
             <Button onClick={() => setInterview(true)}>
-              {t("Commencer", "Nbda")}
+              {t("Commencer", "نبدا")}
             </Button>
           }
         />
@@ -1476,14 +1476,14 @@ export function PathwaysView() {
                 <div className="pathway-details">
                   <dl>
                     {[
-                      [t("Durée", "Lmodda"), p.duration],
-                      [t("Exigence", "S3ouba"), p.difficulty],
+                      [t("Durée", "المدة"), p.duration],
+                      [t("Exigence", "الصعوبة"), p.difficulty],
                       [
-                        t("Professionnalisation", "Tatbi9 mihani"),
+                        t("Professionnalisation", "التطبيق المهني"),
                         p.professionalization,
                       ],
-                      [t("Flexibilité", "Flexibilité"), p.flexibility],
-                      [t("Coût", "Takalif"), p.cost],
+                      [t("Flexibilité", "المرونة"), p.flexibility],
+                      [t("Coût", "التكاليف"), p.cost],
                     ].map(([k, v]) => (
                       <div key={k}>
                         <dt>{k}</dt>
@@ -1492,7 +1492,7 @@ export function PathwaysView() {
                     ))}
                   </dl>
                   <div>
-                    <h3>{t("Points de vigilance", "No9at khas l2intibah")}</h3>
+                    <h3>{t("Points de vigilance", "نقط خاصها الانتباه")}</h3>
                     <ul>
                       {p.risks.map((x) => (
                         <li key={x}>{t(x)}</li>
@@ -1501,12 +1501,12 @@ export function PathwaysView() {
                     <h3>
                       {t(
                         "Sorties possibles, sous conditions",
-                        "Makharej momkina b chorot",
+                        "آفاق ممكنة بشروط",
                       )}
                     </h3>
                     <p>{p.exits.map((x) => t(x)).join(" · ")}</p>
                     <LinkButton onClick={() => go("programs")}>
-                      {t("Explorer les formations", "Nchouf les formations")}
+                      {t("Explorer les formations", "نشوف التكوينات")}
                     </LinkButton>
                   </div>
                 </div>
@@ -1517,12 +1517,12 @@ export function PathwaysView() {
       )}
       {interview && (
         <Modal
-          title={t("Trouver votre direction", "L9a lwijha dyalek")}
+          title={t("Trouver votre direction", "لقى الوجهة ديالك")}
           onClose={() => setInterview(false)}
         >
           <div className="wizard-progress">
             <span>
-              {t("Question", "Sou2al")} {step + 1}/4
+              {t("Question", "السؤال")} {step + 1}/4
             </span>
             <Progress percent={(step + 1) * 25} />
           </div>
@@ -1531,7 +1531,7 @@ export function PathwaysView() {
             <Field
               label={t(
                 "Vos matières préférées, séparées par des virgules",
-                "Lmawad lli kay3ejbok, ferre9 b virgule",
+                "المواد اللي كيعجبوك، فرق بينهم بفاصلة",
               )}
             >
               <input
@@ -1552,10 +1552,10 @@ export function PathwaysView() {
                 [
                   "practical",
                   "Des projets et de la pratique",
-                  "Projets w tatbi9",
+                  "المشاريع والتطبيق",
                 ],
-                ["theory", "Comprendre la théorie", "Nfhem théorie"],
-                ["balanced", "Un équilibre des deux", "Tawazon binathom"],
+                ["theory", "Comprendre la théorie", "نفهم النظري"],
+                ["balanced", "Un équilibre des deux", "توازن بينهم"],
               ].map(([id, fr, ary]) => (
                 <button
                   className={prefs.style === id ? "chosen" : ""}
@@ -1574,7 +1574,7 @@ export function PathwaysView() {
             <Field
               label={t(
                 "Un métier, un domaine ou « à explorer »",
-                "Métier, domaine wlla « mazal n9elleb »",
+                "خدمة، مجال ولا «مازال كنقلب»",
               )}
             >
               <input
@@ -1585,7 +1585,7 @@ export function PathwaysView() {
           )}
           {step === 3 && (
             <>
-              <Field label={t("Villes acceptables", "Lmdoun lli ynasbok")}>
+              <Field label={t("Villes acceptables", "المدن اللي كيناسبوك")}>
                 <input
                   value={prefs.cities.join(",")}
                   onChange={(e) =>
@@ -1599,7 +1599,7 @@ export function PathwaysView() {
               <Field
                 label={t(
                   "Budget annuel (€), si connu",
-                  "Budget dyal l3am (€), ila 3refti",
+                  "ميزانية العام (€)، إلا عرفتيها",
                 )}
               >
                 <input
@@ -1620,11 +1620,11 @@ export function PathwaysView() {
           )}
           <div className="form-actions">
             <Button disabled={step === 0} onClick={() => setStep(step - 1)}>
-              {t("Précédent", "Lli 9bel")}
+              {t("Précédent", "اللي قبل")}
             </Button>
             {step < 3 ? (
               <Button variant="primary" onClick={() => setStep(step + 1)}>
-                {t("Continuer", "Kemme l".replace("Kemme l", "Kemmel"))}
+                {t("Continuer", "كمل".replace("كمل", "كمل"))}
                 <ArrowRight size={16} />
               </Button>
             ) : (
@@ -1641,7 +1641,7 @@ export function PathwaysView() {
                     setInterview(false);
                 }}
               >
-                {t("Voir mes pistes", "Nchouf l2afkar")}
+                {t("Voir mes pistes", "نشوف الأفكار")}
               </Button>
             )}
           </div>

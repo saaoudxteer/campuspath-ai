@@ -52,47 +52,47 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
       <Heading
         eyebrow={t(
           "LES FAITS DEVIENNENT VOTRE HISTOIRE",
-          "LMA3LOMAT KATWELLI 7KAYTEK",
+          "المعلومات كتولي الحكاية ديالك",
         )}
         title={
           kind === "cv"
             ? t(
                 "Votre parcours. Le bon angle.",
-                "Masar dyalek. B tari9a mnasba.",
+                "المسار ديالك، بطريقة مناسبة.",
               )
             : t(
                 "Une motivation qui vous ressemble.",
-                "Motivation kat3ebber 3lik.",
+                "دوافع كتعبر عليك.",
               )
         }
         description={
           kind === "cv"
             ? t(
                 "Un CV préparé depuis votre profil, adapté aux formations que vous avez choisies.",
-                "CV mn profil dyalek, mnasb l formations lli khtariti.",
+                "سيرة ذاتية من الملف ديالك، مناسبة للتكوينات اللي ختاريتي.",
               )
             : t(
                 "Un projet cohérent, puis un brouillon spécifique à chaque formation.",
-                "Projet mtanass9, men be3d moswadda l kol formation.",
+                "مشروع منسجم، ومن بعد مسودة لكل تكوين.",
               )
         }
       />
       <Notice>
         {t(
           "Les documents officiels restent en français. Les brouillons de démonstration utilisent vos données et des modèles déterministes ; aucun service d’IA externe n’est connecté.",
-          "Documents officiels kayb9aw b français. Moswaddat démo katsta3mel ma3lomat dyalek w modèles déterministes ; ma kaynach IA externe connectée.",
+          "الوثائق الرسمية كتبقى بالفرنسية. المسودات التجريبية كتستعمل المعلومات ديالك وقوالب ثابتة؛ ما كاينش ذكاء اصطناعي خارجي مربوط.",
         )}
       </Notice>
       {selected.length === 0 ? (
         <Empty
-          title={t("Vos choix viennent d’abord.", "Khtiyarat dyalek lowwel.")}
+          title={t("Vos choix viennent d’abord.", "الاختيارات ديالك أولا.")}
           description={t(
             "Sélectionnez au moins une formation avant de préparer votre CV ou vos motivations.",
-            "Khtar formation 3la l2a9al 9bel ma twejjed CV w motivations.",
+            "ختار تكوين واحد على الأقل قبل ما توجد السيرة الذاتية ورسائل الدوافع.",
           )}
           action={
             <Button variant="primary" onClick={() => go("programs")}>
-              {t("Choisir mes formations", "Nkhtar formations")}
+              {t("Choisir mes formations", "نختار التكوينات")}
               <ArrowRight size={16} />
             </Button>
           }
@@ -106,14 +106,14 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                   <h2>
                     {t(
                       "Votre fil conducteur",
-                      "Lkhet lli kayrbet masar dyalek",
+                      "الخيط اللي كيربط المسار ديالك",
                     )}
                   </h2>
                   <p>
                     {t(
                       "Passé → choix d’études → compétences → métier → projet à long terme",
-                      "Lmad i".replace("Lmad i", "Lmadi") +
-                        " → 9raya → compétences → métier → projet lmosta9bal",
+                      "الماضي".replace("الماضي", "الماضي") +
+                        " ← القراية ← المهارات ← المهنة ← مشروع المستقبل",
                     )}
                   </p>
                 </div>
@@ -132,10 +132,10 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
               >
                 <div className="form-grid">
                   <Field
-                    label={t("Mon projet d’études", "Projet dyal 9rayti")}
+                    label={t("Mon projet d’études", "المشروع الدراسي ديالي")}
                     hint={t(
                       "Reliez vos acquis, vos choix et les compétences que vous souhaitez développer.",
-                      "Rbet lli 9riti, lkhtiyarat w compétences lli bghiti twesse3.",
+                      "ربط اللي قريتي بالاختيارات والمهارات اللي بغيتي تطور.",
                     )}
                   >
                     <textarea
@@ -153,10 +153,10 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                     />
                   </Field>
                   <Field
-                    label={t("Mon projet professionnel", "Projet mihani dyali")}
+                    label={t("Mon projet professionnel", "المشروع المهني ديالي")}
                     hint={t(
                       "Expliquez le métier visé et les étapes réalistes pour y parvenir.",
-                      "Chre7 métier lli bghiti w lkhotwat lmomkina bach twsel lih.",
+                      "شرح الخدمة اللي بغيتي والخطوات الممكنة باش توصل ليها.",
                     )}
                   >
                     <textarea
@@ -178,19 +178,19 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                   <input name="approved" type="checkbox" />
                   {t(
                     "Je valide ces projets comme mes déclarations de référence.",
-                    "Kan2ekked had projets ka déclarations dyali.",
+                    "كنأكد هاد المشاريع كتصريحات ديالي.",
                   )}
                 </label>
                 <div className="form-actions">
                   <p>
                     {t(
                       "Un changement invalide les documents préparés à partir de l’ancienne version.",
-                      "Taghyir kaykhelli documents l9dam khas ytraj3o.",
+                      "التغيير كيخلي الوثائق القديمة تحتاج مراجعة.",
                     )}
                   </p>
                   <Button type="submit" variant="primary">
                     <Save size={16} />
-                    {t("Enregistrer mes projets", "Sejjel projets dyali")}
+                    {t("Enregistrer mes projets", "نسجل المشاريع ديالي")}
                   </Button>
                 </div>
               </form>
@@ -201,15 +201,15 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
               <SectionTitle
                 title={
                   kind === "cv"
-                    ? t("Mon CV de candidature", "CV dyal candidature")
-                    : t("Brouillon par formation", "Moswadda l kol formation")
+                    ? t("Mon CV de candidature", "السيرة الذاتية للترشيح")
+                    : t("Brouillon par formation", "مسودة لكل تكوين")
                 }
                 action={
                   kind === "motivation" ? (
                     <select
                       aria-label={t(
                         "Formation pour la motivation",
-                        "Formation dyal motivation",
+                        "التكوين المعني برسالة الدوافع",
                       )}
                       value={pid}
                       onChange={(e) => setPid(e.target.value)}
@@ -239,10 +239,10 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                       }
                     />
                     <span className="muted">
-                      {t("Version française", "Version française")}
+                      {t("Version française", "النسخة الفرنسية")}
                     </span>
                   </div>
-                  <pre className="print-artifact" lang="fr">
+                  <pre className="print-artifact" lang="fr" dir="ltr">
                     {artifact.text}
                   </pre>
                   <div className="artifact-actions no-print">
@@ -261,11 +261,11 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                       }}
                     >
                       <Download size={16} />
-                      {t("Exporter le texte", "Télécharger texte")}
+                      {t("Exporter le texte", "نحمل النص")}
                     </Button>
                     <Button onClick={() => window.print()}>
                       <Printer size={16} />
-                      {t("Imprimer / PDF", "Imprimer / PDF")}
+                      {t("Imprimer / PDF", "نطبع / PDF")}
                     </Button>
                     <Button
                       variant="primary"
@@ -276,7 +276,7 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                       onClick={() => setApproval(artifact)}
                     >
                       <Check size={16} />
-                      {t("Valider après relecture", "2ekked men be3d moraja3a")}
+                      {t("Valider après relecture", "نأكد من بعد المراجعة")}
                     </Button>
                   </div>
                 </section>
@@ -284,28 +284,28 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                 <Empty
                   title={t(
                     "Votre brouillon apparaîtra ici.",
-                    "Moswadda dyalek ghadi tban hna.",
+                    "المسودة ديالك غادي تبان هنا.",
                   )}
                   description={
                     kind === "cv"
                       ? t(
                           "Les études, projets, expériences et langues viennent de votre profil.",
-                          "9raya, projets, tajarob w loghat mn profil dyalek.",
+                          "القراية والمشاريع والتجارب واللغات من الملف ديالك.",
                         )
                       : t(
                           "Validez vos projets et résolvez les exigences de la fiche formation pour continuer.",
-                          "2ekked projets w 7ell no9at fiche formation bach tkemmel.",
+                          "أكد المشاريع وحل النقط ديال بطاقة التكوين باش تكمل.",
                         )
                   }
                 />
               )}
             </div>
             <aside>
-              <SectionTitle title={t("Avant de générer", "9bel ma twejjed")} />
+              <SectionTitle title={t("Avant de générer", "قبل ما توجد")} />
               <section className="panel material-gates">
                 <div className="gate-check">
                   <CheckCircle2 size={19} />
-                  {t("Formations sélectionnées", "Formations mkhtarin")}
+                  {t("Formations sélectionnées", "التكوينات المختارة")}
                 </div>
                 {kind === "motivation" && (
                   <>
@@ -319,7 +319,7 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                       )}{" "}
                       {t(
                         "Projets personnels validés",
-                        "Projets dyalek m2ekkdin",
+                        "المشاريع ديالك مؤكدة",
                       )}
                     </div>
                     <div className={`gate-check ${m?.ready ? "" : "pending"}`}>
@@ -330,7 +330,7 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                       )}{" "}
                       {t(
                         "Recherche formation complète",
-                        "Recherche dyal formation kamla",
+                        "البحث على التكوين كامل",
                       )}
                     </div>
                     {m?.blockers.map((b) => (
@@ -355,23 +355,23 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                     artifact
                       ? "Régénérer le brouillon"
                       : "Préparer le brouillon",
-                    artifact ? "3awed wejjed moswadda" : "Wejjed moswadda",
+                    artifact ? "نعاود نوجد المسودة" : "نوجد المسودة",
                   )}
                 </Button>
                 {!canGenerate && (
                   <LinkButton onClick={() => go("programs", pid)}>
-                    {t("Résoudre les points bloquants", "7ell no9at lli ba9in")}
+                    {t("Résoudre les points bloquants", "حل النقط اللي باقية")}
                   </LinkButton>
                 )}
               </section>
               {artifact && (
                 <section className="panel quality-panel">
-                  <h3>{t("Contrôle qualité", "Moraja3at ljawda")}</h3>
+                  <h3>{t("Contrôle qualité", "مراجعة الجودة")}</h3>
                   {kind === "motivation" && (
                     <div className="character-count">
                       <strong>{Array.from(artifact.text).length}</strong> /{" "}
                       {data.cycle.motivation_limit}{" "}
-                      {t("caractères", "caractères")}
+                      {t("caractères", "حرف")}
                       <Progress
                         percent={Math.min(
                           100,
@@ -389,7 +389,7 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
                     <summary>
                       {t(
                         "Voir les références des assertions",
-                        "Chouf dalil dyal lma3lomat",
+                        "نشوف أدلة المعلومات",
                       )}
                     </summary>
                     {artifact.assertions.map((a, i) => (
@@ -419,7 +419,7 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
               <Notice>
                 {t(
                   "Aucune compétence, expérience ou exigence n’est ajoutée par le générateur. Relisez chaque déclaration avant de l’utiliser.",
-                  "Générateur ma kayzid 7ta compétence, expérience wlla chart. Raje3 kol déclaration 9bel ma tsta3melha.",
+                  "المولد ما كيزيد حتى مهارة ولا تجربة ولا شرط. راجع كل تصريح قبل ما تستعملو.",
                 )}
               </Notice>
             </aside>
@@ -428,13 +428,13 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
       )}
       {approval && (
         <Modal
-          title={t("Valider ce document", "2ekked had document")}
+          title={t("Valider ce document", "نأكد هاد الوثيقة")}
           onClose={() => setApproval(null)}
         >
           <Notice>
             {t(
               "Cette validation confirme votre relecture. Le document ne sera envoyé à aucun établissement.",
-              "Ta2kid kay3ni raja3ti document. Ma ghadi ytsift l 7ta mo2assasa.",
+              "التأكيد كيعني راجعتي الوثيقة. ما غادي تتسيفط لحتى مؤسسة.",
             )}
           </Notice>
           <form
@@ -452,11 +452,11 @@ export function MaterialsView({ kind }: { kind: "cv" | "motivation" }) {
               <input required type="checkbox" />
               {t(
                 "J’ai relu le contenu, vérifié ses sources et confirmé qu’il reflète mon parcours.",
-                "Raja3t contenu w dalil w 2ekkedt belli kay3ebber 3la masar dyali.",
+                "راجعت المحتوى والأدلة وأكدت بلي كيعبر على المسار ديالي.",
               )}
             </label>
             <Button variant="primary" type="submit">
-              {t("Valider", "2ekked")}
+              {t("Valider", "نأكد")}
             </Button>
           </form>
         </Modal>
@@ -490,36 +490,36 @@ export function InterviewView() {
   const questions = [
     t(
       "Pourquoi souhaitez-vous étudier en France ?",
-      "3lach bghiti t9ra f Fransa?",
+      "علاش بغيتي تقرا ففرنسا؟",
     ),
     program
       ? `Pourquoi avez-vous choisi ${program.title} ?`
       : t(
           "Quelle formation correspond à votre projet, et pourquoi ?",
-          "Ach men formation mnasba l projet dyalek w 3lach?",
+          "أشنو هو التكوين المناسب للمشروع ديالك وعلاش؟",
         ),
     t(
       "Quel acquis de votre parcours vous prépare à cette formation ?",
-      "Ach men 7aja f 9raytek wejdatek l had formation?",
+      "أشنو فقرايتك وجدك لهاد التكوين؟",
     ),
     goal
       ? `Comment votre projet vous prépare-t-il au métier : ${goal} ?`
       : t(
           "Quel métier souhaitez-vous exercer après vos études ?",
-          "Ach bghiti tkhdem men be3d l9raya?",
+          "شنو بغيتي تخدم من بعد القراية؟",
         ),
     t(
       "Comment comptez-vous financer vos études et votre séjour ?",
-      "Kifach ghadi tkhalles 9raytek w lma3icha?",
+      "كيفاش غادي تخلص القراية والمعيشة؟",
     ),
     data.tasks.some((task) => task.id.startsWith("semester-"))
       ? t(
           "Comment expliquez-vous les relevés manquants dans votre dossier ?",
-          "Kifach katfesser relevés nna9sin f dossier?",
+          "كيفاش كتفسر كشوف النقط الناقصة فالملف؟",
         )
       : t(
           "Quelle difficulté de votre parcours avez-vous surmontée ?",
-          "Ach men s3ouba f masar dyalek 9derti tjawezha?",
+          "أشنو هي الصعوبة فالمسار ديالك اللي قدرت تجاوزها؟",
         ),
   ];
   return (
@@ -527,15 +527,15 @@ export function InterviewView() {
       <Heading
         eyebrow={t(
           "EXPLIQUER VOS CHOIX AVEC CLARTÉ",
-          "CHRE7 KHTIYARAT B WODO7",
+          "شرح الاختيارات بوضوح",
         )}
         title={t(
           "Votre projet, avec vos propres mots.",
-          "Projet dyalek, b klamek nta.",
+          "المشروع ديالك، بكلامك نتا.",
         )}
         description={t(
           "Entraînez-vous à partir de votre dossier, une question à la fois.",
-          "Tderreb mn dossier dyalek, sou2al b sou2al.",
+          "تدرب انطلاقا من الملف ديالك، سؤال بسؤال.",
         )}
       />
       <div className="interview-layout">
@@ -543,7 +543,7 @@ export function InterviewView() {
           <div className="panel-top">
             <span className="badge blue-badge">
               <Mic size={14} />
-              {t("Simulation écrite", "Simulation b lktaba")}
+              {t("Simulation écrite", "محاكاة بالكتابة")}
             </span>
             <span className="muted">
               {index + 1} / {questions.length}
@@ -557,7 +557,7 @@ export function InterviewView() {
           <p>
             {t(
               "Pourquoi cette question ? Elle relie une information de votre dossier à votre projet. Vous pouvez répondre, dire que vous ne savez pas encore ou passer.",
-              "3lach had sou2al ? Kayrbet ma3loma mn dossier dyalek b projet dyalek. T9der tjawb, tgol mazal ma 3reftch, wla tdouz.",
+              "علاش هاد السؤال؟ كيربط معلومة من الملف بالمشروع ديالك. تقدر تجاوب، تقول مازال ما عرفت، ولا تدوز.",
             )}
           </p>
           <form
@@ -581,7 +581,7 @@ export function InterviewView() {
               }
             }}
           >
-            <Field label={t("Votre réponse", "Ljawab dyalek")}>
+            <Field label={t("Votre réponse", "الجواب ديالك")}>
               <textarea
                 rows={7}
                 maxLength={6000}
@@ -593,7 +593,7 @@ export function InterviewView() {
                 }}
                 placeholder={t(
                   "Ce qui m’intéresse dans ce parcours…",
-                  "Lli kay3jebni f had masar…",
+                  "اللي كيعجبني فهاد المسار…",
                 )}
               />
             </Field>
@@ -601,28 +601,28 @@ export function InterviewView() {
               <button
                 type="button"
                 onClick={() => {
-                  setAnswer(t("Je ne sais pas encore.", "Mazal ma 3reftch."));
+                  setAnswer(t("Je ne sais pas encore.", "مازال ما عرفت."));
                   setAnswerMode("unknown");
                 }}
               >
-                {t("Je ne sais pas encore", "Mazal ma 3reftch")}
+                {t("Je ne sais pas encore", "مازال ما عرفت")}
               </button>
               <button
                 type="button"
                 onClick={() => {
                   setAnswer(
-                    t("Je préfère ne pas répondre.", "Kanfdal ma njawbech."),
+                    t("Je préfère ne pas répondre.", "كنفضل ما نجاوبش."),
                   );
                   setAnswerMode("prefer");
                 }}
               >
-                {t("Je préfère ne pas répondre", "Kanfdal ma njawbech")}
+                {t("Je préfère ne pas répondre", "كنفضل ما نجاوبش")}
               </button>
               {answerMode !== "written" && (
                 <span className="muted">
                   {t(
                     "Cette réponse sera conservée comme telle, sans hypothèse ajoutée.",
-                    "Had ljawab ghadi yb9a kima howa, bla chi tafsir zayed.",
+                    "هاد الجواب غادي يبقى كيفما هو، بلا تفسير زايد.",
                   )}
                 </span>
               )}
@@ -630,7 +630,7 @@ export function InterviewView() {
             <div className="form-actions">
               <span>
                 {answer.trim().split(/\s+/).filter(Boolean).length}{" "}
-                {t("mots", "kelma")}
+                {t("mots", "كلمة")}
               </span>
               <Button
                 variant="primary"
@@ -638,7 +638,7 @@ export function InterviewView() {
                 disabled={busy || !answer.trim()}
               >
                 <Play size={15} />
-                {t("Obtenir un retour", "Nchouf moraja3a")}
+                {t("Obtenir un retour", "نشوف المراجعة")}
               </Button>
             </div>
           </form>
@@ -646,7 +646,7 @@ export function InterviewView() {
           {feedback && (
             <div className="interview-feedback">
               <h3>
-                {t("Votre retour de préparation", "Moraja3a dyal ta7dir")}
+                {t("Votre retour de préparation", "مراجعة التحضير")}
               </h3>
               <p>{t(feedback.assessment)}</p>
               {feedback.strengths.map((s) => (
@@ -660,7 +660,7 @@ export function InterviewView() {
               <h3>
                 {t(
                   "Pour aller plus loin",
-                  "Bach tzid twa d d a7".replace("twa d d a7", "twadda7"),
+                  "باش تزيد توضح".replace("توضح", "توضح"),
                 )}
               </h3>
               <p>{t(feedback.follow_up)}</p>
@@ -675,7 +675,7 @@ export function InterviewView() {
                 setFeedback(null);
               }}
             >
-              {t("Précédent", "Lli 9bel")}
+              {t("Précédent", "اللي قبل")}
             </Button>
             <Button
               onClick={() => {
@@ -690,8 +690,8 @@ export function InterviewView() {
                   ? "Recommencer"
                   : "Question suivante",
                 index === questions.length - 1
-                  ? "3awed mn lowwel"
-                  : "Sou2al jdid",
+                  ? "نعاود من الأول"
+                  : "سؤال جديد",
               )}
               <ArrowRight size={16} />
             </Button>
@@ -703,43 +703,43 @@ export function InterviewView() {
                 setFeedback(null);
               }}
             >
-              {t("Passer cette question", "Douz had sou2al")}
+              {t("Passer cette question", "ندوز هاد السؤال")}
             </Button>
           </div>
         </section>
         <aside>
           <section className="panel">
             <h3>
-              {t("Les repères d’une bonne réponse", "No9at dyal jawab mzyan")}
+              {t("Les repères d’une bonne réponse", "نقط ديال جواب مزيان")}
             </h3>
             <div className="rubric-list">
               {[
                 [
-                  t("Clarté", "Wodo7"),
+                  t("Clarté", "الوضوح"),
                   t(
                     "Une idée principale, puis un exemple.",
-                    "Fikra ra2issiya, men be3d exemple.",
+                    "فكرة رئيسية، ومن بعد مثال.",
                   ),
                 ],
                 [
-                  t("Cohérence", "Tnassob"),
+                  t("Cohérence", "الانسجام"),
                   t(
                     "Un lien entre votre passé et votre projet.",
-                    "Rabet bin lmadi dyalek w projet.",
+                    "ربط بين المسار السابق والمشروع ديالك.",
                   ),
                 ],
                 [
-                  t("Précision", "Di99a"),
+                  t("Précision", "الدقة"),
                   t(
                     "Des matières et des contenus vérifiés.",
-                    "Mawad w contenu m2ekkdin.",
+                    "مواد ومحتوى مؤكدين.",
                   ),
                 ],
                 [
-                  t("Authenticité", "Ssid9"),
+                  t("Authenticité", "الصدق"),
                   t(
                     "Vos propres raisons, dans vos mots.",
-                    "L2asbab dyalek, b klamek nta.",
+                    "الأسباب ديالك، بكلامك نتا.",
                   ),
                 ],
               ].map(([h, p]) => (
@@ -753,16 +753,16 @@ export function InterviewView() {
               ))}
             </div>
             <LinkButton onClick={() => go("motivations")}>
-              {t("Relire mon projet", "N3awed n9ra projet")}
+              {t("Relire mon projet", "نعاود نقرا المشروع")}
             </LinkButton>
           </section>
           <Notice>
             {t(
               "Grille indicative sur le texte. L’oral, la véracité et la qualité globale ne sont pas évalués automatiquement. Vos réponses ne sont pas conservées après avoir quitté cet écran.",
-              "Grille ghir 3la texte. L’oral w ssi7a w ljawda ma kayt9eymoch automatiquement. Ljawab ma kayb9ach mlli tk h roj".replace(
-                "tk h roj",
-                "tkhroj",
-              ) + " mn had page.",
+              "مراجعة تقريبية للنص. الشفوي وصحة المعلومات والجودة العامة ما كيتقيموش آليا. الأجوبة ما كتبقاش ملي كتخرج".replace(
+                "كتخرج",
+                "كتخرج",
+              ) + " من هاد الصفحة.",
             )}
           </Notice>
         </aside>
@@ -781,28 +781,28 @@ export function TasksView() {
   return (
     <>
       <Heading
-        eyebrow={t("UNE CHOSE À LA FOIS", "7AJA B 7AJA")}
+        eyebrow={t("UNE CHOSE À LA FOIS", "حاجة بحاجة")}
         title={t(
           "Aujourd’hui, avancez sur l’essentiel.",
-          "Lyom, khdem 3la darori.",
+          "اليوم، خدم على الضروري.",
         )}
         description={t(
           "Les priorités se mettent à jour avec votre dossier. Corriger la cause résout la tâche.",
-          "L2awlawiyat kaytbeddlo m3a dossier. Mlli kat7ell sabab, tâche kattsala.",
+          "الأولويات كتبدل مع الملف. ملي كتحل السبب، المهمة كتسالى.",
         )}
         action={
           <Button onClick={() => setCycle(true)}>
             <Clock3 size={16} />
-            {t("Vérifier mon calendrier", "Nraja3 calendrier")}
+            {t("Vérifier mon calendrier", "نراجع التواريخ")}
           </Button>
         }
       />
       <div className="filter-chips">
         {[
-          ["all", "Toutes", "Kolchi"],
-          ["CRITICAL", "Critiques", "Darori"],
-          ["HIGH", "Prioritaires", "Mosta3jil"],
-          ["MEDIUM", "À explorer", "N9ellbo"],
+          ["all", "Toutes", "كلشي"],
+          ["CRITICAL", "Critiques", "ضروري"],
+          ["HIGH", "Prioritaires", "أولوية"],
+          ["MEDIUM", "À explorer", "نكتشف"],
         ].map(([id, fr, ary]) => (
           <button
             key={id}
@@ -861,7 +861,7 @@ export function TasksView() {
               <button
                 className="icon-button"
                 onClick={() => mutate(`/tasks/${task.id}/complete`, {})}
-                aria-label={t("Marquer comme terminé", "Sejjel belli tsala")}
+                aria-label={t("Marquer comme terminé", "نسجل بلي تسالات")}
               >
                 <Check size={18} />
               </button>
@@ -871,10 +871,10 @@ export function TasksView() {
       </div>
       {tasks.length === 0 && (
         <Empty
-          title={t("Aucune priorité dans cette vue", "Ma kaynach priorité hna")}
+          title={t("Aucune priorité dans cette vue", "ما كاينة حتى أولوية هنا")}
           description={t(
             "Vos tâches évoluent avec les informations du dossier.",
-            "Tâches kaytbeddlo m3a lma3lomat dyal dossier.",
+            "المهام كتبدل مع المعلومات ديال الملف.",
           )}
         />
       )}
@@ -884,13 +884,13 @@ export function TasksView() {
           <h3>
             {t(
               "Le calendrier dépend de votre procédure.",
-              "Calendrier 3la 7sab procédure dyalek.",
+              "التواريخ حسب الإجراء ديالك.",
             )}
           </h3>
           <p>
             {t(
               "Consultez la source officielle avant de confirmer le cycle et les échéances.",
-              "Chouf source rasmi 9bel ta2kid cycle w deadlines.",
+              "شوف المصدر الرسمي قبل تأكيد الدورة والآجال.",
             )}
           </p>
           <a
@@ -901,7 +901,7 @@ export function TasksView() {
           >
             {t(
               "Calendrier Campus France Maroc",
-              "Calendrier Campus France Maroc",
+              "تواريخ كامبوس فرانس المغرب",
             )}
             <ArrowUpRight size={15} />
           </a>
@@ -917,14 +917,14 @@ function CycleModal({ onClose }: { onClose: () => void }) {
     <Modal
       title={t(
         "Confirmer mon cycle de candidature",
-        "2ekked cycle dyal candidature",
+        "نأكد دورة الترشيح",
       )}
       onClose={onClose}
     >
       <Notice kind="warning">
         {t(
           "Les dates ne sont jamais copiées d’une année à l’autre. Reportez uniquement l’échéance officielle de votre procédure.",
-          "Dates ma kaytn9louch mn 3am l 3am. Sejjel ghir date rasmiya dyal procédure dyalek.",
+          "التواريخ ما كتنتقلش من عام لعام. سجل غير التاريخ الرسمي ديال الإجراء ديالك.",
         )}
       </Notice>
       <form
@@ -949,7 +949,7 @@ function CycleModal({ onClose }: { onClose: () => void }) {
         }}
       >
         <Field
-          label={t("Intitulé officiel du cycle", "Smiya rasmiya dyal cycle")}
+          label={t("Intitulé officiel du cycle", "الاسم الرسمي للدورة")}
         >
           <input
             name="label"
@@ -960,7 +960,7 @@ function CycleModal({ onClose }: { onClose: () => void }) {
             placeholder="Ex. cycle et procédure correspondant à votre situation"
           />
         </Field>
-        <Field label={t("Date limite officielle", "Akher ajal rasmi")}>
+        <Field label={t("Date limite officielle", "آخر أجل رسمي")}>
           <input
             name="deadline"
             type="date"
@@ -969,7 +969,7 @@ function CycleModal({ onClose }: { onClose: () => void }) {
           />
         </Field>
         <Field
-          label={t("URL officielle Campus France", "Lien rasmi Campus France")}
+          label={t("URL officielle Campus France", "الرابط الرسمي لكامبوس فرانس")}
         >
           <input
             name="source"
@@ -982,11 +982,11 @@ function CycleModal({ onClose }: { onClose: () => void }) {
           <input required type="checkbox" />
           {t(
             "J’ai vérifié que ce cycle et cette échéance s’appliquent à ma situation.",
-            "Raja3t belli had cycle w date kaynasbo situation dyali.",
+            "راجعت بلي هاد الدورة والتاريخ كيناسبو الوضعية ديالي.",
           )}
         </label>
         <Button type="submit" variant="primary">
-          {t("Enregistrer ma vérification", "Sejjel moraja3ti")}
+          {t("Enregistrer ma vérification", "نسجل المراجعة ديالي")}
         </Button>
       </form>
     </Modal>
@@ -1001,20 +1001,20 @@ export function AuditView() {
       <Heading
         eyebrow={t(
           "RIEN D’IMPORTANT NE PASSE INAPERÇU",
-          "7TA 7AJA MOHIMMA MA TFOUT",
+          "حتى حاجة مهمة ما تفوت",
         )}
         title={t(
           "Votre dossier, passé en revue.",
-          "Dossier dyalek, traje3 kamel.",
+          "الملف ديالك، تراجع كامل.",
         )}
         description={t(
           "Un état clair des pièces, du parcours, des choix et des documents de candidature.",
-          "7ala wad7a dyal lwra9, masar, khtiyarat w documents candidature.",
+          "حالة واضحة للوثائق والمسار والاختيارات ووثائق الترشيح.",
         )}
         action={
           <Button onClick={() => go("tasks")}>
             <ClipboardCheck size={16} />
-            {t("Voir mes priorités", "Chouf l2awlawiyat")}
+            {t("Voir mes priorités", "نشوف الأولويات")}
           </Button>
         }
       />
@@ -1034,36 +1034,36 @@ export function AuditView() {
             {audit.critical.length
               ? t(
                   "Une dernière ligne droite à préparer.",
-                  "Mazal chi khotwat bach tk e mmel.".replace(
-                    "tk e mmel",
-                    "tkemmel",
+                  "مازال شي خطوات باش تكمل.".replace(
+                    "تكمل",
+                    "تكمل",
                   ),
                 )
-              : t("Les contrôles sont satisfaits.", "Lmoraja3a dazet.")}
+              : t("Les contrôles sont satisfaits.", "المراجعة دازت.")}
           </h2>
           <p>
             {t(
               "La complétude mesure le contenu renseigné. La préparation exige des pièces et des conditions vérifiées.",
-              "Ch7al kammelti kay9iss ma3lomat m3emrin. Bach twjed, khas lwra9 w chorot m2ekkdin.",
+              "نسبة الإكمال كتقيس المعلومات المعمرة. باش تكون واجد، خاص الوثائق والشروط يكونو مؤكدين.",
             )}
           </p>
         </div>
         <div className="audit-percentage">
           <strong>{data.completeness.percent}%</strong>
-          <span>{t("dossier renseigné", "dossier m3emmer")}</span>
+          <span>{t("dossier renseigné", "الملف معمر")}</span>
         </div>
       </section>
       <div className="audit-stat-grid">
         {[
           [
             audit.critical.length,
-            t("Points bloquants", "No9at kay7ebso dossier"),
+            t("Points bloquants", "نقط كتحبس الملف"),
             "red",
           ],
-          [audit.warnings.length, t("Vigilances", "No9at l2intibah"), "amber"],
+          [audit.warnings.length, t("Vigilances", "نقط الانتباه"), "amber"],
           [
             audit.ready_items.length,
-            t("Éléments vérifiés", "7wayej m2ekkda"),
+            t("Éléments vérifiés", "حوايج مؤكدة"),
             "green",
           ],
         ].map(([n, l, color]) => (
@@ -1079,7 +1079,7 @@ export function AuditView() {
             <TriangleAlert size={21} />
             {t(
               "À résoudre avant toute candidature",
-              "Khas t7ell 9bel candidature",
+              "خاصها تتحل قبل الترشيح",
             )}
           </h2>
           <ul className="audit-list">
@@ -1094,19 +1094,19 @@ export function AuditView() {
             <p>
               {t(
                 "Aucun blocage détecté par les règles configurées.",
-                "Ma kayn 7ta blocage f règles lli msejlin.",
+                "ما كاين حتى عائق فالقواعد المسجلة.",
               )}
             </p>
           )}
           <LinkButton onClick={() => go("tasks")}>
-            {t("Passer à l’action", "Nbda nkhdem")}
+            {t("Passer à l’action", "نبدا نخدم")}
           </LinkButton>
         </section>
         <div className="stack">
           <section className="panel">
             <h2>
               <Clock3 size={20} />
-              {t("À garder en tête", "Khelli f balek")}
+              {t("À garder en tête", "خلي فبالك")}
             </h2>
             <ul className="audit-warning-list">
               {audit.warnings.map((w) => (
@@ -1117,7 +1117,7 @@ export function AuditView() {
           <section className="panel">
             <h2>
               <CheckCircle2 size={20} />
-              {t("Ce qui est déjà prêt", "Chno wajed")}
+              {t("Ce qui est déjà prêt", "شنو واجد")}
             </h2>
             <ul className="ready-list">
               {audit.ready_items.map((x) => (
@@ -1131,7 +1131,7 @@ export function AuditView() {
               <p>
                 {t(
                   "Les premiers éléments validés apparaîtront ici.",
-                  "Awal 7wayej m2ekkda ghadi ybano hna.",
+                  "أول الحوايج المؤكدة غادي يبانو هنا.",
                 )}
               </p>
             )}
@@ -1141,7 +1141,7 @@ export function AuditView() {
       <Notice>
         {t(
           "Cet audit n’est ni une décision d’éligibilité officielle, ni une garantie d’admission. Le candidat reste responsable du dossier transmis sur la plateforme officielle.",
-          "Had audit machi 9arar rasmi dyal l9oboul w ma kaydmench admission. Candidat kayb9a mas2oul 3la dossier lli ghadi ytsift f plateforme rasmiya.",
+          "هاد المراجعة ماشي قرار رسمي بالقبول وما كتضمنوش. المترشح كيبقى مسؤول على الملف اللي غادي يتسيفط فالمنصة الرسمية.",
         )}
       </Notice>
     </>

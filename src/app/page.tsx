@@ -28,6 +28,7 @@ import { translateSystem } from "@/lib/system-i18n";
 import { AppContext, Button, Field, Loading } from "@/components/ui";
 import { Dashboard } from "@/components/dashboard";
 import { OrientationView } from "@/components/orientation-view";
+import { PublicHome } from "@/components/public-home";
 import {
   ProfileView,
   DocumentsView,
@@ -67,6 +68,8 @@ export default function Page() {
     [error, setError] = useState(""),
     [toast, setToast] = useState(""),
     [auth, setAuth] = useState(false),
+    [demoAvailable, setDemoAvailable] = useState(false),
+    [connectionFailed, setConnectionFailed] = useState(false),
     [authMode, setAuthMode] = useState<"register" | "login">("register");
   const t = useCallback(
     (fr: string, ary?: string) =>
@@ -82,6 +85,9 @@ export default function Page() {
   }, []);
   useEffect(() => {
     let cancelled = false;
+    request("/health").then((health) => {
+      if (!cancelled) setDemoAvailable((health as { demo_mode?: boolean }).demo_mode === true);
+    }).catch(() => {});
     const read = () => {
       const [route, pid] = window.location.hash.slice(1).split("/");
       if (navigation.some((n) => n[0] === route)) setView(route as View);
@@ -97,15 +103,18 @@ export default function Page() {
       })
       .catch((e: unknown) => {
         if (cancelled) return;
-        if (e instanceof ApiError && e.status === 401) setAuth(true);
-        else
+        if (e instanceof ApiError && e.status === 401) setAuth(false);
+        else {
+          setConnectionFailed(true);
           setError(e instanceof Error ? e.message : "Connexion indisponible");
+        }
       })
       .finally(() => {
         if (!cancelled) {
           setLoading(false);
-          if (localStorage.getItem("campuspath-locale") === "ary")
-            setLocale("ary");
+          try {
+            if (localStorage.getItem("campuspath-locale") === "ary") setLocale("ary");
+          } catch { /* Language switching works without browser storage. */ }
           read();
         }
       });
@@ -116,12 +125,13 @@ export default function Page() {
     };
   }, []);
   useEffect(() => {
-    document.documentElement.lang = locale === "fr" ? "fr" : "ary-Latn";
+    document.documentElement.lang = locale === "fr" ? "fr" : "ary-Arab";
+    document.documentElement.dir = locale === "fr" ? "ltr" : "rtl";
   }, [locale]);
   const toggleLocale = () => {
     const next = locale === "fr" ? "ary" : "fr";
     setLocale(next);
-    localStorage.setItem("campuspath-locale", next);
+    try { localStorage.setItem("campuspath-locale", next); } catch { /* Keep the current choice in memory. */ }
   };
   useEffect(() => {
     if (!toast) return;
@@ -137,7 +147,7 @@ export default function Page() {
       try {
         const result = await getSnapshot(path, body, method);
         setData(result);
-        notify(t("Modifications enregistrées.", "Tsejjlat taghyirat."));
+        notify(t("Modifications enregistrées.", "تسجلو التغييرات."));
         return result;
       } catch (e) {
         setError(e instanceof Error ? e.message : "Une erreur est survenue.");
@@ -209,19 +219,25 @@ export default function Page() {
       password: String(form.get("password")),
     });
     if (result) {
-      sessionStorage.removeItem("campuspath-logged-out");
       setAuth(false);
       go("orientation");
     }
   };
-  if (loading) return <Loading />;
-  if (!data && !auth && error)
+  const startDemo = async () => {
+    const result = await mutate("/auth/demo", {});
+    if (result) { setAuth(false); go("orientation"); }
+  };
+  if (loading) return <Loading locale={locale} />;
+  if (!data && !auth && connectionFailed)
     return <main className="connection-recovery">
       <span className="recovery-brand">CampusPath</span>
-      <div role="alert"><h1>{t("Ton espace est momentanément indisponible", "Espace dyalek ma khddamch daba")}</h1><p>{t("La connexion n’a pas abouti. Tes données enregistrées restent conservées. Vérifie ta connexion, puis réessaie.", "Connexion ma khdematch. Données lli tsejjlo ba9yin. Chouf connexion w 3awed.")}</p></div>
-      <Button onClick={() => window.location.reload()}>{t("Réessayer de charger mon espace", "N3awed n7ell espace dyali")}</Button>
+      <div role="alert"><h1>{t("Ton espace est momentanément indisponible", "الفضاء ديالك ما خدامش دابا")}</h1><p>{t("La connexion n’a pas abouti. Tes données enregistrées restent conservées. Vérifie ta connexion, puis réessaie.", "الاتصال ما نجحش. المعلومات اللي تسجلو باقيين محفوظين. شوف الاتصال وعاود.")}</p></div>
+      <Button onClick={() => window.location.reload()}>{t("Réessayer de charger mon espace", "نعاود نحل الفضاء ديالي")}</Button>
     </main>;
-  if (!data || auth)
+  if (!data && !auth) return <PublicHome t={t} locale={locale} toggleLocale={toggleLocale}
+    onStart={(mode) => { setAuthMode(mode); setError(""); setAuth(true); }}
+    onDemo={startDemo} demoAvailable={demoAvailable} busy={busy} error={t(error)} />;
+  if (auth || !data)
     return (
       <div className="auth-page">
         <div className="auth-brand">
@@ -231,17 +247,18 @@ export default function Page() {
           CampusPath AI
         </div>
         <section className="auth-panel">
-          <div className="eyebrow">VOTRE PROJET, VOTRE PARCOURS</div>
+          <button className="text-link" onClick={() => { setAuth(false); setError(""); }}>{t("Retour à l’accueil", "نرجع للرئيسية")}</button>
+          <div className="eyebrow">{t("VOTRE PROJET, VOTRE PARCOURS", "المشروع ديالك، المسار ديالك")}</div>
           <h1>
             {t(
               "Votre prochain chapitre commence ici.",
-              "Lmar7ala jaya katbda hna.",
+              "المرحلة الجاية كتبدا هنا.",
             )}
           </h1>
           <p>
             {t(
               "Construisez un dossier clair et des choix qui vous ressemblent.",
-              "Wejjed dossier wad7 w khtar masar lli ynasbek.",
+              "وجد ملف واضح وختار مسار كيناسبك.",
             )}
           </p>
           <div className="tabs">
@@ -249,23 +266,23 @@ export default function Page() {
               className={authMode === "register" ? "selected" : ""}
               onClick={() => setAuthMode("register")}
             >
-              {t("Créer mon compte", "N7ell compte")}
+              {t("Créer mon compte", "نفتح حساب")}
             </button>
             <button
               className={authMode === "login" ? "selected" : ""}
               onClick={() => setAuthMode("login")}
             >
-              {t("Me connecter", "Ndkhol")}
+              {t("Me connecter", "ندخل")}
             </button>
           </div>
           <form onSubmit={submitAuth}>
-            <Field label="Email">
-              <input name="email" type="email" required autoComplete="email" />
+            <Field label={t("Email", "البريد الإلكتروني")}>
+              <input name="email" type="email" dir="ltr" required autoComplete="email" />
             </Field>
             <Field
               label={t(
                 "Mot de passe · 12 caractères minimum",
-                "Mot de passe · 12 caractères 3la l2a9al",
+                "كلمة السر · 12 حرف على الأقل",
               )}
             >
               <input
@@ -281,8 +298,8 @@ export default function Page() {
             </Field>
             <Button type="submit" variant="primary" disabled={busy}>
               {t(
-                authMode === "register" ? "Créer mon dossier" : "Me connecter",
-                authMode === "register" ? "N7ell dossier" : "Ndkhol",
+                busy ? "Connexion en cours…" : authMode === "register" ? "Créer mon dossier" : "Me connecter",
+                busy ? "الدخول جاري…" : authMode === "register" ? "نفتح الملف" : "ندخل",
               )}
             </Button>
           </form>
@@ -291,34 +308,28 @@ export default function Page() {
               {t(error)}
             </div>
           )}
-          <button
+          {demoAvailable && <button
             className="text-link auth-demo"
-            onClick={async () => {
-              const d = await mutate("/auth/demo", {});
-              if (d) {
-                sessionStorage.removeItem("campuspath-logged-out");
-                setAuth(false);
-                go("dashboard");
-              }
-            }}
+            disabled={busy}
+            onClick={startDemo}
           >
-            {t("Explorer avec un profil fictif", "Njerrab b profil tajribi")}
-          </button>
+            {t("Explorer avec un profil fictif", "نجرب بملف تجريبي")}
+          </button>}
           {data && (
             <button className="text-link" onClick={() => setAuth(false)}>
-              {t("Retour à mon espace", "Rje3 l espace dyali")}
+              {t("Retour à mon espace", "نرجع للفضاء ديالي")}
             </button>
           )}
           <button className="language" onClick={toggleLocale}>
             <Languages size={16} />
-            {locale === "fr" ? "Darija" : "Français"}
+            {locale === "fr" ? "الدارجة" : "Français"}
           </button>
         </section>
       </div>
     );
   const name =
       data.candidate.facts.find((f) => f.key === "first_name")?.value ||
-      t("Bienvenue", "Mer7ba"),
+      t("Bienvenue", "مرحبا"),
     surname =
       data.candidate.facts.find((f) => f.key === "last_name")?.value || "",
     navTitle = navigation.find((n) => n[0] === view)?.[locale === "fr" ? 1 : 2],
@@ -339,7 +350,7 @@ export default function Page() {
     >
       <div className="shell">
         <a className="skip-link" href="#main-content">
-          {t("Aller au contenu", "Sir l contenu")}
+          {t("Aller au contenu", "دوز للمحتوى")}
         </a>
         <aside className="sidebar">
           <button
@@ -353,9 +364,9 @@ export default function Page() {
             CampusPath<span className="brand-ai">AI</span>
           </button>
           <div className="workspace-label">
-            {t("MON AVENIR, MES CHOIX", "MOSTA9BALI, KHTIYARI")}
+            {t("MON AVENIR, MES CHOIX", "مستقبلي، اختياري")}
           </div>
-          <nav aria-label="Navigation principale">
+          <nav aria-label={t("Navigation principale", "التنقل الرئيسي")}>
             {navigation.map(([id, fr, ary], i) => {
               const Icon = icons[i];
               return (
@@ -377,11 +388,11 @@ export default function Page() {
           </nav>
           <div className="sidebar-note">
             <ShieldCheck size={21} />
-            <strong>{t("Des choix éclairés.", "Khtiyar 3la bayna.")}</strong>
+            <strong>{t("Des choix éclairés.", "اختيار على بينة.")}</strong>
             <p>
               {t(
                 "Explorez les possibles. Avancez à votre rythme.",
-                "Ktechef l2ikhtiyarat. T9eddem b rythme dyalek.",
+                "اكتشف الاختيارات وتقدم بالوتيرة ديالك.",
               )}
             </p>
           </div>
@@ -391,7 +402,7 @@ export default function Page() {
               setAuthMode("register");
               setAuth(true);
             }}
-            title={t("Créer ou changer de compte", "Beddel compte")}
+            title={t("Créer ou changer de compte", "نبدل الحساب")}
           >
             <span className="avatar">
               {(name[0] + (surname[0] ?? "")).toUpperCase()}
@@ -402,8 +413,8 @@ export default function Page() {
               </strong>
               <small>
                 {data.candidate.is_demo
-                  ? t("Profil de démonstration", "Profil tajribi")
-                  : t("Mon compte candidat", "Compte dyali")}
+                  ? t("Profil de démonstration", "ملف تجريبي")
+                  : t("Mon compte candidat", "الحساب ديالي")}
               </small>
             </div>
             <ChevronRight size={14} />
@@ -412,7 +423,7 @@ export default function Page() {
         <div className="workspace">
           <header className="topbar">
             <span>
-              {t("Mon espace", "Espace dyali")}
+              {t("Mon espace", "الفضاء ديالي")}
               <ChevronRight size={14} />
               <strong>{navTitle}</strong>
             </span>
@@ -420,29 +431,31 @@ export default function Page() {
               <button
                 className="language"
                 onClick={toggleLocale}
-                aria-label={t("Changer la langue", "Beddel logha")}
+                aria-label={t("Changer la langue", "نبدل اللغة")}
               >
                 <Languages size={16} />
-                {locale === "fr" ? "Français" : "Darija"}
+                {locale === "fr" ? "الدارجة" : "Français"}
                 <ChevronRight size={12} />
               </button>
               <button
                 className="icon-button notification"
                 onClick={() => go("tasks")}
-                aria-label={t("Voir mes priorités", "Chouf l2awlawiyat")}
+                aria-label={t("Voir mes priorités", "نشوف الأولويات")}
               >
                 <Bell size={18} />
                 {data.tasks.some((t) => t.priority === "CRITICAL") && <i />}
               </button>
               <button
                 className="icon-button"
-                aria-label={t("Se déconnecter", "Nkhroj")}
+                aria-label={t("Se déconnecter", "نخرج")}
                 onClick={async () => {
                   try {
                     await request("/auth/logout", {});
-                    sessionStorage.setItem("campuspath-logged-out", "true");
                     setData(null);
-                    setAuth(true);
+                    setAuth(false);
+                    setError("");
+                    setToast("");
+                    window.location.hash = "";
                   } catch (e) {
                     setError(e instanceof Error ? e.message : "Erreur");
                   }
@@ -455,18 +468,18 @@ export default function Page() {
           <main id="main-content">
             {data.candidate.is_demo && (
               <div className="demo-strip">
-                <span>{t("DÉMONSTRATION", "TAJRIBA")}</span>
+                <span>{t("DÉMONSTRATION", "تجربة")}</span>
                 {view === "orientation"
                   ? t(
                       "Vos essais sont enregistrés dans un dossier de démonstration",
-                      "Tajriba dyalek kattsjjel f dossier tajribi",
+                      "التجارب ديالك كتتسجل فملف تجريبي",
                     )
                   : t(
                       "Profil et formations fictifs · aucune candidature envoyée",
-                      "Profil w formations ghir tajriba · ma tsiftat 7ta candidature",
+                      "الملف والتكوينات غير للتجربة · ما تسيفط حتى ترشيح",
                     )}
                 <button onClick={() => setAuth(true)}>
-                  {t("Créer mon dossier", "N7ell dossier dyali")}
+                  {t("Créer mon dossier", "نفتح الملف ديالي")}
                   <ChevronRight size={12} />
                 </button>
               </div>
@@ -476,7 +489,7 @@ export default function Page() {
                 <span>{t(error)}</span>
                 <button
                   onClick={() => setError("")}
-                  aria-label={t("Fermer", "Sedd")}
+                  aria-label={t("Fermer", "نسد")}
                 >
                   <X size={17} />
                 </button>
@@ -503,7 +516,7 @@ export default function Page() {
               <ShieldCheck size={14} />
               {t(
                 "Un outil indépendant de préparation · Non affilié à Campus France",
-                "Outil mosta9il bach twejjed dossier · Ma tabi3ch l Campus France",
+                "أداة مستقلة باش توجد الملف · ما تابعةش لكامبوس فرانس",
               )}
               <span>CampusPath AI</span>
             </footer>
@@ -515,7 +528,7 @@ export default function Page() {
             {toast}
             <button
               onClick={() => setToast("")}
-              aria-label={t("Fermer", "Sedd")}
+              aria-label={t("Fermer", "نسد")}
             >
               <X size={15} />
             </button>
